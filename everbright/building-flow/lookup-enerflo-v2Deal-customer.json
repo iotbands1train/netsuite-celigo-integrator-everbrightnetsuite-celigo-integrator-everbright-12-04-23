@@ -1,0 +1,150 @@
+{
+  "customer": {
+    "company_id": 3262,
+    "office_id": 4527,
+    "creator_id": null,
+    "agent_id": 4093,
+    "setter_id": null,
+    "first_name": "Gregory",
+    "last_name": "Roman",
+    "email": "gregoryroman71282@yahoo.com",
+    "mobile": "9129772537",
+    "secondary_first_name": null,
+    "secondary_last_name": null,
+    "secondary_mobile": "",
+    "secondary_email": null,
+    "address": "9302 Chilmark Path",
+    "city": "San Antonio",
+    "state": "TX",
+    "zip": "78263",
+    "county": "Bexar County",
+    "lat": "29.36886010",
+    "lng": "-98.30731090",
+    "timezone": "America/Chicago",
+    "details": null,
+    "external_id": null,
+    "lead_source": null,
+    "meta_data": {
+      "class": "App\\Services\\ApiService",
+      "method": "api",
+      "function": "addCustomer",
+      "nem_signer": null,
+      "mailing_zip": "78263",
+      "mailing_city": "San Antonio",
+      "nem_override": null,
+      "gmapsOverride": 1,
+      "mailing_state": "TX",
+      "has_valid_email": 1,
+      "mailing_address": "9302 Chilmark Path",
+      "primary_sms_supported": 1,
+      "invalidEmailNotificationSent": 0
+    },
+    "status_id": -1,
+    "lead_router_id": null,
+    "referral_id": null,
+    "deleted_at": null,
+    "language": "en_US",
+    "unit_number": null,
+    "initial_contact": 1,
+    "fullName": "Gregory Roman",
+    "id": 2178178,
+    "created": "2023-10-02T21:31:06+00:00",
+    "updated": "2023-12-02T00:43:07+00:00",
+    "fullState": "Texas",
+    "fullAddress": "9302 Chilmark Path San Antonio, TX 78263",
+    "status_name": null,
+    "integrations": {
+      "Partner": {
+        "Lead": {
+          "integration_record_id": "4604381",
+          "record_type": "Lead",
+          "enerflo_id": 2178178,
+          "last_synced": "2023-10-02T21:31:07+00:00",
+          "updated_at": "2023-10-02T21:31:07+00:00",
+          "created_at": "2023-10-02T21:31:07+00:00"
+        }
+      },
+      "Enerflo V2": {
+        "EnerfloV2Customer": {
+          "integration_record_id": "2cb225da-1b2e-4306-a904-dad53f279ddd",
+          "record_type": "EnerfloV2Customer",
+          "enerflo_id": 2178178,
+          "last_synced": "2023-10-02T21:35:44+00:00",
+          "updated_at": "2023-10-02T21:35:44+00:00",
+          "created_at": "2023-10-02T21:35:44+00:00"
+        }
+      }
+    },
+    "owner": {
+      "first_name": "Charlie",
+      "last_name": "Heaton",
+      "email": "cheaton@trismartsolar.com",
+      "valid_email": 1,
+      "phone": "8014200724",
+      "timezone": "America/Chicago",
+      "id": 6058,
+      "meta": {
+        "inactive": "0",
+        "solo_email": null,
+        "intercom_id": "5fada02582be5a10d941be6e",
+        "is_view_only": "0",
+        "notifications": {
+          "agreementReviewedEmail": "1"
+        },
+        "valid_email_ts": "2023-11-16 23:34:53",
+        "has_valid_email": 1,
+        "sales_rep_license": null,
+        "can_create_customers": "1",
+        "primary_sms_supported": 1,
+        "setter_can_see_office_leads": "1"
+      }
+    },
+    "office": {
+      "office_name": "Limitless San Antonio",
+      "office_id": 4527,
+      "office_city": "San Antonio",
+      "office_address": "2463 Freedom Dr",
+      "office_zip": "78217",
+      "office_tz": "America/Chicago",
+      "office_state": "TX",
+      "sms_number": ""
+    },
+    "company": {
+      "company_name": "Limitless Energy",
+      "company_phone": "8014200724",
+      "company_address": "E Hardy Rd",
+      "company_city": "Houston",
+      "company_state": "TX",
+      "company_zip": "77032",
+      "company_email": "test@tempemail.com",
+      "company_timezone": "America/Chicago"
+    },
+    "customer_notes": "",
+    "futureAppointments": [],
+    "customer_portal_url": "https://enerflo.io/us/gTCwCg",
+    "surveys": {
+      "TriSMART Standard Deal": {
+        "name": "TriSMART Standard Deal",
+        "type": "sales",
+        "id": 1848763
+      },
+      "TriSMART - Deal V2": {
+        "name": "TriSMART - Deal V2",
+        "type": "sales",
+        "id": 1848776,
+        "install": {
+          "id": 4341365,
+          "status": null,
+          "created_at": 4341365,
+          "updated_at": 4341365
+        }
+      }
+    },
+    "loan_application_details": {
+      "lender": "Dividend",
+      "application_status": "prequal_pass",
+      "application_date": "11/28/23 at 01:32 am"
+    },
+    "creator": null
+  }
+}

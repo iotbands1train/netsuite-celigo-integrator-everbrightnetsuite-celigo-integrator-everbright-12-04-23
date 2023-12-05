@@ -1,0 +1,3695 @@
+{
+    "page_of_records": [
+      {
+        "record": {
+          "id": 1848776,
+          "customer_id": 2178178,
+          "company_id": 3262,
+          "epc_company_id": 1260,
+          "survey_type_id": 6029,
+          "survey_type_name": "TriSMART - Deal V2",
+          "survey_hash": "4238a28d-7b8c-41d0-8e2b-5e00e86c4342",
+          "agent_name": "Charlie Heaton",
+          "agent_email": "cheaton@trismartsolar.com",
+          "integrations": {
+            "Enerflo V2": {
+              "EnerfloV2Deal": {
+                "integration_record_id": "c2f00be0-5e33-4f1b-93c7-0d282219a861",
+                "record_type": "EnerfloV2Deal",
+                "enerflo_id": 1848776,
+                "last_synced": "2023-11-28T02:14:21+00:00",
+                "updated_at": "2023-11-28T02:14:21+00:00",
+                "created_at": "2023-10-02T21:35:44+00:00"
+              }
+            }
+          },
+          "installDetails": {
+            "id": 4341365,
+            "epc_company_id": 1260,
+            "company_id": 3262,
+            "editor_company_id": 1260,
+            "office_id": 4527,
+            "epc_market_id": 100624,
+            "customer_id": 2178178,
+            "survey_type_id": 6029,
+            "survey_id": 1848776,
+            "site_survey_id": null,
+            "agent_id": 4093,
+            "agreement_id": 491735,
+            "created_at": "2023-11-28 02:14:17",
+            "updated_at": "2023-11-28 02:14:17",
+            "deleted_at": null,
+            "status_id": 1
+          },
+          "last_updated_section_id": null,
+          "completed_by_name": "Charlie Heaton",
+          "completed_by_email": "cheaton@trismartsolar.com",
+          "user_completed_by_id": "6058",
+          "user_completed_by_name": "Charlie Heaton",
+          "user_completed_by_email": "cheaton@trismartsolar.com",
+          "last_updated_by_id": null,
+          "last_updated_by_name": "",
+          "last_updated_by_email": "",
+          "created_at": "2023-10-02T21:35:44+00:00",
+          "updated_at": "2023-11-28T02:14:19+00:00",
+          "utility": {
+            "utility_id": 36,
+            "utility_name": "CPS Energy",
+            "utility_short_name": "CPS",
+            "tags": [],
+            "company_alias": null,
+            "crm_id": null
+          },
+          "external_customer_id": null,
+          "survey_data": {
+            "panel_id": 3596,
+            "utility_id": 36,
+            "inverter_id": 681,
+            "lender_picker": 37708,
+            "solar_system_size": 17.01,
+            "solar_design_notes": "",
+            "solar_data_panel_count": 42,
+            "solar_data_solar_offset": 82.61092702499204,
+            "solar_data_current_usage": 29876.67478,
+            "solar_data_inverter_count": 50,
+            "solar_data_system_production": 24681.398,
+            "solar_data_total_cost_after_fees": 45351.5,
+            "solar_proposal_monthly_power_bill": 311.22,
+            "pricingOutputs": {
+              "deal": {
+                "org": {
+                  "id": "0f6f35f0-0a18-48b3-aebe-2016c4c715e0"
+                },
+                "state": {
+                  "foam-roof": false,
+                  "hasDesign": true,
+                  "roof-condition": "good",
+                  "hasApprovedDesign": true,
+                  "hasReceivedDesign": true,
+                  "hasCreatedProposal": true,
+                  "hasRequestedDesign": true,
+                  "do-they-have-an-hoa": true,
+                  "taxable-income-40-k": true,
+                  "are-you-the-homeowner": true,
+                  "is-this-a-retrofit-system": false,
+                  "are-there-shading-concerns": false
+                },
+                "projectAddress": {
+                  "lat": 29.3688601,
+                  "lng": -98.3073109,
+                  "city": "San Antonio",
+                  "line1": "9302 Chilmark Path",
+                  "line2": null,
+                  "line3": null,
+                  "state": "TX",
+                  "country": "US",
+                  "postalCode": 78263,
+                  "fullAddress": "9302 Chilmark Path, San Antonio, TX, 78263"
+                }
+              },
+              "design": {
+                "notes": "",
+                "title": "9302 Chilmark Path Design 3",
+                "arrays": [
+                  {
+                    "name": "Array 1",
+                    "tsrf": 1,
+                    "pitch": 27,
+                    "module": {
+                      "id": "b14578d6-062f-44da-ac4c-de88e85770ef",
+                      "name": "Q Cell 405",
+                      "model": "Q.PEAK DUO BLK ML-G10.a+ 405",
+                      "width": 1045,
+                      "length": 1879,
+                      "capacity": 405,
+                      "thumbnail": null,
+                      "efficiency": 0.206,
+                      "degradation": 0.0054,
+                      "manufacturer": "Hanwha Q Cells"
+                    },
+                    "azimuth": 194,
+                    "production": 7952.406000000001,
+                    "moduleCount": 12,
+                    "resizeCoeff": 662.7005,
+                    "solarAccess": null,
+                    "inverterIndex": 0,
+                    "maxModuleCount": 20,
+                    "roofPlaneIndex": null,
+                    "solarAccessByMonth": null
+                  },
+                  {
+                    "name": "Array 2",
+                    "tsrf": 1,
+                    "pitch": 27,
+                    "module": {
+                      "id": "b14578d6-062f-44da-ac4c-de88e85770ef",
+                      "name": "Q Cell 405",
+                      "model": "Q.PEAK DUO BLK ML-G10.a+ 405",
+                      "width": 1045,
+                      "length": 1879,
+                      "capacity": 405,
+                      "thumbnail": null,
+                      "efficiency": 0.206,
+                      "degradation": 0.0054,
+                      "manufacturer": "Hanwha Q Cells"
+                    },
+                    "azimuth": 284,
+                    "production": 16728.992,
+                    "moduleCount": 30,
+                    "resizeCoeff": 557.6330666666667,
+                    "solarAccess": null,
+                    "inverterIndex": 0,
+                    "maxModuleCount": 30,
+                    "roofPlaneIndex": null,
+                    "solarAccessByMonth": null
+                  }
+                ],
+                "errors": [],
+                "offset": 0.8261092702499204,
+                "source": {
+                  "id": "3230d1f3-c3fb-4576-8eb9-2dd6835f6821",
+                  "tool": "DESIGN_REQUEST"
+                },
+                "battery": null,
+                "utility": {
+                  "id": "3ed8df81-1a3b-44c8-9b41-9126b191d493",
+                  "name": "CPS Energy",
+                  "notes": null,
+                  "address": {
+                    "lat": null,
+                    "lng": null,
+                    "city": null,
+                    "line1": null,
+                    "line2": null,
+                    "line3": null,
+                    "state": "TX",
+                    "country": "US",
+                    "postalCode": null,
+                    "fullAddress": ", null, TX, null"
+                  },
+                  "website": null,
+                  "createdAt": "2022-01-06T20:29:55.000Z",
+                  "shortName": "CPS Energy",
+                  "updatedAt": "2022-01-06T20:29:55.000Z",
+                  "postalCodes": [
+                    78002,
+                    78006,
+                    78009,
+                    78015,
+                    78016,
+                    78023,
+                    78039,
+                    78052,
+                    78054,
+                    78056,
+                    78059,
+                    78063,
+                    78065,
+                    78066,
+                    78069,
+                    78070,
+                    78073,
+                    78101,
+                    78108,
+                    78109,
+                    78112,
+                    78121,
+                    78123,
+                    78124,
+                    78132,
+                    78148,
+                    78150,
+                    78152,
+                    78154,
+                    78163,
+                    78201,
+                    78202,
+                    78203,
+                    78204,
+                    78205,
+                    78206,
+                    78207,
+                    78208,
+                    78209,
+                    78210,
+                    78211,
+                    78212,
+                    78213,
+                    78214,
+                    78215,
+                    78216,
+                    78217,
+                    78218,
+                    78219,
+                    78220,
+                    78221,
+                    78222,
+                    78223,
+                    78224,
+                    78225,
+                    78226,
+                    78227,
+                    78228,
+                    78229,
+                    78230,
+                    78231,
+                    78232,
+                    78233,
+                    78234,
+                    78235,
+                    78236,
+                    78237,
+                    78238,
+                    78239,
+                    78240,
+                    78241,
+                    78242,
+                    78243,
+                    78244,
+                    78245,
+                    78246,
+                    78247,
+                    78248,
+                    78249,
+                    78250,
+                    78251,
+                    78252,
+                    78253,
+                    78254,
+                    78255,
+                    78256,
+                    78257,
+                    78258,
+                    78259,
+                    78260,
+                    78261,
+                    78263,
+                    78264,
+                    78265,
+                    78266,
+                    78268,
+                    78269,
+                    78270,
+                    78278,
+                    78279,
+                    78280,
+                    78283,
+                    78284,
+                    78285,
+                    78288,
+                    78289,
+                    78291,
+                    78292,
+                    78293,
+                    78294,
+                    78295,
+                    78296,
+                    78297,
+                    78298,
+                    78299,
+                    78628
+                  ],
+                  "genabilityId": 1068
+                },
+                "batteries": [],
+                "inverters": [
+                  {
+                    "id": "d952c60a-fc1c-4619-b58d-bf03ecf81652",
+                    "name": "Enphase IQ8+",
+                    "model": "IQ8PLUS-72-2-US",
+                    "isMicro": true,
+                    "acOutput": 300,
+                    "thumbnail": null,
+                    "efficiency": 0.976,
+                    "manufacturer": "Enphase"
+                  }
+                ],
+                "attachments": [],
+                "consumption": null,
+                "layoutImage": {
+                  "id": "6d48a6e6-b046-4613-b74f-1a0490bd1edd",
+                  "name": "Screenshot 2023-11-27 182033.png",
+                  "externalUrl": null
+                },
+                "batteryCount": 0,
+                "mountingType": "ROOF",
+                "roofMaterial": "ASPHALT_SHINGLES",
+                "weightedTsrf": 1,
+                "inverterCount": 50,
+                "consumptionProfile": {
+                  "title": "Consumption Profile 2",
+                  "tariff": {
+                    "lseId": 1068,
+                    "tariffId": 3406675,
+                    "tariffName": "Residential",
+                    "effectiveDate": "2022-03-01",
+                    "masterTariffId": 26065
+                  },
+                  "utility": {
+                    "id": "3ed8df81-1a3b-44c8-9b41-9126b191d493",
+                    "name": "CPS Energy",
+                    "notes": null,
+                    "address": {
+                      "lat": null,
+                      "lng": null,
+                      "city": null,
+                      "line1": null,
+                      "line2": null,
+                      "line3": null,
+                      "state": "TX",
+                      "country": "US",
+                      "postalCode": null,
+                      "fullAddress": ", null, TX, null"
+                    },
+                    "website": null,
+                    "createdAt": "2022-01-06T20:29:55.000Z",
+                    "shortName": "CPS Energy",
+                    "updatedAt": "2022-01-06T20:29:55.000Z",
+                    "postalCodes": [
+                      78002,
+                      78006,
+                      78009,
+                      78015,
+                      78016,
+                      78023,
+                      78039,
+                      78052,
+                      78054,
+                      78056,
+                      78059,
+                      78063,
+                      78065,
+                      78066,
+                      78069,
+                      78070,
+                      78073,
+                      78101,
+                      78108,
+                      78109,
+                      78112,
+                      78121,
+                      78123,
+                      78124,
+                      78132,
+                      78148,
+                      78150,
+                      78152,
+                      78154,
+                      78163,
+                      78201,
+                      78202,
+                      78203,
+                      78204,
+                      78205,
+                      78206,
+                      78207,
+                      78208,
+                      78209,
+                      78210,
+                      78211,
+                      78212,
+                      78213,
+                      78214,
+                      78215,
+                      78216,
+                      78217,
+                      78218,
+                      78219,
+                      78220,
+                      78221,
+                      78222,
+                      78223,
+                      78224,
+                      78225,
+                      78226,
+                      78227,
+                      78228,
+                      78229,
+                      78230,
+                      78231,
+                      78232,
+                      78233,
+                      78234,
+                      78235,
+                      78236,
+                      78237,
+                      78238,
+                      78239,
+                      78240,
+                      78241,
+                      78242,
+                      78243,
+                      78244,
+                      78245,
+                      78246,
+                      78247,
+                      78248,
+                      78249,
+                      78250,
+                      78251,
+                      78252,
+                      78253,
+                      78254,
+                      78255,
+                      78256,
+                      78257,
+                      78258,
+                      78259,
+                      78260,
+                      78261,
+                      78263,
+                      78264,
+                      78265,
+                      78266,
+                      78268,
+                      78269,
+                      78270,
+                      78278,
+                      78279,
+                      78280,
+                      78283,
+                      78284,
+                      78285,
+                      78288,
+                      78289,
+                      78291,
+                      78292,
+                      78293,
+                      78294,
+                      78295,
+                      78296,
+                      78297,
+                      78298,
+                      78299,
+                      78628
+                    ],
+                    "genabilityId": 1068
+                  },
+                  "actualRate": 0.125,
+                  "actualBills": [
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                  ],
+                  "estimatedRate": 0.10003,
+                  "estimatedBills": [
+                    201.66063062,
+                    207.80424582,
+                    203.35013363,
+                    217.68310455,
+                    295.22290109,
+                    408.47893676,
+                    482.86422019,
+                    457.28790826,
+                    386.45894942,
+                    277.95954053,
+                    191.56815521,
+                    183.925251
+                  ],
+                  "postSolarTariff": null,
+                  "meanBuildingArea": 1704,
+                  "postSolarUtility": null,
+                  "actualConsumption": [
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    2900,
+                    3700,
+                    3127,
+                    3685,
+                    2475,
+                    null,
+                    null
+                  ],
+                  "actualBuildingArea": null,
+                  "estimatedConsumption": [
+                    1860.68122,
+                    1665.63198,
+                    1860.98777,
+                    2091.49793,
+                    2756.51635,
+                    3286.52049,
+                    3828.55994,
+                    3647.46737,
+                    2986.73678,
+                    2335.99076,
+                    1915.10702,
+                    1839.25251
+                  ],
+                  "postSolarEstimatedRate": null
+                },
+                "firstYearProduction": 24681.398,
+                "totalSystemSizeWatts": 17010,
+                "firstYearProductionByMonth": [
+                  1572.2731893224036,
+                  1596.1454000503354,
+                  1644.713001186472,
+                  1946.8199438468505,
+                  2261.274581711331,
+                  2261.274581711331,
+                  2611.9491255078456,
+                  2684.3889373719153,
+                  2575.729219575812,
+                  2297.494487643365,
+                  1946.8199438468505,
+                  1281.690762185854
+                ]
+              },
+              "netPPW": 1.87,
+              "basePPW": 2.65,
+              "netCost": 31746.05,
+              "rebates": [
+                {
+                  "id": "a6f6e8d8-f3e9-4c97-a4c5-dcf0b02a526b",
+                  "uniqueKey": "a6f6e8d8-f3e9-4c97-a4c5-dcf0b02a526b",
+                  "displayName": "Federal Tax Credit",
+                  "pricingOption": {
+                    "name": "Pricing Option",
+                    "type": "FEDERAL_ITC",
+                    "model": [],
+                    "inputs": {
+                      "type": "federal",
+                      "amount": 0,
+                      "itcPercent": 0.3
+                    }
+                  },
+                  "priceableEntityName": "Rebate"
+                }
+              ],
+              "baseCost": 45076.5,
+              "grossPPW": 2.67,
+              "dealerFee": 0,
+              "discounts": [],
+              "grossCost": 45351.5,
+              "salesTeams": [],
+              "downPayment": 0,
+              "financeCost": 45351.5,
+              "moduleTotal": 0,
+              "adderPricing": {
+                "valueAdders": [],
+                "systemAdders": [
+                  {
+                    "id": "e92d70cd-8ce9-41a9-83a4-f018f190f9aa",
+                    "uniqueKey": "e92d70cd-8ce9-41a9-83a4-f018f190f9aa",
+                    "displayName": "Customer Concierge Fee",
+                    "dynamicInputs": [],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "FIXED_AMOUNT",
+                        "model": [],
+                        "inputs": {
+                          "amount": 0
+                        }
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "962abf32-999f-4c93-a7f8-0503763f71da",
+                    "uniqueKey": "962abf32-999f-4c93-a7f8-0503763f71da",
+                    "displayName": "Travel Adder",
+                    "dynamicInputs": [],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option 7",
+                        "type": "CUSTOM",
+                        "model": [],
+                        "inputs": {
+                          "amount": 2500,
+                          "winner": "lowestAmount"
+                        }
+                      },
+                      {
+                        "name": "Pricing Option 6",
+                        "type": "CUSTOM",
+                        "model": [],
+                        "inputs": {
+                          "amount": 2250,
+                          "winner": "lowestAmount"
+                        }
+                      },
+                      {
+                        "name": "Pricing Option 2",
+                        "type": "CUSTOM",
+                        "model": [],
+                        "inputs": {
+                          "amount": 1000,
+                          "winner": "lowestAmount"
+                        }
+                      },
+                      {
+                        "name": "Pricing Option",
+                        "type": "CUSTOM",
+                        "model": [],
+                        "inputs": {
+                          "amount": 500,
+                          "winner": "lowestAmount"
+                        }
+                      },
+                      {
+                        "name": "Pricing Option 3",
+                        "type": "CUSTOM",
+                        "model": [],
+                        "inputs": {
+                          "amount": 0,
+                          "winner": "lowestAmount"
+                        }
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "4a958a36-cd8e-423a-b35c-af88d05cdf97",
+                    "uniqueKey": "4a958a36-cd8e-423a-b35c-af88d05cdf97",
+                    "displayName": "Whole Home Surge Protector",
+                    "dynamicInputs": [],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "FIXED_AMOUNT",
+                        "model": [],
+                        "inputs": {
+                          "amount": 275
+                        }
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": true
+                  }
+                ],
+                "skippedAdders": [
+                  {
+                    "id": "515416ef-c953-43eb-a078-350f1cc2db10",
+                    "reason": "Did not activate",
+                    "displayName": "Tile Roof (Concrete Only / No Clay)"
+                  },
+                  {
+                    "id": "3e6b2815-d725-4036-86d0-aecc8ae67bba",
+                    "reason": "Did not activate",
+                    "displayName": "Flat Roof"
+                  },
+                  {
+                    "id": "bd22ef99-9fbc-4986-a42d-1de193dc8935",
+                    "reason": "Did not activate",
+                    "displayName": "Metal Roof"
+                  },
+                  {
+                    "id": "5d544a56-cad4-40c2-8cc0-bb2b64063e54",
+                    "reason": "Did not activate",
+                    "displayName": "Foam Roof"
+                  },
+                  {
+                    "id": "be15faf9-5866-4ac5-bf98-a927057e3294",
+                    "reason": "Did not activate",
+                    "displayName": "Small System Size 6-7 Panels"
+                  },
+                  {
+                    "id": "a161b731-ab45-4472-9a3e-d4a1164f0d8e",
+                    "reason": "Did not activate",
+                    "displayName": "Solar Expert CPA Service"
+                  },
+                  {
+                    "id": "998c4aad-f338-474a-891a-282818206b3b",
+                    "reason": "Did not activate",
+                    "displayName": "Google Smart Home"
+                  },
+                  {
+                    "id": "da515d28-9e99-48a1-a9fd-64b49c405701",
+                    "reason": "Did not activate",
+                    "displayName": "Small System Size 8-9 Panels"
+                  },
+                  {
+                    "id": "cceee4f1-fac8-4116-8ee9-dcfd224590c2",
+                    "reason": "Did not activate",
+                    "displayName": "Tax Service (NuSun)"
+                  },
+                  {
+                    "id": "f94894bb-35fe-4b39-9908-70d13e70a902",
+                    "reason": "Did not activate",
+                    "displayName": "5+ Arrays"
+                  },
+                  {
+                    "id": "7b5ef29f-1ad9-44e4-9fdd-4b80abbab415",
+                    "reason": "No matching pricing options",
+                    "displayName": "2023 Miscellaneous"
+                  },
+                  {
+                    "id": "c6af1e0b-2eb1-48ae-b1f5-3f8355e6a06c",
+                    "reason": "No matching pricing options",
+                    "displayName": "Sales Org Pricing"
+                  }
+                ],
+                "availableValueAdders": [
+                  {
+                    "id": "73d13d08-059d-48dd-ad58-4932f07f8691",
+                    "uniqueKey": "73d13d08-059d-48dd-ad58-4932f07f8691",
+                    "displayName": "Enphase IQ Battery 13T",
+                    "dynamicInputs": [],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "FIXED_AMOUNT",
+                        "model": [],
+                        "inputs": {
+                          "amount": 16000
+                        }
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "ec62702d-a08d-4243-9c0b-63a7d90918d5",
+                    "uniqueKey": "ec62702d-a08d-4243-9c0b-63a7d90918d5",
+                    "displayName": "Enphase IQ Battery 10P",
+                    "dynamicInputs": [],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "FIXED_AMOUNT",
+                        "model": [],
+                        "inputs": {
+                          "amount": 16000
+                        }
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "27daf893-2693-4459-af02-c1ae79ed6547",
+                    "uniqueKey": "27daf893-2693-4459-af02-c1ae79ed6547",
+                    "displayName": "Enphase IQ Battery 15P",
+                    "dynamicInputs": [],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "FIXED_AMOUNT",
+                        "model": [],
+                        "inputs": {
+                          "amount": 20000
+                        }
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "d7e78826-375f-4d91-9674-5d9d762e33ff",
+                    "uniqueKey": "d7e78826-375f-4d91-9674-5d9d762e33ff",
+                    "displayName": "Enphase IQ Battery 20P",
+                    "dynamicInputs": [],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "FIXED_AMOUNT",
+                        "model": [],
+                        "inputs": {
+                          "amount": 24000
+                        }
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "a97b1f52-1a4d-490d-8226-b3fc6924a1b2",
+                    "uniqueKey": "a97b1f52-1a4d-490d-8226-b3fc6924a1b2",
+                    "displayName": "Enphase IQ Battery 25P",
+                    "dynamicInputs": [],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "FIXED_AMOUNT",
+                        "model": [],
+                        "inputs": {
+                          "amount": 28000
+                        }
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "c1d4b939-7838-429a-a18c-a492b546077b",
+                    "uniqueKey": "c1d4b939-7838-429a-a18c-a492b546077b",
+                    "displayName": "Enphase IQ Battery 30P",
+                    "dynamicInputs": [],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "FIXED_AMOUNT",
+                        "model": [],
+                        "inputs": {
+                          "amount": 32000
+                        }
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "e2d0b779-88b2-4b3a-a7c8-7663f7ef01b1",
+                    "uniqueKey": "e2d0b779-88b2-4b3a-a7c8-7663f7ef01b1",
+                    "displayName": "Enphase IQ Battery 35P",
+                    "dynamicInputs": [],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "FIXED_AMOUNT",
+                        "model": [],
+                        "inputs": {
+                          "amount": 36000
+                        }
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "efdfe345-f8d8-406f-9db1-b2c52cb32193",
+                    "uniqueKey": "efdfe345-f8d8-406f-9db1-b2c52cb32193",
+                    "displayName": "Enphase IQ Battery 40P",
+                    "dynamicInputs": [],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "FIXED_AMOUNT",
+                        "model": [],
+                        "inputs": {
+                          "amount": 40000
+                        }
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "64101375-4c7b-4388-adbe-6ada63a9d8cb",
+                    "uniqueKey": "64101375-4c7b-4388-adbe-6ada63a9d8cb",
+                    "displayName": "Load Controller",
+                    "dynamicInputs": [],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "FIXED_AMOUNT",
+                        "model": [],
+                        "inputs": {
+                          "amount": 3500
+                        }
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "c35c3e12-41c8-4c56-b7d7-c9d130265c57",
+                    "uniqueKey": "c35c3e12-41c8-4c56-b7d7-c9d130265c57",
+                    "displayName": "Line Side Tap",
+                    "dynamicInputs": [],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "FIXED_AMOUNT",
+                        "model": [],
+                        "inputs": {
+                          "amount": 700
+                        }
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "0e8e0017-719c-4247-a6b4-0b693c5bd81f",
+                    "uniqueKey": "0e8e0017-719c-4247-a6b4-0b693c5bd81f",
+                    "displayName": "High Roof",
+                    "dynamicInputs": [],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "FIXED_AMOUNT",
+                        "model": [],
+                        "inputs": {
+                          "amount": 500
+                        }
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "d173d778-cc3d-43fa-a01b-c829f413414e",
+                    "uniqueKey": "d173d778-cc3d-43fa-a01b-c829f413414e",
+                    "displayName": "Trenching (Dirt)",
+                    "dynamicInputs": [
+                      {
+                        "name": "feet-of-dirt-trenching",
+                        "type": "NumberField",
+                        "settings": {
+                          "label": "Feet of dirt trenching",
+                          "isRequired": true
+                        }
+                      }
+                    ],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "CUSTOM",
+                        "model": {
+                          "amount": {
+                            "inputs": [
+                              "PPFT",
+                              "fieldInputs.feet-of-dirt-trenching"
+                            ]
+                          }
+                        },
+                        "inputs": {
+                          "PPFT": 20
+                        }
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": false
+                  },
+                  {
+                    "id": "da8fab39-b927-4959-8b9f-4e62ef598f3b",
+                    "uniqueKey": "da8fab39-b927-4959-8b9f-4e62ef598f3b",
+                    "displayName": "Line Side Tap w/ Gutter Box",
+                    "dynamicInputs": [],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "FIXED_AMOUNT",
+                        "model": [],
+                        "inputs": {
+                          "amount": 950
+                        }
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "ca40f8d6-8955-41bb-8a46-2af05f322f68",
+                    "uniqueKey": "ca40f8d6-8955-41bb-8a46-2af05f322f68",
+                    "displayName": "Chargepoint EV Charger",
+                    "dynamicInputs": [],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "FIXED_AMOUNT",
+                        "model": [],
+                        "inputs": {
+                          "amount": 1650
+                        }
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "ad1ae91a-2af1-4960-b54c-44b822174589",
+                    "uniqueKey": "ad1ae91a-2af1-4960-b54c-44b822174589",
+                    "displayName": "22 kW Generac Generator",
+                    "dynamicInputs": [],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "FIXED_AMOUNT",
+                        "model": [],
+                        "inputs": {
+                          "amount": 12500
+                        }
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "711f76c2-621e-4c53-98b4-cacb1b23c5b4",
+                    "uniqueKey": "711f76c2-621e-4c53-98b4-cacb1b23c5b4",
+                    "displayName": "Steep Roof",
+                    "dynamicInputs": [],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "FIXED_AMOUNT",
+                        "model": [],
+                        "inputs": {
+                          "amount": 525
+                        }
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "8b294f57-3f24-4635-9e49-dfd9e423ae0f",
+                    "uniqueKey": "8b294f57-3f24-4635-9e49-dfd9e423ae0f",
+                    "displayName": "Retrofit Battery",
+                    "dynamicInputs": [],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "FIXED_AMOUNT",
+                        "model": [],
+                        "inputs": {
+                          "amount": 2000
+                        }
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "7c804f5f-7b08-4507-b544-bdeec8df7817",
+                    "uniqueKey": "7c804f5f-7b08-4507-b544-bdeec8df7817",
+                    "displayName": "Main Panel Upgrade",
+                    "dynamicInputs": [],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "FIXED_AMOUNT",
+                        "model": [],
+                        "inputs": {
+                          "amount": 2000
+                        }
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "eae449e8-8b0d-42d9-88f1-49d2348ba510",
+                    "uniqueKey": "eae449e8-8b0d-42d9-88f1-49d2348ba510",
+                    "displayName": "Main Line Breaker Kit",
+                    "dynamicInputs": [],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "FIXED_AMOUNT",
+                        "model": [],
+                        "inputs": {
+                          "amount": 550
+                        }
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "892136e4-a565-443d-8644-b24acc0ef2a8",
+                    "uniqueKey": "892136e4-a565-443d-8644-b24acc0ef2a8",
+                    "displayName": "Main Breaker Enclosure",
+                    "dynamicInputs": [],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "FIXED_AMOUNT",
+                        "model": [],
+                        "inputs": {
+                          "amount": 600
+                        }
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "39d259d1-49c3-4639-a182-47a987ab9ed1",
+                    "uniqueKey": "39d259d1-49c3-4639-a182-47a987ab9ed1",
+                    "displayName": "Ground Mount",
+                    "dynamicInputs": [],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "PPW",
+                        "model": {
+                          "amount": {
+                            "inputs": [
+                              "systemSizeWatts",
+                              "ppw"
+                            ]
+                          }
+                        },
+                        "inputs": {
+                          "ppw": 0.5
+                        }
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "6627bb88-b349-4546-a8e0-afb8f80e2f06",
+                    "uniqueKey": "6627bb88-b349-4546-a8e0-afb8f80e2f06",
+                    "displayName": "Generator Tie In",
+                    "dynamicInputs": [],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "FIXED_AMOUNT",
+                        "model": [],
+                        "inputs": {
+                          "amount": 650
+                        }
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "35ebfd49-f5de-45e9-bccb-b4f148f96274",
+                    "uniqueKey": "35ebfd49-f5de-45e9-bccb-b4f148f96274",
+                    "displayName": "Feasibility Study (Commercial)",
+                    "dynamicInputs": [],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "PPW",
+                        "model": {
+                          "amount": {
+                            "inputs": [
+                              "systemSizeWatts",
+                              "ppw"
+                            ]
+                          }
+                        },
+                        "inputs": {
+                          "ppw": 0.01
+                        }
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "60c98aab-cdf4-4497-bc2c-847d5bb58f35",
+                    "uniqueKey": "60c98aab-cdf4-4497-bc2c-847d5bb58f35",
+                    "displayName": "Enphase iQ8 Sunlight Backup Controller",
+                    "dynamicInputs": [],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "FIXED_AMOUNT",
+                        "model": [],
+                        "inputs": {
+                          "amount": 3000
+                        }
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "08486ff6-7b2f-4678-a517-34ccdd22d209",
+                    "uniqueKey": "08486ff6-7b2f-4678-a517-34ccdd22d209",
+                    "displayName": "24 KW Generac Generator",
+                    "dynamicInputs": [
+                      {
+                        "name": "what-is-the-quoted-price-of-the-24-kw-generac-generator",
+                        "type": "NumberField",
+                        "settings": {
+                          "label": "What is the quoted price of the 24 kW Generac Generator?",
+                          "isRequired": true
+                        }
+                      }
+                    ],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "CUSTOM",
+                        "model": {
+                          "amount": {
+                            "inputs": [
+                              "fieldInputs.what-is-the-quoted-price-of-the-24-kw-generac-generator"
+                            ]
+                          }
+                        },
+                        "inputs": []
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": false
+                  },
+                  {
+                    "id": "303fcf4a-a970-4c4b-8d2b-19c98179ef8d",
+                    "uniqueKey": "303fcf4a-a970-4c4b-8d2b-19c98179ef8d",
+                    "displayName": "Main Service Panel Relocation",
+                    "dynamicInputs": [],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "FIXED_AMOUNT",
+                        "model": [],
+                        "inputs": {
+                          "amount": 3000
+                        }
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "6ff2bc78-5533-4073-8b59-1a3ee7630d82",
+                    "uniqueKey": "6ff2bc78-5533-4073-8b59-1a3ee7630d82",
+                    "displayName": "Main Service Panel Upgrade - 400 amp",
+                    "dynamicInputs": [],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "FIXED_AMOUNT",
+                        "model": [],
+                        "inputs": {
+                          "amount": 4000
+                        }
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "b9318e93-95ab-4593-bd26-843162bbd334",
+                    "uniqueKey": "b9318e93-95ab-4593-bd26-843162bbd334",
+                    "displayName": "Meter Can Swap",
+                    "dynamicInputs": [],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "FIXED_AMOUNT",
+                        "model": [],
+                        "inputs": {
+                          "amount": 300
+                        }
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "deaae743-59cb-4819-98f6-c4ea59320ab9",
+                    "uniqueKey": "deaae743-59cb-4819-98f6-c4ea59320ab9",
+                    "displayName": "Panel Retrofit",
+                    "dynamicInputs": [],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "FIXED_AMOUNT",
+                        "model": [],
+                        "inputs": {
+                          "amount": 750
+                        }
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "ddb81c4f-2223-4013-8a7b-d97778b618dc",
+                    "uniqueKey": "ddb81c4f-2223-4013-8a7b-d97778b618dc",
+                    "displayName": "Tesla Powerwall",
+                    "dynamicInputs": [
+                      {
+                        "name": "how-many-tesla-powerwall-batteries-are-needed",
+                        "type": "SelectField",
+                        "fields": null,
+                        "showIf": null,
+                        "settings": {
+                          "label": "How many Tesla Powerwall batteries are needed?",
+                          "options": [
+                            {
+                              "isNew": false,
+                              "label": 1,
+                              "value": "one"
+                            },
+                            {
+                              "isNew": false,
+                              "label": 2,
+                              "value": "two"
+                            },
+                            {
+                              "isNew": false,
+                              "label": 3,
+                              "value": "three"
+                            },
+                            {
+                              "isNew": false,
+                              "label": 4,
+                              "value": "four"
+                            }
+                          ],
+                          "displayAs": "dropdown",
+                          "isRequired": true,
+                          "placeholder": 0
+                        },
+                        "disabledIf": null
+                      }
+                    ],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "CUSTOM",
+                        "model": {
+                          "amount": {
+                            "inputs": [
+                              "fieldInputs.how-many-tesla-powerwall-batteries-are-needed",
+                              "price1",
+                              "price2",
+                              "price3",
+                              "price4"
+                            ]
+                          }
+                        },
+                        "inputs": {
+                          "price1": 13000,
+                          "price2": 25000,
+                          "price3": 36000,
+                          "price4": 48000
+                        }
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": false
+                  },
+                  {
+                    "id": "4f884b00-74b0-40e6-aafe-a666f4cd0cec",
+                    "uniqueKey": "4f884b00-74b0-40e6-aafe-a666f4cd0cec",
+                    "displayName": "Trenching (Concrete)",
+                    "dynamicInputs": [
+                      {
+                        "name": "feet-of-concrete-trenching",
+                        "type": "NumberField",
+                        "settings": {
+                          "label": "Feet of concrete trenching",
+                          "isRequired": true
+                        }
+                      }
+                    ],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "CUSTOM",
+                        "model": {
+                          "amount": {
+                            "inputs": [
+                              "PPFT",
+                              "fieldInputs.feet-of-concrete-trenching"
+                            ]
+                          }
+                        },
+                        "inputs": {
+                          "PPFT": 30
+                        }
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": false
+                  },
+                  {
+                    "id": "d9293a3e-78ed-4b43-81fd-e98fab78e815",
+                    "uniqueKey": "d9293a3e-78ed-4b43-81fd-e98fab78e815",
+                    "displayName": "Enphase IQ Battery 10T",
+                    "dynamicInputs": [],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "FIXED_AMOUNT",
+                        "model": [],
+                        "inputs": {
+                          "amount": 13500
+                        }
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "3065eb19-b541-4282-addf-f93542b9bccd",
+                    "uniqueKey": "3065eb19-b541-4282-addf-f93542b9bccd",
+                    "displayName": "Windows and Doors",
+                    "dynamicInputs": [
+                      {
+                        "name": "new_windows_cost",
+                        "type": "NumberField",
+                        "settings": {
+                          "label": "What is the quote for the new Windows/Doors? ",
+                          "isRequired": true,
+                          "description": "Quote for new doors and windows",
+                          "defaultValue": 0
+                        }
+                      }
+                    ],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "CUSTOM",
+                        "model": {
+                          "amount": {
+                            "inputs": [
+                              "fieldInputs.new_windows_cost"
+                            ]
+                          }
+                        },
+                        "inputs": []
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": false
+                  },
+                  {
+                    "id": "12003e40-2d4c-48c2-9619-4a0af92b5c5f",
+                    "uniqueKey": "12003e40-2d4c-48c2-9619-4a0af92b5c5f",
+                    "displayName": "Water System",
+                    "dynamicInputs": [
+                      {
+                        "name": "solar_water_cost",
+                        "type": "NumberField",
+                        "settings": {
+                          "label": "amount",
+                          "isRequired": true,
+                          "description": "Price of water system?",
+                          "defaultValue": 0
+                        }
+                      }
+                    ],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "CUSTOM",
+                        "model": {
+                          "amount": {
+                            "inputs": [
+                              "fieldInputs.solar_water_cost"
+                            ]
+                          }
+                        },
+                        "inputs": []
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": false
+                  },
+                  {
+                    "id": "5c2f4128-2620-4654-b09e-c6aac88bd1df",
+                    "uniqueKey": "5c2f4128-2620-4654-b09e-c6aac88bd1df",
+                    "displayName": "Enphase IQ Battery 20T",
+                    "dynamicInputs": [],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "FIXED_AMOUNT",
+                        "model": [],
+                        "inputs": {
+                          "amount": 21000
+                        }
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "2f0694cf-aeff-4206-9361-7e78465cd2de",
+                    "uniqueKey": "2f0694cf-aeff-4206-9361-7e78465cd2de",
+                    "displayName": "Enphase IQ Battery 40T",
+                    "dynamicInputs": [],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "FIXED_AMOUNT",
+                        "model": [],
+                        "inputs": {
+                          "amount": 41000
+                        }
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "4d756ce6-7fc6-46f2-8588-04105697967a",
+                    "uniqueKey": "4d756ce6-7fc6-46f2-8588-04105697967a",
+                    "displayName": "Enphase IQ Battery 30T",
+                    "dynamicInputs": [],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "FIXED_AMOUNT",
+                        "model": [],
+                        "inputs": {
+                          "amount": 31000
+                        }
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "b64ca143-1bc9-4167-b116-d63788d3d063",
+                    "uniqueKey": "b64ca143-1bc9-4167-b116-d63788d3d063",
+                    "displayName": "Overhead Main Service Panel Relocation",
+                    "dynamicInputs": [],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "FIXED_AMOUNT",
+                        "model": [],
+                        "inputs": {
+                          "amount": 3000
+                        }
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "8f2e827d-b812-4528-8228-6dcf4cd98610",
+                    "uniqueKey": "8f2e827d-b812-4528-8228-6dcf4cd98610",
+                    "displayName": "AC Soft Starter",
+                    "dynamicInputs": [],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "FIXED_AMOUNT",
+                        "model": [],
+                        "inputs": {
+                          "amount": 1300
+                        }
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "ee19286d-8069-45a3-9415-3c9b23d2496b",
+                    "uniqueKey": "ee19286d-8069-45a3-9415-3c9b23d2496b",
+                    "displayName": "DIY Nest Thermostat",
+                    "dynamicInputs": [],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "FIXED_AMOUNT",
+                        "model": [],
+                        "inputs": {
+                          "amount": 350
+                        }
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "5a107d87-3f21-4101-913b-cdc2e930b389",
+                    "uniqueKey": "5a107d87-3f21-4101-913b-cdc2e930b389",
+                    "displayName": "RGV Main Service & Meter Can Upgrade",
+                    "dynamicInputs": [],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "FIXED_AMOUNT",
+                        "model": [],
+                        "inputs": {
+                          "amount": 2950
+                        }
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "8e54cd15-0f73-4999-9478-8d81b7773b2e",
+                    "uniqueKey": "8e54cd15-0f73-4999-9478-8d81b7773b2e",
+                    "displayName": "RGV Meter Can Upgrade",
+                    "dynamicInputs": [],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "FIXED_AMOUNT",
+                        "model": [],
+                        "inputs": {
+                          "amount": 600
+                        }
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "bd3fd8be-d3fd-4d05-956b-fee2e444c7fb",
+                    "uniqueKey": "bd3fd8be-d3fd-4d05-956b-fee2e444c7fb",
+                    "displayName": "RGV Main Line Breaker Kit",
+                    "dynamicInputs": [],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "FIXED_AMOUNT",
+                        "model": [],
+                        "inputs": {
+                          "amount": 850
+                        }
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "b4a6884e-817d-4c10-9a72-a66d1146eb86",
+                    "uniqueKey": "b4a6884e-817d-4c10-9a72-a66d1146eb86",
+                    "displayName": "HVAC Work",
+                    "dynamicInputs": [
+                      {
+                        "name": "hvac-work-cost",
+                        "type": "NumberField",
+                        "fields": null,
+                        "showIf": null,
+                        "settings": {
+                          "label": "HVAC work cost?",
+                          "isRequired": true,
+                          "defaultValue": 0
+                        },
+                        "disabledIf": null
+                      }
+                    ],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "CUSTOM",
+                        "model": {
+                          "amount": {
+                            "inputs": [
+                              "fieldInputs.hvac-work-cost"
+                            ]
+                          }
+                        },
+                        "inputs": []
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": false
+                  },
+                  {
+                    "id": "db1e56a2-5494-4897-9539-23345df9e3cf",
+                    "uniqueKey": "db1e56a2-5494-4897-9539-23345df9e3cf",
+                    "displayName": "Home Standard Generator",
+                    "dynamicInputs": [
+                      {
+                        "name": "generac_generator_price_input",
+                        "type": "NumberField",
+                        "settings": {
+                          "min": 0,
+                          "label": "What is the price for the home generator?",
+                          "isRequired": true,
+                          "defaultValue": 0
+                        }
+                      }
+                    ],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "CUSTOM",
+                        "model": {
+                          "amount": {
+                            "inputs": [
+                              "fieldInputs.generac_generator_price_input"
+                            ]
+                          }
+                        },
+                        "inputs": []
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": false
+                  },
+                  {
+                    "id": "aef03dea-7006-4cc4-ba63-8757c0de87e5",
+                    "uniqueKey": "aef03dea-7006-4cc4-ba63-8757c0de87e5",
+                    "displayName": "Subpanel",
+                    "dynamicInputs": [],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "FIXED_AMOUNT",
+                        "model": [],
+                        "inputs": {
+                          "amount": 700
+                        }
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "c4fde081-8406-42fb-bf22-c000bce2d010",
+                    "uniqueKey": "c4fde081-8406-42fb-bf22-c000bce2d010",
+                    "displayName": "Home Security",
+                    "dynamicInputs": [
+                      {
+                        "name": "home_security_pricing",
+                        "type": "NumberField",
+                        "settings": {
+                          "min": 0,
+                          "label": "What is the price of the security system?",
+                          "isRequired": true,
+                          "description": "What is the price of the security system?",
+                          "defaultValue": 0
+                        }
+                      }
+                    ],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "CUSTOM",
+                        "model": {
+                          "amount": {
+                            "inputs": [
+                              "fieldInputs.home_security_pricing"
+                            ]
+                          }
+                        },
+                        "inputs": []
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": false
+                  },
+                  {
+                    "id": "ad9ba88a-963e-459b-a7a7-6a6b55cd6a69",
+                    "uniqueKey": "ad9ba88a-963e-459b-a7a7-6a6b55cd6a69",
+                    "displayName": "Franklin Home Power",
+                    "dynamicInputs": [
+                      {
+                        "name": "how-many-franklin-home-power-batteries-are-needed",
+                        "type": "SelectField",
+                        "fields": null,
+                        "showIf": null,
+                        "settings": {
+                          "label": "How many Franklin Home Batteries are needed?",
+                          "options": [
+                            {
+                              "isNew": false,
+                              "label": 1,
+                              "value": "one"
+                            },
+                            {
+                              "isNew": false,
+                              "label": 2,
+                              "value": "two"
+                            },
+                            {
+                              "isNew": false,
+                              "label": 3,
+                              "value": "three"
+                            },
+                            {
+                              "isNew": false,
+                              "label": 4,
+                              "value": "four"
+                            }
+                          ],
+                          "displayAs": "dropdown",
+                          "isRequired": true,
+                          "description": "",
+                          "placeholder": 0
+                        },
+                        "disabledIf": null
+                      }
+                    ],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "CUSTOM",
+                        "model": {
+                          "amount": {
+                            "inputs": [
+                              "fieldInputs.how-many-franklin-home-power-batteries-are-needed",
+                              "price1",
+                              "price2",
+                              "price3",
+                              "price4"
+                            ]
+                          }
+                        },
+                        "inputs": {
+                          "price1": 14000,
+                          "price2": 23500,
+                          "price3": 33000,
+                          "price4": 42500
+                        }
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": false
+                  },
+                  {
+                    "id": "16f7ef75-a645-4c53-9b6b-f04fd0ed57fc",
+                    "uniqueKey": "16f7ef75-a645-4c53-9b6b-f04fd0ed57fc",
+                    "displayName": "TriSMART Solar Lead",
+                    "dynamicInputs": [],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "PPW",
+                        "model": {
+                          "amount": {
+                            "inputs": [
+                              "systemSizeWatts",
+                              "ppw"
+                            ]
+                          }
+                        },
+                        "inputs": {
+                          "ppw": 0.2
+                        }
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "719d3fb2-8bd1-4d36-9b06-0e7906ecb3e2",
+                    "uniqueKey": "719d3fb2-8bd1-4d36-9b06-0e7906ecb3e2",
+                    "displayName": "GTR Lead ",
+                    "dynamicInputs": [],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "FIXED_AMOUNT",
+                        "model": [],
+                        "inputs": {
+                          "amount": 1100
+                        }
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "d0b7a5e5-72eb-4e97-8486-c5c0789872fa",
+                    "uniqueKey": "d0b7a5e5-72eb-4e97-8486-c5c0789872fa",
+                    "displayName": "MPU",
+                    "dynamicInputs": [],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "FIXED_AMOUNT",
+                        "model": [],
+                        "inputs": {
+                          "amount": 2500
+                        }
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "0755e5ef-7e02-4c29-9515-6268afda3303",
+                    "uniqueKey": "0755e5ef-7e02-4c29-9515-6268afda3303",
+                    "displayName": "Limitless Energy LLC - High roof 8+ kW",
+                    "dynamicInputs": [],
+                    "pricingOptions": [
+                      {
+                        "name": "Pricing Option",
+                        "type": "FIXED_AMOUNT",
+                        "model": [],
+                        "inputs": {
+                          "amount": 1500
+                        }
+                      }
+                    ],
+                    "priceableEntityName": "Adder",
+                    "dynamicInputsSatisfied": true
+                  }
+                ]
+              },
+              "batteryTotal": 0,
+              "rebatesTotal": 13605.45,
+              "financeMethod": {
+                "id": "DividendFinancePlugin",
+                "pluginName": "DividendFinancePlugin"
+              },
+              "inverterTotal": 0,
+              "commissionBase": 45351.5,
+              "discountsTotal": 0,
+              "equipmentTotal": 0,
+              "financeProduct": {
+                "id": "87ea16f9-6e24-4658-92a4-51396a539888",
+                "name": "Level - 25 years - 8.99%",
+                "rate": 0.0899,
+                "states": [
+                  "AZ",
+                  "CO",
+                  "NM",
+                  "OK",
+                  "TX",
+                  "UT"
+                ],
+                "status": "ACTIVE",
+                "hideApr": false,
+                "calcType": 3,
+                "createdAt": "2023-05-10T20:38:46.000Z",
+                "updatedAt": "2023-09-28T17:25:39.000Z",
+                "termMonths": 300,
+                "customFields": {
+                  "rate": {
+                    "value": 0.0899
+                  },
+                  "states": {
+                    "value": [
+                      "AZ",
+                      "CO",
+                      "NM",
+                      "OK",
+                      "TX",
+                      "UT"
+                    ],
+                    "display": "AZ, CO, NM, OK, TX, UT"
+                  },
+                  "hideApr": {
+                    "value": false
+                  },
+                  "calcType": {
+                    "value": 3
+                  },
+                  "loanTypeCode": {
+                    "value": "DivLev25"
+                  },
+                  "dividendSyncId": {
+                    "value": "brand:n/a-loanCode:DivLev25-rate:0.0899-fee:0"
+                  },
+                  "deferPeriodDays": {
+                    "value": 30
+                  },
+                  "promoPeriodMonths": {
+                    "value": 0
+                  }
+                },
+                "loanTypeCode": "DivLev25",
+                "originalName": "Level - 25 years - 8.99%",
+                "financeMethod": "DividendFinancePlugin",
+                "dividendSyncId": "brand:n/a-loanCode:DivLev25-rate:0.0899-fee:0",
+                "deferPeriodDays": 30,
+                "dealerFeePercent": 0,
+                "financeMethodName": "Dividend",
+                "promoPeriodMonths": 0,
+                "paymentFactorNoItc": 0.00875860465116279,
+                "paymentFactorPreItc": 0.006204418604651163,
+                "paymentFactorPostItc": 0.006204418604651163,
+                "originalDealerFeePercent": 0
+              },
+              "withDealerFees": {
+                "baseCost": 45076.5,
+                "equipmentTotal": 0,
+                "valueAddersTotal": 0,
+                "systemAddersTotal": 275,
+                "calculatedEquipment": [
+                  {
+                    "id": "80f41388-0e49-4537-829a-3796c047f844",
+                    "pitch": 27,
+                    "amount": 0,
+                    "azimuth": 194,
+                    "capacity": 405,
+                    "tierStart": 0,
+                    "displayName": "Array 1 - Q Cell 405 (x12)",
+                    "moduleCount": 12,
+                    "priceableEntityName": "OrgEquipment.PV_MODULE"
+                  },
+                  {
+                    "id": "80f41388-0e49-4537-829a-3796c047f844",
+                    "pitch": 27,
+                    "amount": 0,
+                    "azimuth": 284,
+                    "capacity": 405,
+                    "tierStart": 12,
+                    "displayName": "Array 2 - Q Cell 405 (x30)",
+                    "moduleCount": 30,
+                    "priceableEntityName": "OrgEquipment.PV_MODULE"
+                  },
+                  {
+                    "id": "040c06ae-f2ee-4c76-b03d-59070976f8be",
+                    "qty": 50,
+                    "amount": 0,
+                    "tierStart": 0,
+                    "displayName": "Enphase IQ8+",
+                    "priceableEntityName": "OrgEquipment.INVERTER"
+                  }
+                ],
+                "calculatedValueAdders": [],
+                "calculatedSystemAdders": [
+                  {
+                    "id": "e92d70cd-8ce9-41a9-83a4-f018f190f9aa",
+                    "amount": 0,
+                    "uniqueKey": "e92d70cd-8ce9-41a9-83a4-f018f190f9aa",
+                    "displayName": "Customer Concierge Fee",
+                    "dynamicInputs": [],
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "962abf32-999f-4c93-a7f8-0503763f71da",
+                    "amount": 0,
+                    "winner": "lowestAmount",
+                    "uniqueKey": "962abf32-999f-4c93-a7f8-0503763f71da",
+                    "displayName": "Travel Adder",
+                    "dynamicInputs": [],
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "4a958a36-cd8e-423a-b35c-af88d05cdf97",
+                    "amount": 275,
+                    "uniqueKey": "4a958a36-cd8e-423a-b35c-af88d05cdf97",
+                    "displayName": "Whole Home Surge Protector",
+                    "dynamicInputs": [],
+                    "dynamicInputsSatisfied": true
+                  }
+                ],
+                "baseCostWithAddersAndEquipment": 45351.5,
+                "calculatedAvailableValueAdders": [
+                  {
+                    "id": "73d13d08-059d-48dd-ad58-4932f07f8691",
+                    "amount": 16000,
+                    "displayName": "Enphase IQ Battery 13T",
+                    "dynamicInputs": [],
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "ec62702d-a08d-4243-9c0b-63a7d90918d5",
+                    "amount": 16000,
+                    "displayName": "Enphase IQ Battery 10P",
+                    "dynamicInputs": [],
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "27daf893-2693-4459-af02-c1ae79ed6547",
+                    "amount": 20000,
+                    "displayName": "Enphase IQ Battery 15P",
+                    "dynamicInputs": [],
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "d7e78826-375f-4d91-9674-5d9d762e33ff",
+                    "amount": 24000,
+                    "displayName": "Enphase IQ Battery 20P",
+                    "dynamicInputs": [],
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "a97b1f52-1a4d-490d-8226-b3fc6924a1b2",
+                    "amount": 28000,
+                    "displayName": "Enphase IQ Battery 25P",
+                    "dynamicInputs": [],
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "c1d4b939-7838-429a-a18c-a492b546077b",
+                    "amount": 32000,
+                    "displayName": "Enphase IQ Battery 30P",
+                    "dynamicInputs": [],
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "e2d0b779-88b2-4b3a-a7c8-7663f7ef01b1",
+                    "amount": 36000,
+                    "displayName": "Enphase IQ Battery 35P",
+                    "dynamicInputs": [],
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "efdfe345-f8d8-406f-9db1-b2c52cb32193",
+                    "amount": 40000,
+                    "displayName": "Enphase IQ Battery 40P",
+                    "dynamicInputs": [],
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "64101375-4c7b-4388-adbe-6ada63a9d8cb",
+                    "amount": 3500,
+                    "displayName": "Load Controller",
+                    "dynamicInputs": [],
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "c35c3e12-41c8-4c56-b7d7-c9d130265c57",
+                    "amount": 700,
+                    "displayName": "Line Side Tap",
+                    "dynamicInputs": [],
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "0e8e0017-719c-4247-a6b4-0b693c5bd81f",
+                    "amount": 500,
+                    "displayName": "High Roof",
+                    "dynamicInputs": [],
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "d173d778-cc3d-43fa-a01b-c829f413414e",
+                    "amount": -1,
+                    "displayName": "Trenching (Dirt)",
+                    "dynamicInputs": [
+                      {
+                        "name": "feet-of-dirt-trenching",
+                        "type": "NumberField",
+                        "settings": {
+                          "label": "Feet of dirt trenching",
+                          "isRequired": true
+                        }
+                      }
+                    ],
+                    "dynamicInputsSatisfied": false
+                  },
+                  {
+                    "id": "da8fab39-b927-4959-8b9f-4e62ef598f3b",
+                    "amount": 950,
+                    "displayName": "Line Side Tap w/ Gutter Box",
+                    "dynamicInputs": [],
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "ca40f8d6-8955-41bb-8a46-2af05f322f68",
+                    "amount": 1650,
+                    "displayName": "Chargepoint EV Charger",
+                    "dynamicInputs": [],
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "ad1ae91a-2af1-4960-b54c-44b822174589",
+                    "amount": 12500,
+                    "displayName": "22 kW Generac Generator",
+                    "dynamicInputs": [],
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "711f76c2-621e-4c53-98b4-cacb1b23c5b4",
+                    "amount": 525,
+                    "displayName": "Steep Roof",
+                    "dynamicInputs": [],
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "8b294f57-3f24-4635-9e49-dfd9e423ae0f",
+                    "amount": 2000,
+                    "displayName": "Retrofit Battery",
+                    "dynamicInputs": [],
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "7c804f5f-7b08-4507-b544-bdeec8df7817",
+                    "amount": 2000,
+                    "displayName": "Main Panel Upgrade",
+                    "dynamicInputs": [],
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "eae449e8-8b0d-42d9-88f1-49d2348ba510",
+                    "amount": 550,
+                    "displayName": "Main Line Breaker Kit",
+                    "dynamicInputs": [],
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "892136e4-a565-443d-8644-b24acc0ef2a8",
+                    "amount": 600,
+                    "displayName": "Main Breaker Enclosure",
+                    "dynamicInputs": [],
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "39d259d1-49c3-4639-a182-47a987ab9ed1",
+                    "amount": 8505,
+                    "displayName": "Ground Mount",
+                    "dynamicInputs": [],
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "6627bb88-b349-4546-a8e0-afb8f80e2f06",
+                    "amount": 650,
+                    "displayName": "Generator Tie In",
+                    "dynamicInputs": [],
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "35ebfd49-f5de-45e9-bccb-b4f148f96274",
+                    "amount": 170.1,
+                    "displayName": "Feasibility Study (Commercial)",
+                    "dynamicInputs": [],
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "60c98aab-cdf4-4497-bc2c-847d5bb58f35",
+                    "amount": 3000,
+                    "displayName": "Enphase iQ8 Sunlight Backup Controller",
+                    "dynamicInputs": [],
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "08486ff6-7b2f-4678-a517-34ccdd22d209",
+                    "amount": -1,
+                    "displayName": "24 KW Generac Generator",
+                    "dynamicInputs": [
+                      {
+                        "name": "what-is-the-quoted-price-of-the-24-kw-generac-generator",
+                        "type": "NumberField",
+                        "settings": {
+                          "label": "What is the quoted price of the 24 kW Generac Generator?",
+                          "isRequired": true
+                        }
+                      }
+                    ],
+                    "dynamicInputsSatisfied": false
+                  },
+                  {
+                    "id": "303fcf4a-a970-4c4b-8d2b-19c98179ef8d",
+                    "amount": 3000,
+                    "displayName": "Main Service Panel Relocation",
+                    "dynamicInputs": [],
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "6ff2bc78-5533-4073-8b59-1a3ee7630d82",
+                    "amount": 4000,
+                    "displayName": "Main Service Panel Upgrade - 400 amp",
+                    "dynamicInputs": [],
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "b9318e93-95ab-4593-bd26-843162bbd334",
+                    "amount": 300,
+                    "displayName": "Meter Can Swap",
+                    "dynamicInputs": [],
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "deaae743-59cb-4819-98f6-c4ea59320ab9",
+                    "amount": 750,
+                    "displayName": "Panel Retrofit",
+                    "dynamicInputs": [],
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "ddb81c4f-2223-4013-8a7b-d97778b618dc",
+                    "amount": -1,
+                    "displayName": "Tesla Powerwall",
+                    "dynamicInputs": [
+                      {
+                        "name": "how-many-tesla-powerwall-batteries-are-needed",
+                        "type": "SelectField",
+                        "fields": null,
+                        "showIf": null,
+                        "settings": {
+                          "label": "How many Tesla Powerwall batteries are needed?",
+                          "options": [
+                            {
+                              "isNew": false,
+                              "label": 1,
+                              "value": "one"
+                            },
+                            {
+                              "isNew": false,
+                              "label": 2,
+                              "value": "two"
+                            },
+                            {
+                              "isNew": false,
+                              "label": 3,
+                              "value": "three"
+                            },
+                            {
+                              "isNew": false,
+                              "label": 4,
+                              "value": "four"
+                            }
+                          ],
+                          "displayAs": "dropdown",
+                          "isRequired": true,
+                          "placeholder": 0
+                        },
+                        "disabledIf": null
+                      }
+                    ],
+                    "dynamicInputsSatisfied": false
+                  },
+                  {
+                    "id": "4f884b00-74b0-40e6-aafe-a666f4cd0cec",
+                    "amount": -1,
+                    "displayName": "Trenching (Concrete)",
+                    "dynamicInputs": [
+                      {
+                        "name": "feet-of-concrete-trenching",
+                        "type": "NumberField",
+                        "settings": {
+                          "label": "Feet of concrete trenching",
+                          "isRequired": true
+                        }
+                      }
+                    ],
+                    "dynamicInputsSatisfied": false
+                  },
+                  {
+                    "id": "d9293a3e-78ed-4b43-81fd-e98fab78e815",
+                    "amount": 13500,
+                    "displayName": "Enphase IQ Battery 10T",
+                    "dynamicInputs": [],
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "3065eb19-b541-4282-addf-f93542b9bccd",
+                    "amount": -1,
+                    "displayName": "Windows and Doors",
+                    "dynamicInputs": [
+                      {
+                        "name": "new_windows_cost",
+                        "type": "NumberField",
+                        "settings": {
+                          "label": "What is the quote for the new Windows/Doors? ",
+                          "isRequired": true,
+                          "description": "Quote for new doors and windows",
+                          "defaultValue": 0
+                        }
+                      }
+                    ],
+                    "dynamicInputsSatisfied": false
+                  },
+                  {
+                    "id": "12003e40-2d4c-48c2-9619-4a0af92b5c5f",
+                    "amount": -1,
+                    "displayName": "Water System",
+                    "dynamicInputs": [
+                      {
+                        "name": "solar_water_cost",
+                        "type": "NumberField",
+                        "settings": {
+                          "label": "amount",
+                          "isRequired": true,
+                          "description": "Price of water system?",
+                          "defaultValue": 0
+                        }
+                      }
+                    ],
+                    "dynamicInputsSatisfied": false
+                  },
+                  {
+                    "id": "5c2f4128-2620-4654-b09e-c6aac88bd1df",
+                    "amount": 21000,
+                    "displayName": "Enphase IQ Battery 20T",
+                    "dynamicInputs": [],
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "2f0694cf-aeff-4206-9361-7e78465cd2de",
+                    "amount": 41000,
+                    "displayName": "Enphase IQ Battery 40T",
+                    "dynamicInputs": [],
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "4d756ce6-7fc6-46f2-8588-04105697967a",
+                    "amount": 31000,
+                    "displayName": "Enphase IQ Battery 30T",
+                    "dynamicInputs": [],
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "b64ca143-1bc9-4167-b116-d63788d3d063",
+                    "amount": 3000,
+                    "displayName": "Overhead Main Service Panel Relocation",
+                    "dynamicInputs": [],
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "8f2e827d-b812-4528-8228-6dcf4cd98610",
+                    "amount": 1300,
+                    "displayName": "AC Soft Starter",
+                    "dynamicInputs": [],
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "ee19286d-8069-45a3-9415-3c9b23d2496b",
+                    "amount": 350,
+                    "displayName": "DIY Nest Thermostat",
+                    "dynamicInputs": [],
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "5a107d87-3f21-4101-913b-cdc2e930b389",
+                    "amount": 2950,
+                    "displayName": "RGV Main Service & Meter Can Upgrade",
+                    "dynamicInputs": [],
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "8e54cd15-0f73-4999-9478-8d81b7773b2e",
+                    "amount": 600,
+                    "displayName": "RGV Meter Can Upgrade",
+                    "dynamicInputs": [],
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "bd3fd8be-d3fd-4d05-956b-fee2e444c7fb",
+                    "amount": 850,
+                    "displayName": "RGV Main Line Breaker Kit",
+                    "dynamicInputs": [],
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "b4a6884e-817d-4c10-9a72-a66d1146eb86",
+                    "amount": -1,
+                    "displayName": "HVAC Work",
+                    "dynamicInputs": [
+                      {
+                        "name": "hvac-work-cost",
+                        "type": "NumberField",
+                        "fields": null,
+                        "showIf": null,
+                        "settings": {
+                          "label": "HVAC work cost?",
+                          "isRequired": true,
+                          "defaultValue": 0
+                        },
+                        "disabledIf": null
+                      }
+                    ],
+                    "dynamicInputsSatisfied": false
+                  },
+                  {
+                    "id": "db1e56a2-5494-4897-9539-23345df9e3cf",
+                    "amount": -1,
+                    "displayName": "Home Standard Generator",
+                    "dynamicInputs": [
+                      {
+                        "name": "generac_generator_price_input",
+                        "type": "NumberField",
+                        "settings": {
+                          "min": 0,
+                          "label": "What is the price for the home generator?",
+                          "isRequired": true,
+                          "defaultValue": 0
+                        }
+                      }
+                    ],
+                    "dynamicInputsSatisfied": false
+                  },
+                  {
+                    "id": "aef03dea-7006-4cc4-ba63-8757c0de87e5",
+                    "amount": 700,
+                    "displayName": "Subpanel",
+                    "dynamicInputs": [],
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "c4fde081-8406-42fb-bf22-c000bce2d010",
+                    "amount": -1,
+                    "displayName": "Home Security",
+                    "dynamicInputs": [
+                      {
+                        "name": "home_security_pricing",
+                        "type": "NumberField",
+                        "settings": {
+                          "min": 0,
+                          "label": "What is the price of the security system?",
+                          "isRequired": true,
+                          "description": "What is the price of the security system?",
+                          "defaultValue": 0
+                        }
+                      }
+                    ],
+                    "dynamicInputsSatisfied": false
+                  },
+                  {
+                    "id": "ad9ba88a-963e-459b-a7a7-6a6b55cd6a69",
+                    "amount": -1,
+                    "displayName": "Franklin Home Power",
+                    "dynamicInputs": [
+                      {
+                        "name": "how-many-franklin-home-power-batteries-are-needed",
+                        "type": "SelectField",
+                        "fields": null,
+                        "showIf": null,
+                        "settings": {
+                          "label": "How many Franklin Home Batteries are needed?",
+                          "options": [
+                            {
+                              "isNew": false,
+                              "label": 1,
+                              "value": "one"
+                            },
+                            {
+                              "isNew": false,
+                              "label": 2,
+                              "value": "two"
+                            },
+                            {
+                              "isNew": false,
+                              "label": 3,
+                              "value": "three"
+                            },
+                            {
+                              "isNew": false,
+                              "label": 4,
+                              "value": "four"
+                            }
+                          ],
+                          "displayAs": "dropdown",
+                          "isRequired": true,
+                          "description": "",
+                          "placeholder": 0
+                        },
+                        "disabledIf": null
+                      }
+                    ],
+                    "dynamicInputsSatisfied": false
+                  },
+                  {
+                    "id": "16f7ef75-a645-4c53-9b6b-f04fd0ed57fc",
+                    "amount": 3402,
+                    "displayName": "TriSMART Solar Lead",
+                    "dynamicInputs": [],
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "719d3fb2-8bd1-4d36-9b06-0e7906ecb3e2",
+                    "amount": 1100,
+                    "displayName": "GTR Lead ",
+                    "dynamicInputs": [],
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "d0b7a5e5-72eb-4e97-8486-c5c0789872fa",
+                    "amount": 2500,
+                    "displayName": "MPU",
+                    "dynamicInputs": [],
+                    "dynamicInputsSatisfied": true
+                  },
+                  {
+                    "id": "0755e5ef-7e02-4c29-9515-6268afda3303",
+                    "amount": 1500,
+                    "displayName": "Limitless Energy LLC - High roof 8+ kW",
+                    "dynamicInputs": [],
+                    "dynamicInputsSatisfied": true
+                  }
+                ]
+              },
+              "dealerFeeFactor": 1,
+              "pricingSettings": {
+                "basePPW": 2.65,
+                "rounding": {
+                  "mode": 1,
+                  "scale": 2
+                },
+                "stateTaxes": [],
+                "dealerFeePercent": 0,
+                "basePPWAdjustments": []
+              },
+              "systemSizeWatts": 17010,
+              "dealerFeePercent": 0,
+              "equipmentPricing": {
+                "batteries": [],
+                "inverters": [
+                  {
+                    "id": "040c06ae-f2ee-4c76-b03d-59070976f8be",
+                    "uniqueKey": "040c06ae-f2ee-4c76-b03d-59070976f8be_0",
+                    "displayName": "Enphase IQ8+",
+                    "pricingOptions": [
+                      {
+                        "name": "No-Op Pricing Option",
+                        "type": "CUSTOM",
+                        "model": [],
+                        "inputs": {
+                          "qty": 50,
+                          "amount": 0,
+                          "tierStart": 0
+                        }
+                      }
+                    ],
+                    "priceableEntityName": "OrgEquipment.INVERTER"
+                  }
+                ],
+                "pvModules": [
+                  {
+                    "id": "80f41388-0e49-4537-829a-3796c047f844",
+                    "uniqueKey": "80f41388-0e49-4537-829a-3796c047f844_0",
+                    "displayName": "Array 1 - Q Cell 405 (x12)",
+                    "pricingOptions": [
+                      {
+                        "name": "No-Op Pricing Option",
+                        "type": "CUSTOM",
+                        "model": [],
+                        "inputs": {
+                          "pitch": 27,
+                          "amount": 0,
+                          "azimuth": 194,
+                          "capacity": 405,
+                          "tierStart": 0,
+                          "moduleCount": 12
+                        }
+                      }
+                    ],
+                    "priceableEntityName": "OrgEquipment.PV_MODULE"
+                  },
+                  {
+                    "id": "80f41388-0e49-4537-829a-3796c047f844",
+                    "uniqueKey": "80f41388-0e49-4537-829a-3796c047f844_1",
+                    "displayName": "Array 2 - Q Cell 405 (x30)",
+                    "pricingOptions": [
+                      {
+                        "name": "No-Op Pricing Option",
+                        "type": "CUSTOM",
+                        "model": [],
+                        "inputs": {
+                          "pitch": 27,
+                          "amount": 0,
+                          "azimuth": 284,
+                          "capacity": 405,
+                          "tierStart": 12,
+                          "moduleCount": 30
+                        }
+                      }
+                    ],
+                    "priceableEntityName": "OrgEquipment.PV_MODULE"
+                  }
+                ]
+              },
+              "valueAddersTotal": 0,
+              "calculatedRebates": [],
+              "commissionBasePPW": 2.67,
+              "federalRebateBase": 45351.5,
+              "systemAddersTotal": 275,
+              "federalRebateTotal": 13605.45,
+              "calculatedDiscounts": [],
+              "calculatedEquipment": [
+                {
+                  "id": "80f41388-0e49-4537-829a-3796c047f844",
+                  "name": "No-Op Pricing Option",
+                  "pitch": 27,
+                  "amount": 0,
+                  "azimuth": 194,
+                  "capacity": 405,
+                  "tierStart": 0,
+                  "displayName": "Array 1 - Q Cell 405 (x12)",
+                  "moduleCount": 12,
+                  "priceableEntityName": "OrgEquipment.PV_MODULE"
+                },
+                {
+                  "id": "80f41388-0e49-4537-829a-3796c047f844",
+                  "name": "No-Op Pricing Option",
+                  "pitch": 27,
+                  "amount": 0,
+                  "azimuth": 284,
+                  "capacity": 405,
+                  "tierStart": 12,
+                  "displayName": "Array 2 - Q Cell 405 (x30)",
+                  "moduleCount": 30,
+                  "priceableEntityName": "OrgEquipment.PV_MODULE"
+                },
+                {
+                  "id": "040c06ae-f2ee-4c76-b03d-59070976f8be",
+                  "qty": 50,
+                  "name": "No-Op Pricing Option",
+                  "amount": 0,
+                  "tierStart": 0,
+                  "displayName": "Enphase IQ8+",
+                  "priceableEntityName": "OrgEquipment.INVERTER"
+                }
+              ],
+              "calculatedValueAdders": [],
+              "calculatedSystemAdders": [
+                {
+                  "id": "e92d70cd-8ce9-41a9-83a4-f018f190f9aa",
+                  "name": "Pricing Option",
+                  "amount": 0,
+                  "uniqueKey": "e92d70cd-8ce9-41a9-83a4-f018f190f9aa",
+                  "displayName": "Customer Concierge Fee",
+                  "dynamicInputs": [],
+                  "dynamicInputsSatisfied": true
+                },
+                {
+                  "id": "962abf32-999f-4c93-a7f8-0503763f71da",
+                  "name": "Pricing Option 3",
+                  "amount": 0,
+                  "winner": "lowestAmount",
+                  "uniqueKey": "962abf32-999f-4c93-a7f8-0503763f71da",
+                  "displayName": "Travel Adder",
+                  "dynamicInputs": [],
+                  "dynamicInputsSatisfied": true
+                },
+                {
+                  "id": "4a958a36-cd8e-423a-b35c-af88d05cdf97",
+                  "name": "Pricing Option",
+                  "amount": 275,
+                  "uniqueKey": "4a958a36-cd8e-423a-b35c-af88d05cdf97",
+                  "displayName": "Whole Home Surge Protector",
+                  "dynamicInputs": [],
+                  "dynamicInputsSatisfied": true
+                }
+              ],
+              "grossCostBeforeRebates": 45351.5,
+              "addersAndEquipmentTotal": 275,
+              "grossCostBeforeRebatesPPW": 2.67,
+              "rebatesFinancePaydownTotal": 13605.45,
+              "rebatesReducingFederalTotal": 0,
+              "rebatesReducingNetCostTotal": 13605.45,
+              "rebatesReducingGrossCostTotal": 0,
+              "baseCostWithAddersAndEquipment": 45351.5,
+              "calculatedAvailableValueAdders": [
+                {
+                  "id": "73d13d08-059d-48dd-ad58-4932f07f8691",
+                  "name": "Pricing Option",
+                  "amount": 16000,
+                  "displayName": "Enphase IQ Battery 13T",
+                  "dynamicInputs": [],
+                  "dynamicInputsSatisfied": true
+                },
+                {
+                  "id": "ec62702d-a08d-4243-9c0b-63a7d90918d5",
+                  "name": "Pricing Option",
+                  "amount": 16000,
+                  "displayName": "Enphase IQ Battery 10P",
+                  "dynamicInputs": [],
+                  "dynamicInputsSatisfied": true
+                },
+                {
+                  "id": "27daf893-2693-4459-af02-c1ae79ed6547",
+                  "name": "Pricing Option",
+                  "amount": 20000,
+                  "displayName": "Enphase IQ Battery 15P",
+                  "dynamicInputs": [],
+                  "dynamicInputsSatisfied": true
+                },
+                {
+                  "id": "d7e78826-375f-4d91-9674-5d9d762e33ff",
+                  "name": "Pricing Option",
+                  "amount": 24000,
+                  "displayName": "Enphase IQ Battery 20P",
+                  "dynamicInputs": [],
+                  "dynamicInputsSatisfied": true
+                },
+                {
+                  "id": "a97b1f52-1a4d-490d-8226-b3fc6924a1b2",
+                  "name": "Pricing Option",
+                  "amount": 28000,
+                  "displayName": "Enphase IQ Battery 25P",
+                  "dynamicInputs": [],
+                  "dynamicInputsSatisfied": true
+                },
+                {
+                  "id": "c1d4b939-7838-429a-a18c-a492b546077b",
+                  "name": "Pricing Option",
+                  "amount": 32000,
+                  "displayName": "Enphase IQ Battery 30P",
+                  "dynamicInputs": [],
+                  "dynamicInputsSatisfied": true
+                },
+                {
+                  "id": "e2d0b779-88b2-4b3a-a7c8-7663f7ef01b1",
+                  "name": "Pricing Option",
+                  "amount": 36000,
+                  "displayName": "Enphase IQ Battery 35P",
+                  "dynamicInputs": [],
+                  "dynamicInputsSatisfied": true
+                },
+                {
+                  "id": "efdfe345-f8d8-406f-9db1-b2c52cb32193",
+                  "name": "Pricing Option",
+                  "amount": 40000,
+                  "displayName": "Enphase IQ Battery 40P",
+                  "dynamicInputs": [],
+                  "dynamicInputsSatisfied": true
+                },
+                {
+                  "id": "64101375-4c7b-4388-adbe-6ada63a9d8cb",
+                  "name": "Pricing Option",
+                  "amount": 3500,
+                  "displayName": "Load Controller",
+                  "dynamicInputs": [],
+                  "dynamicInputsSatisfied": true
+                },
+                {
+                  "id": "c35c3e12-41c8-4c56-b7d7-c9d130265c57",
+                  "name": "Pricing Option",
+                  "amount": 700,
+                  "displayName": "Line Side Tap",
+                  "dynamicInputs": [],
+                  "dynamicInputsSatisfied": true
+                },
+                {
+                  "id": "0e8e0017-719c-4247-a6b4-0b693c5bd81f",
+                  "name": "Pricing Option",
+                  "amount": 500,
+                  "displayName": "High Roof",
+                  "dynamicInputs": [],
+                  "dynamicInputsSatisfied": true
+                },
+                {
+                  "id": "d173d778-cc3d-43fa-a01b-c829f413414e",
+                  "amount": -1,
+                  "displayName": "Trenching (Dirt)",
+                  "dynamicInputs": [
+                    {
+                      "name": "feet-of-dirt-trenching",
+                      "type": "NumberField",
+                      "settings": {
+                        "label": "Feet of dirt trenching",
+                        "isRequired": true
+                      }
+                    }
+                  ],
+                  "dynamicInputsSatisfied": false
+                },
+                {
+                  "id": "da8fab39-b927-4959-8b9f-4e62ef598f3b",
+                  "name": "Pricing Option",
+                  "amount": 950,
+                  "displayName": "Line Side Tap w/ Gutter Box",
+                  "dynamicInputs": [],
+                  "dynamicInputsSatisfied": true
+                },
+                {
+                  "id": "ca40f8d6-8955-41bb-8a46-2af05f322f68",
+                  "name": "Pricing Option",
+                  "amount": 1650,
+                  "displayName": "Chargepoint EV Charger",
+                  "dynamicInputs": [],
+                  "dynamicInputsSatisfied": true
+                },
+                {
+                  "id": "ad1ae91a-2af1-4960-b54c-44b822174589",
+                  "name": "Pricing Option",
+                  "amount": 12500,
+                  "displayName": "22 kW Generac Generator",
+                  "dynamicInputs": [],
+                  "dynamicInputsSatisfied": true
+                },
+                {
+                  "id": "711f76c2-621e-4c53-98b4-cacb1b23c5b4",
+                  "name": "Pricing Option",
+                  "amount": 525,
+                  "displayName": "Steep Roof",
+                  "dynamicInputs": [],
+                  "dynamicInputsSatisfied": true
+                },
+                {
+                  "id": "8b294f57-3f24-4635-9e49-dfd9e423ae0f",
+                  "name": "Pricing Option",
+                  "amount": 2000,
+                  "displayName": "Retrofit Battery",
+                  "dynamicInputs": [],
+                  "dynamicInputsSatisfied": true
+                },
+                {
+                  "id": "7c804f5f-7b08-4507-b544-bdeec8df7817",
+                  "name": "Pricing Option",
+                  "amount": 2000,
+                  "displayName": "Main Panel Upgrade",
+                  "dynamicInputs": [],
+                  "dynamicInputsSatisfied": true
+                },
+                {
+                  "id": "eae449e8-8b0d-42d9-88f1-49d2348ba510",
+                  "name": "Pricing Option",
+                  "amount": 550,
+                  "displayName": "Main Line Breaker Kit",
+                  "dynamicInputs": [],
+                  "dynamicInputsSatisfied": true
+                },
+                {
+                  "id": "892136e4-a565-443d-8644-b24acc0ef2a8",
+                  "name": "Pricing Option",
+                  "amount": 600,
+                  "displayName": "Main Breaker Enclosure",
+                  "dynamicInputs": [],
+                  "dynamicInputsSatisfied": true
+                },
+                {
+                  "id": "39d259d1-49c3-4639-a182-47a987ab9ed1",
+                  "ppw": 0.5,
+                  "name": "Pricing Option",
+                  "amount": 8505,
+                  "displayName": "Ground Mount",
+                  "dynamicInputs": [],
+                  "dynamicInputsSatisfied": true
+                },
+                {
+                  "id": "6627bb88-b349-4546-a8e0-afb8f80e2f06",
+                  "name": "Pricing Option",
+                  "amount": 650,
+                  "displayName": "Generator Tie In",
+                  "dynamicInputs": [],
+                  "dynamicInputsSatisfied": true
+                },
+                {
+                  "id": "35ebfd49-f5de-45e9-bccb-b4f148f96274",
+                  "ppw": 0.01,
+                  "name": "Pricing Option",
+                  "amount": 170.1,
+                  "displayName": "Feasibility Study (Commercial)",
+                  "dynamicInputs": [],
+                  "dynamicInputsSatisfied": true
+                },
+                {
+                  "id": "60c98aab-cdf4-4497-bc2c-847d5bb58f35",
+                  "name": "Pricing Option",
+                  "amount": 3000,
+                  "displayName": "Enphase iQ8 Sunlight Backup Controller",
+                  "dynamicInputs": [],
+                  "dynamicInputsSatisfied": true
+                },
+                {
+                  "id": "08486ff6-7b2f-4678-a517-34ccdd22d209",
+                  "amount": -1,
+                  "displayName": "24 KW Generac Generator",
+                  "dynamicInputs": [
+                    {
+                      "name": "what-is-the-quoted-price-of-the-24-kw-generac-generator",
+                      "type": "NumberField",
+                      "settings": {
+                        "label": "What is the quoted price of the 24 kW Generac Generator?",
+                        "isRequired": true
+                      }
+                    }
+                  ],
+                  "dynamicInputsSatisfied": false
+                },
+                {
+                  "id": "303fcf4a-a970-4c4b-8d2b-19c98179ef8d",
+                  "name": "Pricing Option",
+                  "amount": 3000,
+                  "displayName": "Main Service Panel Relocation",
+                  "dynamicInputs": [],
+                  "dynamicInputsSatisfied": true
+                },
+                {
+                  "id": "6ff2bc78-5533-4073-8b59-1a3ee7630d82",
+                  "name": "Pricing Option",
+                  "amount": 4000,
+                  "displayName": "Main Service Panel Upgrade - 400 amp",
+                  "dynamicInputs": [],
+                  "dynamicInputsSatisfied": true
+                },
+                {
+                  "id": "b9318e93-95ab-4593-bd26-843162bbd334",
+                  "name": "Pricing Option",
+                  "amount": 300,
+                  "displayName": "Meter Can Swap",
+                  "dynamicInputs": [],
+                  "dynamicInputsSatisfied": true
+                },
+                {
+                  "id": "deaae743-59cb-4819-98f6-c4ea59320ab9",
+                  "name": "Pricing Option",
+                  "amount": 750,
+                  "displayName": "Panel Retrofit",
+                  "dynamicInputs": [],
+                  "dynamicInputsSatisfied": true
+                },
+                {
+                  "id": "ddb81c4f-2223-4013-8a7b-d97778b618dc",
+                  "amount": -1,
+                  "displayName": "Tesla Powerwall",
+                  "dynamicInputs": [
+                    {
+                      "name": "how-many-tesla-powerwall-batteries-are-needed",
+                      "type": "SelectField",
+                      "fields": null,
+                      "showIf": null,
+                      "settings": {
+                        "label": "How many Tesla Powerwall batteries are needed?",
+                        "options": [
+                          {
+                            "isNew": false,
+                            "label": 1,
+                            "value": "one"
+                          },
+                          {
+                            "isNew": false,
+                            "label": 2,
+                            "value": "two"
+                          },
+                          {
+                            "isNew": false,
+                            "label": 3,
+                            "value": "three"
+                          },
+                          {
+                            "isNew": false,
+                            "label": 4,
+                            "value": "four"
+                          }
+                        ],
+                        "displayAs": "dropdown",
+                        "isRequired": true,
+                        "placeholder": 0
+                      },
+                      "disabledIf": null
+                    }
+                  ],
+                  "dynamicInputsSatisfied": false
+                },
+                {
+                  "id": "4f884b00-74b0-40e6-aafe-a666f4cd0cec",
+                  "amount": -1,
+                  "displayName": "Trenching (Concrete)",
+                  "dynamicInputs": [
+                    {
+                      "name": "feet-of-concrete-trenching",
+                      "type": "NumberField",
+                      "settings": {
+                        "label": "Feet of concrete trenching",
+                        "isRequired": true
+                      }
+                    }
+                  ],
+                  "dynamicInputsSatisfied": false
+                },
+                {
+                  "id": "d9293a3e-78ed-4b43-81fd-e98fab78e815",
+                  "name": "Pricing Option",
+                  "amount": 13500,
+                  "displayName": "Enphase IQ Battery 10T",
+                  "dynamicInputs": [],
+                  "dynamicInputsSatisfied": true
+                },
+                {
+                  "id": "3065eb19-b541-4282-addf-f93542b9bccd",
+                  "amount": -1,
+                  "displayName": "Windows and Doors",
+                  "dynamicInputs": [
+                    {
+                      "name": "new_windows_cost",
+                      "type": "NumberField",
+                      "settings": {
+                        "label": "What is the quote for the new Windows/Doors? ",
+                        "isRequired": true,
+                        "description": "Quote for new doors and windows",
+                        "defaultValue": 0
+                      }
+                    }
+                  ],
+                  "dynamicInputsSatisfied": false
+                },
+                {
+                  "id": "12003e40-2d4c-48c2-9619-4a0af92b5c5f",
+                  "amount": -1,
+                  "displayName": "Water System",
+                  "dynamicInputs": [
+                    {
+                      "name": "solar_water_cost",
+                      "type": "NumberField",
+                      "settings": {
+                        "label": "amount",
+                        "isRequired": true,
+                        "description": "Price of water system?",
+                        "defaultValue": 0
+                      }
+                    }
+                  ],
+                  "dynamicInputsSatisfied": false
+                },
+                {
+                  "id": "5c2f4128-2620-4654-b09e-c6aac88bd1df",
+                  "name": "Pricing Option",
+                  "amount": 21000,
+                  "displayName": "Enphase IQ Battery 20T",
+                  "dynamicInputs": [],
+                  "dynamicInputsSatisfied": true
+                },
+                {
+                  "id": "2f0694cf-aeff-4206-9361-7e78465cd2de",
+                  "name": "Pricing Option",
+                  "amount": 41000,
+                  "displayName": "Enphase IQ Battery 40T",
+                  "dynamicInputs": [],
+                  "dynamicInputsSatisfied": true
+                },
+                {
+                  "id": "4d756ce6-7fc6-46f2-8588-04105697967a",
+                  "name": "Pricing Option",
+                  "amount": 31000,
+                  "displayName": "Enphase IQ Battery 30T",
+                  "dynamicInputs": [],
+                  "dynamicInputsSatisfied": true
+                },
+                {
+                  "id": "b64ca143-1bc9-4167-b116-d63788d3d063",
+                  "name": "Pricing Option",
+                  "amount": 3000,
+                  "displayName": "Overhead Main Service Panel Relocation",
+                  "dynamicInputs": [],
+                  "dynamicInputsSatisfied": true
+                },
+                {
+                  "id": "8f2e827d-b812-4528-8228-6dcf4cd98610",
+                  "name": "Pricing Option",
+                  "amount": 1300,
+                  "displayName": "AC Soft Starter",
+                  "dynamicInputs": [],
+                  "dynamicInputsSatisfied": true
+                },
+                {
+                  "id": "ee19286d-8069-45a3-9415-3c9b23d2496b",
+                  "name": "Pricing Option",
+                  "amount": 350,
+                  "displayName": "DIY Nest Thermostat",
+                  "dynamicInputs": [],
+                  "dynamicInputsSatisfied": true
+                },
+                {
+                  "id": "5a107d87-3f21-4101-913b-cdc2e930b389",
+                  "name": "Pricing Option",
+                  "amount": 2950,
+                  "displayName": "RGV Main Service & Meter Can Upgrade",
+                  "dynamicInputs": [],
+                  "dynamicInputsSatisfied": true
+                },
+                {
+                  "id": "8e54cd15-0f73-4999-9478-8d81b7773b2e",
+                  "name": "Pricing Option",
+                  "amount": 600,
+                  "displayName": "RGV Meter Can Upgrade",
+                  "dynamicInputs": [],
+                  "dynamicInputsSatisfied": true
+                },
+                {
+                  "id": "bd3fd8be-d3fd-4d05-956b-fee2e444c7fb",
+                  "name": "Pricing Option",
+                  "amount": 850,
+                  "displayName": "RGV Main Line Breaker Kit",
+                  "dynamicInputs": [],
+                  "dynamicInputsSatisfied": true
+                },
+                {
+                  "id": "b4a6884e-817d-4c10-9a72-a66d1146eb86",
+                  "amount": -1,
+                  "displayName": "HVAC Work",
+                  "dynamicInputs": [
+                    {
+                      "name": "hvac-work-cost",
+                      "type": "NumberField",
+                      "fields": null,
+                      "showIf": null,
+                      "settings": {
+                        "label": "HVAC work cost?",
+                        "isRequired": true,
+                        "defaultValue": 0
+                      },
+                      "disabledIf": null
+                    }
+                  ],
+                  "dynamicInputsSatisfied": false
+                },
+                {
+                  "id": "db1e56a2-5494-4897-9539-23345df9e3cf",
+                  "amount": -1,
+                  "displayName": "Home Standard Generator",
+                  "dynamicInputs": [
+                    {
+                      "name": "generac_generator_price_input",
+                      "type": "NumberField",
+                      "settings": {
+                        "min": 0,
+                        "label": "What is the price for the home generator?",
+                        "isRequired": true,
+                        "defaultValue": 0
+                      }
+                    }
+                  ],
+                  "dynamicInputsSatisfied": false
+                },
+                {
+                  "id": "aef03dea-7006-4cc4-ba63-8757c0de87e5",
+                  "name": "Pricing Option",
+                  "amount": 700,
+                  "displayName": "Subpanel",
+                  "dynamicInputs": [],
+                  "dynamicInputsSatisfied": true
+                },
+                {
+                  "id": "c4fde081-8406-42fb-bf22-c000bce2d010",
+                  "amount": -1,
+                  "displayName": "Home Security",
+                  "dynamicInputs": [
+                    {
+                      "name": "home_security_pricing",
+                      "type": "NumberField",
+                      "settings": {
+                        "min": 0,
+                        "label": "What is the price of the security system?",
+                        "isRequired": true,
+                        "description": "What is the price of the security system?",
+                        "defaultValue": 0
+                      }
+                    }
+                  ],
+                  "dynamicInputsSatisfied": false
+                },
+                {
+                  "id": "ad9ba88a-963e-459b-a7a7-6a6b55cd6a69",
+                  "amount": -1,
+                  "displayName": "Franklin Home Power",
+                  "dynamicInputs": [
+                    {
+                      "name": "how-many-franklin-home-power-batteries-are-needed",
+                      "type": "SelectField",
+                      "fields": null,
+                      "showIf": null,
+                      "settings": {
+                        "label": "How many Franklin Home Batteries are needed?",
+                        "options": [
+                          {
+                            "isNew": false,
+                            "label": 1,
+                            "value": "one"
+                          },
+                          {
+                            "isNew": false,
+                            "label": 2,
+                            "value": "two"
+                          },
+                          {
+                            "isNew": false,
+                            "label": 3,
+                            "value": "three"
+                          },
+                          {
+                            "isNew": false,
+                            "label": 4,
+                            "value": "four"
+                          }
+                        ],
+                        "displayAs": "dropdown",
+                        "isRequired": true,
+                        "description": "",
+                        "placeholder": 0
+                      },
+                      "disabledIf": null
+                    }
+                  ],
+                  "dynamicInputsSatisfied": false
+                },
+                {
+                  "id": "16f7ef75-a645-4c53-9b6b-f04fd0ed57fc",
+                  "ppw": 0.2,
+                  "name": "Pricing Option",
+                  "amount": 3402,
+                  "displayName": "TriSMART Solar Lead",
+                  "dynamicInputs": [],
+                  "dynamicInputsSatisfied": true
+                },
+                {
+                  "id": "719d3fb2-8bd1-4d36-9b06-0e7906ecb3e2",
+                  "name": "Pricing Option",
+                  "amount": 1100,
+                  "displayName": "GTR Lead ",
+                  "dynamicInputs": [],
+                  "dynamicInputsSatisfied": true
+                },
+                {
+                  "id": "d0b7a5e5-72eb-4e97-8486-c5c0789872fa",
+                  "name": "Pricing Option",
+                  "amount": 2500,
+                  "displayName": "MPU",
+                  "dynamicInputs": [],
+                  "dynamicInputsSatisfied": true
+                },
+                {
+                  "id": "0755e5ef-7e02-4c29-9515-6268afda3303",
+                  "name": "Pricing Option",
+                  "amount": 1500,
+                  "displayName": "Limitless Energy LLC - High roof 8+ kW",
+                  "dynamicInputs": [],
+                  "dynamicInputsSatisfied": true
+                }
+              ],
+              "baseCostWithSystemAddersAndDealerFees": 45351.5,
+              "equipmentAndValueAddersWithDealerFees": 0,
+              "baseCostWithSystemAddersEquipmentAndDealerFees": 45351.5
+            },
+            "enerfloV2deal": {
+              "foam-roof": false,
+              "hasDesign": true,
+              "roof-condition": "good",
+              "selectedProposal": "aee1b41f-bdd4-40a5-822e-5d9c7c043701",
+              "hasApprovedDesign": true,
+              "hasReceivedDesign": true,
+              "hasSignedContract": true,
+              "hasCreatedProposal": true,
+              "hasRequestedDesign": true,
+              "do-they-have-an-hoa": true,
+              "hasApprovedContract": true,
+              "signedContractFiles": [
+                {
+                  "name": "executed_contract.pdf",
+                  "externalUrl": "https://s3.us-west-2.amazonaws.com/assets.enerflo.io/docflo_pdfs/executed/Gregory_Roman_2023-11-28_8ab6d604-020e-4fe3-8fe2-626ae256f88b.pdf"
+                },
+                {
+                  "name": "trismart---welcome-call.pdf",
+                  "externalUrl": "https://s3.us-west-2.amazonaws.com/assets.enerflo.io/docflo_pdfs/executed/8ab6d604-020e-4fe3-8fe2-626ae256f88b.d6fee56a-d044-4a2b-9d91-0537585357e7.pdf"
+                },
+                {
+                  "name": "trismart-production-guarantee-v3.pdf",
+                  "externalUrl": "https://s3.us-west-2.amazonaws.com/assets.enerflo.io/docflo_pdfs/executed/8ab6d604-020e-4fe3-8fe2-626ae256f88b.2d1e93ac-c02b-4816-9f9b-403d4a916321.pdf"
+                },
+                {
+                  "name": "trismart---install-agreement---v6.pdf",
+                  "externalUrl": "https://s3.us-west-2.amazonaws.com/assets.enerflo.io/docflo_pdfs/executed/8ab6d604-020e-4fe3-8fe2-626ae256f88b.95e7af28-b0a0-4001-9386-c81515821dc8.pdf"
+                },
+                {
+                  "name": "trismart---cps-energy---non-rebate-form-v2.pdf",
+                  "externalUrl": "https://s3.us-west-2.amazonaws.com/assets.enerflo.io/docflo_pdfs/executed/8ab6d604-020e-4fe3-8fe2-626ae256f88b.2f393ada-b37a-40c6-b303-067cf188a64a.pdf"
+                }
+              ],
+              "taxable-income-40-k": true,
+              "hasGeneratedContract": true,
+              "are-you-the-homeowner": true,
+              "contractApprovalEnabled": false,
+              "is-this-a-retrofit-system": false,
+              "are-there-shading-concerns": false,
+              "hasSubmittedFinancingApplication": true
+            },
+            "enerfloV2files": [
+              {
+                "url": "https://s3.us-west-2.amazonaws.com/assets.enerflo.io/docflo_pdfs/executed/Gregory_Roman_2023-11-28_8ab6d604-020e-4fe3-8fe2-626ae256f88b.pdf",
+                "name": "executed_contract.pdf",
+                "source": "signedContractFiles"
+              },
+              {
+                "url": "https://s3.us-west-2.amazonaws.com/assets.enerflo.io/docflo_pdfs/executed/8ab6d604-020e-4fe3-8fe2-626ae256f88b.d6fee56a-d044-4a2b-9d91-0537585357e7.pdf",
+                "name": "trismart---welcome-call.pdf",
+                "source": "signedContractFiles"
+              },
+              {
+                "url": "https://s3.us-west-2.amazonaws.com/assets.enerflo.io/docflo_pdfs/executed/8ab6d604-020e-4fe3-8fe2-626ae256f88b.2d1e93ac-c02b-4816-9f9b-403d4a916321.pdf",
+                "name": "trismart-production-guarantee-v3.pdf",
+                "source": "signedContractFiles"
+              },
+              {
+                "url": "https://s3.us-west-2.amazonaws.com/assets.enerflo.io/docflo_pdfs/executed/8ab6d604-020e-4fe3-8fe2-626ae256f88b.95e7af28-b0a0-4001-9386-c81515821dc8.pdf",
+                "name": "trismart---install-agreement---v6.pdf",
+                "source": "signedContractFiles"
+              },
+              {
+                "url": "https://s3.us-west-2.amazonaws.com/assets.enerflo.io/docflo_pdfs/executed/8ab6d604-020e-4fe3-8fe2-626ae256f88b.2f393ada-b37a-40c6-b303-067cf188a64a.pdf",
+                "name": "trismart---cps-energy---non-rebate-form-v2.pdf",
+                "source": "signedContractFiles"
+              }
+            ]
+          },
+          "customer": {
+            "company_id": 3262,
+            "office_id": 4527,
+            "creator_id": null,
+            "agent_id": 4093,
+            "setter_id": null,
+            "first_name": "Gregory",
+            "last_name": "Roman",
+            "email": "gregoryroman71282@yahoo.com",
+            "mobile": "9129772537",
+            "secondary_first_name": null,
+            "secondary_last_name": null,
+            "secondary_mobile": "",
+            "secondary_email": null,
+            "address": "9302 Chilmark Path",
+            "city": "San Antonio",
+            "state": "TX",
+            "zip": "78263",
+            "county": "Bexar County",
+            "lat": "29.36886010",
+            "lng": "-98.30731090",
+            "timezone": "America/Chicago",
+            "details": null,
+            "external_id": null,
+            "lead_source": null,
+            "meta_data": {
+              "class": "App\\Services\\ApiService",
+              "method": "api",
+              "function": "addCustomer",
+              "nem_signer": null,
+              "mailing_zip": "78263",
+              "mailing_city": "San Antonio",
+              "nem_override": null,
+              "gmapsOverride": 1,
+              "mailing_state": "TX",
+              "has_valid_email": 1,
+              "mailing_address": "9302 Chilmark Path",
+              "primary_sms_supported": 1,
+              "invalidEmailNotificationSent": 0
+            },
+            "status_id": -1,
+            "lead_router_id": null,
+            "referral_id": null,
+            "deleted_at": null,
+            "language": "en_US",
+            "unit_number": null,
+            "initial_contact": 1,
+            "fullName": "Gregory Roman",
+            "id": 2178178,
+            "created": "2023-10-02T21:31:06+00:00",
+            "updated": "2023-12-02T00:43:07+00:00",
+            "fullState": "Texas",
+            "fullAddress": "9302 Chilmark Path San Antonio, TX 78263",
+            "status_name": null,
+            "integrations": {
+              "Partner": {
+                "Lead": {
+                  "integration_record_id": "4604381",
+                  "record_type": "Lead",
+                  "enerflo_id": 2178178,
+                  "last_synced": "2023-10-02T21:31:07+00:00",
+                  "updated_at": "2023-10-02T21:31:07+00:00",
+                  "created_at": "2023-10-02T21:31:07+00:00"
+                }
+              },
+              "Enerflo V2": {
+                "EnerfloV2Customer": {
+                  "integration_record_id": "2cb225da-1b2e-4306-a904-dad53f279ddd",
+                  "record_type": "EnerfloV2Customer",
+                  "enerflo_id": 2178178,
+                  "last_synced": "2023-10-02T21:35:44+00:00",
+                  "updated_at": "2023-10-02T21:35:44+00:00",
+                  "created_at": "2023-10-02T21:35:44+00:00"
+                }
+              }
+            },
+            "owner": {
+              "first_name": "Charlie",
+              "last_name": "Heaton",
+              "email": "cheaton@trismartsolar.com",
+              "valid_email": 1,
+              "phone": "8014200724",
+              "timezone": "America/Chicago",
+              "id": 6058,
+              "meta": {
+                "inactive": "0",
+                "solo_email": null,
+                "intercom_id": "5fada02582be5a10d941be6e",
+                "is_view_only": "0",
+                "notifications": {
+                  "agreementReviewedEmail": "1"
+                },
+                "valid_email_ts": "2023-11-16 23:34:53",
+                "has_valid_email": 1,
+                "sales_rep_license": null,
+                "can_create_customers": "1",
+                "primary_sms_supported": 1,
+                "setter_can_see_office_leads": "1"
+              }
+            },
+            "office": {
+              "office_name": "Limitless San Antonio",
+              "office_id": 4527,
+              "office_city": "San Antonio",
+              "office_address": "2463 Freedom Dr",
+              "office_zip": "78217",
+              "office_tz": "America/Chicago",
+              "office_state": "TX",
+              "sms_number": ""
+            },
+            "company": {
+              "company_name": "Limitless Energy",
+              "company_phone": "8014200724",
+              "company_address": "E Hardy Rd",
+              "company_city": "Houston",
+              "company_state": "TX",
+              "company_zip": "77032",
+              "company_email": "test@tempemail.com",
+              "company_timezone": "America/Chicago"
+            },
+            "customer_notes": "",
+            "futureAppointments": [],
+            "customer_portal_url": "https://enerflo.io/us/gTCwCg",
+            "surveys": {
+              "TriSMART Standard Deal": {
+                "name": "TriSMART Standard Deal",
+                "type": "sales",
+                "id": 1848763
+              },
+              "TriSMART - Deal V2": {
+                "name": "TriSMART - Deal V2",
+                "type": "sales",
+                "id": 1848776,
+                "install": {
+                  "id": 4341365,
+                  "status": null,
+                  "created_at": 4341365,
+                  "updated_at": 4341365
+                }
+              }
+            },
+            "loan_application_details": {
+              "lender": "Dividend",
+              "application_status": "prequal_pass",
+              "application_date": "11/28/23 at 01:32 am"
+            },
+            "creator": null
+          },
+          "progress": 0,
+          "files": [],
+          "enerflo_url": "https://enerflo.io/survey/menu/1848776",
+          "solarData": {
+            "system_size": 17.01,
+            "system_cost": 45076.5,
+            "system_production": 24681,
+            "system_adder_cost": 275,
+            "total_system_cost": 45351.5,
+            "total_base_cost": 45076.5,
+            "panel": {
+              "id": 3596,
+              "company_id": 1260,
+              "name": "Q Cell 405",
+              "model": "Q.PEAK DUO BLK ML-G10.a+ 405",
+              "manufacturer": "Qcells",
+              "width": 1045,
+              "length": 1879,
+              "watts": 405,
+              "meta_data": null,
+              "solar_degradation": 0.0054,
+              "spec_sheet_url": null,
+              "created_at": "2023-09-26 19:40:21",
+              "updated_at": "2023-09-26 19:40:21",
+              "all_offices": 1,
+              "all_markets": 1,
+              "all_dealers": 0,
+              "all_lenders": 1,
+              "active": 1,
+              "price_adder": null,
+              "crm_id": null,
+              "price_cost": null
+            },
+            "inverter": {
+              "id": 681,
+              "company_id": 1260,
+              "name": "Enphase IQ8+",
+              "model": "IQ8+",
+              "manufacturer": "Enphase",
+              "meta_data": {
+                "aurora_name": null,
+                "nominal_rating": null,
+                "solo_inverter_id": null,
+                "exclude_from_rebate": null,
+                "sighten_inverter_id": null,
+                "sunnova_inverter_id": null,
+                "dividend_inverter_id": null,
+                "sunnova_inverter_name": null,
+                "dividend_inverter_name": null,
+                "solar_success_inverter_id": null,
+                "solar_success_inverter_name": null
+              },
+              "max_efficiency": 0.97,
+              "created_at": "2022-03-14 20:03:45",
+              "updated_at": "2023-08-25 21:25:19",
+              "is_microinverter": 1,
+              "all_offices": 0,
+              "all_markets": 1,
+              "all_dealers": 1,
+              "all_lenders": 1,
+              "active": 1,
+              "price_adder": "0.00",
+              "fixed_cost": "0.00",
+              "crm_id": null
+            },
+            "inverter_count": 50,
+            "total_loan_cost": 45351.5,
+            "ppw": 2.67,
+            "ppw_net": 1.07,
+            "fed_tax_rebate": 13605.45,
+            "rebates": [],
+            "net_cost": 18140.6,
+            "finance_method": "Dividend",
+            "finance_code": "Dividend_25yr_8.99",
+            "finance_details": {
+              "apr": 8.99,
+              "term": 300,
+              "balance": 45351.5,
+              "termYears": 25,
+              "totalinterest": 68732,
+              "monthlypayment": 281,
+              "monthlypaymentInitial": 281,
+              "monthlypaymentAdjusted": 397,
+              "monthlypaymentEscalated": 0
+            },
+            "finance_ppw": 1.07,
+            "panel_type": false,
+            "down_payment": null,
+            "adders": {
+              "Customer Concierge Fee": {
+                "id": 4033,
+                "qty": 1,
+                "cost": 0,
+                "name": "Customer Concierge Fee",
+                "type": "SYSTEM",
+                "active": 1,
+                "base_cost": 0,
+                "company_cost": 0,
+                "offset_value": 0,
+                "single_price": 0,
+                "costAfterFees": 0,
+                "contract_hide_adder": "1",
+                "contract_show_adder_price": null
+              },
+              "Travel Adder": {
+                "id": 6119,
+                "qty": 1,
+                "cost": 0,
+                "name": "Travel Adder",
+                "type": "SYSTEM",
+                "active": 1,
+                "base_cost": 0,
+                "company_cost": 0,
+                "offset_value": 0,
+                "single_price": 0,
+                "costAfterFees": 0,
+                "contract_hide_adder": null,
+                "contract_show_adder_price": "1"
+              },
+              "Whole Home Surge Protector": {
+                "id": 11123,
+                "qty": 1,
+                "cost": 275,
+                "name": "Whole Home Surge Protector",
+                "type": "SYSTEM",
+                "active": 1,
+                "base_cost": 275,
+                "company_cost": 0,
+                "offset_value": 0,
+                "single_price": 275,
+                "costAfterFees": 275,
+                "contract_hide_adder": null,
+                "contract_show_adder_price": null
+              }
+            }
+          }
+        }
+      }
+    ]
+  }

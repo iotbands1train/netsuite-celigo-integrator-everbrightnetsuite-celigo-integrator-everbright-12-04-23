@@ -1,0 +1,20 @@
+{
+  "installDetails": {
+    "id": 4341365,
+    "epc_company_id": 1260,
+    "company_id": 3262,
+    "editor_company_id": 1260,
+    "office_id": 4527,
+    "epc_market_id": 100624,
+    "customer_id": 2178178,
+    "survey_type_id": 6029,
+    "survey_id": 1848776,
+    "site_survey_id": null,
+    "agent_id": 4093,
+    "agreement_id": 491735,
+    "created_at": "2023-11-28 02:14:17",
+    "updated_at": "2023-11-28 02:14:17",
+    "deleted_at": null,
+    "status_id": 1
+  }
+}
