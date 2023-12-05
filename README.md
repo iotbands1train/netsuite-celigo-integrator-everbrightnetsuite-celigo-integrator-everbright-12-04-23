@@ -36,3 +36,5 @@ https://www.notion.so/bded340199494f259c2719178af649b8?v=aefed1d9fd6c4c199acd79c
 [NS - TS] Hierarchy Object EverBright
 https://goeverbright.atlassian.net/wiki/spaces/SS/pages/736854029/What+is+the+EverBright+Object+Hierarchy
 
+Code Tasks - Added - NS - PIC script-> Project 
+https://docs.google.com/document/d/1JzsePlhkapqtWgDkST0dcS3fl-CdcVbE-ioaw8NDgeQ 
