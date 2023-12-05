@@ -30,4 +30,7 @@ https://8587733.app.netsuite.com/app/common/custom/custrecordentry.nl?rectype=85
 [NS - TS] Script Execution log 
 https://8587733.app.netsuite.com/app/common/scripting/scriptnotearchive.nl?whence= 
 
+[NS - TS] notion taskManager
+https://www.notion.so/bded340199494f259c2719178af649b8?v=aefed1d9fd6c4c199acd79cb363d8d2d&p=667370344e3f4eeb9ede88f191348bff&pm=s 
+
 
