@@ -1,0 +1,14 @@
+{
+    "baseUrl": "/SuiteScripts",
+    "paths": {
+        "BB/UpdateAdderQty": "BB/SS/Lib/BB.SS.Project.UpdateAdderQtyFromProjectSysSize.js",
+        "BB/Financier": "BB/SS/Lib/BB.SS.Project.UpdateProjectFinancierOverview.js",
+        "BB/PaymentMemo": "BB/SS/Lib/BB.SS.Projects.PaymentMemo.js",
+        "BB/ContractHistory": "BB/SS/Lib/BB.SS.Project.TotalContractValueHistory.js",
+        "BB/upsertSalesOrder": "BB.SS.MD.UpsertSalesOrder.js",
+        "BB/solarConfig": "BB_SS_MD_SolarConfig.js",
+        "BB/accountingFields":  "BB/SS/Lib/BB.SS.Project.AccountingFields.js",
+        "BB/accountingCalc": "BB.SS.MD.AccountingFieldCalculations.js",
+        "BB/projectService": "BB/SS/Lib/BB.SS.Project.Service" 
+    }
+}

@@ -1,0 +1,50 @@
+CASE 
+	WHEN {custentity_bb_m0_date} IS NULL AND (({custentity_bb_project_start_date} + nvl(${data.NEW_TO_M0.value},30)) - {today}) between 31 and 60 
+	THEN nvl({custentity_bb_fin_m0_invoice_amount},0) - nvl({custentity_bb_design_amount},0) - nvl({custentity_bb_site_audit_amount},0)-nvl({custentity_bb_orgntr_m0_vbill_amt},0)  - nvl({custentity_bb_installer_m0_vbill_amt},0) 
+	ELSE 0 
+END + 
+CASE 
+	WHEN {custentity_bb_m0_date} IS NULL AND (({custentity_bb_project_start_date} + nvl(${data.NEW_TO_M1.value},30)) - {today}) between 31 and 60 
+	THEN nvl({custentity_bb_fin_m1_invoice_amount},0) - nvl({custentity_bb_orgntr_m1_vbill_amt},0) - nvl({custentity_bb_installer_m1_vbill_amt},0) - nvl({custentity_bb_equip_cost_amount},0) 
+	ELSE 0 
+END + 
+CASE 
+	WHEN {custentity_bb_m0_date} IS NULL and (({custentity_bb_project_start_date} + nvl(${data.NEW_TO_M2.value},30)) - {today}) between 31 and 60	
+	THEN nvl({custentity_bb_fin_m2_invoice_amount},0) - nvl({custentity_bb_orgntr_m2_vbill_amt},0) - nvl({custentity_bb_installer_m2_vbill_amt},0) 
+	ELSE 0 
+END + 
+CASE 
+	WHEN {custentity_bb_m0_date} IS NULL and (( {custentity_bb_project_start_date} + nvl(${data.NEW_TO_M3.value},30)) - {today}) between 31 and 60 
+	THEN nvl({custentity_bb_fin_m3_invoice_amount},0) - nvl({custentity_bb_orgntr_m3_vbill_amt},0) - nvl({custentity_bb_installer_m3_vbill_amt},0)  - nvl({custentity_bb_inspection_amount},0) 
+	ELSE 0 
+END + 
+CASE 
+	WHEN {custentity_bb_m0_date} IS NOT NULL AND {custentity_bb_m1_date} IS NULL AND (( {custentity_bb_m0_date} + nvl(${data.M0_TO_M1.value},30)) - {today}) between 31 and 60 
+	THEN nvl({custentity_bb_fin_m1_invoice_amount},0) - nvl({custentity_bb_orgntr_m1_vbill_amt},0) - nvl({custentity_bb_installer_m1_vbill_amt},0) - nvl({custentity_bb_equip_cost_amount},0) 
+	ELSE 0 
+END + 
+CASE 
+	WHEN {custentity_bb_m0_date} IS NOT NULL AND {custentity_bb_m1_date} IS NULL AND (( {custentity_bb_m0_date} + nvl(${data.M0_TO_M2.value},30)) - {today}) between 31 and 60 
+	THEN nvl({custentity_bb_fin_m2_invoice_amount},0) - nvl({custentity_bb_orgntr_m2_vbill_amt},0) - nvl({custentity_bb_installer_m2_vbill_amt},0) 
+	ELSE 0 
+END + 
+CASE 	
+	WHEN {custentity_bb_m0_date} IS NOT NULL AND {custentity_bb_m1_date} IS NULL AND (( {custentity_bb_m0_date} + nvl(${data.M0_TO_M3.value},30)) - {today}) between 31 and 60 
+	THEN nvl({custentity_bb_fin_m3_invoice_amount},0) - nvl({custentity_bb_orgntr_m3_vbill_amt},0) - nvl({custentity_bb_installer_m3_vbill_amt},0)  - nvl({custentity_bb_inspection_amount},0) 
+	ELSE 0 
+END + 
+CASE 	
+	WHEN {custentity_bb_m1_date} IS NOT NULL AND {custentity_bb_m2_date} IS NULL AND (( {custentity_bb_m1_date} + nvl(${data.M1_TO_M2.value},30)) - {today}) between 31 and 60 
+	THEN nvl({custentity_bb_fin_m2_invoice_amount},0) - nvl({custentity_bb_orgntr_m2_vbill_amt},0) - nvl({custentity_bb_installer_m2_vbill_amt},0) 
+	ELSE 0 
+END + 
+CASE 
+	WHEN {custentity_bb_m1_date} IS NOT NULL AND {custentity_bb_m2_date} IS NULL AND (( {custentity_bb_m1_date} + nvl(${data.M1_TO_M3.value},30)) - {today}) between 31 and 60 
+	THEN nvl({custentity_bb_fin_m3_invoice_amount},0) - nvl({custentity_bb_orgntr_m3_vbill_amt},0) - nvl({custentity_bb_installer_m3_vbill_amt},0)  - nvl({custentity_bb_inspection_amount},0) 
+	ELSE 0 
+END + 
+CASE 
+	WHEN {custentity_bb_m2_date} IS NOT NULL AND {custentity_bb_m3_date} IS NULL AND (( {custentity_bb_m2_date} + nvl(${data.M2_TO_M3.value},30)) - {today}) between 31 and 60 
+	THEN nvl({custentity_bb_fin_m3_invoice_amount},0) - nvl({custentity_bb_orgntr_m3_vbill_amt},0) - nvl({custentity_bb_installer_m3_vbill_amt},0)  - nvl({custentity_bb_inspection_amount},0) 
+	ELSE 0 
+END

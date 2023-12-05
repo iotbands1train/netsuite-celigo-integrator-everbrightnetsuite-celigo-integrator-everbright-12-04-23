@@ -1,0 +1,39 @@
+{
+  "baseUrl": "/SuiteScripts",
+	"paths": {
+		"BB/s3": "/.bundle/207067/BB/SS/Lib/BB.S3",
+		"BB/project": "BB/SS/Lib/BB.SS.Projects.js",
+		"BB/entity": "BB/SS/Lib/BB.SS.Entity.js",
+		"BB/transform": "BB/SS/Lib/BB.SS.Transform.js",
+		"BB/weather": "BB/SS/Lib/BB.SS.Weather",
+		"BB/UpdateAdderQty": "BB/SS/Lib/BB.SS.Project.UpdateAdderQtyFromProjectSysSize.js",
+        "BB/Financier": "BB/SS/Lib/BB.SS.Project.UpdateProjectFinancierOverview.js",
+        "BB/PaymentMemo": "BB/SS/Lib/BB.SS.Projects.PaymentMemo.js",
+        "BB/ContractHistory": "BB/SS/Lib/BB.SS.Project.TotalContractValueHistory.js",
+        "BB/upsertSalesOrder": "BB/SS/Lib/BB.SS.MD.UpsertSalesOrder.js",
+        "BB/accountingFields":  "BB/SS/Lib/BB.SS.Project.AccountingFields.js",
+        "BB/accountingCalc": "BB/SS/Lib/BB.SS.MD.AccountingFieldCalculations.js",      
+        "BB/invoiceService": "BB/SS/Lib/BB.SS.Invoice.Service.js",
+        "BB/vendorBillService": "BB/SS/Lib/BB.SS.VendorBill.Service.js",
+        "BB/proposalService": "BB/SS/Lib/BB.SS.Proposal.Service.js",
+        "BB/leadService": "BB/SS/Lib/BB.SS.Lead.Service.js",
+        "BB/projectService": "BB/SS/Lib/BB.SS.Project.Service.js",
+        "BB/proposalModel": "BB/SS/Lib/BB.SS.Proposal.Model.js",
+        "BB/leadModel": "BB/SS/Lib/BB.SS.Lead.Model.js",
+        "BB/projectModel": "BB/SS/Lib/BB.SS.Project.Model.js",
+        "BB/financingTypeService": "BB/SS/Lib/BB.SS.FinancingType.Service.js",
+        "BB/financingTypeModel": "BB/SS/Lib/BB.SS.FinancingType.Model.js",
+        "BB/transactionService": "BB/SS/Lib/BB.SS.Transaction.Service.js",
+        "BB/milestoneService": "BB/SS/Lib/BB.SS.Milestone.Service.js",
+        "BB/projectActionService": "BB/SS/Lib/BB.SS.ProjectAction.Service.js",
+        "BB/projectActionModel": "BB/SS/Lib/BB.SS.ProjectAction.Model.js",
+        "BB/moment": "BB/SS/Lib/moment.min.js",
+        "BB/demoDataGenerationService": "BB/SS/Lib/BB.SS.DemoDataGeneration.Service.js",
+        "BB/baywa": "BB/SS/Lib/BB.SS.BayWa.js",
+        "BB/subcustomer": "BB/SS/Lib/BB.SS.Project.SubCustomer.js",
+        "BB/framework": "BB/SS/Lib/bb_framework_all.js",
+        "BB/createJE":"BB/SS/Lib/BB.SS.CreateJeFromM1.js"
+
+        
+	}
+}

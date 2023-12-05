@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key={googleapikey}&callback=&libraries=places"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <script>
+        window.onload = function () {
+          for(var i=0; i<document.forms.length; i++){
+              var form = document.forms[i];
+              form.action = "#";
+          }
+        }
+
+
+        function initAutocomplete() {
+            address1Field = document.querySelector("#homeownerAddress");
+            address2Field = document.querySelector("#address2");
+            postalField = document.querySelector("#postcode");
+            console.log('IN');
+
+
+            // Create the autocomplete object, restricting the search predictions to
+            // addresses in the US and Canada.
+            autocomplete = new google.maps.places.Autocomplete(address1Field, {
+                componentRestrictions: {country: ["us", "ca"]},
+                fields: ["address_components", "geometry"],
+                types: ["address"],
+            });
+            address1Field.focus();
+
+            // When the user selects an address from the drop-down, populate the
+            // address fields in the form.
+            autocomplete.addListener("place_changed", fillInAddress);
+            $(this).delay(1000).queue(function() {
+                address1Field.setAttribute('autocomplete', 'none');
+                $(this).dequeue();
+            });
+        }
+
+        function fillInAddress() {
+            const place = autocomplete.getPlace();
+            let address1 = "";
+            let postcode = "";
+
+            for (const component of place.address_components) {
+                // @ts-ignore remove once typings fixed
+                const componentType = component.types[0];
+
+                switch (componentType) {
+                    case "street_number": {
+                        address1 = `${component.long_name} ${address1}`;
+                        break;
+                    }
+
+                    case "route": {
+                        address1 += component.short_name;
+                        break;
+                    }
+
+                    case "postal_code": {
+                        postcode = `${component.long_name}${postcode}`;
+                        break;
+                    }
+
+                    case "postal_code_suffix": {
+                        postcode = `${postcode}-${component.long_name}`;
+                        break;
+                    }
+
+                    case "locality":
+                        (document.querySelector("#locality")).value =
+                            component.long_name;
+                        break;
+
+                    case "administrative_area_level_1": {
+                        (document.querySelector("#state")).value =
+                            component.short_name;
+                        break;
+                    }
+
+                    case "country":
+                        (document.querySelector("#country")).value =
+                            component.long_name;
+                        break;
+                }
+            }
+
+            address1Field.value = address1;
+            postalField.value = postcode;
+
+            // After filling the form with address components from the Autocomplete
+            // prediction, set cursor focus on the second address line to encourage
+            // entry of subpremise information such as apartment, unit, or floor number.
+            address2Field.focus();
+        }
+
+        window.onload = initAutocomplete;
+    </script>
+</head>
+<body>
+
+<form class="p-4 col-7 needs-validation"  method="post">
+    <input class="form-control"  type="hidden" id="filterType" name="filterType" value="project"/>
+    <label class="control-label">
+        <span >Project Id</span>
+        <input class="form-control" type="text" id="projectName" name="projectName" placeholder="Project ID"  onload="removeAutoComplete()"/>
+    </label>
+    <button class="btn btn-primary submit" type="submit">Submit</button>
+</form>
+
+<form class="p-4 col-7 needs-validation" method="post">
+    <input class="form-control" type="hidden" id="filterType" name="filterType" value="email"/>
+    <label  class="control-label" >
+        <span>Email</span>
+        <input class="form-control" type="text" id="projectEmail" name="projectEmail" placeholder="Homeowner Email"/>
+    </label>
+    <button class="btn btn-primary submit"  type="submit" >Submit</button>
+</form>
+
+
+<form class="p-4 col-7 needs-validation" method="post">
+    <p >Address</p>
+    <label  class="control-label">
+        <!-- Avoid the word "address" in id, name, or label text to avoid browser autofill from conflicting with Place Autocomplete. Star or comment bug https://crbug.com/587466 to request Chromium to honor autocomplete="off" attribute. -->
+        <span >Homeowner Address</span>
+        <input class="form-control" type="text" id="homeownerAddress" name="HomeownerAddress" required autocomplete="null"/>
+    </label>
+    <label  class="control-label">
+        <span >Apartment, unit, suite, or floor #</span>
+        <input class="form-control" id="address2" name="address2"/>
+    </label  class="control-label">
+    <label  class="control-label">
+        <span >City*</span>
+        <input class="form-control" id="locality" name="locality" required/>
+    </label  class="control-label">
+    <label >
+        <span >State/Province*</span>
+        <input class="form-control" id="state" name="state" required/>
+    </label>
+    <label  class="control-label">
+        <span >Postal code*</span>
+        <input class="form-control" id="postcode" name="postcode" required/>
+    </label>
+    <label  class="control-label">
+        <span>Country/Region*</span>
+        <input class="form-control" id="country" name="country" required/>
+    </label>
+    <input class="form-control" type="hidden" id="filterType" name="filterType" value="address"/>
+
+    <button class="btn btn-primary submit"  type="submit" >Submit</button>
+
+</form>
+</body>
+</html>

@@ -1,0 +1,16 @@
+dl {
+    display: flex;
+    flex-flow: row wrap;
+}
+dt {
+    flex-basis: 20%;
+    text-align: right;
+    color: #333;
+}
+dd {
+    flex-basis: 70%;
+    flex-grow: 1;
+    margin: 0;
+    padding-left: 1em;
+    color: #888;
+}

@@ -1,0 +1,27 @@
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load('current', {'packages':['bar']});
+  google.charts.setOnLoadCallback(drawChart);
+
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable(CHART_DATA);
+
+    var options = {
+      chart: {
+        title: 'CHART_TITLE',
+      },
+      bars: 'vertical',
+      vAxis: {format: 'currency'},
+      height: 300,
+      width: 400,
+      colors: ['COLOR1', 'COLOR2']
+    };
+
+    var chart = new google.charts.Bar(document.getElementById('DIV_ID'));
+
+    chart.draw(data, google.charts.Bar.convertOptions(options));
+  }
+</script>
+
+<div id="DIV_ID" height="300px" width="400px"></div>
+<div>DATA_TABLE</div>

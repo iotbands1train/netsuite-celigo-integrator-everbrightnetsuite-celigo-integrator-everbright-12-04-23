@@ -1,0 +1,719 @@
+<div id="app" novalidate>
+
+  <div class="ns-portlet-loader" v-show="loading">
+    <div class="ns-inner">
+      <div class="ns-portlet-loader__wrapper">
+        <svg viewBox="-18 -18 36 36" role="img" aria-label="Loading" class="ns-portlet-loader__icon--circular">
+          <circle fill="none" r="16" class="ns-portlet-loader__icon--circular__outline"></circle>
+          <circle fill="none" r="16" class="ns-portlet-loader__icon--circular__runner" transform="rotate(-135)" stroke-dasharray="100"></circle>
+        </svg>
+      </div>
+      <span class="ns-loading-message" data-message="1">Loading. Please wait ...</span>
+    </div>
+  </div>
+
+  <table cellspacing="0" cellpadding="0" border="0" width="100%">
+    <tbody>
+    <tr class="uir-fieldgroup-content">
+      <td valign="top" width="33%">
+        <table border="0" class="table_fields" cellspacing="0" cellpadding="0" data-colnumber="2">
+          <tbody>
+          <tr>
+            <td width="33%">
+              <div class="uir-field-wrapper" data-field-type="select">
+                <span class="smallgraytextnolink uir-label ">
+                  <span class="smallgraytextnolink">
+                    <a class="smallgraytextnolink">Columns</a>
+                  </span>
+                </span>
+                <span class="uir-field inputreadonly">
+                  <select-input v-model="column" :options="options"></select-input>
+                </span>
+              </div>
+            </td>
+            <td width="33%"></td>
+            <td width="33%"></td>
+          </tr>
+          <tr v-if="/totals/i.test(column.value)">
+            <td colspan="3">
+              <div class="uir-field-wrapper">
+                <span class="smallgraytextnolink uir-label">
+                  <span class="uir-field inputreadonly">
+                  <span style="white-space: nowrap" class="effectStatic" data-fieldtype="" data-helperbutton-count="1">
+                    <input type="checkbox" v-model="ignoreDates">
+                  </span>
+                </span>
+                  <span class="smallgraytextnolink">
+                    <a class="smallgraytextnolink">Ignore Start/End Date</a>
+                  </span>
+                </span>
+
+              </div>
+            </td>
+          </tr>
+          <tr v-if="!ignoreDates">
+            <td width="33%">
+              <div class="uir-field-wrapper">
+                <span class="smallgraytextnolink uir-label">
+                  <span class="smallgraytextnolink">
+                    <a class="smallgraytextnolink">Start Date</a>
+                  </span>
+                </span>
+                <span class="uir-field inputreadonly">
+                  <span style="white-space: nowrap" class="effectStatic" data-fieldtype="" data-helperbutton-count="1">
+                    <input onkeyup="" maxlength="24" type="text" size="17" id="start_date" class="input uir-custom-field"
+                           ref="start-date-input"  v-model="startDate">
+                    <span class="field_widget_pos uir-field-widget">
+                      <a @click="openCalendar($event, 'start_date')" tabindex="-1" href="javascript:void('')" id="start_date_helper_calendar"
+                         title="Pick" class="smalltextul field_widget i_calendar"></a>
+                    </span>
+                  </span>
+                </span>
+              </div>
+            </td>
+            <td width="33%">
+              <div class="uir-field-wrapper" data-field-type="select">
+                <span class="smallgraytextnolink uir-label">
+                  <span class="smallgraytextnolink">
+                    <a class="smallgraytextnolink">End Date</a>
+                  </span>
+                </span>
+                <span class="uir-field inputreadonly">
+                  <span style="white-space: nowrap" class="effectStatic" data-fieldtype="" data-helperbutton-count="1">
+                    <input onkeyup="" maxlength="24" type="text" size="17" id="end_date" class="input uir-custom-field"
+                           ref="end-date-input" v-model="endDate">
+                    <span class="field_widget_pos uir-field-widget">
+                      <a @click="openCalendar($event, 'end_date')" tabindex="-1" href="javascript:void('')" id="end_date_helper_calendar"
+                         title="Pick" class="smalltextul field_widget i_calendar"></a>
+                    </span>
+                  </span>
+                </span>
+              </div>
+            </td>
+            <td width="33%"></td>
+          </tr>
+          <tr>
+            <td width="33%">
+              <div class="uir-field-wrapper" data-field-type="select">
+                <span class="smallgraytextnolink uir-label ">
+                  <span class="smallgraytextnolink">
+                    <a class="smallgraytextnolink">Subsidiary</a>
+                  </span>
+                </span>
+                <span class="uir-field inputreadonly" style="width: 50%">
+                    <select-input v-model="subsidiary" :options="subsidiaries"></select-input>
+                </span>
+              </div>
+            </td>
+            <td width="33%">
+              <div class="uir-field-wrapper" data-field-type="select">
+                <span class="smallgraytextnolink uir-label ">
+                  <span class="smallgraytextnolink">
+                    <a class="smallgraytextnolink">Segment</a>
+                  </span>
+                </span>
+                <span class="uir-field inputreadonly" style="width: 50%">
+                    <select-input v-model="segment" :options="segments"></select-input>
+                </span>
+              </div>
+            </td>
+            <td width="33%"></td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <div class="uir-field-wrapper" data-field-type="select">
+                <span class="smallgraytextnolink uir-label ">
+                  <span class="smallgraytextnolink">
+                    <a class="smallgraytextnolink">Project</a>
+                  </span>
+                </span>
+                <span class="uir-field inputreadonly" style="width: 50%">
+                  <input type="text" class="full-width" v-model="searchProjects.term" @keyup="projectFilterDelay">
+                  <div style="display: none" v-show="searchProjects.found && searchProjects.found.length > 0">
+                    <div class="uir-tooltip align_top_left uir-field-tooltip-wrapper">
+                      <span class="uir-cover"><i></i></span>
+                      <div class="uir-tooltip-content">
+                        <div class="dropdownDiv" style="z-index: 1001; visibility: visible; overflow: auto; width: 514px; height: 198px; position: static; display: block;">
+                          <template v-for="(found, idx) in searchProjects.found" :key="'found_project_' + idx">
+                            <div
+                                    :class="{'dropdownSelected': found.hover, 'dropdownNotSelected': !found.hover}"
+                                    @mouseover="found.hover = true"
+                                    @mouseleave="found.hover = false"
+                                    @click="selectProject(found)"
+                            >{{found.text}}</div>
+                          </template>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </span>
+              </div>
+            </td>
+            <td width="33%"></td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <div class="uir-field-wrapper" data-field-type="select">
+                <span class="smallgraytextnolink uir-label ">
+                  <span class="smallgraytextnolink">
+                    <a class="smallgraytextnolink">Budget Version</a>
+                  </span>
+                </span>
+                <span class="uir-field inputreadonly" style="width: 50%">
+                  <input type="text" v-model="versionSearch.term" @keyup="versionFilterDelay">
+                  <div style="display: none" v-show="versionSearch.found && versionSearch.found.length > 0">
+                    <div class="uir-tooltip align_top_left uir-field-tooltip-wrapper">
+                      <span class="uir-cover"><i></i></span>
+                      <div class="uir-tooltip-content">
+                        <div class="dropdownDiv" style="z-index: 1001; visibility: visible; overflow: auto; width: 514px; height: 198px; position: static; display: block;">
+                          <template v-for="(found, idx) in versionSearch.found" :key="'found_version_' + idx">
+                            <div
+                                    :class="{'dropdownSelected': found.hover, 'dropdownNotSelected': !found.hover}"
+                                    @mouseover="found.hover = true"
+                                    @mouseleave="found.hover = false"
+                                    @click="selectVersion(found)"
+                            >{{found.value}}</div>
+                          </template>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </span>
+              </div>
+            </td>
+            <td width="33%"></td>
+          </tr>
+          <tr><td colspan="3">&nbsp;</td></tr>
+          <tr>
+            <td width="33%">
+              <table cellpadding="0" cellspacing="0" border="0" class="uir-button"
+                     style="margin-right:6px;cursor:hand;" role="presentation">
+                <tbody>
+                <tr class="pgBntG pgBntB">
+                  <td><img src="/images/nav/ns_x.gif" class="bntLT" border="0" height="50%" width="3"
+                           alt=""> <img src="/images/nav/ns_x.gif" class="bntLB" border="0" height="50%"
+                                        width="3" alt=""></td>
+                  <td height="20" valign="top" nowrap="" class="bntBgB">
+                    <input type="button" class="rndbuttoninpt bntBgT" value="Load" @click.prevent="getData">
+                  </td>
+                  <td><img src="/images/nav/ns_x.gif" height="50%" class="bntRT" border="0" width="3"
+                           alt=""> <img src="/images/nav/ns_x.gif" height="50%" class="bntRB" border="0"
+                                        width="3" alt=""></td>
+                </tr>
+                </tbody>
+              </table>
+              <table cellpadding="0" cellspacing="0" border="0" class="uir-button"
+                     style="margin-right:6px;cursor:hand;" role="presentation">
+                <tbody>
+                <tr class="pgBntG">
+                  <td><img src="/images/nav/ns_x.gif" class="bntLT" border="0" height="50%" width="3"
+                           alt=""> <img src="/images/nav/ns_x.gif" class="bntLB" border="0" height="50%"
+                                        width="3" alt=""></td>
+                  <td height="20" valign="top" nowrap="" class="bntBgB">
+                    <input type="button" class="rndbuttoninpt bntBgT" value="Export Excel" @click.prevent="exportData">
+                  </td>
+                  <td><img src="/images/nav/ns_x.gif" height="50%" class="bntRT" border="0" width="3"
+                           alt=""> <img src="/images/nav/ns_x.gif" height="50%" class="bntRB" border="0"
+                                        width="3" alt=""></td>
+                </tr>
+                </tbody>
+              </table>
+            </td>
+            <td width="33%"></td>
+            <td width="33%"></td>
+          </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+  <table v-if="form" class="uir-table-block" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody>
+    <tr>
+      <td>
+        <div class="bgsubtabbar">
+          <div class="subtabbarul" style="position: absolute; top:0px; left:0px;"></div>
+          <div class="subtabbarur" style="position: absolute; top:0px; right:0px;"></div>
+          <table border="0" cellspacing="0" cellpadding="0" class="bgsubtabbar" role="presentation">
+            <tbody>
+            <tr>
+              <td class="formsubtabsep" side="0">&nbsp;</td>
+              <td valign="middle" nowrap="" class="formsubtabon">
+                <a onclick="return false;" class="formsubtabtext formsubtabtexton">Budget VS Actuals</a>
+              </td>
+              <td class="formsubtabsep" side="1">&nbsp;</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+    <tr class="ns-subtab-border">
+      <td>
+        <div class="subtabblock" v-if="form.data.length == 0">
+          <div class="budget-content-container">
+            <span class="no-data-found">No data found.</span>
+          </div>
+        </div>
+        <div class="subtabblock" style="position:relative; " v-else>
+          <div style="visibility: visible;">
+            <div class="subtabblock" style="padding: 4px;">
+              <div class="uir-list-control-bar">
+                <table width="100%" border="0" cellspacing="0" cellpadding="2" role="presentation">
+                  <tbody>
+                  <tr>
+                    <td>
+                      <table border="0" cellspacing="0" cellpadding="2" role="presentation">
+                        <tbody>
+                        <tr>
+                          <td>
+                            <table cellpadding="0" cellspacing="0" border="0" class="uir-button" style="margin-right:6px;cursor:hand;" role="presentation">
+                              <tbody>
+                              <tr class="tabBnt">
+                                <td height="20" valign="top" nowrap="" class="bntBgB">
+                                  <input type="button" style="" class="rndbuttoninpt bntBgT" value="Expand All"
+                                         @click="expandAll">
+                                </td>
+                              </tr>
+                              </tbody>
+                            </table>
+                            <table cellpadding="0" cellspacing="0" border="0" class="uir-button" style="margin-right:6px;cursor:hand;" role="presentation">
+                              <tbody>
+                              <tr class="tabBnt">
+                                <td height="20" valign="top" nowrap="" class="bntBgB">
+                                  <input type="button" style="" class="rndbuttoninpt bntBgT" value="Collapse All"
+                                         @click="collapseAll">
+                                </td>
+                              </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="budget-content-container" >
+                <div class="scrollable-content-container">
+                  <div class="fixed-table-container listtable" :class="{'full-width': !form.seqCount}">
+                    <div v-if="form" class="fixed-table" :class="{'separator-border': form.seqCount, 'full-width': !form.seqCount}">
+                      <table border="0" cellspacing="0" cellpadding="0" class="listtable listborder uir-list-table"
+                             :class="{'full-width': !form.seqCount}">
+                        <tbody>
+                        <tr class="uir-machine-headerrow">
+                          <td height="100%" class="listheadertdleft listheadertextb uir-column-large">
+                            <div class="listheader">&nbsp;</div>
+                          </td>
+                        </tr>
+                        <tr class="uir-machine-headerrow">
+                          <td height="100%" class="listheadertdleft listheadertextb uir-column-large">
+                            &nbsp;
+                          </td>
+                        </tr>
+                        <template v-if="form && form.data" v-for="(project, projectIdx) in form.data">
+                          <tr class="uir-list-row-tr bgtabbar">
+                            <td class="uir-list-row-cell formtaboff section-title text-left" style="cursor: pointer;" @click="project.collapsed = !project.collapsed">
+                              {{project.name}}
+                            </td>
+                          </tr>
+                          <template v-if="project.sections" v-for="(section, sectionIdx) in project.sections">
+                            <tr class="uir-list-row-tr dkBlueSel" v-if="!project.collapsed">
+                              <td class="uir-list-row-cell formtaboff section-title text-left jump-level-1" style="cursor: pointer;" @click="section.collapsed = !section.collapsed" >
+                                {{section.name}}
+                              </td>
+                            </tr>
+                            <template v-if="section.items" v-for="(item, itemIdx) in section.items">
+                              <tr class="uir-list-row-tr" :class="{'uir-list-row-odd': !(itemIdx%2), 'uir-list-row-even': itemIdx%2, 'listfocusedrow': isFocused(sectionIdx, itemIdx)}" v-if="!section.collapsed">
+                                <td class="uir-list-row-cell listtexthl jump-level-2">{{item.name}}</td>
+                              </tr>
+                            </template>
+                          </template>
+                        </template>
+                        <tr class="uir-machine-headerrow footer">
+                          <td colspan="2" height="100%" class="listheadertdleft listheadertextb uir-column-large">
+                            <div class="listheader">&nbsp;</div>
+                          </td>
+                        </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="scrollable-table" v-if="form && form.seqCount">
+                      <table border="0" cellspacing="0" cellpadding="0" class="listtable listborder uir-list-table"
+                             style="table-layout: fixed">
+                        <tbody>
+                        <tr class="uir-machine-headerrow">
+                          <td height="100%" colspan="4" style="" class="listheadertd listheadertextbrt uir-column-medium text-center separator-border"
+                              v-for="(n, nIdx) in form.seqNames" :key="nIdx">
+                            <div class="listheader tooltip">
+                              {{n}}
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="uir-machine-headerrow">
+                          <template v-for="n in form.seqCount" :key="n">
+                            <td height="100%" class="listheadertd listheadertextbrt uir-column-medium text-center">
+                              Budget ({{version ? version : 'Current'}})
+                            </td>
+                            <td height="100%" class="listheadertd listheadertextbrt uir-column-medium text-center">
+                              Actual
+                            </td>
+                            <td height="100%" class="listheadertd listheadertextbrt uir-column-medium text-center">
+                              Committed Cost
+                            </td>
+                            <td height="100%" class="listheadertd listheadertextbrt uir-column-medium text-center separator-border">
+                              Variance
+                            </td>
+                          </template>
+                        </tr>
+                        <template v-for="(project, projectIdx) in form.data">
+                          <tr class="uir-list-row-tr bgtabbar">
+                            <template v-for="n in form.seqCount" :key="n">
+                              <td height="100%" class="uir-list-row-cell formtaboff section-title text-right"
+                                  :class="{'negative': project.seq[n-1].budget < 0}">
+                                {{formatCurrency(project.seq[n-1].budget)}}
+                              </td>
+                              <td height="100%" class="uir-list-row-cell formtaboff section-title text-right"
+                                  :class="{'negative': project.seq[n-1].actual < 0}">
+                                {{formatCurrency(project.seq[n-1].actual)}}
+                              </td>
+                              <td height="100%" class="uir-list-row-cell formtaboff section-title text-right"
+                                  :class="{'negative': project.seq[n-1].cc < 0}">
+                                {{formatCurrency(project.seq[n-1].cc)}}
+                              </td>
+                              <td height="100%" class="uir-list-row-cell formtaboff section-title text-right separator-border"
+                                  :class="{'negative': project.seq[n-1].variance < 0}">
+                                {{formatCurrency(project.seq[n-1].variance)}}
+                              </td>
+                            </template>
+                          </tr>
+                          <template v-for="(section, sectionIdx) in project.sections">
+                            <tr class="uir-list-row-tr dkBlueSel" v-if="!project.collapsed">
+                              <template v-for="n in form.seqCount" :key="n">
+                                <td height="100%" class="uir-list-row-cell formtaboff section-title text-right"
+                                    :class="{'negative': section.seq[n-1].budget < 0}">
+                                  {{formatCurrency(section.seq[n-1].budget)}}
+                                </td>
+                                <td height="100%" class="uir-list-row-cell formtaboff section-title text-right"
+                                    :class="{'negative': section.seq[n-1].actual < 0}">
+                                  {{formatCurrency(section.seq[n-1].actual)}}
+                                </td>
+                                <td height="100%" class="uir-list-row-cell formtaboff section-title text-right"
+                                    :class="{'negative': section.seq[n-1].cc < 0}">
+                                  {{formatCurrency(section.seq[n-1].cc)}}
+                                </td>
+                                <td height="100%" class="uir-list-row-cell formtaboff section-title text-right separator-border"
+                                    :class="{'negative': section.seq[n-1].variance < 0}">
+                                  {{formatCurrency(section.seq[n-1].variance)}}
+                                </td>
+                              </template>
+                            </tr>
+                            <template v-for="(item, idx) in section.items">
+                              <tr class="uir-list-row-tr" :class="{'uir-list-row-odd': !(idx%2), 'uir-list-row-even': idx%2, 'listfocusedrow': isFocused(sectionIdx, idx)}" v-if="!section.collapsed">
+                                <template v-for="(seq, seqIdx) in item.seq" :key="seqIdx">
+                                  <td class="uir-list-row-cell listtexthlrt" :class="{'negative': seq.budget < 0}">{{formatCurrency(seq.budget)}}</td>
+                                  <td class="uir-list-row-cell listtexthlrt" :class="{'negative': seq.actual < 0}">{{formatCurrency(seq.actual)}}</td>
+                                  <td class="uir-list-row-cell listtexthlrt" :class="{'negative': seq.cc < 0}">{{formatCurrency(seq.cc)}}</td>
+                                  <td class="uir-list-row-cell listtexthlrt separator-border" :class="{'negative': seq.variance < 0}">{{formatCurrency(seq.variance)}}</td>
+                                </template>
+                              </tr>
+                            </template>
+                          </template>
+                        </template>
+                        <tr class="uir-machine-headerrow footer">
+                          <td height="100%" colspan="4" class="listheadertd listheadertextbrt uir-column-medium separator-border"
+                              v-for="n in form.seqCount" :key="n" :class="{'is-history-data' : isHistory(n)}">
+                            <div class="listheader">
+                              &nbsp;
+                            </div>
+                          </td>
+                        </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+  <input type="text" autofocus="autofocus" style="display:none" />
+
+</div>
+
+<script type="text/x-template" id="select-input">
+  <span data-fieldtype="select" class="listcontrol nldropdown" style="white-space: nowrap; display: block;" data-helperbutton-count="0">
+      <div class="uir-select-input-container" style="width: 100%">
+        <input name="inpt_custpage_doc_status_id" type="text" value=" " :value="value ? value.text : undefined" class="textbox" autocomplete="off" contenteditable="false"
+               role="combobox" title="" style="width: 100%; vertical-align: top;">
+        <span class="ddarrowSpan" @click="tooltip = !tooltip">
+	        <img src="/uirefresh/img/field/dropdown.png" height="20" width="20" class="i_dropdownarrow" alt="More Options" >
+        </span>
+      </div>
+      <div class="uir-tooltip-content" v-if="tooltip">
+        <div v-if="options && options.length > 0" class="dropdownDiv" style="width: 100%; z-index: 1001; visibility: visible; overflow: hidden; z-index: 9999; min-width: 150px; max-height: 150px; position: absolute; display: block;">
+          <div class="dropdownNotSelected">&nbsp;</div>
+          <template v-for="option in options">
+            <div @mouseover="hover = option" @mouseout="hover = null"
+                 :class="{'dropdownSelected': hover && option.value == hover.value, 'dropdownNotSelected': !hover || option.value != hover.value}"
+                 @click="select(option)">
+              {{option.text}}
+            </div>
+          </template>
+        </div>
+      </div>
+    </span>
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+<script type="text/javascript" src="BB.VUE.ProjectExpenseBudgetVsActuals.js"></script>
+
+<style type="text/css">
+    .full-width {
+        width: 100%;
+    }
+
+    .float-right {
+        float: right !important;
+    }
+
+    .text-right {
+        text-align: right !important;
+    }
+
+    .text-left {
+        text-align: left !important;
+    }
+
+    .text-center {
+        text-align: center !important;
+    }
+
+    .fixed-table-container {
+        display: flex;
+    }
+
+    .fixed-table-container table {
+        white-space: nowrap;
+    }
+
+    .fixed-table {
+        position: sticky;
+        z-index: 500;
+        left: 0;
+        background-color: white;
+    }
+
+    .separator-border,
+    .uir-list-row-tr > td.separator-border,
+    .listtable > tbody > tr:not(.uir-machine-row-last):not(.uir-machine-row-focused) > td.separator-border {
+        border-right: 1px solid #ccc !important;
+    }
+
+    .scrollable-table {
+        z-index: 400;
+        /*overflow: auto;*/
+    }
+
+    .uir-machine-headerrow td {
+        position: sticky;
+        top: 0;
+        z-index: 2;
+    }
+
+    .uir-machine-headerrow.footer td {
+        bottom: 0 !important;
+    }
+
+    .uir-list-row-tr > td.section-title, tr.uir-list-row-tr > td.section-title:hover, tr.uir-list-row-tr:hover > td.section-title {
+        background-color: inherit !important;
+        font-weight: bold;
+        color: white !important;
+        border-color: inherit !important;
+        text-align: left;
+    }
+
+    .ns-portlet-loader__icon--circular .ns-portlet-loader__icon--circular__runner {
+        stroke: #607799;
+        stroke-width: 3px;
+        stroke-dashoffset: 75;
+    }
+
+    .ns-portlet-loader__icon--circular .ns-portlet-loader__icon--circular__outline {
+        stroke: #dfe4eb;
+        stroke-width: 3px;
+    }
+
+    .ns-portlet-loader__icon--circular {
+        -webkit-animation: spin 2s ease infinite;
+        -moz-animation: spin 2s ease infinite;
+        animation: spin 2s ease infinite;
+    }
+
+    .ns-portlet-loader__wrapper {
+        width: 32px;
+        height: 32px;
+        align-self: center;
+    }
+
+    .ns-portlet-loader .ns-inner {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        vertical-align: middle;
+    }
+
+    .ns-portlet-loader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 900;
+        overflow: hidden;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 1);
+        color: #666666;
+        border-radius: 5px;
+        position: fixed;
+    }
+
+    .bgsubtabbar {
+        background-color: #ccc;
+        display: block;
+    }
+
+    .budget-content-container {
+        height: 60vh;
+        overflow: auto;
+    }
+
+    .scrollable-content-container {
+        width: 96vw;
+        display: flex;
+    }
+
+    .invalid {
+        border-color: red !important;
+        background-color: mistyrose !important;
+    }
+
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        padding: 5px 10px;
+        border-radius: 6px;
+
+        /* Position the tooltip text */
+        position: absolute;
+        z-index: 1;
+        left: 50%;
+        transform: translateX(-50%);
+
+        /* Fade in tooltip */
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+    /* Tooltip arrow */
+    .tooltip-bottom {
+        top: 100%;
+    }
+
+    .tooltip-bottom::after {
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent #555 transparent;
+    }
+
+    /* Show the tooltip text when you mouse over the tooltip container */
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .listheader {
+        cursor: default;
+        line-height: 20px;
+    }
+
+    .icon {
+        position: relative;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background: url(/uirefresh/img/alertbox_icons.png) no-repeat top left;
+        background-size: 16px;
+    }
+
+    .fixed-table-container .effectStatic {
+        float: left;
+    }
+
+    td.focus-seq, td.focus-seq > * {
+        background: #fefecc !important;
+    }
+
+    input[type="text"]:disabled {
+        color: #888 !important;
+    }
+
+    .uir-button select {
+        min-width: 100px;
+    }
+
+    .is-history-data {
+        display: none;
+    }
+
+    .show-history .is-history-data {
+        display: table-cell !important;
+    }
+
+    .seq-separator {
+
+    }
+
+    .uir-list-row-tr > td.jump-level-1 {
+        padding-left: 12px !important;
+    }
+
+    .uir-list-row-tr > td.jump-level-2 {
+        padding-left: 24px !important;
+    }
+
+    .uir-list-row-tr > td.section-title.negative,
+    tr.uir-list-row-tr > td.section-title:hover.negative,
+    tr.uir-list-row-tr:hover > td.section-title.negative,
+    .uir-list-row-tr > td.negative,
+    .uir-machine-row > td.negative,
+    .uir-machine-totals-row > td.negative
+    {
+        color: #ee0000 !important;
+    }
+    .no-data-found {
+        text-align: center;
+        margin-top: 30px;
+        display: block;
+    }
+</style>

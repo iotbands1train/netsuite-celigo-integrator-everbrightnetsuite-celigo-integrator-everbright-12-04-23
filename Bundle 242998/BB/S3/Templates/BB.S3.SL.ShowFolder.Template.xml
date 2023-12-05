@@ -1,0 +1,600 @@
+<html>
+    <head>
+        <style type="text/css">
+            #jquery-script-menu{position:absolute;height:90px;width:100%;top:0;left:0;border-top:5px solid #316594;background:#fff;-moz-box-shadow:0 2px 3px 0 rgba(0,0,0,.16);-webkit-box-shadow:0 2px 3px 0 rgba(0,0,0,.16);box-shadow:0 2px 3px 0 rgba(0,0,0,.16);z-index:999999;padding:10px 0;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}.jquery-script-center{max-width:960px;margin:0 auto}.jquery-script-center ul{width:212px;float:left;line-height:45px;margin:0;padding:0;list-style:none}.jquery-script-center a{text-decoration:none}.jquery-script-ads{max-width:728px;height:90px;float:right}.jquery-script-clear{clear:both;height:0}#carbonads{display:block;overflow:hidden;max-width:728px;position:relative;font-size:22px;box-sizing:content-box}#carbonads>span{display:block}#carbonads a{color:#4078c0;text-decoration:none}#carbonads a:hover{color:#3664a3}.carbon-wrap{display:flex;align-items:center}.carbon-img{display:block;margin:0;line-height:1}.carbon-img img{display:block;height:90px;width:auto}.carbon-text{display:block;padding:0 1em;line-height:1.35;text-align:left}.carbon-poweredby{display:block;position:absolute;bottom:0;right:0;padding:6px 10px;text-align:center;text-transform:uppercase;letter-spacing:.5px;font-weight:600;font-size:8px;border-top-left-radius:4px;line-height:1;color:#aaa!important}@media only screen and (min-width:320px) and (max-width:759px){.carbon-text{font-size:14px}}@media only screen and (max-width:1023px){.jquery-script-ads{display:none}}
+
+            .site-cm-box{border:1px solid #d2d2d2;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;background-color:#fff}
+            .site-cm-box ul.site-cm-group li{height:36px;padding-left:20px;padding-right:20px;line-height:36px;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;cursor:default}
+            .site-cm-box .site-cm-separ{height:0;border-top:1px solid #d2d2d2}
+            .site-cm-box ul.site-cm-group li:hover,.site-cm-box ul.site-cm-group li.hover{color:#fff;background-color:#33ce61}
+            .site-cm-box ul.site-cm-group li>.site-cm-box{left:185px;margin-top:-36px}.site-cm-box ul.site-cm-group li:hover>.site-cm-box,.site-cm-box ul.site-cm-group li.hover>.site-cm-box{color:#000}
+            .site-cm-icon{color:#666;width:20px}
+            .site-cm-box ul{padding-inline-start:0 !important;}
+        </style>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/exif-js"></script>
+        <style type="text/css">
+            .objects {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-gap: 10px;
+            }
+
+            .object {
+            padding: 10px;
+            text-align: center;
+            display: block;
+            /* background: lightgray; */
+            background: rgb(200,200,200,.4);
+            border-radius: 6px;
+            font-size: 12;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+
+            .object a {
+            text-decoration: none;
+            color: black;
+            }
+
+            .new {
+            border: dashed;
+            /* background: lightblue; */
+            background: rgb(100 200 255 / 40%);
+            }
+
+            #file_uploads {
+            opacity: 0;
+            }
+
+            .drop-target {
+            width: 100%;
+            display: inline-block;
+            }
+
+            .bar {
+            background: #399b58
+            }
+
+            .preview-image {
+            min-height: 50px;
+            min-width: 50px;
+            max-width: 172px;
+            background-repeat: no-repeat;
+            background-position: center;
+            }
+            #submit_delete{
+            height:20px;
+            width:100px;
+            margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <#if METADATA.downloadAllUrl != ''>
+        <input type="button" style="margin-bottom:10px" class="download-all-btn rndbuttoninpt bntBgT"
+               value="Download All"/>
+        <a class="download-all-link" style="visibility: hidden;"></a>
+
+    </#if>
+    <form action="//s3-${METADATA.region}.amazonaws.com/${METADATA.bucket}/" method="POST" enctype="multipart/form-data"
+          class="direct-upload">
+        <#list METADATA.hiddenFields as field>
+        <input type="hidden" name="${field.name}" id="${field.id}" value="${field.value}"/>
+    </#list>
+    <div class="objects">
+        <#if METADATA.hideDropArea!='true'>
+        <div class="object new" id="drop-area">
+            <label for="file_uploads" class="drop-target">
+                <span style="font-size: 36">+</span>
+                <br/>
+                <span>Add Files</span>
+            </label>
+            <input type="file" name="file" id="file_uploads" multiple/>
+        </div>
+    </#if>
+    <#list XML.ListBucketResult.Contents as result>
+    <#assign lowerKey = result.Key?lower_case />
+    <div class="object">
+        <a target="_" href="${METADATA.showFileUrl}&amp;name=${result.Key}">
+            <#assign bgImage = "https://img.icons8.com/document" />
+            <#if lowerKey?contains(".jpg") || lowerKey?contains(".jpeg") || lowerKey?contains(".gif") || lowerKey?contains(".png")>
+            <#assign bgImage = "https://img.icons8.com/image" />
+        </#if>
+        <#assign imgKey = result.Key>
+        <#assign imgName = "">
+        <#list imgKey?split("/") as x><#assign imgName = x></#list>
+    <#list XMLTHUMB.ListBucketResult.Contents as thumb>
+    <#assign thumbName = "">
+    <#list thumb.Key?split("/") as t><#assign thumbName = t></#list>
+<#if thumbName==imgName><#assign imgKey = thumb.Key></#if>
+        </#list>
+
+<img class="preview-image" style="background-image: url('${bgImage}')"
+     src="${METADATA.showFileUrl}&amp;preview=true&amp;name=${imgKey}"/>
+<br/>
+<span>${result.filename}</span>
+        </a>
+        </div>
+        </#list>
+        </div>
+<p> </p>
+<input id="submit_delete" name="Delete Files" value="Delete Files" type="button">
+
+</form>
+
+        <!-- Start of the JavaScript -->
+        <!-- Load jQuery &amp; jQuery UI (Needed for the FileUpload Plugin) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+        <!-- Load the FileUpload Plugin (more info @ https://github.com/blueimp/jQuery-File-Upload) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-file-upload/9.5.7/jquery.fileupload.js"></script>
+
+<script>
+function imgEvnt(e){
+    var reloadImgCount = jQuery(e).attr("reloadct") || 0;
+    if(reloadImgCount>10) {
+// thumbnails not turned on?
+        jQuery(e).off('load');
+        jQuery(e).attr("src", jQuery(e).attr("src").replace("-thumbnails/","/") );
+        return;
+    }
+
+    if ( jQuery(e).height() < 55) {
+        reloadImgCount++;
+        jQuery(e).attr("reloadct",reloadImgCount);
+        console.log('reload img',reloadImgCount);
+        jQuery(e).attr("src", jQuery(e).attr("src") );
+    }
+};
+function imgErrEvnt(e){
+    console.log('img Error Event',e);
+};
+
+
+var folder,isEdit,isCreate,recordFileCountField,useFileDate;
+window.top.hasFileMessage=window.top.hasFileMessage ? window.top.hasFileMessage : false;
+$(document).ready(function () {
+
+// Assigned to variable for later use.
+    var form = $('.direct-upload');
+    var filesUploaded = [];
+    folder = form.find('input[name="prefix"]').val();
+
+// Place any uploads within the descending folders
+    var folders = [];
+
+    $('.download-all-btn').on('click', function () {
+        $.ajax({
+            type: 'POST'
+            , url: '${METADATA.downloadAllUrl}'
+            , crossDomain: true
+            , data: JSON.stringify({prefix: folder, bucketName: '${METADATA.bucket}'})
+            , contentType: 'application/json'
+            , success: function (data) {
+                if (data.url) {
+                    $('.download-all-link').attr('href', data.url);
+                    $('.download-all-link')[0].click();
+                    $('.download-all-link').attr('href', '');
+                }
+            }
+            , error: function (xhr, status, error) {
+            }
+        })
+    });
+
+    form.fileupload({
+        url: form.attr('action'),
+        type: form.attr('method'),
+        datatype: 'xml',
+        add: function (event, data) {
+// Give the file which is being uploaded its current content-type (It doesn't retain it otherwise)
+// and give it a unique name (so it won't overwrite anything already on s3).
+            EXIF.enableXmp();
+            var file = data.files[0];
+
+// replacement of special characters, accents, etc
+try{
+file = new File([file],file.name.normalize('NFD').replace(/([\u0300-\u036f]|[^0-9a-zA-Z\s\(\)\.\-])/g, ''),{ type: file.type });
+data.files[0] = file;
+} catch(fn_err){console.error('file rename error',fn_err);}
+
+            var exifData={};
+
+            EXIF.getData(file, function() {
+                if(useFileDate){
+                    exifData = EXIF.getAllTags(this);
+                    console.log(file,exifData);
+                    console.log(JSON.stringify(exifData));
+
+                    var fileDate = '';
+                    if(exifData.DateTimeOriginal) fileDate = exifData.DateTimeOriginal;
+                    else if(exifData.DateTime) fileDate =  exifData.DateTime;
+                    else if(exifData.GPSDateStamp) fileDate = exifData.GPSDateStamp;
+                    else if(file.lastModified) fileDate = file.lastModified;
+
+                    fileDate = fileDate ? formatDate(fileDate) +' ' : ''; // add a space
+                    file = new File([file],fileDate+file.name,{ type: file.type });
+                    data.files[0] = file;
+                }
+
+                var filename = file.name;
+                form.find('input[name="Content-Type"]').val(file.type);
+                form.find('input[name="key"]').val([folder, filename].join("/"));
+
+// Show warning message if you're leaving the page during an upload.
+                window.onbeforeunload = function () {
+                    return 'You have unsaved changes.';
+                };
+
+// Actually submit form to S3.
+                data.submit();
+
+// Add new object panel to list
+// Uses the file size as a unique identifier
+                var viewUrl = "${METADATA.showFileUrl}&name=" + [folder, filename].join("/");
+                var previewUrl = "${METADATA.showFileUrl}&preview=true&name=" + [folder, filename].join("/");
+                var aHref = '<a href = "' + viewUrl + '" target = "_" > ';
+                var isImage = false;
+                var img = (function () {
+                    switch (file.type) {
+                        case 'image/jpeg':
+                        case 'image/gif':
+                        case 'image/png':
+                            isImage = true;
+                            return '<img class="preview-image" style="background-image: url(\'${bgImage}\')" src=""/>';
+                        default:
+                            return '<img src="https://img.icons8.com/document"/>';
+                    }
+                })();
+                var newObject = $(['<div class="object" data-mod="', filename, '">', aHref, img, '<br/><span>', filename, '</span><br/><div class="bar"></div></a></div>'].join(""));
+                newObject.data('isImage', isImage);
+                if (isImage) {
+                    previewUrl = "${METADATA.showFileUrl}&preview=true&name=" + [folder.replace(/\//,'-thumbnails/'), filename].join("/");
+
+                    newObject.data('previewUrl', previewUrl);
+                }
+                $('.objects').append(newObject);
+                newObject.slideDown('fast');
+                addCheckbox(newObject, jQuery('.object').length-1);
+            });
+        },
+        progress: function (e, data) {
+// This is what makes everything really cool, thanks to that callback
+// you can now update the progress bar based on the upload progress.
+            var percent = Math.round((data.loaded / data.total) * 100);
+            $(['.object[data-mod="', data.files[0].name, '"] .bar'].join("")).css('width', percent + '%').html(percent + '%');
+        },
+        fail: function (e, data) {
+// Remove the 'unsaved changes' message.
+            window.onbeforeunload = null;
+            $('.object[data-mod="' + data.files[0].name + '"] .bar').css('width', '100%').addClass('red').html('');
+        },
+        done: function (event, data) {
+            window.onbeforeunload = null;
+
+// Upload Complete, show information about the upload in a textarea
+// from here you can do what you want as the file is on S3
+// e.g. save reference to your server / log it, etc.
+            var original = data.files[0];
+            var s3Result = data.result.documentElement.children;
+            var objectEl = $(['.object[data-mod="', original.name, '"]'].join(''));
+            var previewUrl = objectEl.data('previewUrl');
+            var isImage = objectEl.data('isImage');
+            if (isImage && previewUrl) {
+                var imgEl = $('img', objectEl);
+// initial load events to display the thumbnail
+                imgEl.attr('onload', "imgEvnt(this)");
+                imgEl.attr('onerror', "imgErrEvnt(this)");
+
+// replace for thumbnail
+                console.log(previewUrl);
+                imgEl.attr('src', previewUrl);
+            }
+
+            filesUploaded.push({
+                "original_name": original.name
+            });
+            if(recordFileCountField) setFileCount(recordFileCountField,0);
+            objectEl.find('.bar').remove();
+        }
+    });
+
+    var frameEl = window.frameElement;
+
+    if (frameEl) {
+        var frameData = jQuery(window.frameElement).data();
+        recordFileCountField = frameData["countField"] ? frameData["countField"] : null;
+        useFileDate =  frameData["usefiledate"] ? frameData["usefiledate"] : false;
+
+        isEdit = window.top.location.href.toLocaleLowerCase().indexOf("e=t") > 0;
+
+        window.top.require(['N/currentRecord'],function (cr){
+            var rec = cr.get.promise().then(function (r){
+                isCreate = r.id == "";
+
+                if (!isCreate && !isEdit) {
+                    jQuery('#drop-area').remove();
+                    jQuery('#submit_delete').remove();
+                } else {
+                    /**
+                     loop over each object and add a check box for the delete
+                     */
+                    var counter = 1;
+                    jQuery('.object').each(function (counter) {
+                        if (counter >= 1) {
+                            addCheckbox(jQuery(this),counter);
+                        }
+                    });
+                }
+            })
+        })
+    } else {
+        jQuery('#submit_delete').remove();
+    }
+
+
+
+    /**
+     Delete items
+     */
+    var deleteItems = [];
+    jQuery('#submit_delete').click(function () {
+// loop over objects that have check box marked as true, then pass those objects to request call to the suitelet
+        var counter = 1;
+        jQuery('.object').each(function (counter) {
+            if (counter >= 1 && jQuery('#delete_file' + counter).prop('checked') == true) {
+                var objectName = jQuery('.object').get(counter);
+                var fileName = jQuery('span', objectName).text();
+                deleteItems.push(fileName);
+            }
+        });
+        if (deleteItems.length > 0) {
+            var path = folder;
+            var data = {
+                deleteItems: deleteItems,
+                path: path
+            }
+            var body = JSON.stringify(data);
+
+            window.top.require(['N/url','N/https'],function(url,https){
+                var suiteletURL = url.resolveScript({
+                    scriptId: 'customscript_bb_s3_sl_delete_amz_objects',
+                    deploymentId: 'customdeploy_bb_s3_sl_delete_amz_objects',
+                    returnExternalUrl: false,
+                });
+                var rsp = https.post({
+                    url: suiteletURL,
+                    body: body
+                });
+                if (rsp.code == 200) {
+                    if(recordFileCountField) setFileCount(recordFileCountField,deleteItems.length);
+                    jQuery(location.reload());
+                }
+            })
+        }
+    }); // end of on click function
+
+
+}); // end document ready
+
+function addCheckbox(fileEl,counter){
+    fileEl.append(
+        jQuery(document.createElement('input')).attr({
+            id: 'delete_file' + counter,
+            name: 'delete_file',
+            type: 'checkbox'
+        })
+    );
+// position of check boxes
+    jQuery('#delete_file' + counter).parent().css({position: 'relative'});
+    jQuery('#delete_file' + counter).css({top: 5, right: 5, position: 'absolute'});
+}
+
+function setFileCount(field,deletedCount) {
+    deletedCount ? deletedCount : 0;
+    var fileCount = jQuery('.object').length>1 ? jQuery('.object').length-1-deletedCount : 0;
+    window.top.require(['N/record','N/currentRecord','N/ui/message'],function(record,cr,message){
+        if(isEdit || isCreate){
+// use current record
+            var rec = cr.get.promise().then(function (r){
+                r.setValue({fieldId:field,value:fileCount});
+            });
+            window.top.ischanged=true;
+            if(!window.top.hasFileMessage) {
+                message.create({
+                    title: 'Documents Have Changed',
+                    message: 'Document changes have been made. Make sure the record is saved before exiting.',
+                    type: message.Type.INFORMATION
+                }).show();
+                window.top.hasFileMessage=true;
+            }
+        } else {
+// use record
+// ??? Do we need this if not in edit mode to upload files ????
+        }
+    });
+//window.top.nlapiSetFieldValue(field, 124);
+}
+
+function formatDate(str){
+    if(isNaN(str)){
+        var dtAr= str.indexOf('T')>0 ? str.split('T') : str.split(' ');
+        var d=dtAr[0].replace(/:/g,'-');
+        return dtAr[1] ? d+'T'+dtAr[1] : d;
+    } else {
+        var dt=new Date(parseInt(str));
+        var isoStr = dt.toISOString();
+        return isoStr.substring(0,isoStr.indexOf('.'));
+    }
+}
+
+function getFileDate(file) {
+    var exifData={};
+//let file = input.files[0];
+    console.log('File name: ',file.name); // e.g my.png
+    console.log('File type: ',file.type); // e.g image/png
+    console.log('File size: ',file.size); // e.g 17534
+    console.log('Last modified: ',file.lastModifiedDate); // e.g 1552830408824
+    console.log(file);
+    EXIF.enableXmp();
+    /*
+    EXIF.getData(file, function() {
+    var make = EXIF.getTag(this, "Make");
+    var model = EXIF.getTag(this, "Model");
+    console.log('getTag',make, model);
+    });
+    */
+    EXIF.getData(file, function() {
+        var allMetaData = EXIF.getAllTags(this);
+        console.log(file,allMetaData);
+    });
+    /*
+    EXIF.getData(file, function() {
+    exifData = EXIF.pretty(this);
+    if (exifData) {
+    console.log('pretty....');
+    console.log(exifData);
+    } else {
+    console.log("No EXIF data found in image '" + file.name + "'.");
+    }
+    });
+    */
+}
+
+</script>
+
+
+<script>
+(function ($) {
+
+    $.fn.contextMenu = function (data, options) {
+        //console.log('contextMenu',data,options);
+        var _contextMenuTarget;
+        var $body = $("body"),
+            defaults = {name: "", offsetX: 15, offsetY: 5, beforeShow: $.noop, afterShow: $.noop};
+        var params = $.extend(defaults, options || {}), keyMap = {}, idKey = "site_cm_", classKey = "site-cm-",
+            name = name || ("JCM_" + +new Date() + (Math.floor(Math.random() * 1000) + 1)), count = 0;
+        var buildMenuHtml = function (mdata) {
+            var menuData = mdata || data, idName = idKey + (mdata ? count++ : name), className = classKey + "box";
+            var $mbox = $('<div id="' + idName + '" class="' + className + '" style="position:absolute; display: none;">');
+            $.each(menuData, function (index, group) {
+                if (!$.isArray(group)) {
+                    throw TypeError()
+                }
+                index && $mbox.append('<div class="' + classKey + 'separ">');
+                if (!group.length) {
+                    return
+                }
+                var $ul = $('<ul class="' + classKey + 'group">');
+                $.each(group, function (innerIndex, item) {
+                    var key,
+                        $li = $("<li>" + item.text + ($.isArray(item.items) && item.items.length ? buildMenuHtml(item.items) : "") + "</li>");
+                    $.isFunction(item.action) && (key = (name + "_" + count + "_" + index + "_" + innerIndex), keyMap[key] = item.action, $li.attr("data-key", key));
+                    $ul.append($li).appendTo($mbox)
+                })
+            });
+            var html = $mbox.get(0).outerHTML;
+            $mbox = null;
+            return html
+        }, createContextMenu = function (obj) {
+            console.log('each on createContextMenu',obj);
+            _contextMenuTarget = obj;
+            var $menu = $("#" + idKey + name);
+            if (!$menu.length) {
+                var html = buildMenuHtml();
+                $menu = $(html).appendTo($body);
+                $("li", $menu).on("mouseover", function () {
+                    $(this).addClass("hover").children("." + classKey + "box").show()
+                }).on("mouseout", function () {
+                    $(this).removeClass("hover").children("." + classKey + "box").hide()
+                }).on("click", function () {
+                    var key = $(this).data("key");
+                    console.log(_contextMenuTarget);
+                    key && (keyMap[key].call(_contextMenuTarget) !== false) && $menu.hide()
+                });
+                $menu.on("contextmenu", function () {
+                    return false
+                })
+            }
+            return $menu
+        };
+        $body.on("mousedown", function (e) {
+            var jid = ("#" + idKey + name);
+            !$(e.target).closest(jid).length && $(jid).hide()
+        });
+        return this.each(function () {
+            //console.log('each',this);
+            $(this).on("contextmenu", function (e) {
+                if ($.isFunction(params.beforeShow) && params.beforeShow.call(this, e) === false) {
+                    return
+                }
+                e.cancelBubble = true;
+                e.preventDefault();
+                //console.log('each on',this);
+                var $menu = createContextMenu(this);
+                $menu.show().offset({left: e.pageX + params.offsetX, top: e.pageY + params.offsetY});
+                $.isFunction(params.afterShow) && params.afterShow.call(this, e)
+            })
+        })
+    }
+})(jQuery);
+
+</script>
+
+<script>
+
+function download(url, filename) {
+    fetch(url).then(function(t) {
+        return t.blob().then((b)=>{
+                var a = document.createElement("a");
+                a.href = URL.createObjectURL(b);
+                a.setAttribute("download", filename);
+                a.click();
+            }
+        );
+    });
+}
+
+var data = [
+    [
+        {
+            text: '<i class="fas fa-file-download" style="margin-right:5px"></i> Download File',
+            action: function () {
+                //console.log("Download File",this);
+                var target=$(this);
+                //console.log("target",target);
+                var downloadURL = target.find('a').attr('href');
+                var fileName = downloadURL.substr(downloadURL.lastIndexOf('/')+1);
+                downloadURL +="&download=t";
+                //console.log(downloadURL);
+                jQuery.get(downloadURL,function(presignedURL){
+                    //console.log(presignedURL);
+                    download(presignedURL, fileName);
+                });
+            }
+        },
+        {
+            text: '<i class="fas fa-file-download" style="margin-right:5px"></i> View Full Sized File',
+            action: function () {
+                //console.log("View File",this);
+                var target=$(this);
+                //console.log("target",target);
+                //console.log(target.find('a').attr('href'));
+                window.open(target.find('a').attr('href'),"_blank");
+            }
+        }
+    ]
+];
+
+jQuery('.object').not(".new").contextMenu(data,this);
+</script>
+
+
+
+        </body>
+        </html>

@@ -1,0 +1,180 @@
+<html>
+    <style>
+        * {
+            box-sizing:border-box;
+            padding:0;
+            margin:0;
+            outline: 0;
+        }
+        body {
+            font-family:Helvetica Neue,Helvetica,Arial,sans-serif;
+            font-size:14px;
+            padding:14px;
+        }
+        article {
+            width:100%;
+            max-width:1000px;
+            margin:0 auto;
+            height:1000px;
+            position:relative;
+        }
+        ul {
+            display:flex;
+            top:0px;
+            z-index:10;
+            padding-bottom:14px;
+        }
+        li {
+            list-style:none;
+            flex:1;
+        }
+        li:last-child {
+            border-right:1px solid #DDD;
+        }
+        button {
+            width:100%;
+            border: 1px solid #DDD;
+            border-right:0;
+            border-top:0;
+            padding: 10px;
+            background:#FFF;
+            font-size:14px;
+            font-weight:bold;
+            height:60px;
+            color:#999
+        }
+        li.active button {
+            background:#F5F5F5;
+            color:#000;
+        }
+        table { border-collapse:collapse; table-layout:fixed; width:70%; }
+        th { background:#F5F5F5; display:none; }
+        td, th {
+            height:45px
+        }
+        td,th { border:1px solid #DDD; padding:10px; empty-cells:show; }
+        td,th {
+            text-align:left;
+        }
+        td+td, th+th {
+            text-align:center;
+            display:none;
+        }
+        td.default {
+            display:table-cell;
+        }
+        .bg-purple {
+            border-top:3px solid #A32362;
+        }
+        .bg-blue {
+            border-top:3px solid #0097CF;
+        }
+        .sales_rep_table table {
+            width: 500px;
+        }
+        .sales_rep_table td {
+            border:none;
+            border-collapse:collapse
+            border-style : hidden!important;
+            padding: 5px;
+        }
+        .sep {
+            background:#F5F5F5;
+            font-weight:bold;
+        }
+        .txt-l { font-size:28px; font-weight:bold; }
+        .txt-top { position:relative; top:-9px; left:-2px; }
+        .tick { font-size:18px; color:#2CA01C; }
+        .hide {
+            border:0;
+            background:none;
+        }
+
+        @media (min-width: 640px) {
+            ul {
+                display:none;
+            }
+            td,th {
+                display:table-cell !important;
+            }
+            td,th {
+                width: 175px;
+
+            }
+            td+td, th+th {
+                width: auto;
+            }
+        }
+    </style>
+    <body>
+
+        <br>
+        <br>
+        <img src="https://tstdrv1967913.app.netsuite.com/core/media/media.nl?id=34074&c=TSTDRV1967913&h=PMqzZlcEQyyQgiR2IVV46ds3AVhDHDyfEH_GTQG7k6f-Jm-o" alt="BayWa Image">
+        <br>
+
+        <table class="sales_rep_table" style="width: 500;">
+            <tr>
+                <td class="sales_rep_td"><b>Sales Rep</b></td>
+                <td class="sales_rep_td">${data.salesrep}</td>
+            </tr>
+            <tr>
+                <td class="sales_rep_td"><b>Phone Number</b></td>
+                <td class="sales_rep_td">${data.salesrep_phone}</td>
+            </tr>
+        </table>
+
+        <br>
+        <br>
+        <br>
+        <h1>Item Availability</h1>
+        <br>
+        <br>
+
+        <#list data.items as items>
+            <#if items.internalid.item?contains("null") == false>
+                <table style="width: 700" class="sales_rep_table">
+                    <tr>
+                        <th class="bg-blue">Item</th><th class="bg-blue">${items.internalid.item}</th>
+                    </tr>
+                        <tr>
+                        <#if items.instock?contains("true") == true>
+                            <td>Stock Details</td><td>In Stock  <span class="tick">&#10004;</span></td>
+                        </#if>
+
+                        <#if items.discontinued?contains("true") == true>
+                            <td>Stock Details</td><td>${data.discontinued_msg}</td>
+                        </#if>
+                    </tr>
+                </table>
+
+                <table>
+                    <thead>
+                    <tr>
+                        <th class="bg-blue"></th><th class="bg-blue">Available Now</th><th class="bg-blue">Available Next</th><th class="bg-blue">Available Next Date</th>
+                    <tr>
+                    </thead>
+                    <#list items.warehouses as warehouse>
+                        <tr>
+                            <td><b>${warehouse.name}<b></td>
+                            <td><#if items.available_now?contains("null") == false>${warehouse.available_now}</#if></td>
+                            <td><#if items.available_next?contains("null") == false>${warehouse.available_next}</#if></td>
+                            <td><#if items.available_next_date?contains("null") == false>${warehouse.available_next_date}</#if></td>
+                        </tr>
+                    </#list>
+                </table>
+
+                <br>
+                <br>
+                <br>
+                <br>
+            </#if>
+        </#list>
+    </body>
+</html>
+
+
+
+
+
+

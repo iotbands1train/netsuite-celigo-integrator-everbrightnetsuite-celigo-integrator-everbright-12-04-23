@@ -1,0 +1,204 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+<div id="app" novalidate>
+    <div class="container" v-if="isLoaded">
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label>PROJECT</label>
+                    <div><a :href="form.view.projectUrl">{{form.view.projectName}}</a></div>
+                </div>
+                <div class="form-group">
+                    <label>CHANGE OF SCOPE REASON <span style="color:red">*</span></label>
+                    <select class="form-control" v-model="$root.form.data.changeOfScopeReason" required>
+                        <template v-for="cosReason in $root.form.view.changeOfScopeReasonList">
+                            <option :value="cosReason">{{cosReason.name}}</option>
+                        </template>
+                    </select>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group box">
+                    <label class="box-header">CHANGE OF SCOPE REASON COMMENT <span style="color:red">*</span></label>
+                    <textarea class="form-control box-content" v-model="form.data.changeOfScopeComment" required></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <package-action-list :children="form.data.packageActionsData"></package-action-list>
+        </div>
+        <div class="row">
+            <div class="col col-auto m-auto">
+                <button class="btn btn-primary" type="button" @click="submitForm" :disabled="savingForm">${form.view.saveButtonText}</button>
+            </div>
+            <div class="col">
+                <div class="alert alert-primary m-auto" role="alert" v-if="savingForm">
+                    Change of scope in process
+                </div>
+            </div>
+
+
+        </div>
+<!--        <pre>
+        {{form.data}}
+        </pre>-->
+    </div>
+</div>
+
+<script type="text/x-template" id="collapsible-header">
+    <div class="">
+        <div class="header-content row">
+            <div class="col header-selection">
+                <input class="" type="checkbox" v-model="child.selected">
+                <button class="btn btn-link" type="button" @click="toggleShow(child, 'show')">
+                    {{ child.name }}
+                </button>
+            </div>
+            <button class="col btn btn-link float-right cos-message" type="button" @click="toggleShow(child, 'showCosForm')" v-if="child.selected" v-html="cosMessage(child)"></button>
+        </div>
+        <div class="d-inline-block">
+            <transition name="fade">
+                <change-of-scope-form :cos="child" v-if="child.showCosForm"></change-of-scope-form>
+            </transition>
+        </div>
+    </div>
+</script>
+<script type="text/x-template" id="collapsible-body">
+    <div>
+        Collapsible body: {{child || ''}}
+    </div>
+</script>
+<script type="text/x-template" id="collapsible-list">
+    <div class="accordion w-100">
+        <div class="card" v-for="child in children" :class="statusClass(child)">
+            <div class="card-header" :class="statusClass(child)">
+                <component :is="templateHeader" :child="child"></component>
+            </div>
+            <transition name="slide-fade">
+                <div v-if="typeof child.show === 'boolean' && child.show" class="card-body" :class="statusClass(child)">
+                    <component :is="templateBody" :child="child"></component>
+                </div>
+            </transition>
+        </div>
+    </div>
+</script>
+<script type="text/x-template" id="package-action-body">
+    <project-action-list :children="child.projectActionsByStatus"></project-action-list>
+</script>
+<script type="text/x-template" id="project-action-header">
+
+</script>
+<script type="text/x-template" id="project-action-body">
+    <div class="list-group list-group-flush">
+        <div class="list-group-item" v-for="projectAction in child.projectActions">
+            <div class="header-content">
+                <input class="" type="checkbox" :checked="projectAction.selected" @click="projectAction.selected = !projectAction.selected">
+                <span class="project-label">{{projectAction.packageAction}}</span>
+                <button class="btn btn-link float-right cos-message" type="button" @click="toggleShow(projectAction, 'showCosForm')" v-if="projectAction.selected" v-html="cosMessage(projectAction)"></button>
+            </div>
+            <div class="d-inline-block">
+                <transition name="fade">
+                    <change-of-scope-form :cos="projectAction" v-if="projectAction.showCosForm"></change-of-scope-form>
+                </transition>
+            </div>
+        </div>
+    </div>
+</script>
+<script type="text/x-template" id="change-of-scope-form">
+    <div class="form-row ml-5 mt-3">
+        <div class="form-group mr-3">
+            <div class="form-check">
+                <input :id="_uid" class="form-check-input" type="checkbox" v-model="cos.createNewRevision">
+                <label class="form-check-label" :for="_uid">
+                    New Revision
+                </label>
+            </div>
+        </div>
+        <div class="form-group mr-3">
+            <label>Old Rev. Status</label>
+            <select class="form-control form-control-sm" v-model="cos.oldDocumentStatus">
+                <option value=""></option>
+                <template v-for="status in oldRevisionStatusList">
+                    <option :value="status.id">{{ status.name }}</option>
+                </template>
+            </select>
+        </div>
+        <div class="form-group mr-3" v-if="cos.createNewRevision">
+            <label>New Rev. Status</label>
+            <select class="form-control form-control-sm" v-model="cos.newDocumentStatus">
+                <option value=""></option>
+                <template v-for="status in newRevisionStatusList">
+                    <option :value="status.id">{{ status.name }}</option>
+                </template>
+            </select>
+        </div>
+        <div class="form-group" v-if="showRejectionReason">
+            <label>Rejection Reason</label>
+            <select class="form-control form-control-sm" v-model="cos.rejectionReason">
+                <option value=""></option>
+                <template v-for="rejectionReason in $root.form.view.rejectionReasons[cos.packageId]">
+                    <option :value="rejectionReason.id">{{ rejectionReason.name }}</option>
+                </template>
+            </select>
+        </div>
+    </div>
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+<!--<script src="//cdn.jsdelivr.net/npm/vuelidate@0.7.5/dist/vuelidate.min.js"></script>-->
+<!--<script src="//cdn.jsdelivr.net/npm/vuelidate@0.7.5/dist/validators.min.js"></script>-->
+<script type="text/javascript" src="BB.VUE.ChangeOfScope.js"></script>
+
+<style type="text/css">
+    .card { border-radius: 0; border-right: 0; margin-bottom: 20px; }
+    .card-header { background-color: transparent; padding: 0 20px; }
+    .card-header .btn { vertical-align: inherit; }
+    .accordion>.card:last-of-type { border-bottom: 0; }
+    .accordion > .card .card-header.card-header-flush { margin-bottom: auto;}
+
+    /* Enter and leave animations can use different */
+    /* durations and timing functions.              */
+    .slide-fade-enter-active {
+        transition: all .3s ease;
+    }
+    .slide-fade-leave-active {
+        transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+    }
+    .slide-fade-enter, .slide-fade-leave-to
+        /* .slide-fade-leave-active below version 2.1.8 */ {
+        transform: translateX(10px);
+        opacity: 0;
+    }
+
+    .fade-enter-active, .fade-leave-active {
+        transition: opacity .5s;
+    }
+    .fade-enter, .fade-leave-to /* .fade-leave-active до версии 2.1.8 */ {
+        opacity: 0;
+    }
+
+    .card { border-left: 10px solid grey; border-radius: initial !important; }
+    .card .status-approved {border-color: green; }
+    .card .status-rejected {border-color: darkred; }
+    .card .status-not-started {border-color: grey; }
+    .card .status-submitted-to {border-color: orange; }
+    .card .status-internal {border-color: cadetblue; }
+
+    .card .cos-message { font-size: 12px; text-align: right; text-decoration: none; font-style: italic; color: dimgrey; }
+    .card .header-content { height: 70px; }
+
+    .card .project-label {vertical-align: middle; padding-left: 10px;}
+    .card .form-row { font-size: 14px; }
+    .card .form-row label { padding-top: 3px; }
+    .card .header-selection { margin: auto; }
+    .card .card-body { padding-right: 0; }
+
+    .container .box { display: flex; flex-flow: column; height: 100%; margin-bottom: 0; padding-bottom: 1rem; }
+    .container .box .box-header { flex: 0 1 auto; }
+    .container .box .box-content { flex: auto; }
+
+    .card pre { font-size: 12px; }
+
+    .text .container { font-size: 12pt; }
+</style>

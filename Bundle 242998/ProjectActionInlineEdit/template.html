@@ -1,0 +1,551 @@
+<div id="app" novalidate>
+
+  <div class="loading" v-if="isLoadingData">
+    <div class="inner">
+      <div class="wrapper">
+        <svg viewBox="-18 -18 36 36" role="img" aria-label="Loading" class="loader-icon">
+          <circle fill="none" r="16" class="outline"></circle>
+          <circle fill="none" r="16" class="runner" transform="rotate(-135)" stroke-dasharray="100"></circle>
+        </svg>
+      </div>
+      <span class="ns-loading-message ns-visible-message" data-message="0">Loading</span>
+    </div>
+  </div>
+
+  <template v-for="(filter, key) in filters">
+    <div class="filter">
+      <label>{{filter.label}}</label>
+      <div v-if="filter.isDate">
+        <date-filter-input class="date-filter" :id="key" v-model="newFilters[key]" @change="filterChanged"></date-filter-input>
+      </div>
+      <div v-if="!filter.isDate && !filter.multiselect" class="select-list dropdownInput">
+        <select v-model="newFilters[key]" @change="filterChanged">
+          <option v-for="item in filter.data" :key="key + '_' + item.id" :value="item.id">{{item.text}}</option>
+        </select>
+        <span class="ddarrowSpan">
+          <img src="/uirefresh/img/field/dropdown.png" height="20" width="20" alt="More Options">
+        </span>
+      </div>
+      <div v-if="filter.multiselect">
+        <multi-select-filter-input :id="key" :options="filter.data" v-model="newFilters[key]" @change="filterChanged"></multi-select-filter-input>
+      </div>
+    </div>
+  </template>
+  <table class="uir-table-block" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody>
+    <tr>
+      <td>
+        <div id="main_mh" class="bgsubtabbar">
+          <div class="subtabbarul" style="position: absolute; top:0px; left:0px;"></div>
+          <div class="subtabbarur" style="position: absolute; top:0px; right:0px;"></div>
+          <table border="0" cellspacing="0" cellpadding="0" class="bgsubtabbar" role="presentation">
+            <tbody>
+            <tr>
+              <td id="main_mh_sp_0" class="formsubtabsep" side="0">&nbsp;</td>
+              <td valign="middle" nowrap="" class="formsubtabon">
+                <span class="formsubtabtext formsubtabtexton">Project Actions</span>
+                <span class="uir-tab-content-dot formsubtabtext formsubtabtexton">
+                  <img src="/images/forms/tab/contentindicator_on.png" alt="Content available"
+                      style="width:6px; height:8px;" border="0">
+                  Project Actions
+                </span>
+              </td>
+              <td id="main_mh_sp_1" class="formsubtabsep" side="1">&nbsp;</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+    <tr class="ns-subtab-border">
+      <td>
+        <div class="subtabblock" style="position:relative; ">
+          <div class="totallingTopRight" style="font-size:0px;z-index:1;"></div>
+          <div class="totallingBottomLeft" style="font-size:0px;z-index:1;"></div>
+          <div class="totallingBottomRight" style="font-size:0px;z-index:1;"></div>
+          <div class="subtabcornerul" style="position:absolute; left:4px; top:4px;z-index:10;"></div>
+          <div class="subtabcornerur" style="position:absolute; right:4px; top:4px;z-index:10;"></div>
+          <div class="subtabcornerll" style="position:absolute; left:4px; bottom:4px;z-index:10;"></div>
+          <div class="subtabcornerlr" style="position:absolute; right:4px; bottom:4px;z-index:10;"></div>
+          <div id="custpage_project_action_list_layer" style="">
+            <div class="subtabblock" style="padding: 4px;">
+              <div align="right"></div>
+              <div class="subtabblock">
+                <input type="hidden" name="lineindex" value="10">
+                <table class="table_fields" border="0" cellspacing="0" cellpadding="0" width="100%"
+                       style="display: none" role="presentation">
+                  <input name="custpage_project_action_id" id="custpage_project_action_id" type="hidden"
+                         value="300310" defaultvalue="">
+                  <input name="custpage_package_id" id="custpage_package_id" type="hidden"
+                         onchange="if (Synccustpage_package_idcustpage_project_action_list(true,null,null,null,null,null) == false) return false;if (getEventTarget(event)==this)this.focus();setMachineChanged('custpage_project_action_list',this);"
+                         value="2" defaultvalue="">
+                  <input name="custpage_phase_id" id="custpage_phase_id" type="hidden"
+                         onchange="if (Synccustpage_phase_idcustpage_project_action_list(true,null,null,null,null,null) == false) return false;if (getEventTarget(event)==this)this.focus();setMachineChanged('custpage_project_action_list',this);"
+                         value="" defaultvalue="">
+
+                  <tbody>
+                  <tr>
+
+                    <td>
+
+                      <div class="uir-field-wrapper" data-field-type="select"><span
+                              id="custpage_project_action_list_custpage_package_action_id_fs_lbl_uir_label"
+                              class="smalltextnolink uir-label "><span
+                              id="custpage_project_action_list_custpage_package_action_id_fs_lbl"
+                              class="labelSpanEdit smalltextnolink" style="">
+
+<a class="smalltextnolink" onmouseover="this.className='smalltextnolink'; return true;"
+   onmouseout="this.className='smalltextnolink'; ">Package Action</a>
+</span></span><span class="uir-field">
+
+</span>
+                      </div>
+                    </td>
+
+                  </tr>
+
+
+                  <tr>
+
+                    <td>
+
+                      <div class="uir-field-wrapper" data-field-type="select"><span
+                              id="custpage_project_action_list_custpage_doc_status_id_fs_lbl_uir_label"
+                              class="smalltextnolink uir-label "><span
+                              id="custpage_project_action_list_custpage_doc_status_id_fs_lbl"
+                              class="labelSpanEdit smalltextnolink" style="">
+
+<a class="smalltextnolink" onmouseover="this.className='smalltextnolink'; return true;"
+   onmouseout="this.className='smalltextnolink'; ">Action Status</a>
+</span></span><span class="uir-field">
+
+</span>
+                      </div>
+                    </td>
+
+                  </tr>
+
+
+                  <tr>
+
+                    <td>
+
+                      <div class="uir-field-wrapper" data-field-type="text"><span
+                              id="custpage_project_action_list_custpage_response_days_fs_lbl_uir_label"
+                              class="smalltextnolink uir-label "><span
+                              id="custpage_project_action_list_custpage_response_days_fs_lbl"
+                              class="labelSpanEdit smalltextnolink" style="">
+
+<a class="smalltextnolink" onmouseover="this.className='smalltextnolink'; return true;"
+   onmouseout="this.className='smalltextnolink'; ">Duration In Days</a>
+</span></span><span class="uir-field">
+
+</span>
+                      </div>
+                    </td>
+
+                  </tr>
+
+
+                  </tbody>
+                </table>
+              </div>
+              <div class="listcornerul" style="font-size:0px; position:absolute; left:4px;z-index:30;"></div>
+              <div class="listcornerur" style="font-size:0px; position:absolute; right:4px;z-index:30;"></div>
+              <div class="listcornerll"
+                   style="font-size:0px; position:absolute; left:4px; bottom:4px;z-index:30;"></div>
+              <div class="listcornerlr"
+                   style="font-size:0px; position:absolute; right:4px; bottom:4px;z-index:30;"></div>
+              <div class="uir-machine-table-container" data-machine-name="custpage_project_action_list" style="padding-bottom: 150px">
+                <table id="custpage_project_action_list_splits" width="100%" border="0" cellspacing="0"
+                       cellpadding="0" class="listtable listborder uir-machine-table">
+                  <tbody>
+                  <tr class="uir-machine-headerrow">
+                    <td style="display: none;">
+
+                    </td>
+                    <td></td>
+                    <#list form.columns.visible as column>
+                    <td height="100%" class="listheadertdleft listheadertextb uir-column-large" align="left"
+                        data-label="${column.label}">
+                      <div class="listheader">${column.label}</div>
+                    </td>
+                    </#list>
+                  </tr>
+
+                  <template v-for="(row, idx) in rows">
+                    <tr class="uir-machine-row uir-machine-row-odd"
+                        :class="{'uir-machine-row-odd': idx%2 === 0, 'uir-machine-row-even': idx%2 > 0}"
+                        @click="selectLine(idx)"
+                        v-if="idx != selectedLine">
+                      <td style="display: none;">
+                        <#list form.columns.hidden as column>
+                          <input type="hidden" name="${column.key}" :value="row.${column.key}.value" />
+                        </#list>
+                      </td>
+                      <td class="listtexthl">
+                        <a v-if="!row.saving" :href="row.view" target="_blank">View</a>
+                        <span v-if="row.saving">Saving... </span>
+                      </td>
+                      <#list form.columns.visible as column>
+                        <td class="listtexthl" align="left" style="height: 100%;">
+                          <#if column.type == 'checkbox'>
+                          {{row.${column.key}.value ? 'Yes' : 'No'}}
+                          <#else>
+                          {{row.${column.key}.text ?? row.${column.key}.value}}
+                          </#if>
+                        </td>
+                      </#list>
+                    </tr>
+                    <template v-else>
+                      <tr class="uir-machine-row uir-machine-row-even uir-machine-row-focused listfocusedrow">
+                        <td style="display: none;">
+                          <#list form.columns.hidden as column>
+                            <input type="hidden" name="${column.key}" :value="row.${column.key}.value" />
+                          </#list>
+                        </td>
+                        <td class="listinlinefocusedrowleft">
+                          <a :href="row.view" target="_blank">View</a>
+                        </td>
+                        <#list form.columns.visible as column>
+                          <td class="listinlinefocusedrow ${(column.display == 'readonly')?then('uir-disabled', '')}" align="left" style="height: 100%;">
+                            <#if column.display == 'readonly' || column.type == 'default'>
+                              <#if column.type == 'checkbox'>
+                              {{row.${column.key}.value ? 'Yes' : 'No'}}
+                              <#else>
+                              {{row.${column.key}.text ?? row.${column.key}.value}}
+                              </#if>
+                            <#else>
+                              <#if column.dataField?has_content >
+                              <${column.type}-input column="${column.key}" v-model="row.${column.key}" :options="columns['${column.key}'].data['${column.dataField}_' + row.${column.dataField}.value]"></${column.type}-input>
+                              <#else>
+                              <${column.type}-input column="${column.key}" :row="row" v-model="row.${column.key}" :options="columns['${column.key}'].data"></${column.type}-input>
+                              </#if>
+                            </#if>
+                          </td>
+                        </#list>
+                      </tr>
+                      <tr class="uir-machine-button-row">
+                        <td colspan="${form.columns.visible?size + 1}" class="machineButtonRow">
+                          <div style="display: block; padding: 0px 2px; height: 37px;" class="machineButtonRow">
+                            <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                              <tbody>
+                              <tr>
+                                <td>
+                                  <table class="machBnt uir-machinebutton-left" border="0" cellpadding="0" cellspacing="0"
+                                         role="presentation">
+                                    <tbody>
+                                    <tr>
+                                      <td><img src="/images/nav/ns_x.gif" class="bntLT" width="3" border="0" height="3"
+                                               alt=""></td>
+                                    </tr>
+                                    <tr>
+                                      <td class="bntLS" valign="top"><img src="/images/nav/ns_x.gif" width="1" height="14"
+                                                                          alt=""></td>
+                                    </tr>
+                                    <tr>
+                                      <td><img src="/images/nav/ns_x.gif" class="bntLB" width="3" border="0" height="3"
+                                               alt=""></td>
+                                    </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                                <td>
+                                  <table class="machBnt" cellpadding="0"
+                                         cellspacing="0" border="0" style="cursor:hand;" role="presentation">
+                                    <tbody>
+                                    <tr>
+                                      <td class="bntTop"><img src="/images/nav/ns_x.gif" width="1" height="3" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                      <td class="uir-addedit bntBg" valign="top">
+                                        <input type="button" style=""
+                                        class="nlinlineeditbutton bntBgT"
+                                        value="OK"
+                                        name="custpage_project_action_list_addedit"
+                                               @click="submit(row)"
+                                      />
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td class="bntBot"><img src="/images/nav/ns_x.gif" width="1" height="3" alt=""></td>
+                                    </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                                <td>
+                                  <table class="machBnt" id="tbl_custpage_project_action_list_clear" cellpadding="0"
+                                         cellspacing="0" border="0" style="cursor:hand;" role="presentation">
+                                    <tbody>
+                                    <tr>
+                                      <td class="bntTop"><img src="/images/nav/ns_x.gif" width="1" height="3" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                      <td class="uir-clear bntBg" valign="top">
+                                        <input type="button" style=""
+                                          class="nlinlineeditbutton bntBgT"
+                                          value="Cancel"
+                                          name="custpage_project_action_list_clear"
+                                          @click="cancelLine()"
+                                        />
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td class="bntBot"><img src="/images/nav/ns_x.gif" width="1" height="3" alt=""></td>
+                                    </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                                <td>
+                                  <table class="machBnt uir-machinebutton-right" border="0" cellpadding="0"
+                                         cellspacing="0" role="presentation">
+                                    <tbody>
+                                    <tr>
+                                      <td><img src="/images/nav/ns_x.gif" class="bntRT" width="3" border="0" height="3"
+                                               alt=""></td>
+                                    </tr>
+                                    <tr>
+                                      <td class="bntRS" valign="top"><img src="/images/nav/ns_x.gif" width="1" height="14"
+                                                                          alt=""></td>
+                                    </tr>
+                                    <tr>
+                                      <td><img src="/images/nav/ns_x.gif" class="bntRB" width="3" border="0" height="3"
+                                               alt=""></td>
+                                    </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </td>
+                      </tr>
+                    </template>
+                  </template>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+<script type="text/x-template" id="text-input">
+  <input onkeyup="" maxlength="300" onkeypress="" type="text"
+         style="width: 100%;" class="textbox input uir-custom-field" v-model="value.value">
+</script>
+
+<script type="text/x-template" id="clobtext-input">
+  <input onkeyup="" maxlength="300" onkeypress="" type="text"
+         style="width: 100%;" class="textbox input uir-custom-field" v-model="value.value">
+</script>
+
+<script type="text/x-template" id="checkbox-input">
+  <input onkeyup="" onkeypress="" type="checkbox" style="width: 100%;" class="input uir-custom-field" v-model="value.value">
+</script>
+
+<script type="text/x-template" id="select-input">
+  <span data-fieldtype="select" class="listcontrol nldropdown" style="white-space: nowrap; display: block;" data-helperbutton-count="0">
+      <div class="uir-select-input-container">
+        <input name="inpt_custpage_doc_status_id" type="text" value=" " :value="value.text" class="textbox" autocomplete="off" contenteditable="false"
+               role="combobox" title="" style="width: 100%; vertical-align: top;">
+        <span class="ddarrowSpan" @click="tooltip = !tooltip">
+	        <img src="/uirefresh/img/field/dropdown.png" height="20" width="20" class="i_dropdownarrow" alt="More Options" >
+        </span>
+      </div>
+      <div class="uir-tooltip-content" v-if="tooltip">
+        <div v-if="options && options.length > 0" class="dropdownDiv" style="z-index: 1001; visibility: visible; overflow: hidden; z-index: 9999; min-width: 150px; max-height: 150px; position: absolute; display: block;">
+          <div class="dropdownNotSelected">&nbsp;</div>
+          <template v-for="option in options">
+            <div @mouseover="hover = option" @mouseout="hover = null"
+                 :class="{'dropdownSelected': hover && option.value == hover.value, 'dropdownNotSelected': !hover || option.value != hover.value}"
+                 @click="select(option)">
+              {{option.text}}
+            </div>
+          </template>
+        </div>
+      </div>
+    </span>
+</script>
+
+<script type="text/x-template" id="autocomplete-input">
+  <span data-fieldtype="select" class="listcontrol nldropdown" style="white-space: nowrap; display: block;" data-helperbutton-count="0">
+      <div class="uir-select-input-container">
+        <input type="text" v-model="term" @keyup="filterDelay" class="textbox" autocomplete="off" contenteditable="false"
+               role="combobox" title="" style="width: 100%; vertical-align: top;">
+        <span class="ddarrowSpan" @click="tooltip = !tooltip">
+	        <img src="/uirefresh/img/field/dropdown.png" height="20" width="20" class="i_dropdownarrow" alt="More Options" >
+        </span>
+      </div>
+      <div class="uir-tooltip-content" v-if="tooltip">
+        <div v-if="foundData.length > 0" class="dropdownDiv" style="z-index: 1001; visibility: visible; overflow: hidden; z-index: 9999; min-width: 150px; max-height: 150px; position: absolute; display: block;">
+          <div class="dropdownNotSelected">&nbsp;</div>
+          <template v-for="option in foundData">
+            <div @mouseover="hover = option" @mouseout="hover = null"
+                 :class="{'dropdownSelected': hover && option.value == hover.value, 'dropdownNotSelected': !hover || option.value != hover.value}"
+                 @click="select(option)">
+              {{option.text}}
+            </div>
+          </template>
+        </div>
+      </div>
+    </span>
+</script>
+
+<script type="text/x-template" id="date-filter-input">
+  <span style="white-space: nowrap" class="effectStatic" data-fieldtype="" data-helperbutton-count="1">
+    <input onkeyup=""
+           maxlength="24"
+           type="text"
+           size="17"
+           :id="id"
+           class="input uir-custom-field"
+           ref="date-filter-input"
+           @input="onchange">
+    <span class="field_widget_pos uir-field-widget always-visible">
+      <a
+              @click="onclick"
+              tabindex="-1"
+              href="javascript:void('')"
+              :id="id + '_helper_calendar'" title="Pick" class="smalltextul field_widget i_calendar"></a>
+    </span>
+  </span>
+</script>
+
+<script type="text/x-template" id="multi-select-filter-input">
+  <span :id="id + '_holder'" data-fieldtype="multiselect" class="uir-multiselect">
+    <input :id="'hddn_' + id" :ref="id + '-value'" @input="onchange" type="hidden" />
+  </span>
+</script>
+
+<script type="text/x-template" id="date-input">
+  <span style="white-space: nowrap" class="effectStatic" data-fieldtype="" data-helperbutton-count="1">
+    <input onkeyup=""
+           maxlength="24"
+           type="text"
+           size="17"
+           :id="column + '_' + row.id"
+           class="input uir-custom-field"
+           ref="date-input"
+           v-model="value.value">
+    <span class="field_widget_pos uir-field-widget">
+      <a
+         @click="onclick"
+         tabindex="-1"
+         href="javascript:void('')"
+         :id="column + '_' + row.id + '_helper_calendar'" title="Pick" class="smalltextul field_widget i_calendar"></a>
+    </span>
+  </span>
+</script>
+
+
+<style>
+
+  .filter {
+    display: inline-block;
+    margin-left: 20px;
+      vertical-align: top;
+  }
+
+  .filter label {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: lighter;
+    display: block;
+    margin-bottom: 3px;
+  }
+
+  .select-list {
+    position: relative;
+    font-size: 13px;
+    display: inline-block;
+    padding-right: 1px !important;
+    border-color: #D5DEE6 !important;
+    height: 26px;
+  }
+  .select-list select {
+    border: none !important;
+    padding: 4px 20px 4px 5px;
+    margin: 0;
+    font: inherit;
+    outline:none; /* remove focus ring from Webkit */
+    line-height: 1.2;
+    background: #fff;
+    -webkit-appearance:none; /* remove the strong OSX influence from Webkit */
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 0px;
+  }
+
+  .select-list select:hover, .select-list select:active, .select-list select:focus {
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  .select-list .ddarrowSpan {
+    position: absolute;
+    right: 0px;
+    top: 2px;
+    pointer-events: none;
+    left: auto;
+  }
+
+  .loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    top: 0;
+    text-align: center;
+    z-index: 100;
+  }
+  .loading .inner {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    top: 40%;
+    position: fixed;
+  }
+  .loading .wrapper {
+    width: 32px;
+    height: 32px;
+    align-self: center;
+  }
+
+  .loading .loader-icon {
+    -webkit-animation: spin 2s ease infinite;
+    -moz-animation: spin 2s ease infinite;
+    animation: spin 2s ease infinite;
+  }
+  .loading .loader-icon .outline {
+    stroke: #dfe4eb;
+    stroke-width: 3px;
+  }
+  .loading .loader-icon .runner {
+    stroke: #607799;
+    stroke-width: 3px;
+    stroke-dashoffset: 75;
+  }
+
+</style>
+
+<script type="text/javascript">
+  var
+    //_data = ${form.data}
+    // _columns = ${form.columnsObj}
+    _filters = ${form.filters}
+    ,_isPortlet = ${form.isPortlet}
+  ;
+  // console.log(${form.columnsJson});
+  // console.log(_isPortlet);
+</script>
+<script src="//cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+<script src="//cdn.jsdelivr.net/npm/vue-resource@1.5.1"></script>
+<script type="text/javascript" src="BB.VUE.ProjectActionInlineEdit.js"></script>

@@ -1,0 +1,119 @@
+{
+  "Site": {
+    "Addresses": [
+      {
+        "AddrLine1": {
+          "Value": "405 N Grand Ave"
+        },
+        "AddrLine2": {
+          "Value": "Apt 3222"
+        },
+        "AddrLine3": {
+          "Value": "Building H"
+        },
+        "AddressType": {
+          "Value": "Installation"
+        },
+        "City": {
+          "Value": "Bozeman"
+        },
+        "Country": {
+          "Value": "USA"
+        },
+        "County": {
+          "Value": "Gallatin County"
+        },
+        "StateProvince": {
+          "Value": "MT"
+        },
+        "ZipPostalCode": {
+          "Value": "59715-3509"
+        }
+      }
+    ],
+    "Contacts": [
+      {
+        "Address": {
+          "AddrLine1": {
+            "Value": "405 N Grand Ave"
+          },
+          "AddrLine2": {
+            "Value": "Apt 3222"
+          },
+          "AddrLine3": {
+            "Value": "Building H"
+          },
+          "AddressID": {
+            "Value": "b72dc7dc-d8df-4569-b6cd-85fc64546eb1"
+          },
+          "AddressType": {
+            "Value": "Installation"
+          },
+          "City": {
+            "Value": "Bozeman"
+          },
+          "Country": {
+            "Value": "USA"
+          },
+          "County": {
+            "Value": "Gallatin County"
+          },
+          "StateProvince": {
+            "Value": "MT"
+          },
+          "ZipPostalCode": {
+            "Value": "59715-3509"
+          }
+        },
+        "ContactID": {
+          "Value": "b72dc7dc-d8df-4569-b6cd-85fc64546eb1"
+        },
+        "ContactTimezone": {
+          "Value": "MST"
+        },
+        "ContactType": {
+          "Value": "Homeowner"
+        },
+        "Email": {
+          "Value": "email@email.com"
+        },
+        "FirstName": {
+          "Value": "John"
+        },
+        "HomePhone": {
+          "Value": "(777) 777-7777"
+        },
+        "LastName": {
+          "Value": "Doe"
+        },
+        "MiddleName": {
+          "Value": "Perry"
+        },
+        "MobilePhone": {
+          "Value": "(777) 777-7777"
+        },
+        "PreferredContactMethod": {
+          "Value": "Email"
+        },
+        "Title": {
+          "Value": "Dr."
+        },
+        "URL": {
+          "Value": "https://domainname.com"
+        },
+        "WorkPhone": {
+          "Value": "(777) 777-7777"
+        }
+      }
+    ],
+    "SiteID": {
+      "Value": "b72dc7dc-d8df-4569-b6cd-85fc64546eb1"
+    },
+    "SiteMandatoryAccessReqrmnts": {
+      "Value": "Gate Code is 1231"
+    },
+    "SiteName": {
+      "Value": "Example Site"
+    },
+  }
+}

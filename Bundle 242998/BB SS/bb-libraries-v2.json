@@ -1,0 +1,8 @@
+{
+	"paths": {
+		  "BB/project": "./Lib/v0.2.0/BB.SS.Projects.js",
+		  "BB/entity": "./Lib/v0.2.0/BB.SS.Entity.js",
+		  "BB/transform": "./Lib/v0.2.0/BB.SS.Transform.js",
+      "BB/transaction": "./Lib/v0.2.0/BB.SS.Transactions.js"
+	}
+}

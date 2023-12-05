@@ -1,0 +1,8 @@
+{
+	"baseUrl": "/SuiteScripts/BB/S3",
+	"paths": {
+		"bb/framework": "Lib/bb_framework_all",
+		"s3": "Lib/BB.S3",
+		"crypto-js": "Lib/crypto-js"
+	}
+}

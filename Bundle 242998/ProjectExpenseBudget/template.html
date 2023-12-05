@@ -1,0 +1,881 @@
+<div id="app" novalidate>
+  <div class="ns-portlet-loader" v-show="loading">
+    <div class="ns-inner">
+      <div class="ns-portlet-loader__wrapper">
+        <svg viewBox="-18 -18 36 36" role="img" aria-label="Loading" class="ns-portlet-loader__icon--circular">
+          <circle fill="none" r="16" class="ns-portlet-loader__icon--circular__outline"></circle>
+          <circle fill="none" r="16" class="ns-portlet-loader__icon--circular__runner" transform="rotate(-135)" stroke-dasharray="100"></circle>
+        </svg>
+      </div>
+      <span class="ns-loading-message" data-message="1">Loading. Please wait ...</span>
+    </div>
+  </div>
+
+  <div class="ext-el-mask" style="display: none; bottom: 0; right: 0; position: fixed; z-index: 9000;"
+       v-show="!loading && showVersionModal"
+       v-if="!loading && showVersionModal"></div>
+  <div class=" x-window" style="position: fixed; z-index: 9003; visibility: visible; left: calc(50% - 200px); top: calc(50% - 100px); background-color: rgb(255, 255, 255); width: 400px; display: none;"
+       v-show="!loading && showVersionModal"
+       v-if="!loading && showVersionModal">
+    <div class="x-window-header x-unselectable x-window-draggable uir-message-header">
+      <span class="x-window-header-text">Create New Version</span>
+    </div>
+    <div class="x-window-bwrap">
+      <div class="uir-message-popup">
+        <div class="uir-message-text">
+          Version Name:
+          <input type="text" class="inputrt uir-custom-field" v-model="tempVersionName" style="float: right" />
+        </div>
+        <div class="uir-message-buttons">
+          <button type="button" value="true" @click="cancelNewVersion">Cancel</button>
+          <button type="button" value="true" @click="createNewVersion">Create</button>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="x-dlg-focus" tabindex="-1">&nbsp;</a>
+  </div>
+
+  <table v-if="form" cellpadding="0" cellspacing="0" border="0" class="uir-button"
+         style="margin-right:6px;cursor:hand;" role="presentation">
+    <tbody>
+    <tr class="pgBntG" :class="{'pgBntB': !$v.form.$invalid && $v.form.$anyDirty, 'pgBntBDis': $v.form.$invalid || !$v.form.$anyDirty}">
+      <td><img src="/images/nav/ns_x.gif" class="bntLT" border="0" height="50%" width="3"
+               alt=""> <img src="/images/nav/ns_x.gif" class="bntLB" border="0" height="50%"
+                            width="3" alt=""></td>
+      <td height="20" valign="top" nowrap="" class="bntBgB">
+        <input type="button" style=""
+                                                                   class="rndbuttoninpt bntBgT"
+                                                                   value="Submit Expense Budget Records"
+                                                                   @click.prevent="submitForm"
+        :disabled="$v.form.$invalid || !$v.form.$anyDirty">
+      </td>
+      <td><img src="/images/nav/ns_x.gif" height="50%" class="bntRT" border="0" width="3"
+               alt=""> <img src="/images/nav/ns_x.gif" height="50%" class="bntRB" border="0"
+                            width="3" alt=""></td>
+    </tr>
+    </tbody>
+  </table>
+
+  <table cellpadding="0" cellspacing="0" border="0" class="uir-button"
+         style="margin-right:6px;cursor:hand;" role="presentation">
+    <tbody>
+    <tr class="pgBntG">
+      <td><img src="/images/nav/ns_x.gif" class="bntLT" border="0" height="50%" width="3"
+               alt=""> <img src="/images/nav/ns_x.gif" class="bntLB" border="0" height="50%"
+                            width="3" alt=""></td>
+      <td height="20" valign="top" nowrap="" class="bntBgB">
+        <input type="button" class="rndbuttoninpt bntBgT" value="Export Excel" @click.prevent="exportData">
+      </td>
+      <td><img src="/images/nav/ns_x.gif" height="50%" class="bntRT" border="0" width="3"
+               alt=""> <img src="/images/nav/ns_x.gif" height="50%" class="bntRB" border="0"
+                            width="3" alt=""></td>
+    </tr>
+    </tbody>
+  </table>
+
+  <table border="0" cellpadding="0" cellspacing="0" class="uir-button-menu-divider"
+         style="margin-right:6px; display: inline"
+         role="presentation" v-if="form && form.version">
+    <tbody>
+    <tr>
+      <td class="rndbuttoncaps" bgcolor="#B5B5B5">
+        <img src="/images/nav/ns_x.gif" border="0" width="1" height="19" alt="">
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+  <table v-if="form && form.version && !form.version.baseLineIsSet" cellpadding="0" cellspacing="0" border="0" class="uir-button"
+         style="margin-right:6px;cursor:hand;" role="presentation">
+    <tbody>
+    <tr class="pgBntG">
+      <td><img src="/images/nav/ns_x.gif" class="bntLT" border="0" height="50%" width="3"
+               alt=""> <img src="/images/nav/ns_x.gif" class="bntLB" border="0" height="50%"
+                            width="3" alt=""></td>
+      <td height="20" valign="top" nowrap="" class="bntBgB">
+        <input type="button" style=""
+               class="rndbuttoninpt bntBgT"
+               value="Set Baseline"
+               @click="addVersion('Baseline')">
+      </td>
+      <td><img src="/images/nav/ns_x.gif" height="50%" class="bntRT" border="0" width="3"
+               alt=""> <img src="/images/nav/ns_x.gif" height="50%" class="bntRB" border="0"
+                            width="3" alt=""></td>
+    </tr>
+    </tbody>
+  </table>
+  <table v-if="form && form.version && form.version.canAddVersion && !hasNewVersionSet" cellpadding="0" cellspacing="0" border="0" class="uir-button"
+         style="margin-right:6px;cursor:hand;" role="presentation">
+    <tbody>
+    <tr class="pgBntG" :class="{'pgBntBDis': !selectedVersion || selectedVersion.readonly}">
+      <td><img src="/images/nav/ns_x.gif" class="bntLT" border="0" height="50%" width="3"
+               alt=""> <img src="/images/nav/ns_x.gif" class="bntLB" border="0" height="50%"
+                            width="3" alt=""></td>
+      <td height="20" valign="top" nowrap="" class="bntBgB">
+        <input type="button" style=""
+               class="rndbuttoninpt bntBgT"
+               value="Add Version"
+               :disabled="!selectedVersion || selectedVersion.readonly"
+               @click="addVersion()">
+      </td>
+      <td><img src="/images/nav/ns_x.gif" height="50%" class="bntRT" border="0" width="3"
+               alt=""> <img src="/images/nav/ns_x.gif" height="50%" class="bntRB" border="0"
+                            width="3" alt=""></td>
+    </tr>
+    </tbody>
+  </table>
+
+  <table v-if="form && form.version && hasNewVersionSet" cellpadding="0" cellspacing="0" border="0" class="uir-button"
+         style="margin-right:6px;cursor:hand;" role="presentation">
+    <tbody>
+    <tr class="pgBntG">
+      <td><img src="/images/nav/ns_x.gif" class="bntLT" border="0" height="50%" width="3"
+               alt=""> <img src="/images/nav/ns_x.gif" class="bntLB" border="0" height="50%"
+                            width="3" alt=""></td>
+      <td height="20" valign="top" nowrap="" class="bntBgB">
+        <input type="button" style=""
+               class="rndbuttoninpt bntBgT"
+               value="Cancel Version"
+               @click="cancelVersion">
+      </td>
+      <td><img src="/images/nav/ns_x.gif" height="50%" class="bntRT" border="0" width="3"
+               alt=""> <img src="/images/nav/ns_x.gif" height="50%" class="bntRB" border="0"
+                            width="3" alt=""></td>
+    </tr>
+    </tbody>
+  </table>
+
+  <table v-if="canDeleteVersion || canResetVersion" cellpadding="0" cellspacing="0" border="0" class="uir-button"
+         style="margin-right:6px;cursor:hand;" role="presentation">
+    <tbody>
+    <tr class="pgBntG">
+      <td><img src="/images/nav/ns_x.gif" class="bntLT" border="0" height="50%" width="3"
+               alt=""> <img src="/images/nav/ns_x.gif" class="bntLB" border="0" height="50%"
+                            width="3" alt=""></td>
+      <td height="20" valign="top" nowrap="" class="bntBgB">
+        <input v-if="canDeleteVersion" type="button" style=""
+               class="rndbuttoninpt bntBgT"
+               value="Delete Version"
+               @click="deleteVersion">
+        <input v-if="canResetVersion" type="button" style=""
+               class="rndbuttoninpt bntBgT"
+               value="Reset Version"
+               @click="deleteVersion">
+      </td>
+      <td><img src="/images/nav/ns_x.gif" height="50%" class="bntRT" border="0" width="3"
+               alt=""> <img src="/images/nav/ns_x.gif" height="50%" class="bntRB" border="0"
+                            width="3" alt=""></td>
+    </tr>
+    </tbody>
+  </table>
+
+  <table v-if="form && form.version && form.version.canAddVersion && !hasNewVersionSet" cellpadding="0" cellspacing="0" border="0" class="uir-button"
+         style="margin-right:6px;cursor:hand;" role="presentation">
+    <tbody>
+    <tr>
+      <td><select class="form-control"
+                  v-if="form && form.version && form.version.versions"
+                  @change="getData()"
+                  v-model="selectedVersion">
+        <template v-for="version in form.version.versions">
+          <option :value="version">{{version.name}}</option>
+        </template>
+      </select></td>
+    </tr>
+    </tbody>
+  </table>
+
+  <table v-if="form && form.version && hasNewVersionSet" cellpadding="0" cellspacing="0" border="0" class="uir-button"
+         style="margin-right:6px;cursor:hand;" role="presentation">
+    <tbody>
+    <tr>
+      <td><select class="form-control" disabled>
+          <option value="">{{form.setVersionName}}</option>
+      </select></td>
+    </tr>
+    </tbody>
+  </table>
+
+
+  <table cellpadding="0" cellspacing="0" border="0" class="uir-multibutton" style="cursor:hand;margin-right:6px;"
+         role="presentation" v-if="false">
+    <tbody>
+    <tr class="pgBntY pgBntB" :class="{'pgBntBDis': form.setVersionName}">
+      <td>
+        <img src="/images/nav/ns_x.gif" class="bntLT" border="0" height="50%" width="3" alt="">
+        <img src="/images/nav/ns_x.gif" class="bntLB" border="0" height="50%" width="3" alt="">
+      </td>
+      <td nowrap="" class="bntBgB" valign="top" height="20">
+        <input aria-expanded="false" role="button" class="rndbuttoninpt bntBgT"
+               style="vertical-align:middle;" aria-haspopup="false"
+               :value="form.setVersionName"
+               :disabled="form.setVersionName">
+      </td>
+      <td nowrap="" valign="top" class="bntBgB multiBnt">
+        <div style="padding: 2px 3px 0px 4px;" class="bntBgT">
+          <img class="multiBntTri" height="12" border="0" width="8" src="/images/nav/ns_x.gif" alt="More Options">
+        </div>
+      </td>
+      <td>
+        <img src="/images/nav/ns_x.gif" height="50%" class="bntRT" border="0" width="3" alt="">
+        <img src="/images/nav/ns_x.gif" height="50%" class="bntRB" border="0" width="3" alt="">
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+  <table class="uir-button" style="vertical-align: bottom;">
+    <tbody>
+    <tr>
+      <td>
+        <h1 style="font-size: small;">Search:</h1>
+      </td>
+      <td>
+        <input type="text" v-model="searchProjects.term" @keyup="projectFilterDelay">
+        <div style="display: none" v-show="searchProjects.found && searchProjects.found.length > 0">
+          <div class="uir-tooltip align_top_left uir-field-tooltip-wrapper">
+            <span class="uir-cover"><i></i></span>
+            <div class="uir-tooltip-content">
+              <div class="dropdownDiv" style="z-index: 1001; visibility: visible; overflow: auto; width: 514px; height: 198px; position: static; display: block;">
+                <template v-for="(found, idx) in searchProjects.found" :key="'found_project_' + idx">
+                  <div
+                        :class="{'dropdownSelected': found.hover, 'dropdownNotSelected': !found.hover}"
+                        @mouseover="found.hover = true"
+                        @mouseleave="found.hover = false"
+                        @click="window.location.href = found.url"
+                >{{found.name}}</div>
+                </template>
+              </div>
+            </div>
+          </div>
+        </div></td>
+    </tr>
+    </tbody>
+  </table>
+
+<!--<pre v-if="form">{{selectedVersion}}</pre>-->
+<!--<pre v-if="form">{{form.version}}</pre>-->
+  <table cellspacing="0" cellpadding="0" border="0" width="100%">
+    <tbody>
+    <tr class="uir-fieldgroup-content">
+      <td valign="top" width="33%">
+        <table border="0" class="table_fields" cellspacing="0" cellpadding="0" data-colnumber="2">
+          <tbody>
+          <tr>
+            <td>
+              <div class="uir-field-wrapper" data-field-type="select">
+          <span class="smallgraytextnolink uir-label">
+            <span class="smallgraytextnolink">
+              <a class="smallgraytextnolink">Project</a>
+            </span>
+          </span>
+                <span class="uir-field inputreadonly">
+            <span class="inputreadonly">
+              <a class="dottedlink" v-if="form && form.project && form.project.url" :href="form.project.url">
+                {{form.project.name}}
+              </a>
+            </span>
+          </span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="uir-field-wrapper" data-field-type="select">
+          <span class="smallgraytextnolink uir-label ">
+            <span class="smallgraytextnolink">
+              <a class="smallgraytextnolink">Sales Order</a>
+            </span>
+          </span>
+                <span class="uir-field inputreadonly">
+            <span class="inputreadonly">
+              <a class="dottedlink" v-if="form && form.salesOrder && form.salesOrder.url" :href="form.salesOrder.url">
+                {{form.salesOrder.name}}
+              </a>
+            </span>
+          </span>
+              </div>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </td>
+      <td valign="top" width="33%">
+        <table border="0" class="table_fields" cellspacing="0" cellpadding="0" data-colnumber="2" v-if="form && form.projectDates">
+          <tbody>
+          <tr>
+            <td>
+              <div class="uir-field-wrapper" data-field-type="select">
+          <span class="smallgraytextnolink uir-label">
+            <span class="smallgraytextnolink">
+              <a class="smallgraytextnolink">Start Date</a>
+            </span>
+          </span>
+              <span class="uir-field inputreadonly">
+                <span class="inputreadonly">
+                    {{formattedStart}}
+                </span>
+              </span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="uir-field-wrapper" data-field-type="select">
+          <span class="smallgraytextnolink uir-label ">
+            <span class="smallgraytextnolink">
+              <a class="smallgraytextnolink">End Date</a>
+            </span>
+          </span>
+                <span class="uir-field inputreadonly">
+            <span class="inputreadonly">
+              {{formattedEnd}}
+            </span>
+          </span>
+              </div>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </td>
+      <td valign="top" width="33%">
+
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+  <table v-if="form" class="uir-table-block" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody>
+    <tr>
+      <td>
+        <div class="bgsubtabbar">
+          <div class="subtabbarul" style="position: absolute; top:0px; left:0px;"></div>
+          <div class="subtabbarur" style="position: absolute; top:0px; right:0px;"></div>
+          <table border="0" cellspacing="0" cellpadding="0" class="bgsubtabbar" role="presentation">
+            <tbody>
+            <tr>
+              <td class="formsubtabsep" side="0">&nbsp;</td>
+              <td valign="middle" nowrap="" class="formsubtabon">
+                <a onclick="return false;" class="formsubtabtext formsubtabtexton">Expense Items</a>
+              </td>
+              <td class="formsubtabsep" side="1">&nbsp;</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+    <tr class="ns-subtab-border">
+      <td>
+        <div class="subtabblock" style="position:relative; ">
+          <div style="visibility: visible;">
+            <div class="subtabblock" style="padding: 4px;">
+              <div class="uir-list-control-bar">
+                <table width="100%" border="0" cellspacing="0" cellpadding="2" role="presentation">
+                  <tbody>
+                  <tr>
+                    <td>
+                      <table border="0" cellspacing="0" cellpadding="2" role="presentation"
+                             v-if="!form.version.baseLineIsSet || (!selectedVersion && form.version.baseLineIsSet && form.setVersionName) || (selectedVersion && !selectedVersion.readonly)">
+                        <tbody>
+                        <tr>
+                          <td>
+                            <table cellpadding="0" cellspacing="0" border="0"
+                                   class="uir-button" style="margin-right:6px;cursor:hand;" role="presentation" v-show="canDivide">
+                              <tbody>
+                              <tr class="tabBnt">
+                                <td height="20" valign="top" nowrap="" class="bntBgB">
+                                  <input type="button" style="" class="rndbuttoninpt bntBgT" :value="'Divide over ' + form.seqName + 's'"
+                                         @click="divideOverSequences">
+                                </td>
+                              </tr>
+                              </tbody>
+                            </table>
+                            <table cellpadding="0" cellspacing="0" border="0"
+                                   class="uir-button" style="margin-right:6px;cursor:hand;" role="presentation" v-show="canSum">
+                              <tbody>
+                              <tr class="tabBnt">
+                                <td height="20" valign="top" nowrap="" class="bntBgB">
+                                  <input type="button" style="" class="rndbuttoninpt bntBgT" :value="'Sum all ' + form.seqName + 's'"
+                                         @click="sumSequences">
+                                </td>
+                              </tr>
+                              </tbody>
+                            </table>
+                            <table cellpadding="0" cellspacing="0" border="0" class="uir-button"
+                                   class="" style="margin-right:6px;" role="presentation" v-show="(canSum || canDivide) && (canAddSeq || showMoveSeq || hasHistory)">
+                              <tbody>
+                              <tr>
+                                <td height="20" valign="top" nowrap="">
+                                  |
+                                </td>
+                              </tr>
+                              </tbody>
+                            </table>
+                            <table cellpadding="0" cellspacing="0" border="0"
+                                   class="uir-button" style="margin-right:6px;cursor:hand;" role="presentation"
+                                   v-if="hasHistory">
+                              <tbody>
+                              <tr class="tabBnt">
+                                <td height="20" valign="top" nowrap="" class="bntBgB">
+                                  <input type="button" style="" class="rndbuttoninpt bntBgT" :value="(showHistorySeq ? 'Hide' : 'Show') + ' History'"
+                                         @click="showHistorySeq = !showHistorySeq">
+                                </td>
+                              </tr>
+                              </tbody>
+                            </table>
+                            <table cellpadding="0" cellspacing="0" border="0"
+                                   class="uir-button" style="margin-right:6px;cursor:hand;" role="presentation"
+                                   v-if="canAddSeq">
+                              <tbody>
+                              <tr class="tabBnt">
+                                <td height="20" valign="top" nowrap="" class="bntBgB">
+                                  <input type="button" style="" class="rndbuttoninpt bntBgT" :value="'Add ' + form.seqName"
+                                         @click="addSequence">
+                                </td>
+                              </tr>
+                              </tbody>
+                            </table>
+                            <table cellpadding="0" cellspacing="0" border="0"
+                                   class="uir-button" style="margin-right:6px;cursor:hand;" role="presentation" v-show="showMoveSeq">
+                              <tbody>
+                              <tr class="tabBnt" :class="{'tabBntDis': disableMovePrev}">
+                                <td height="20" valign="top" nowrap="" class="bntBgB">
+                                  <input type="button" style="" class="rndbuttoninpt bntBgT" :value="'Move to prev ' + form.seqName"
+                                         @click="moveToPrevSeq" :disabled="disableMovePrev">
+                                </td>
+                              </tr>
+                              </tbody>
+                            </table>
+                            <table cellpadding="0" cellspacing="0" border="0"
+                                   class="uir-button" style="margin-right:6px;cursor:hand;" role="presentation" v-show="showMoveSeq">
+                              <tbody>
+                              <tr class="tabBnt" :class="{'tabBntDis': disableMoveNext}">
+                                <td height="20" valign="top" nowrap="" class="bntBgB">
+                                  <input type="button" style="" class="rndbuttoninpt bntBgT" :value="'Move to next ' + form.seqName"
+                                         @click="moveToNextSeq" :disabled="disableMoveNext">
+                                </td>
+                              </tr>
+                              </tbody>
+                            </table>
+                            <table cellpadding="0" cellspacing="0" border="0"
+                                   class="uir-button" style="margin-right:6px;cursor:hand;" role="presentation" v-show="showMoveSeq">
+                              <tbody>
+                              <tr class="tabBnt" :class="{'tabBntDis': disableDelete}">
+                                <td height="20" valign="top" nowrap="" class="bntBgB">
+                                  <input type="button" style="" class="rndbuttoninpt bntBgT" :value="'Delete selected ' + form.seqName"
+                                         @click="deleteSeq" :disabled="disableDelete">
+                                </td>
+                              </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="budget-content-container">
+                <div class="scrollable-content-container">
+                <div class="fixed-table-container listtable" :class="{'full-width': !form.seqCount}">
+                  <div v-if="form" class="fixed-table" :class="{'separator-border': form.seqCount, 'full-width': !form.seqCount}">
+                    <table border="0" cellspacing="0" cellpadding="0" class="listtable listborder uir-list-table"
+                           :class="{'full-width': !form.seqCount}">
+                      <tbody>
+                      <tr class="uir-machine-headerrow">
+                        <td height="100%" class="listheadertdleft listheadertextb uir-column-quickDelete text-center" v-if="showMoveSeq">
+                          &nbsp;<input type="checkbox" @click="selectMoveProject" :indeterminate.prop="form.moveSelectedPartial" :checked="form.moveSelected"  />
+                        </td>
+                        <td height="100%" class="listheadertdleft listheadertextb uir-column-large">
+                          <div class="listheader">Expense Item</div>
+                        </td>
+                        <td height="100%" class="listheadertd listheadertextb uir-column-large">
+<!--                          <div class="listheader">Description</div>-->
+                        </td>
+                        <td height="100%" class="listheadertd listheadertextbrt uir-column-medium">
+                          <div class="listheader">Amount</div>
+                        </td>
+                      </tr>
+                      <template v-if="form && form.sections" v-for="(section, sectionIdx) in $v.form.sections.$each.$iter">
+                        <tr class="uir-list-row-tr bgtabbar">
+                          <td class="uir-list-row-cell formtaboff section-title" v-if="showMoveSeq">
+                            &nbsp;<input type="checkbox" @click="selectMoveSection(section.$model, $event)"
+                                         :indeterminate.prop="section.$model.moveSelectedPartial"
+                                         :checked="section.$model.moveSelected"
+                          />
+                          </td>
+                          <td class="uir-list-row-cell formtaboff section-title text-left" style="cursor: pointer;" @click="toggleSection(sectionIdx)">
+                            {{section.$model.title}}
+                          </td>
+                          <td class="uir-list-row-cell formtaboff section-title">
+                            &nbsp;
+                          </td>
+                          <td class="uir-list-row-cell formtaboff section-title text-right">
+                            {{totalAmountSectionSeq(section.$model)}}
+                          </td>
+                        </tr>
+                        <template v-if="section.items" v-for="(item, idx) in section.items.$each.$iter">
+                          <tr class="uir-list-row-tr" :class="{'uir-list-row-odd': !(idx%2), 'uir-list-row-even': idx%2, 'listfocusedrow': isFocused(sectionIdx, idx)}" v-show="!section.$model.collapsed">
+                            <td class="uir-list-row-cell formtaboff" v-if="showMoveSeq">
+                              &nbsp;<input type="checkbox" @click="selectMoveItem(item.$model)" :checked="item.$model.moveSelected" />
+                            </td>
+                            <td class="uir-list-row-cell listtexthl">{{item.$model.title}}</td>
+                            <td class="uir-list-row-cell listtexthl">
+<!--                            <span class="effectStatic">-->
+<!--                              <input onkeyup="" type="text" size="50" class="input uir-custom-field" @focus="focused(sectionIdx, idx)"-->
+<!--                                     v-model="item.$model.desc" :disabled="selectedVersion && selectedVersion.readonly"/>-->
+<!--                            </span>-->
+                            </td>
+                            <td class="uir-list-row-cell listtexthlrt">
+                            <span class="effectStatic" :class="{'float-right': !form.seqCount}" v-if="form && form.version && !form.version.readonly">
+                              <input onkeyup="" type="text" size="15" class="inputrt uir-custom-field" :disabled="selectedVersion && selectedVersion.readonly"
+                                     v-model.trim="item.amount.$model" @focus="focused(sectionIdx, idx)" :class="{'invalid': !item.amount.currency}" />
+                              <div class="icon tooltip" v-if="form.seqCount && item.amount.currency && sameAmountAsSeq(item.$model)">
+                                <span class="tooltiptext tooltip-bottom">Total amount and sum of all occurrences is not equal.<br>Variance: {{varianceAmount(item.$model)}}</span>
+                              </div>
+                            </span>
+                              <template v-else>
+                                {{item.amount.$model}}
+                              </template>
+                            </td>
+                          </tr>
+                        </template>
+                      </template>
+                      <tr class="uir-machine-headerrow footer">
+                        <td height="100%" class="listheadertdleft listheadertextb uir-column-large" v-if="showMoveSeq">
+                          <div class="listheader"></div>
+                        </td>
+                        <td height="100%" class="listheadertdleft listheadertextb uir-column-large">
+                          <div class="listheader"></div>
+                        </td>
+                        <td height="100%" class="listheadertd listheadertextb uir-column-large">
+                          <div class="listheader"></div>
+                        </td>
+                        <td height="100%" class="listheadertd listheadertextbrt uir-column-medium">
+                          <div class="listheader">
+                            {{totalAmount}}
+                          </div>
+                        </td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="scrollable-table" v-if="form && form.seqCount">
+                    <table border="0" cellspacing="0" cellpadding="0" class="listtable listborder uir-list-table"
+                    :class="{'show-history' : showHistorySeq}" style="table-layout: fixed">
+                      <tbody>
+                      <tr class="uir-machine-headerrow">
+                        <td height="100%" style="" class="listheadertd listheadertextbrt uir-column-medium text-center"
+                            v-for="n in form.seqCount" :key="n" @click="focusSequence(n)"
+                            :class="{'is-history-data' : isHistory(n)}">
+                          <div class="listheader tooltip">
+                            {{getSeqTitle(n)}}
+                            <span class="tooltiptext tooltip-bottom">{{form.seqName}} {{n}}</span>
+                          </div>
+                        </td>
+                      </tr>
+                      <template v-for="(section, sectionIdx) in $v.form.sections.$each.$iter">
+                        <tr class="uir-list-row-tr bgtabbar">
+                          <td class="uir-list-row-cell formtaboff section-title text-right" v-for="n in form.seqCount"
+                              :key="n" :class="{'is-history-data' : isHistory(n)}">
+                            {{totalAmountSectionSeq(section.$model, n)}}
+                          </td>
+                        </tr>
+                        <template v-for="(item, idx) in section.items.$each.$iter">
+                          <tr class="uir-list-row-tr" :class="{'uir-list-row-odd': !(idx%2), 'uir-list-row-even': idx%2, 'listfocusedrow': isFocused(sectionIdx, idx)}" v-show="!section.$model.collapsed">
+                            <td class="uir-list-row-cell listtexthlrt" v-for="(seq, seqIdx) in item.seqData.$each.$iter"
+                                :key="seqIdx" :class="{'focus-seq': isSeqFocused(seqIdx), 'is-history-data': isHistory(Number(seqIdx) + 1) }">
+                            <span class="effectStatic" v-if="form && form.version && !form.version.readonly">
+                              <input onkeyup="" type="text" size="15" class="inputrt uir-custom-field" :disabled="selectedVersion && selectedVersion.readonly"
+                                     v-model="seq.amount.$model" @focus="focused(sectionIdx, idx)" :class="{'invalid': !seq.amount.currency}"/>
+                            </span>
+                              <template v-else>
+                                {{seq.amount.$model}}
+                              </template>
+                            </td>
+                          </tr>
+                        </template>
+                      </template>
+                      <tr class="uir-machine-headerrow footer">
+                        <td height="100%" style="" class="listheadertd listheadertextbrt uir-column-medium"
+                            v-for="n in form.seqCount" :key="n" :class="{'is-history-data' : isHistory(n)}">
+                          <div class="listheader">
+                            {{totalAmountSeq(n)}}
+                          </div>
+                        </td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+  <br>
+  <table v-if="form" cellpadding="0" cellspacing="0" border="0" class="uir-button"
+         style="margin-right:6px;cursor:hand;" role="presentation">
+    <tbody>
+    <tr class="pgBntG" :class="{'pgBntB': !$v.form.$invalid && $v.form.$anyDirty, 'pgBntBDis': $v.form.$invalid || !$v.form.$anyDirty}">
+      <td><img src="/images/nav/ns_x.gif" class="bntLT" border="0" height="50%" width="3"
+               alt=""> <img src="/images/nav/ns_x.gif" class="bntLB" border="0" height="50%"
+                            width="3" alt=""></td>
+      <td height="20" valign="top" nowrap="" class="bntBgB"><input type="button" style=""
+                                                                   class="rndbuttoninpt bntBgT"
+                                                                   value="Submit Expense Budget Records"
+                                                                   @click.prevent="submitForm"
+                                                                   :disabled="$v.form.$invalid || !$v.form.$anyDirty"></td>
+      <td><img src="/images/nav/ns_x.gif" height="50%" class="bntRT" border="0" width="3"
+               alt=""> <img src="/images/nav/ns_x.gif" height="50%" class="bntRB" border="0"
+                            width="3" alt=""></td>
+    </tr>
+    </tbody>
+  </table>
+  <table cellpadding="0" cellspacing="0" border="0" class="uir-button"
+         style="margin-right:6px;cursor:hand;" role="presentation">
+    <tbody>
+    <tr class="pgBntG">
+      <td><img src="/images/nav/ns_x.gif" class="bntLT" border="0" height="50%" width="3"
+               alt=""> <img src="/images/nav/ns_x.gif" class="bntLB" border="0" height="50%"
+                            width="3" alt=""></td>
+      <td height="20" valign="top" nowrap="" class="bntBgB">
+        <input type="button" class="rndbuttoninpt bntBgT" value="Export Excel" @click.prevent="exportData">
+      </td>
+      <td><img src="/images/nav/ns_x.gif" height="50%" class="bntRT" border="0" width="3"
+               alt=""> <img src="/images/nav/ns_x.gif" height="50%" class="bntRB" border="0"
+                            width="3" alt=""></td>
+    </tr>
+    </tbody>
+  </table>
+  <input type="text" autofocus="autofocus" style="display:none" />
+<!--  <pre>
+    {{focusedMoveItems()}}
+  </pre>-->
+</div>
+
+<script src="//cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+<script src="//cdn.jsdelivr.net/npm/vuelidate@0.7.5/dist/vuelidate.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/vuelidate@0.7.5/dist/validators.min.js"></script>
+<script type="text/javascript" src="BB.VUE.ProjectExpenseBudget.js"></script>
+
+<style type="text/css">
+  .full-width {
+    width: 100%;
+  }
+
+  .float-right {
+    float: right !important;
+  }
+
+  .text-right {
+    text-align: right !important;
+  }
+
+  .text-left {
+    text-align: left !important;
+  }
+
+  .text-center {
+    text-align: center !important;
+  }
+
+  .fixed-table-container {
+    display: flex;
+  }
+
+  .fixed-table-container table {
+    white-space: nowrap;
+  }
+
+  .fixed-table {
+    position: sticky;
+    z-index: 500;
+    left: 0;
+    background-color: white;
+  }
+
+  .separator-border {
+    border-right: 1px solid #ccc;
+  }
+
+  .scrollable-table {
+    z-index: 400;
+    /*overflow: auto;*/
+  }
+
+  .uir-machine-headerrow td {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+
+  .uir-machine-headerrow.footer td {
+    bottom: 0 !important;
+  }
+
+  .uir-list-row-tr > td.section-title, tr.uir-list-row-tr > td.section-title:hover, tr.uir-list-row-tr:hover > td.section-title {
+    background-color: inherit !important;
+    font-weight: bold;
+    color: white !important;
+    border-color: inherit !important;
+    text-align: left;
+  }
+
+  .ns-portlet-loader__icon--circular .ns-portlet-loader__icon--circular__runner {
+    stroke: #607799;
+    stroke-width: 3px;
+    stroke-dashoffset: 75;
+  }
+
+  .ns-portlet-loader__icon--circular .ns-portlet-loader__icon--circular__outline {
+    stroke: #dfe4eb;
+    stroke-width: 3px;
+  }
+
+  .ns-portlet-loader__icon--circular {
+    -webkit-animation: spin 2s ease infinite;
+    -moz-animation: spin 2s ease infinite;
+    animation: spin 2s ease infinite;
+  }
+
+  .ns-portlet-loader__wrapper {
+    width: 32px;
+    height: 32px;
+    align-self: center;
+  }
+
+  .ns-portlet-loader .ns-inner {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+  }
+
+  .ns-portlet-loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 900;
+    overflow: hidden;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 1);
+    color: #666666;
+    border-radius: 5px;
+    position: fixed;
+  }
+
+  .bgsubtabbar {
+    background-color: #ccc;
+    display: block;
+  }
+
+  .budget-content-container {
+    height: 60vh;
+    overflow: auto;
+  }
+
+  .scrollable-content-container {
+    width: 96vw;
+    display: flex;
+  }
+
+  .invalid {
+    border-color: red !important;
+    background-color: mistyrose !important;
+  }
+
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 6px;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  /* Tooltip arrow */
+  .tooltip-bottom {
+    top: 100%;
+  }
+
+  .tooltip-bottom::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #555 transparent;
+  }
+
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .listheader {
+    cursor: default;
+    line-height: 20px;
+  }
+
+  .icon {
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(/uirefresh/img/alertbox_icons.png) no-repeat top left;
+    background-size: 16px;
+  }
+
+  .fixed-table-container .effectStatic {
+    float: left;
+  }
+
+  td.focus-seq, td.focus-seq > * {
+    background: #fefecc !important;
+  }
+
+  input[type="text"]:disabled {
+    color: #888 !important;
+  }
+
+  .uir-button select {
+    min-width: 100px;
+  }
+
+  .is-history-data {
+    display: none;
+  }
+
+  .show-history .is-history-data {
+    display: table-cell !important;
+  }
+
+</style>
