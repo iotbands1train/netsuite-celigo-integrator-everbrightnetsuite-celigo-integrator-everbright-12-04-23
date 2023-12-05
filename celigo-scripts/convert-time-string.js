@@ -1,3 +1,8 @@
+
+//results[*].date_created  =  //originalPayload.projectData.createdAt
+
+
+
 function convertAndIncrementMonth(inputDatetime) {
     // Convert the input string to a JavaScript Date object
     const dateObj = new Date(inputDatetime);
