@@ -28,8 +28,7 @@ define(['../libs/typedarray', '../../BB SS/API Logs/API_Log', '../BB.SS.MD.FlatT
         , MILESTONE_UPDATE: '/api/v1/milestone/{milestone_Id}/submit'
         , CREATE_TASK: '/api/v1/milestone/{milestone_Id}/decide_tasks'
         , GET_TASKS: '/v1/task/{task_Id}'
-      }
-      ;
+      }; 
 
 
     function postData(endpoint, data){
