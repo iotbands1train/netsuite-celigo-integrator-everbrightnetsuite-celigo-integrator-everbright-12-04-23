@@ -1,0 +1,158 @@
+{
+  "originalPayload": {
+    "contactData": {
+      "enerfloCustomerId": 2178178,
+      "firstName": "Gregory",
+      "lastName": "Roman",
+      "phoneNumber": "9129772537",
+      "primaryEmail": "gregoryroman71282@yahoo.com",
+      "street": "9302 Chilmark Path",
+      "city": "San Antonio",
+      "state": "TX",
+      "zip": "78263"
+    },
+    "projectData": {
+      "salesOrgId": 3262,
+      "salesOrgName": "Limitless Energy",
+      "createdAt": "2023-11-28T02:14:17+00:00",
+      "enerfloProjectId": 4341365,
+      "surveyId": 1848776,
+      "relatedCustomer": 2178178,
+      "contractPrice": 45351.5,
+      "systemSize": 17.01,
+      "utility": "CPS Energy",
+      "avgUtilityBill": 311.22,
+      "dealType": "TriSMART - Deal V2",
+      "status": "Active",
+      "advPaySch": {
+        "lenderName": "Dividend",
+        "loanTermYears": 25,
+        "dealerFeePercent": 0,
+        "apr": 8.99
+      },
+      "salesRep": {
+        "employee": 6058,
+        "fullName": "Charlie Heaton",
+        "firstName": "Charlie",
+        "lastName": "Heaton",
+        "phoneNumber": "8014200724",
+        "primaryEmail": "cheaton@trismartsolar.com"
+      },
+      "equipment": {
+        "panel": {
+          "id": 3596,
+          "name": "Q Cell 405",
+          "manufacturer": "Qcells",
+          "model": "Q.PEAK DUO BLK ML-G10.a+ 405",
+          "watts": 405,
+          "width": 1045,
+          "length": 1879,
+          "crm_id": null,
+          "active": 1,
+          "company_id": 1260,
+          "price_adder": null
+        },
+        "inverter": {
+          "id": 681,
+          "name": "Enphase IQ8+",
+          "model": "IQ8+",
+          "manufacturer": "Enphase",
+          "is_microinverter": 1,
+          "max_efficiency": 0.97,
+          "crm_id": null,
+          "active": 1,
+          "company_id": 1260
+        }
+      },
+      "adders": [
+        {
+          "quantity": 1,
+          "active": true,
+          "cost": 0,
+          "cost_after_fees": 0,
+          "name": "Enerflo - Customer Concierge Fee",
+          "id": 4033,
+          "change_order_id": null,
+          "solo_adder_id": null,
+          "crm_id": null,
+          "crm_field": null,
+          "type": "SYSTEM",
+          "is_battery": 0,
+          "dealer_fees_enabled": true,
+          "is_ppw": false,
+          "contract_hide_adder": "1",
+          "parent_product_name": "Installer Concierge Fee"
+        },
+        {
+          "quantity": 1,
+          "active": true,
+          "cost": 0,
+          "cost_after_fees": 0,
+          "name": "Travel 0-60 miles away from TriSMART",
+          "id": 6119,
+          "change_order_id": null,
+          "solo_adder_id": null,
+          "crm_id": null,
+          "crm_field": null,
+          "type": "SYSTEM",
+          "is_battery": 0,
+          "dealer_fees_enabled": true,
+          "is_ppw": false,
+          "contract_hide_adder": 0,
+          "parent_product_name": "Travel Adder"
+        },
+        {
+          "quantity": 1,
+          "active": true,
+          "cost": 275,
+          "cost_after_fees": 275,
+          "name": "Whole Home Surge Protector",
+          "id": 11123,
+          "change_order_id": null,
+          "solo_adder_id": null,
+          "crm_id": null,
+          "crm_field": null,
+          "type": "SYSTEM",
+          "is_battery": 0,
+          "dealer_fees_enabled": true,
+          "is_ppw": false,
+          "contract_hide_adder": 0,
+          "parent_product_name": "Surge Protector"
+        },
+        {
+          "quantity": 1,
+          "active": true,
+          "cost": 0,
+          "cost_after_fees": 0,
+          "name": "Enphase IQ8+ ($0 ppw)",
+          "id": null,
+          "change_order_id": null,
+          "solo_adder_id": null,
+          "crm_id": null,
+          "crm_field": null,
+          "type": "SYSTEM",
+          "is_battery": 0,
+          "dealer_fees_enabled": false,
+          "is_ppw": true,
+          "contract_hide_adder": 0,
+          "parent_product_name": "Enphase IQ8+"
+        }
+      ],
+      "panelCount": 42,
+      "inverterCount": 50,
+      "locationId": 100624,
+      "locationName": "San Antonio Warehouse"
+    },
+    "files": [
+      {
+        "id": "6d48a6e6-b046-4613-b74f-1a0490bd1edd",
+        "survey_id": 1848776,
+        "name": "Screenshot 2023-11-27 182033.png",
+        "type": "layoutImage",
+        "url": "https://enerflo.io/survey/v2file-redirect/1848776/6d48a6e6-b046-4613-b74f-1a0490bd1edd.png"
+      }
+    ],
+    "agreement_url": "https://s3.us-west-2.amazonaws.com/assets.enerflo.io/docflo_pdfs/executed/Gregory_Roman_2023-11-28_8ab6d604-020e-4fe3-8fe2-626ae256f88b.pdf"
+  },
+  "image_table": "2023-11-28T02:14:17+00:00"
+}
