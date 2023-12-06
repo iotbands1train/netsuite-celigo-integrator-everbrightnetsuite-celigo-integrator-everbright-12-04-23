@@ -1,0 +1,38 @@
+{
+  "page_of_records": [
+    {
+      "record": {
+        "id": 1234567,
+        "customer_id": 9876543,
+        "company_id": 5678,
+        "epc_company_id": 1234,
+        "survey_type_id": 9876,
+        "survey_type_name": "Sample Survey Type",
+        "survey_hash": "sample-survey-hash-123",
+        "agent_name": "John Doe",
+        "agent_email": "johndoe@example.com",
+        "integrations": {},
+        "installDetails": {},
+        "last_updated_section_id": null,
+        "completed_by_name": "John Doe",
+        "completed_by_email": "johndoe@example.com",
+        "user_completed_by_id": "56789",
+        "user_completed_by_name": "John Doe",
+        "user_completed_by_email": "johndoe@example.com",
+        "last_updated_by_id": null,
+        "last_updated_by_name": "",
+        "last_updated_by_email": "",
+        "created_at": "2023-01-15T12:45:00+00:00",
+        "updated_at": "2023-02-28T18:30:00+00:00",
+        "utility": {},
+        "external_customer_id": null,
+        "survey_data": {},
+        "customer": {},
+        "progress": 0,
+        "files": [],
+        "enerflo_url": "https://enerflo.io/survey/menu/1234567",
+        "solarData": {}
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "integrations": {
+    "Enerflo V2": {
+      "EnerfloV2Deal": {
+        "integration_record_id": "c2f00be0-5e33-4f1b-93c7-0d282219a861",
+        "record_type": "EnerfloV2Deal",
+        "enerflo_id": 1848776,
+        "last_synced": "2023-11-28T02:14:21+00:00",
+        "updated_at": "2023-11-28T02:14:21+00:00",
+        "created_at": "2023-10-02T21:35:44+00:00"
+      }
+    }
+  }
+}

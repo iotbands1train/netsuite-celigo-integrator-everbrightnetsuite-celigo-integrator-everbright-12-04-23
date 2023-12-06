@@ -1,0 +1,44 @@
+{
+    "record": {
+      "originalPayload": {
+        "contactData": {
+          "everbrightCustomerId": "fc539a28-91f1-4a2d-b615-d50f3839a690",
+          "firstName": "Brandon",
+          "lastName": "Noriega",
+          "phoneNumber": "",
+          "primaryEmail": "",
+          "street": "7235 Plow Run",
+          "city": "San Antonio",
+          "state": "TX",
+          "zip": "78252"
+        },
+        "projectData": {
+          "relatedCustomer": "fc539a28-91f1-4a2d-b615-d50f3839a690",
+          "salesOrgId": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+          "salesOrgName": "TriSMART Solar, LLC",
+          "createdAt": "2023-10-12T17:27:09.441557Z",
+          "everbrightProjectId": "8ca99d95-9844-4b37-a8c6-9239a27f1f86",
+          "survey_id": "0030a818-4d4e-4c3d-bd78-e6ca80178911",
+          "salesRep": {
+            "employee": "c8d3b443-046b-4dd8-ae75-2ed404a8de7b",
+            "firstName": "Gerardo",
+            "lastName": "Calaycay",
+            "primaryEmail": "gcalaycay@trismartsolar.com"
+          }
+        },
+        "files": {
+          "id": "ChIJzcF_sV9GXIYRfDJ067nbtLc",
+          "survey_id": "0030a818-4d4e-4c3d-bd78-e6ca80178911",
+          "url": "https://maps.googleapis.com/maps/api/staticmap?center=29.3584623%2C-98.77201900000001&maptype=satellite&size=400x400&zoom=20"
+        }
+      },
+      "ids": {
+        "everbrightCustomerId": "fc539a28-91f1-4a2d-b615-d50f3839a690",
+        "survey_id": "0030a818-4d4e-4c3d-bd78-e6ca80178911",
+        "everbrightProjectId": "8ca99d95-9844-4b37-a8c6-9239a27f1f86",
+        "relatedCustomer": "2023-10-17T14:35:45.085403Z",
+        "workflow_definition_id": "66955d1b-d2ee-436d-9655-b22643d74275"
+      },
+      "image_table": "\n      <table style=\"font-family: \"Trebuchet MS\", Arial, Helvetica, sans-serif;border-collapse: collapse;width: 100%;\">\n        <thead>\n          <tr>\n            <th style=\"border: 1px solid #ddd;padding: 8px;padding-top: 12px;padding-bottom: 12px;text-align: left;background-color: #4CAF50;color: white;\">Friendly Name</th>\n            <th style=\"border: 1px solid #ddd;padding: 8px;padding-top: 12px;padding-bottom: 12px;text-align: left;background-color: #4CAF50;color: white;\">Image Link</th>\n          </tr>\n        </thead>\n        <tbody>\n          \n        </tbody>\n      </table>\n    "
+    }
+  }
