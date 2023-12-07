@@ -1,6 +1,15 @@
 # netsuite-celigo-integrator-everbright-12-04-23
 
 
+SuiteBundles > Bundle 389179  = blutraining
+SuiteBundles > Bundle 352618  = saved_search_delete_records_MapReduceScript.js 
+SuiteBundles > Bundle 482472  = saved_search_delete_records_MapReduceScript.js 
+
+SuiteBundles > Bundle 286129 = password
+
+
+
+
 This is scripts from NS
 
 Enerflo has a flow Project Creation.
