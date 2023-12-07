@@ -122,22 +122,13 @@ getFinancierId(projectData.advPaySch.lenderName)  = getFinancierId(name)  =  'Ca
 				~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    	
 
-originalPayload.addersData 
-originalPayload.addersData 
-originalPayload.addersData 
-originalPayload.addersData 
+originalPayload.addersData  
 
 
-originalPayload.batteriesData 
-originalPayload.batteriesData 
-originalPayload.batteriesData 
-originalPayload.batteriesData
+originalPayload.batteriesData  
 
 
-originalPayload.arraysData
-originalPayload.arraysData
-originalPayload.arraysData
-originalPayload.arraysData
+originalPayload.arraysData 
 
 
 				~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
