@@ -25,9 +25,9 @@ define(['../libs/typedarray', '../../BB SS/API Logs/API_Log', '../BB.SS.MD.FlatT
       ENDPOINTS = {
         CREATE_USER: '/v1/user'
         , CREATE_SITE: '/v1/site'
-        , MILESTONE_UPDATE: '/api/v1/milestone/{milestone_Id}/submit'
-        , CREATE_TASK: '/api/v1/milestone/{milestone_Id}/decide_tasks'
-        , GET_TASKS: '/v1/task/{task_Id}'
+        , MILESTONE_UPDATE: '/api/v1/milestone/{milestone_id}/submit'
+        , CREATE_TASK: '/api/v1/milestone/{task_id}/decide_tasks'
+        , GET_TASKS: '/v1/task/{milestone_id}'
       }; 
 
 

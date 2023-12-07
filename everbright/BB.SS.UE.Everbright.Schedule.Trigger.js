@@ -45,8 +45,8 @@ define(['N/runtime', 'N/task', 'N/search', 'N/query', 'N/record', 'SuiteBundles/
             type: 'customrecord_bb_ss_project_interface',
             id: objNewRecord.id,
             values: {
-                'custrecord_bb_pi_send_error_email': true,
-                'custrecord_bb_pi_error_details': createHtmlText([{'System': 'SolarSuccess', 'Stage': 'Process Trigger', 'Field': 'N/A', 'Value': 'N/A',  'Details': e && e.message ? e.message : e, 'Date': (new Date(Date.now())).toISOString()}])
+                'custrecord_dev_everbri_send_error_email': true,
+                'custrecord__everbright_details': createHtmlText([{'System': 'SolarSuccess', 'Stage': 'Process Trigger', 'Field': 'N/A', 'Value': 'N/A',  'Details': e && e.message ? e.message : e, 'Date': (new Date(Date.now())).toISOString()}])
             }
          });
       }
@@ -80,8 +80,8 @@ define(['N/runtime', 'N/task', 'N/search', 'N/query', 'N/record', 'SuiteBundles/
                'entitystatus': solarConfig.getConfiguration('custrecord_everbright_status_type').value,
                'subsidiary': 2, //TriSMART Solar
                'isperson': 'T',
-               'custentity_bbss_everbright_customer_id': contactData.everbrightCustomerId,
-               'custentity_bbss_everbright_project_id': projectData.everbrightProjectId,
+               'custentity_dev_everbright_customer_id': contactData.everbrightCustomerId,
+               'custentity_dev_everbright_project_id': projectData.everbrightProjectId,
                'firstname': contactData.firstName,
                'lastname': contactData.lastName,
                'custentity_bb_home_owner_phone': contactData.phoneNumber,
