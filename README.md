@@ -38,3 +38,45 @@ https://goeverbright.atlassian.net/wiki/spaces/SS/pages/736854029/What+is+the+Ev
 
 Code Tasks - Added - NS - PIC script-> Project 
 https://docs.google.com/document/d/1JzsePlhkapqtWgDkST0dcS3fl-CdcVbE-ioaw8NDgeQ 
+
+
+Project Interface - https://8587733.app.netsuite.com/app/common/custom/custrecord.nl?id=88&e=T 
+
+EverBright Project ID	custrecord_everbright_proj_id	Free-Form Text	 	EverBright	Yes
+ 	EverBright Project Images	custrecord_everbright_project_images	Rich Text	 	EverBright	No
+ 	Original Payload (EverBright)	custrecord_everbright_payload	Long Text	 	EverBright	No
+ 	Error Details (EverBright)	custrecord__everbright_details	Rich Text	 	EverBright	No
+
+
+Customer to Project Mapping - https://8587733.app.netsuite.com/app/common/custom/custrecordentry.nl?rectype=85&id=52&whence= 
+ 
+EverBright Project ID 
+
+CUSTOMER FIELD ID
+custentity_dev_everbright_project
+PROJECT FIELD ID
+custentity_dev_everbright_project
+
+
+SolarSuccess Integration Configuration 
+https://8587733.app.netsuite.com/app/common/custom/custrecordentry.nl?rectype=30&id=1 
+
+
+
+
+
+EverBright Project ID	custentity_dev_everbright_project	custentity_dev_everbright_project
+Everbright Project Images	custentity_everbright_proj_images	custentity_everbright_proj_images
+
+
+
+customrecord_bb_project_adder
+custrecord_bb_project_adder_project
+custrecord_bb_adder_item
+custrecord_bb_quantity
+
+
+Custom Entity Field 
+
+Everbright Customer ID	custentity_dev_everbright_customer_id	Free-Form Text	 	EverBright Integration
+EverBright Project Id	custentity_dev_everbright_project_id	Free-Form Text	 	EverBright Integration

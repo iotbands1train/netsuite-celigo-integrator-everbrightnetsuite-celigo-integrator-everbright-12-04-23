@@ -74,7 +74,7 @@ define(['N/runtime', 'N/record', 'N/query', 'N/search', 'N/error', 'SuiteBundles
         let logTitle = 'createCustomer';
 
         let objCustomerRecord;
-        let customerExists = getLead(customerData.custentity_bbss_everbright_customer_id);
+        let customerExists = getLead(customerData.custentity_everbright_customer_id);
         if (customerExists != null) {
             objCustomerRecord = record.load({
                 type: record.Type.LEAD,
@@ -113,14 +113,14 @@ define(['N/runtime', 'N/record', 'N/query', 'N/search', 'N/error', 'SuiteBundles
             `SELECT 
                 ID, 
                 entityid,
-                custentity_bbss_everbright_customer_id
+                custentity_everbright_customer_id
             FROM
                 customer 
             WHERE
                 searchstage = 'Lead'
             AND
                 (
-                    custentity_bbss_everbright_customer_id = ?
+                    custentity_everbright_customer_id = ?
                 )`;
         let results = query.runSuiteQL({
             query: sql,

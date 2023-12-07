@@ -260,7 +260,7 @@ define(['N/runtime', 'N/record', 'N/query', 'N/search', 'N/error', 'SuiteBundles
                 });
 
                 if (filesTable && filesTable.custrecord_bb_pi_enerflo_proj_images) {
-                    fieldsToUpdate['custentity_bb_enerflo_proj_images'] = filesTable.custrecord_bb_pi_enerflo_proj_images;
+                    fieldsToUpdate['custentity_everbright_proj_images'] = filesTable.custrecord_bb_pi_enerflo_proj_images;
                 }
             }
 
@@ -272,11 +272,11 @@ define(['N/runtime', 'N/record', 'N/query', 'N/search', 'N/error', 'SuiteBundles
                 });
             }
 
-            if (customerId && fieldsToUpdate.custentity_bb_enerflo_proj_images){
+            if (customerId && fieldsToUpdate.custentity_everbright_proj_images){
                 record.submitFields({
                     type: record.Type.CUSTOMER,
                     id: customerId,
-                    values: {'custentity_bb_enerflo_proj_images': fieldsToUpdate.custentity_bb_enerflo_proj_images}
+                    values: {'custentity_everbright_proj_images': fieldsToUpdate.custentity_everbright_proj_images}
                 });
             }
         }catch(e){
