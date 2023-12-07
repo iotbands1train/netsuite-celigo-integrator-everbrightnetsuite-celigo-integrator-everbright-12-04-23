@@ -26,9 +26,9 @@ define(['N/runtime', 'N/task', 'N/search', 'N/query', 'N/record', 'SuiteBundles/
       let objNewRecord = context.newRecord;
       try{
 
-         let everbrightId = objNewRecord.getValue('custrecordcustrecord_everbright_proj_id');
+         let everbrightId = objNewRecord.getValue('custentity_dev_everbright_project');
          if (!everbrightId) {return;}
-         let everbrightPayload = JSON.parse(objNewRecord.getValue('custrecordcustrecord_everbright_payload'));
+         let everbrightPayload = JSON.parse(objNewRecord.getValue('custrecord_everbright_payload'));
          let objData = getData(everbrightPayload, objNewRecord.id);
          if (!objData) {
             let errMsg = 'Error while generating data object from everbright payload.';

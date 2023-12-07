@@ -1,10 +1,10 @@
 /**
- * Copyright 2020 Blue Banyan Solutions, Inc.
+ * Copyright 2020 Trismart.
  * All Rights Reserved.
  *
- * This software and information are proprietary to Blue Banyan Solutions, Inc.
+ * This software and information are proprietary to Trismart.
  * Any use of the software and information shall be in accordance with the terms
- * of the license agreement you entered into with Blue Banyan Solutions, Inc,
+ * of the license agreement you entered into with Trismart,
  * including possible restrictions on redistribution, misuse, and alteration.
  */
 
@@ -12,8 +12,8 @@
  * @NApiVersion 2.1
  * @NScriptType ScheduledScript
  * @NModuleScope public
- * @author Santiago Rios
- * @fileOverview This ScheduleScript script is for the Enerflo integration main logic. It will be triggered
+ * @author Kendrick Smith
+ * @fileOverview This ScheduleScript script is for the Everbright integration main logic. It will be triggered
  *               when a new Project Interface record gets created through Celigo, create the Customer record,
  *               trigger the Solar Success customization for the Project creation and create the Adders.
  */
@@ -77,7 +77,7 @@ define(['N/runtime', 'N/record', 'N/query', 'N/search', 'N/error', 'SuiteBundles
         let logTitle = 'createCustomer';
 
         let objCustomerRecord;
-        let customerExists = getCustomer(customerData.custentity_bbss_enerflo_customer_id);
+        let customerExists = getCustomer(customerData.custentity_dev_everbright_customer_id);
         if (customerExists != null) {
             objCustomerRecord = record.load({
                 type: record.Type.CUSTOMER,
@@ -114,24 +114,24 @@ define(['N/runtime', 'N/record', 'N/query', 'N/search', 'N/error', 'SuiteBundles
         return {customerId: customerId, errorsData: objErrors};
     }
 
-    const getCustomer = (enerfloCustId) => {
+    const getCustomer = (everbrightCustId) => {
         let logTitle = 'getCustomer';
 
         let sql =
             `SELECT 
                 ID, 
                 entityid,
-                custentity_bbss_enerflo_customer_id
+                custentity_dev_everbright_customer_id
             FROM
                 customer 
             WHERE
                 (
-                    custentity_bbss_enerflo_customer_id = ?
+                    custentity_dev_everbright_customer_id = ?
                 )`;
         let results = query.runSuiteQL({
             query: sql,
             params: [
-                enerfloCustId
+                everbrightCustId
             ]
         }).asMappedResults();
         if (results.length <= 0) {
@@ -256,11 +256,11 @@ define(['N/runtime', 'N/record', 'N/query', 'N/search', 'N/error', 'SuiteBundles
                 let filesTable = search.lookupFields({
                     type: 'customrecord_bb_ss_project_interface',
                     id: projectInterfaceId,
-                    columns: ['custrecord_bb_pi_enerflo_proj_images']
+                    columns: ['custentity_everbright_proj_images']
                 });
 
-                if (filesTable && filesTable.custrecord_bb_pi_enerflo_proj_images) {
-                    fieldsToUpdate['custentity_everbright_proj_images'] = filesTable.custrecord_bb_pi_enerflo_proj_images;
+                if (filesTable && filesTable.custentity_everbright_proj_images) {
+                    fieldsToUpdate['custentity_everbright_proj_images'] = filesTable.custentity_everbright_proj_images;
                 }
             }
 
