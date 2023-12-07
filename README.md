@@ -81,7 +81,8 @@ Custom Entity Field
 Everbright Customer ID	custentity_dev_everbright_customer_id	Free-Form Text	 	EverBright Integration
 EverBright Project Id	custentity_dev_everbright_project_id	Free-Form Text	 	EverBright Integration
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+				~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   	
  Bundle 242998\BB SS\SS Lib\BB.SS.MD.LeadToProject.js
 
 BB.SS.MD.LeadToProject.js
@@ -116,4 +117,35 @@ originalPayload.v2DealData.objArrays[*]
 
 
 getFinancierId(projectData.advPaySch.lenderName)  = getFinancierId(name)  =  'Cash'
+
+
+				~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   	
+
+originalPayload.addersData 
+originalPayload.addersData 
+originalPayload.addersData 
+originalPayload.addersData 
+
+
+originalPayload.batteriesData 
+originalPayload.batteriesData 
+originalPayload.batteriesData 
+originalPayload.batteriesData
+
+
+originalPayload.arraysData
+originalPayload.arraysData
+originalPayload.arraysData
+originalPayload.arraysData
+
+
+				~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   	
+
+
+
+originalPayload.projectData.salesRep
+
+
 
