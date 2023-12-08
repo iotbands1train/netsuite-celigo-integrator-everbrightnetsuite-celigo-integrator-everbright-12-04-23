@@ -1,6 +1,11 @@
 # netsuite-celigo-integrator-everbright-12-04-23
 
 
+
+Bundle 242998 = is the main code for netsuite -> project, customer, code. solarsuccess related
+
+
+
 SuiteBundles > Bundle 389179  = blutraining
 SuiteBundles > Bundle 352618  = saved_search_delete_records_MapReduceScript.js 
 SuiteBundles > Bundle 482472  = saved_search_delete_records_MapReduceScript.js 
