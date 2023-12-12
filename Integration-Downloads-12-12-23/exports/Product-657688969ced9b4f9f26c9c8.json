@@ -1,0 +1,858 @@
+{
+  "_id": "657688969ced9b4f9f26c9c8",
+  "name": "Product",
+  "_connectionId": "654e618e57f7f566040cf952",
+  "apiIdentifier": "e2c7ea9372",
+  "asynchronous": true,
+  "isLookup": true,
+  "oneToMany": false,
+  "mockOutput": {
+    "page_of_records": [
+      {
+        "record": {
+          "count": 76,
+          "next": "https://engine.goeverbright.com/api/v1/product?page=2&site_id=56a9b904-ecfd-4507-97fd-624593982c4a",
+          "previous": null,
+          "results": [
+            {
+              "uuid": "56e735ef-d9ca-4913-a8eb-69ad81567be1",
+              "name": "Cash",
+              "is_offering": true,
+              "available_to_offer": true,
+              "solver_uuid": "9cc67a64-04d0-4de8-a58d-c386664856f0",
+              "organization": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "financier": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "channel_manager": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "installer": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "product_type": "CASH",
+              "is_active": true,
+              "contract_type": "CSH",
+              "payment_type": "PRE"
+            },
+            {
+              "uuid": "9e3b9d4c-0143-4583-bd3b-634b01139cc8",
+              "name": "Cash",
+              "is_offering": true,
+              "available_to_offer": true,
+              "solver_uuid": "9cc67a64-04d0-4de8-a58d-c386664856f0",
+              "organization": {
+                "uuid": "0c5ce0c4-478c-4bc1-9854-5859c5f2ccdf",
+                "name": "Inspire",
+                "is_active": true
+              },
+              "financier": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "channel_manager": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "installer": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "product_type": "CASH",
+              "is_active": true,
+              "contract_type": "CSH",
+              "payment_type": "PRE"
+            },
+            {
+              "uuid": "ac87df84-d927-4fc8-a71c-c804cdef66b5",
+              "name": "Cash",
+              "is_offering": true,
+              "available_to_offer": true,
+              "solver_uuid": "9cc67a64-04d0-4de8-a58d-c386664856f0",
+              "organization": {
+                "uuid": "7e529868-9203-4934-a90a-3f13be753d99",
+                "name": "Solfinity Power (TriSMART)",
+                "is_active": true
+              },
+              "financier": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "channel_manager": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "installer": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "product_type": "CASH",
+              "is_active": true,
+              "contract_type": "CSH",
+              "payment_type": "PRE"
+            },
+            {
+              "uuid": "76ef4637-4dc5-4b98-9b40-feb8954e276f",
+              "name": "Cash",
+              "is_offering": true,
+              "available_to_offer": true,
+              "solver_uuid": "9cc67a64-04d0-4de8-a58d-c386664856f0",
+              "organization": {
+                "uuid": "2523c2ea-edaa-4103-95c7-4ba3b9e93f49",
+                "name": "Go Green Solar, LLC",
+                "is_active": true
+              },
+              "financier": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "channel_manager": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "installer": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "product_type": "CASH",
+              "is_active": true,
+              "contract_type": "CSH",
+              "payment_type": "PRE"
+            },
+            {
+              "uuid": "d5ca08a9-5804-44d8-8c07-7ee3fa5c9e00",
+              "name": "Cash",
+              "is_offering": true,
+              "available_to_offer": true,
+              "solver_uuid": "9cc67a64-04d0-4de8-a58d-c386664856f0",
+              "organization": {
+                "uuid": "f9b7f129-075f-4a78-9baa-2bbab6caa02e",
+                "name": "Solar Energy Partners (TriSmart)",
+                "is_active": true
+              },
+              "financier": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "channel_manager": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "installer": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "product_type": "CASH",
+              "is_active": true,
+              "contract_type": "CSH",
+              "payment_type": "PRE"
+            },
+            {
+              "uuid": "cdd8f22d-b091-479c-bc72-da4762a9ea2e",
+              "name": "Cash (p)",
+              "is_offering": false,
+              "available_to_offer": false,
+              "solver_uuid": "9cc67a64-04d0-4de8-a58d-c386664856f0",
+              "organization": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "financier": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "channel_manager": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "installer": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "product_type": "CASH",
+              "is_active": true,
+              "contract_type": "CSH",
+              "payment_type": "PRE"
+            },
+            {
+              "uuid": "b1a7b962-c039-44ab-9321-2fa6f61e3bd0",
+              "name": "Cash (p)",
+              "is_offering": false,
+              "available_to_offer": false,
+              "solver_uuid": "9cc67a64-04d0-4de8-a58d-c386664856f0",
+              "organization": {
+                "uuid": "0c5ce0c4-478c-4bc1-9854-5859c5f2ccdf",
+                "name": "Inspire",
+                "is_active": true
+              },
+              "financier": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "channel_manager": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "installer": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "product_type": "CASH",
+              "is_active": true,
+              "contract_type": "CSH",
+              "payment_type": "PRE"
+            },
+            {
+              "uuid": "27842ed6-1b6e-4e99-a22e-2cbd812e21f1",
+              "name": "Cash (p)",
+              "is_offering": false,
+              "available_to_offer": false,
+              "solver_uuid": "9cc67a64-04d0-4de8-a58d-c386664856f0",
+              "organization": {
+                "uuid": "7e529868-9203-4934-a90a-3f13be753d99",
+                "name": "Solfinity Power (TriSMART)",
+                "is_active": true
+              },
+              "financier": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "channel_manager": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "installer": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "product_type": "CASH",
+              "is_active": true,
+              "contract_type": "CSH",
+              "payment_type": "PRE"
+            },
+            {
+              "uuid": "016f3c9e-2738-4fbd-9410-74f2fb5f2207",
+              "name": "Cash (p)",
+              "is_offering": false,
+              "available_to_offer": false,
+              "solver_uuid": "9cc67a64-04d0-4de8-a58d-c386664856f0",
+              "organization": {
+                "uuid": "2523c2ea-edaa-4103-95c7-4ba3b9e93f49",
+                "name": "Go Green Solar, LLC",
+                "is_active": true
+              },
+              "financier": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "channel_manager": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "installer": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "product_type": "CASH",
+              "is_active": true,
+              "contract_type": "CSH",
+              "payment_type": "PRE"
+            },
+            {
+              "uuid": "b7fd5254-e95a-4937-b5fb-959f7cfd2650",
+              "name": "Cash (p)",
+              "is_offering": false,
+              "available_to_offer": false,
+              "solver_uuid": "9cc67a64-04d0-4de8-a58d-c386664856f0",
+              "organization": {
+                "uuid": "f9b7f129-075f-4a78-9baa-2bbab6caa02e",
+                "name": "Solar Energy Partners (TriSmart)",
+                "is_active": true
+              },
+              "financier": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "channel_manager": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "installer": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "product_type": "CASH",
+              "is_active": true,
+              "contract_type": "CSH",
+              "payment_type": "PRE"
+            },
+            {
+              "uuid": "121d7816-bd87-4e8c-9f92-8f6d0a96c4d3",
+              "name": "Demo Buydown Loan",
+              "is_offering": false,
+              "available_to_offer": true,
+              "solver_uuid": "d404e7d9-f5de-48fc-9b40-a61bc8220909",
+              "organization": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "financier": {
+                "uuid": "55e9f3d5-ad55-422b-aa87-8538e86191f4",
+                "name": "EverBright Invite",
+                "is_active": true
+              },
+              "channel_manager": {
+                "uuid": "55e9f3d5-ad55-422b-aa87-8538e86191f4",
+                "name": "EverBright Invite",
+                "is_active": true
+              },
+              "installer": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "product_type": "LOAN_BUYDOWN",
+              "is_active": false,
+              "contract_type": "LOA",
+              "payment_type": "MON"
+            },
+            {
+              "uuid": "bff66e6f-6412-4b99-abb5-b64c4ac63d88",
+              "name": "Demo Buydown Loan (p)",
+              "is_offering": false,
+              "available_to_offer": false,
+              "solver_uuid": "d404e7d9-f5de-48fc-9b40-a61bc8220909",
+              "organization": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "financier": {
+                "uuid": "55e9f3d5-ad55-422b-aa87-8538e86191f4",
+                "name": "EverBright Invite",
+                "is_active": true
+              },
+              "channel_manager": {
+                "uuid": "55e9f3d5-ad55-422b-aa87-8538e86191f4",
+                "name": "EverBright Invite",
+                "is_active": true
+              },
+              "installer": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "product_type": "LOAN_BUYDOWN",
+              "is_active": false,
+              "contract_type": "LOA",
+              "payment_type": "MON"
+            },
+            {
+              "uuid": "e51c252e-37ab-4872-89f6-5b595536ed61",
+              "name": "Demo Loan",
+              "is_offering": false,
+              "available_to_offer": true,
+              "solver_uuid": "ffb43644-e003-45d6-a764-7b058351eaac",
+              "organization": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "financier": {
+                "uuid": "55e9f3d5-ad55-422b-aa87-8538e86191f4",
+                "name": "EverBright Invite",
+                "is_active": true
+              },
+              "channel_manager": {
+                "uuid": "55e9f3d5-ad55-422b-aa87-8538e86191f4",
+                "name": "EverBright Invite",
+                "is_active": true
+              },
+              "installer": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "product_type": "LOAN",
+              "is_active": false,
+              "contract_type": "LOA",
+              "payment_type": "MON"
+            },
+            {
+              "uuid": "d1b9130a-5480-49bd-8a5a-9928fa662b08",
+              "name": "Demo Loan (p)",
+              "is_offering": false,
+              "available_to_offer": false,
+              "solver_uuid": "ffb43644-e003-45d6-a764-7b058351eaac",
+              "organization": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "financier": {
+                "uuid": "55e9f3d5-ad55-422b-aa87-8538e86191f4",
+                "name": "EverBright Invite",
+                "is_active": true
+              },
+              "channel_manager": {
+                "uuid": "55e9f3d5-ad55-422b-aa87-8538e86191f4",
+                "name": "EverBright Invite",
+                "is_active": true
+              },
+              "installer": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "product_type": "LOAN",
+              "is_active": false,
+              "contract_type": "LOA",
+              "payment_type": "MON"
+            },
+            {
+              "uuid": "05e8eca8-302f-435e-b1e1-d5a2ced6654b",
+              "name": "DNU - Cash",
+              "is_offering": false,
+              "available_to_offer": true,
+              "solver_uuid": "9cc67a64-04d0-4de8-a58d-c386664856f0",
+              "organization": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "financier": {
+                "uuid": "55e9f3d5-ad55-422b-aa87-8538e86191f4",
+                "name": "EverBright Invite",
+                "is_active": true
+              },
+              "channel_manager": {
+                "uuid": "55e9f3d5-ad55-422b-aa87-8538e86191f4",
+                "name": "EverBright Invite",
+                "is_active": true
+              },
+              "installer": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "product_type": "CASH",
+              "is_active": false,
+              "contract_type": "CSH",
+              "payment_type": "PRE"
+            },
+            {
+              "uuid": "6b8ddcdf-13e8-4d13-97e2-5afb58bd69f9",
+              "name": "DNU - Cash (p)",
+              "is_offering": false,
+              "available_to_offer": false,
+              "solver_uuid": "9cc67a64-04d0-4de8-a58d-c386664856f0",
+              "organization": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "financier": {
+                "uuid": "55e9f3d5-ad55-422b-aa87-8538e86191f4",
+                "name": "EverBright Invite",
+                "is_active": true
+              },
+              "channel_manager": {
+                "uuid": "55e9f3d5-ad55-422b-aa87-8538e86191f4",
+                "name": "EverBright Invite",
+                "is_active": true
+              },
+              "installer": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "product_type": "CASH",
+              "is_active": false,
+              "contract_type": "CSH",
+              "payment_type": "PRE"
+            },
+            {
+              "uuid": "295664dc-67ea-4a62-816e-022d07d3a3c0",
+              "name": "EverBright EverFixed",
+              "is_offering": true,
+              "available_to_offer": true,
+              "solver_uuid": "7f3a9607-852b-4623-aa38-daab8451fd9a",
+              "organization": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "financier": {
+                "uuid": "88171ca6-1c4a-4753-88b5-8a689342c334",
+                "name": "EverBright, LLC",
+                "is_active": true
+              },
+              "channel_manager": {
+                "uuid": "88171ca6-1c4a-4753-88b5-8a689342c334",
+                "name": "EverBright, LLC",
+                "is_active": true
+              },
+              "installer": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "product_type": "FIXED_PPA",
+              "is_active": true,
+              "contract_type": "PPA",
+              "payment_type": "FIX"
+            },
+            {
+              "uuid": "dd61863c-bf87-4190-8ca5-bec6c1272703",
+              "name": "EverBright EverFixed",
+              "is_offering": true,
+              "available_to_offer": true,
+              "solver_uuid": "7f3a9607-852b-4623-aa38-daab8451fd9a",
+              "organization": {
+                "uuid": "0c5ce0c4-478c-4bc1-9854-5859c5f2ccdf",
+                "name": "Inspire",
+                "is_active": true
+              },
+              "financier": {
+                "uuid": "88171ca6-1c4a-4753-88b5-8a689342c334",
+                "name": "EverBright, LLC",
+                "is_active": true
+              },
+              "channel_manager": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "installer": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "product_type": "FIXED_PPA",
+              "is_active": true,
+              "contract_type": "PPA",
+              "payment_type": "FIX"
+            },
+            {
+              "uuid": "fd17d436-983b-45ee-a720-89c0b5b7b8ad",
+              "name": "EverBright EverFixed",
+              "is_offering": true,
+              "available_to_offer": true,
+              "solver_uuid": "7f3a9607-852b-4623-aa38-daab8451fd9a",
+              "organization": {
+                "uuid": "9965a9d9-b27b-4cd9-8101-e2ca1427eff5",
+                "name": "Nusun Power(TriSmart)",
+                "is_active": true
+              },
+              "financier": {
+                "uuid": "88171ca6-1c4a-4753-88b5-8a689342c334",
+                "name": "EverBright, LLC",
+                "is_active": true
+              },
+              "channel_manager": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "installer": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "product_type": "FIXED_PPA",
+              "is_active": true,
+              "contract_type": "PPA",
+              "payment_type": "FIX"
+            },
+            {
+              "uuid": "27326a70-0e67-4ec6-9715-fbf0e4447ac0",
+              "name": "EverBright EverFixed",
+              "is_offering": true,
+              "available_to_offer": true,
+              "solver_uuid": "7f3a9607-852b-4623-aa38-daab8451fd9a",
+              "organization": {
+                "uuid": "7e529868-9203-4934-a90a-3f13be753d99",
+                "name": "Solfinity Power (TriSMART)",
+                "is_active": true
+              },
+              "financier": {
+                "uuid": "88171ca6-1c4a-4753-88b5-8a689342c334",
+                "name": "EverBright, LLC",
+                "is_active": true
+              },
+              "channel_manager": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "installer": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "product_type": "FIXED_PPA",
+              "is_active": true,
+              "contract_type": "PPA",
+              "payment_type": "FIX"
+            },
+            {
+              "uuid": "0b47bd1a-36d8-4eb7-ae2e-f8c29e0bf583",
+              "name": "EverBright EverFixed",
+              "is_offering": true,
+              "available_to_offer": true,
+              "solver_uuid": "7f3a9607-852b-4623-aa38-daab8451fd9a",
+              "organization": {
+                "uuid": "2523c2ea-edaa-4103-95c7-4ba3b9e93f49",
+                "name": "Go Green Solar, LLC",
+                "is_active": true
+              },
+              "financier": {
+                "uuid": "88171ca6-1c4a-4753-88b5-8a689342c334",
+                "name": "EverBright, LLC",
+                "is_active": true
+              },
+              "channel_manager": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "installer": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "product_type": "FIXED_PPA",
+              "is_active": true,
+              "contract_type": "PPA",
+              "payment_type": "FIX"
+            },
+            {
+              "uuid": "8eabfbec-787d-4ab0-986f-b84419c28919",
+              "name": "EverBright EverFixed",
+              "is_offering": true,
+              "available_to_offer": true,
+              "solver_uuid": "7f3a9607-852b-4623-aa38-daab8451fd9a",
+              "organization": {
+                "uuid": "f9b7f129-075f-4a78-9baa-2bbab6caa02e",
+                "name": "Solar Energy Partners (TriSmart)",
+                "is_active": true
+              },
+              "financier": {
+                "uuid": "88171ca6-1c4a-4753-88b5-8a689342c334",
+                "name": "EverBright, LLC",
+                "is_active": true
+              },
+              "channel_manager": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "installer": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "product_type": "FIXED_PPA",
+              "is_active": true,
+              "contract_type": "PPA",
+              "payment_type": "FIX"
+            },
+            {
+              "uuid": "8291a992-abb6-485e-a812-f7f1f979977f",
+              "name": "EverBright EverFixed (p)",
+              "is_offering": false,
+              "available_to_offer": false,
+              "solver_uuid": "7f3a9607-852b-4623-aa38-daab8451fd9a",
+              "organization": {
+                "uuid": "0c5ce0c4-478c-4bc1-9854-5859c5f2ccdf",
+                "name": "Inspire",
+                "is_active": true
+              },
+              "financier": {
+                "uuid": "88171ca6-1c4a-4753-88b5-8a689342c334",
+                "name": "EverBright, LLC",
+                "is_active": true
+              },
+              "channel_manager": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "installer": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "product_type": "FIXED_PPA",
+              "is_active": true,
+              "contract_type": "PPA",
+              "payment_type": "FIX"
+            },
+            {
+              "uuid": "7c313260-0e89-401a-9a5c-ae97a59ba91b",
+              "name": "EverBright EverFixed (p)",
+              "is_offering": false,
+              "available_to_offer": false,
+              "solver_uuid": "7f3a9607-852b-4623-aa38-daab8451fd9a",
+              "organization": {
+                "uuid": "9965a9d9-b27b-4cd9-8101-e2ca1427eff5",
+                "name": "Nusun Power(TriSmart)",
+                "is_active": true
+              },
+              "financier": {
+                "uuid": "88171ca6-1c4a-4753-88b5-8a689342c334",
+                "name": "EverBright, LLC",
+                "is_active": true
+              },
+              "channel_manager": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "installer": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "product_type": "FIXED_PPA",
+              "is_active": true,
+              "contract_type": "PPA",
+              "payment_type": "FIX"
+            },
+            {
+              "uuid": "d343e401-30b2-40c0-9167-dacf5eb95392",
+              "name": "EverBright EverFixed (p)",
+              "is_offering": false,
+              "available_to_offer": false,
+              "solver_uuid": "7f3a9607-852b-4623-aa38-daab8451fd9a",
+              "organization": {
+                "uuid": "7e529868-9203-4934-a90a-3f13be753d99",
+                "name": "Solfinity Power (TriSMART)",
+                "is_active": true
+              },
+              "financier": {
+                "uuid": "88171ca6-1c4a-4753-88b5-8a689342c334",
+                "name": "EverBright, LLC",
+                "is_active": true
+              },
+              "channel_manager": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "installer": {
+                "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                "name": "TriSMART Solar, LLC",
+                "is_active": true
+              },
+              "product_type": "FIXED_PPA",
+              "is_active": true,
+              "contract_type": "PPA",
+              "payment_type": "FIX"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "http": {
+    "relativeURI": "/api/v1/product?site_id={{record.originalPayload.projectData.everbrightProjectId}}",
+    "method": "GET",
+    "formType": "http"
+  },
+  "transform": {
+    "type": "expression",
+    "expression": {
+      "rules": [
+        [
+          {
+            "extract": "results[*].uuid",
+            "generate": "originalPayload.projectData.product.*.product_id"
+          },
+          {
+            "generate": "originalPayload.projectData.product.*.product_name",
+            "extract": "results[*].name"
+          },
+          {
+            "generate": "originalPayload.projectData.product.*.product_is_offering",
+            "extract": "results[*].is_offering"
+          },
+          {
+            "generate": "originalPayload.projectData.product.*.product_available_to_offer",
+            "extract": "results[*].available_to_offer"
+          },
+          {
+            "extract": "results[*].solver_uuid",
+            "generate": "originalPayload.projectData.product_solver_uuid"
+          }
+        ]
+      ],
+      "version": "1"
+    },
+    "rules": [
+      [
+        {
+          "extract": "results[*].uuid",
+          "generate": "originalPayload.projectData.product.*.product_id"
+        },
+        {
+          "generate": "originalPayload.projectData.product.*.product_name",
+          "extract": "results[*].name"
+        },
+        {
+          "generate": "originalPayload.projectData.product.*.product_is_offering",
+          "extract": "results[*].is_offering"
+        },
+        {
+          "generate": "originalPayload.projectData.product.*.product_available_to_offer",
+          "extract": "results[*].available_to_offer"
+        },
+        {
+          "extract": "results[*].solver_uuid",
+          "generate": "originalPayload.projectData.product_solver_uuid"
+        }
+      ]
+    ],
+    "version": "1"
+  },
+  "adaptorType": "HTTPExport"
+}

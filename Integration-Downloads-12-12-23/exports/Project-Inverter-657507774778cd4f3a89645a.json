@@ -1,0 +1,135 @@
+{
+  "_id": "657507774778cd4f3a89645a",
+  "name": "Project Inverter",
+  "_connectionId": "654e618e57f7f566040cf952",
+  "apiIdentifier": "e248d43469",
+  "asynchronous": true,
+  "isLookup": true,
+  "oneToMany": false,
+  "mockOutput": {
+    "page_of_records": [
+      {
+        "record": {
+          "count": 4,
+          "next": null,
+          "previous": null,
+          "results": [
+            {
+              "uuid": "041fcfee-68c0-4605-a3c0-37aff8242ff9",
+              "project": "2f560cb9-8ec9-4d12-877d-c267cdafd97d",
+              "inverter_model": "dbd15933-bd7d-469b-bb26-96883a0258ae",
+              "pv_arrays": [
+                "0eec09a7-f800-471b-8a27-035f2c977e4c"
+              ],
+              "batteries": [],
+              "mppt_channels": 1,
+              "terminals_per_channel": 3,
+              "nominal_capacity": 10000,
+              "dc_ac_ratio": 0.79
+            },
+            {
+              "uuid": "cc43c9c4-9b32-4a23-8187-0f9d49e5dae3",
+              "project": "2f560cb9-8ec9-4d12-877d-c267cdafd97d",
+              "inverter_model": "dbd15933-bd7d-469b-bb26-96883a0258ae",
+              "pv_arrays": [
+                "f63fcf4b-9cf8-4686-8265-3e7d3954f3f5"
+              ],
+              "batteries": [],
+              "mppt_channels": 1,
+              "terminals_per_channel": 3,
+              "nominal_capacity": 10000,
+              "dc_ac_ratio": 0.4345
+            },
+            {
+              "uuid": "1a2d40ee-4033-4b12-bc40-cd1b01bd72cf",
+              "project": "48a62699-a712-4e6f-8262-12b5335188c4",
+              "inverter_model": "dbd15933-bd7d-469b-bb26-96883a0258ae",
+              "pv_arrays": [
+                "57fedfcf-44be-40ad-a389-13ad02a541c2"
+              ],
+              "batteries": [],
+              "mppt_channels": 1,
+              "terminals_per_channel": 3,
+              "nominal_capacity": 10000,
+              "dc_ac_ratio": 0.79
+            },
+            {
+              "uuid": "9f64bd1b-d69a-4e4d-821d-6503981113ec",
+              "project": "48a62699-a712-4e6f-8262-12b5335188c4",
+              "inverter_model": "dbd15933-bd7d-469b-bb26-96883a0258ae",
+              "pv_arrays": [
+                "37a86c75-0f5f-48de-a7a4-edd9d40a6063"
+              ],
+              "batteries": [],
+              "mppt_channels": 1,
+              "terminals_per_channel": 3,
+              "nominal_capacity": 10000,
+              "dc_ac_ratio": 0.4345
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "http": {
+    "relativeURI": "/api/v1/project_inverter?project_id={{record.originalPayload.projectData.project_id}}",
+    "method": "GET",
+    "formType": "http"
+  },
+  "transform": {
+    "type": "expression",
+    "expression": {
+      "rules": [
+        [
+          {
+            "extract": "count",
+            "generate": "originalPayload.projectData.proj_inverters_count"
+          },
+          {
+            "generate": "originalPayload.projectData.proj_inverters_id.*",
+            "extract": "results[*].uuid"
+          },
+          {
+            "generate": "originalPayload.projectData.proj_inverters_pv_arrays_ids.*",
+            "extract": "results[*].pv_arrays"
+          },
+          {
+            "generate": "originalPayload.projectData.proj_inverters_batteries.*",
+            "extract": "results[*].batteries"
+          },
+          {
+            "generate": "originalPayload.projectData.proj_inverters_inverter_model",
+            "extract": "results[*].inverter_model"
+          }
+        ]
+      ],
+      "version": "1"
+    },
+    "rules": [
+      [
+        {
+          "extract": "count",
+          "generate": "originalPayload.projectData.proj_inverters_count"
+        },
+        {
+          "generate": "originalPayload.projectData.proj_inverters_id.*",
+          "extract": "results[*].uuid"
+        },
+        {
+          "generate": "originalPayload.projectData.proj_inverters_pv_arrays_ids.*",
+          "extract": "results[*].pv_arrays"
+        },
+        {
+          "generate": "originalPayload.projectData.proj_inverters_batteries.*",
+          "extract": "results[*].batteries"
+        },
+        {
+          "generate": "originalPayload.projectData.proj_inverters_inverter_model",
+          "extract": "results[*].inverter_model"
+        }
+      ]
+    ],
+    "version": "1"
+  },
+  "adaptorType": "HTTPExport"
+}

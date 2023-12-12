@@ -1,0 +1,402 @@
+{
+  "_id": "656f53520697aa3425291215",
+  "name": "Get [Sales WorkFlow]",
+  "description": "Get specific extra data [sales workflow]",
+  "_connectionId": "654e618e57f7f566040cf952",
+  "apiIdentifier": "ef50449704",
+  "asynchronous": true,
+  "isLookup": true,
+  "hooks": {
+    "preSavePage": {
+      "_scriptId": "6576302bdf8b184f3121cc3f",
+      "function": "preSavePage232"
+    }
+  },
+  "oneToMany": false,
+  "mockOutput": {
+    "page_of_records": [
+      {
+        "record": {
+          "count": 1,
+          "next": null,
+          "previous": null,
+          "results": [
+            {
+              "uuid": "a9dd4987-65dc-4eaf-ab2e-baa52a997a30",
+              "archived": false,
+              "workflow_definition": "66955d1b-d2ee-436d-9655-b22643d74275",
+              "site": "3cc01da8-1882-4abf-ba66-b029bf868902",
+              "current_phase": "operations",
+              "next_phase": null,
+              "phases": [
+                {
+                  "uuid": "d7d8a27d-10bd-4435-8b52-2a3fe209422b",
+                  "alias": "address",
+                  "order": 1,
+                  "displayed": true,
+                  "status": "COMP",
+                  "is_open": true,
+                  "assigned_to_user": {
+                    "uuid": "b0d45312-d8d2-4d43-934b-ecec2031f9d9",
+                    "email": "Fsimmons@nusunpower.com",
+                    "first_name": "Franklin",
+                    "last_name": "Simmons",
+                    "organization": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                    "organization_name": "TriSMART Solar, LLC"
+                  },
+                  "assigned_to_organization": {
+                    "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                    "name": "TriSMART Solar, LLC",
+                    "is_active": true
+                  },
+                  "phase_definition": "0b605586-36a2-49eb-ac37-0f4a7df14014",
+                  "summary": "<QuerySet [<Address: 4501 Bluestem Ln, Killeen, TX 76542>]>"
+                },
+                {
+                  "uuid": "68b2239e-aab7-4ece-87ae-4c12e7e51d3d",
+                  "alias": "quote",
+                  "order": 5,
+                  "displayed": true,
+                  "status": "COMP",
+                  "is_open": true,
+                  "assigned_to_user": {
+                    "uuid": "b0d45312-d8d2-4d43-934b-ecec2031f9d9",
+                    "email": "Fsimmons@nusunpower.com",
+                    "first_name": "Franklin",
+                    "last_name": "Simmons",
+                    "organization": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                    "organization_name": "TriSMART Solar, LLC"
+                  },
+                  "assigned_to_organization": {
+                    "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                    "name": "TriSMART Solar, LLC",
+                    "is_active": true
+                  },
+                  "phase_definition": "d0411e0c-4cab-423a-8b48-0eadcb131a33",
+                  "summary": "EverBright EverOwn"
+                },
+                {
+                  "uuid": "1ee0c829-dc0e-4e7e-bd9b-003e94b6f401",
+                  "alias": "contact",
+                  "order": 2,
+                  "displayed": true,
+                  "status": "COMP",
+                  "is_open": true,
+                  "assigned_to_user": {
+                    "uuid": "b0d45312-d8d2-4d43-934b-ecec2031f9d9",
+                    "email": "Fsimmons@nusunpower.com",
+                    "first_name": "Franklin",
+                    "last_name": "Simmons",
+                    "organization": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                    "organization_name": "TriSMART Solar, LLC"
+                  },
+                  "assigned_to_organization": {
+                    "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                    "name": "TriSMART Solar, LLC",
+                    "is_active": true
+                  },
+                  "phase_definition": "237f49a1-5984-4426-b242-605f788d0388",
+                  "summary": "David Oquendo"
+                },
+                {
+                  "uuid": "4284d38f-fceb-4a49-b0bb-2233c4e33447",
+                  "alias": "project",
+                  "order": 4,
+                  "displayed": true,
+                  "status": "COMP",
+                  "is_open": true,
+                  "assigned_to_user": {
+                    "uuid": "b0d45312-d8d2-4d43-934b-ecec2031f9d9",
+                    "email": "Fsimmons@nusunpower.com",
+                    "first_name": "Franklin",
+                    "last_name": "Simmons",
+                    "organization": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                    "organization_name": "TriSMART Solar, LLC"
+                  },
+                  "assigned_to_organization": {
+                    "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                    "name": "TriSMART Solar, LLC",
+                    "is_active": true
+                  },
+                  "phase_definition": "b8825baa-42e8-4a4e-ae2b-3bacebce11a7",
+                  "summary": "Project 1",
+                  "default_data": {
+                    "pv_module_model": "5a8ac823-f38d-4460-8b8c-24eb9f6d9aee",
+                    "initial_input_mode": "RSD",
+                    "inverter_model": "a514fdf8-2ea4-4c9f-b42d-6b7af010ffd1",
+                    "capacity": 5
+                  }
+                },
+                {
+                  "uuid": "89240d6a-37a7-4a84-be37-e260569ee75b",
+                  "alias": "usage",
+                  "order": 3,
+                  "displayed": true,
+                  "status": "COMP",
+                  "is_open": true,
+                  "assigned_to_user": {
+                    "uuid": "b0d45312-d8d2-4d43-934b-ecec2031f9d9",
+                    "email": "Fsimmons@nusunpower.com",
+                    "first_name": "Franklin",
+                    "last_name": "Simmons",
+                    "organization": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                    "organization_name": "TriSMART Solar, LLC"
+                  },
+                  "assigned_to_organization": {
+                    "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                    "name": "TriSMART Solar, LLC",
+                    "is_active": true
+                  },
+                  "phase_definition": "909f6e1c-33aa-49a8-80c6-4d44fc3c7253",
+                  "summary": "075f0d2f-a209-4992-91cd-176a59520c01"
+                },
+                {
+                  "uuid": "a87e0417-929c-4870-9c85-93864f404343",
+                  "alias": "proposal",
+                  "order": 6,
+                  "displayed": true,
+                  "status": "COMP",
+                  "is_open": true,
+                  "assigned_to_user": {
+                    "uuid": "b0d45312-d8d2-4d43-934b-ecec2031f9d9",
+                    "email": "Fsimmons@nusunpower.com",
+                    "first_name": "Franklin",
+                    "last_name": "Simmons",
+                    "organization": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                    "organization_name": "TriSMART Solar, LLC"
+                  },
+                  "assigned_to_organization": {
+                    "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                    "name": "TriSMART Solar, LLC",
+                    "is_active": true
+                  },
+                  "phase_definition": "569aee27-4154-45f4-bc0a-80fdf1836fc9",
+                  "summary": "Proposal 1"
+                },
+                {
+                  "uuid": "45f05436-c0ce-480f-8e9f-c860cdc8c169",
+                  "alias": "contract",
+                  "order": 8,
+                  "displayed": true,
+                  "status": "COMP",
+                  "is_open": true,
+                  "assigned_to_user": {
+                    "uuid": "b0d45312-d8d2-4d43-934b-ecec2031f9d9",
+                    "email": "Fsimmons@nusunpower.com",
+                    "first_name": "Franklin",
+                    "last_name": "Simmons",
+                    "organization": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                    "organization_name": "TriSMART Solar, LLC"
+                  },
+                  "assigned_to_organization": {
+                    "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                    "name": "TriSMART Solar, LLC",
+                    "is_active": true
+                  },
+                  "phase_definition": "7125a76f-49d0-473c-8f19-37437dee89c5",
+                  "summary": "Contract 1"
+                },
+                {
+                  "uuid": "eafdd9a3-59f5-4965-a8b8-906da167e1ab",
+                  "alias": "qualification",
+                  "order": 7,
+                  "displayed": true,
+                  "status": "COMP",
+                  "is_open": true,
+                  "assigned_to_user": {
+                    "uuid": "b0d45312-d8d2-4d43-934b-ecec2031f9d9",
+                    "email": "Fsimmons@nusunpower.com",
+                    "first_name": "Franklin",
+                    "last_name": "Simmons",
+                    "organization": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                    "organization_name": "TriSMART Solar, LLC"
+                  },
+                  "assigned_to_organization": {
+                    "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                    "name": "TriSMART Solar, LLC",
+                    "is_active": true
+                  },
+                  "phase_definition": "0aec1132-107b-48df-bf1c-1fff0f6ec772",
+                  "summary": "4501 Bluestem Ln, Killeen, TX 76542 - David Oquendo"
+                },
+                {
+                  "uuid": "1b8eb907-6dee-4bb2-940f-628a0ef516ec",
+                  "alias": "operations",
+                  "order": 9,
+                  "displayed": true,
+                  "status": "INPROG",
+                  "is_open": true,
+                  "assigned_to_user": {
+                    "uuid": "b0d45312-d8d2-4d43-934b-ecec2031f9d9",
+                    "email": "Fsimmons@nusunpower.com",
+                    "first_name": "Franklin",
+                    "last_name": "Simmons",
+                    "organization": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                    "organization_name": "TriSMART Solar, LLC"
+                  },
+                  "assigned_to_organization": {
+                    "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+                    "name": "TriSMART Solar, LLC",
+                    "is_active": true
+                  },
+                  "phase_definition": "a5e947d6-4b52-4c46-b95a-4ff8c108e135",
+                  "summary": "EverBright EverOwn"
+                }
+              ],
+              "current_stage": null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "http": {
+    "relativeURI": "/api/v1/sales_workflow?site_id=3cc01da8-1882-4abf-ba66-b029bf868902",
+    "method": "GET",
+    "formType": "http"
+  },
+  "transform": {
+    "type": "expression",
+    "expression": {
+      "rules": [
+        [
+          {
+            "generate": "originalPayload.projectData.salesRep.employee",
+            "extract": "results[*].phases[6].assigned_to_user.uuid"
+          },
+          {
+            "generate": "originalPayload.projectData.salesRep.primaryEmail",
+            "extract": "results[*].phases[6].assigned_to_user.email"
+          },
+          {
+            "generate": "originalPayload.projectData.salesRep.firstName",
+            "extract": "results[*].phases[6].assigned_to_user.first_name"
+          },
+          {
+            "generate": "originalPayload.projectData.salesRep.lastName",
+            "extract": "results[*].phases[6].assigned_to_user.last_name"
+          },
+          {
+            "generate": "originalPayload.projectData.salesOrgId",
+            "extract": "results[*].phases[6].assigned_to_organization.uuid"
+          },
+          {
+            "generate": "originalPayload.projectData.salesOrgName",
+            "extract": "results[*].phases[6].assigned_to_organization.name"
+          },
+          {
+            "generate": "ids.workflow_d_id",
+            "extract": "results[*].workflow_definition"
+          },
+          {
+            "extract": "results[*].phases[0].uuid",
+            "generate": "ids.address_id_0"
+          },
+          {
+            "generate": "ids.quote_id_1",
+            "extract": "results[*].phases[1].uuid"
+          },
+          {
+            "generate": "ids.contact_id_2",
+            "extract": "results[*].phases[2].uuid"
+          },
+          {
+            "generate": "ids.project_id_3",
+            "extract": "results[*].phases[3].uuid"
+          },
+          {
+            "generate": "ids.usage_id _4",
+            "extract": "results[*].phases[4].uuid"
+          },
+          {
+            "generate": "ids.proposal_id_5",
+            "extract": "results[*].phases[5].uuid"
+          },
+          {
+            "extract": "results[*].phases[6].uuid",
+            "generate": "ids.contract_id_6"
+          },
+          {
+            "generate": "ids.qualification_id_7",
+            "extract": "results[*].phases[7].uuid"
+          },
+          {
+            "generate": "ids.operations_id_8",
+            "extract": "results[*].phases[8].uuid"
+          }
+        ]
+      ],
+      "version": "1"
+    },
+    "rules": [
+      [
+        {
+          "generate": "originalPayload.projectData.salesRep.employee",
+          "extract": "results[*].phases[6].assigned_to_user.uuid"
+        },
+        {
+          "generate": "originalPayload.projectData.salesRep.primaryEmail",
+          "extract": "results[*].phases[6].assigned_to_user.email"
+        },
+        {
+          "generate": "originalPayload.projectData.salesRep.firstName",
+          "extract": "results[*].phases[6].assigned_to_user.first_name"
+        },
+        {
+          "generate": "originalPayload.projectData.salesRep.lastName",
+          "extract": "results[*].phases[6].assigned_to_user.last_name"
+        },
+        {
+          "generate": "originalPayload.projectData.salesOrgId",
+          "extract": "results[*].phases[6].assigned_to_organization.uuid"
+        },
+        {
+          "generate": "originalPayload.projectData.salesOrgName",
+          "extract": "results[*].phases[6].assigned_to_organization.name"
+        },
+        {
+          "generate": "ids.workflow_d_id",
+          "extract": "results[*].workflow_definition"
+        },
+        {
+          "extract": "results[*].phases[0].uuid",
+          "generate": "ids.address_id_0"
+        },
+        {
+          "generate": "ids.quote_id_1",
+          "extract": "results[*].phases[1].uuid"
+        },
+        {
+          "generate": "ids.contact_id_2",
+          "extract": "results[*].phases[2].uuid"
+        },
+        {
+          "generate": "ids.project_id_3",
+          "extract": "results[*].phases[3].uuid"
+        },
+        {
+          "generate": "ids.usage_id _4",
+          "extract": "results[*].phases[4].uuid"
+        },
+        {
+          "generate": "ids.proposal_id_5",
+          "extract": "results[*].phases[5].uuid"
+        },
+        {
+          "extract": "results[*].phases[6].uuid",
+          "generate": "ids.contract_id_6"
+        },
+        {
+          "generate": "ids.qualification_id_7",
+          "extract": "results[*].phases[7].uuid"
+        },
+        {
+          "generate": "ids.operations_id_8",
+          "extract": "results[*].phases[8].uuid"
+        }
+      ]
+    ],
+    "version": "1"
+  },
+  "adaptorType": "HTTPExport"
+}

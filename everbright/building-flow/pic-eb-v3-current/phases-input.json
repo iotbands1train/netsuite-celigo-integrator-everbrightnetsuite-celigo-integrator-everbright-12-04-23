@@ -1,0 +1,221 @@
+{
+    "uuid": "d7d8a27d-10bd-4435-8b52-2a3fe209422b",
+    "alias": "address",
+    "order": 1,
+    "displayed": true,
+    "status": "COMP",
+    "is_open": true,
+    "assigned_to_user": {
+        "uuid": "b0d45312-d8d2-4d43-934b-ecec2031f9d9",
+        "email": "Fsimmons@nusunpower.com",
+        "first_name": "Franklin",
+        "last_name": "Simmons",
+        "organization": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+        "organization_name": "TriSMART Solar, LLC"
+    },
+    "assigned_to_organization": {
+        "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+        "name": "TriSMART Solar, LLC",
+        "is_active": true
+    },
+    "phase_definition": "0b605586-36a2-49eb-ac37-0f4a7df14014",
+    "summary": "<QuerySet [<Address: 4501 Bluestem Ln, Killeen, TX 76542>]>",
+    "default_data": {}
+},
+{
+    "uuid": "68b2239e-aab7-4ece-87ae-4c12e7e51d3d",
+    "alias": "quote",
+    "order": 5,
+    "displayed": true,
+    "status": "COMP",
+    "is_open": true,
+    "assigned_to_user": {
+        "uuid": "b0d45312-d8d2-4d43-934b-ecec2031f9d9",
+        "email": "Fsimmons@nusunpower.com",
+        "first_name": "Franklin",
+        "last_name": "Simmons",
+        "organization": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+        "organization_name": "TriSMART Solar, LLC"
+    },
+    "assigned_to_organization": {
+        "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+        "name": "TriSMART Solar, LLC",
+        "is_active": true
+    },
+    "phase_definition": "d0411e0c-4cab-423a-8b48-0eadcb131a33",
+    "summary": "EverBright EverOwn",
+    "default_data": {}
+},
+{
+    "uuid": "1ee0c829-dc0e-4e7e-bd9b-003e94b6f401",
+    "alias": "contact",
+    "order": 2,
+    "displayed": true,
+    "status": "COMP",
+    "is_open": true,
+    "assigned_to_user": {
+        "uuid": "b0d45312-d8d2-4d43-934b-ecec2031f9d9",
+        "email": "Fsimmons@nusunpower.com",
+        "first_name": "Franklin",
+        "last_name": "Simmons",
+        "organization": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+        "organization_name": "TriSMART Solar, LLC"
+    },
+    "assigned_to_organization": {
+        "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+        "name": "TriSMART Solar, LLC",
+        "is_active": true
+    },
+    "phase_definition": "237f49a1-5984-4426-b242-605f788d0388",
+    "summary": "David Oquendo",
+    "default_data": {}
+},
+{
+    "uuid": "4284d38f-fceb-4a49-b0bb-2233c4e33447",
+    "alias": "project",
+    "order": 4,
+    "displayed": true,
+    "status": "COMP",
+    "is_open": true,
+    "assigned_to_user": {
+        "uuid": "b0d45312-d8d2-4d43-934b-ecec2031f9d9",
+        "email": "Fsimmons@nusunpower.com",
+        "first_name": "Franklin",
+        "last_name": "Simmons",
+        "organization": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+        "organization_name": "TriSMART Solar, LLC"
+    },
+    "assigned_to_organization": {
+        "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+        "name": "TriSMART Solar, LLC",
+        "is_active": true
+    },
+    "phase_definition": "b8825baa-42e8-4a4e-ae2b-3bacebce11a7",
+    "summary": "Project 1",
+    "default_data": {
+        "capacity": 5,
+        "initial_input_mode": "RSD",
+        "pv_module_model": "5a8ac823-f38d-4460-8b8c-24eb9f6d9aee",
+        "inverter_model": "a514fdf8-2ea4-4c9f-b42d-6b7af010ffd1"
+    }
+},
+{
+    "uuid": "89240d6a-37a7-4a84-be37-e260569ee75b",
+    "alias": "usage",
+    "order": 3,
+    "displayed": true,
+    "status": "COMP",
+    "is_open": true,
+    "assigned_to_user": {
+        "uuid": "b0d45312-d8d2-4d43-934b-ecec2031f9d9",
+        "email": "Fsimmons@nusunpower.com",
+        "first_name": "Franklin",
+        "last_name": "Simmons",
+        "organization": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+        "organization_name": "TriSMART Solar, LLC"
+    },
+    "assigned_to_organization": {
+        "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+        "name": "TriSMART Solar, LLC",
+        "is_active": true
+    },
+    "phase_definition": "909f6e1c-33aa-49a8-80c6-4d44fc3c7253",
+    "summary": "075f0d2f-a209-4992-91cd-176a59520c01",
+    "default_data": {}
+},
+{
+    "uuid": "a87e0417-929c-4870-9c85-93864f404343",
+    "alias": "proposal",
+    "order": 6,
+    "displayed": true,
+    "status": "COMP",
+    "is_open": true,
+    "assigned_to_user": {
+        "uuid": "b0d45312-d8d2-4d43-934b-ecec2031f9d9",
+        "email": "Fsimmons@nusunpower.com",
+        "first_name": "Franklin",
+        "last_name": "Simmons",
+        "organization": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+        "organization_name": "TriSMART Solar, LLC"
+    },
+    "assigned_to_organization": {
+        "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+        "name": "TriSMART Solar, LLC",
+        "is_active": true
+    },
+    "phase_definition": "569aee27-4154-45f4-bc0a-80fdf1836fc9",
+    "summary": "Proposal 1",
+    "default_data": {}
+},
+{
+    "uuid": "45f05436-c0ce-480f-8e9f-c860cdc8c169",
+    "alias": "contract",
+    "order": 8,
+    "displayed": true,
+    "status": "COMP",
+    "is_open": true,
+    "assigned_to_user": {
+        "uuid": "b0d45312-d8d2-4d43-934b-ecec2031f9d9",
+        "email": "Fsimmons@nusunpower.com",
+        "first_name": "Franklin",
+        "last_name": "Simmons",
+        "organization": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+        "organization_name": "TriSMART Solar, LLC"
+    },
+    "assigned_to_organization": {
+        "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+        "name": "TriSMART Solar, LLC",
+        "is_active": true
+    },
+    "phase_definition": "7125a76f-49d0-473c-8f19-37437dee89c5",
+    "summary": "Contract 1",
+    "default_data": {}
+},
+{
+    "uuid": "eafdd9a3-59f5-4965-a8b8-906da167e1ab",
+    "alias": "qualification",
+    "order": 7,
+    "displayed": true,
+    "status": "COMP",
+    "is_open": true,
+    "assigned_to_user": {
+        "uuid": "b0d45312-d8d2-4d43-934b-ecec2031f9d9",
+        "email": "Fsimmons@nusunpower.com",
+        "first_name": "Franklin",
+        "last_name": "Simmons",
+        "organization": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+        "organization_name": "TriSMART Solar, LLC"
+    },
+    "assigned_to_organization": {
+        "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+        "name": "TriSMART Solar, LLC",
+        "is_active": true
+    },
+    "phase_definition": "0aec1132-107b-48df-bf1c-1fff0f6ec772",
+    "summary": "4501 Bluestem Ln, Killeen, TX 76542 - David Oquendo",
+    "default_data": {}
+},
+{
+    "uuid": "1b8eb907-6dee-4bb2-940f-628a0ef516ec",
+    "alias": "operations",
+    "order": 9,
+    "displayed": true,
+    "status": "INPROG",
+    "is_open": true,
+    "assigned_to_user": {
+        "uuid": "b0d45312-d8d2-4d43-934b-ecec2031f9d9",
+        "email": "Fsimmons@nusunpower.com",
+        "first_name": "Franklin",
+        "last_name": "Simmons",
+        "organization": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+        "organization_name": "TriSMART Solar, LLC"
+    },
+    "assigned_to_organization": {
+        "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+        "name": "TriSMART Solar, LLC",
+        "is_active": true
+    },
+    "phase_definition": "a5e947d6-4b52-4c46-b95a-4ff8c108e135",
+    "summary": "EverBright EverOwn",
+    "default_data": {}
+}

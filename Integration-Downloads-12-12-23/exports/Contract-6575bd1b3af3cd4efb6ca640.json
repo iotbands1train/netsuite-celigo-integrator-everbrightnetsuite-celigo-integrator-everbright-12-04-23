@@ -1,0 +1,95 @@
+{
+  "_id": "6575bd1b3af3cd4efb6ca640",
+  "name": "Contract",
+  "_connectionId": "654e618e57f7f566040cf952",
+  "apiIdentifier": "ea280cc8ea",
+  "asynchronous": true,
+  "isLookup": true,
+  "oneToMany": false,
+  "mockOutput": {
+    "page_of_records": [
+      {
+        "record": {
+          "count": 1,
+          "next": null,
+          "previous": null,
+          "results": [
+            {
+              "date_created": "2023-10-12T15:29:50.401184Z",
+              "date_updated": "2023-10-12T15:30:08.145197Z",
+              "created_by": "dbfe4797-2364-4523-909e-9ddb7111c234",
+              "modified_by": "dbfe4797-2364-4523-909e-9ddb7111c234",
+              "uuid": "9dfdc51c-c451-4c67-91ff-c43fd8ef09f4",
+              "name": "Contract 1",
+              "status": "NOSTART",
+              "async_status": null,
+              "async_failure_message": null,
+              "last_updated": "2023-10-12T15:30:08.279303Z",
+              "site": "56a9b904-ecfd-4507-97fd-624593982c4a",
+              "quote": "f741387f-9d27-48e9-b687-e4c97afd3642",
+              "max_homeowner_signers": 2,
+              "signers": [],
+              "special_instructions": "<ul class=\"p-rich_text_list p-rich_text_list__bullet\" data-stringify-type=\"unordered-list\" data-indent=\"0\" data-border=\"0\">\n<li data-stringify-indent=\"0\" data-stringify-border=\"0\">A person on title must be on the agreement.</li>\n<li data-stringify-indent=\"0\" data-stringify-border=\"0\">A person with approved credit must be on the agreement.</li>\n<li data-stringify-indent=\"0\" data-stringify-border=\"0\">If signer email or phone number needs to be updated, the legal contact information may be accessed and updated in the Qualification Phase</li>\n<li data-stringify-indent=\"0\" data-stringify-border=\"0\">If signer names need to be updated, please contact us at dealprocessing@goeverbright.com or call 833-830-0475.</li>\n<li data-stringify-indent=\"0\" data-stringify-border=\"0\">DocuSign signature must match legal contact names.</li>\n</ul>",
+              "is_external": false,
+              "allows_check_for_update": false,
+              "allows_upload": false
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "http": {
+    "relativeURI": "/api/v1/contract?site_id={{record.originalPayload.projectData.everbrightProjectId}}",
+    "method": "GET",
+    "formType": "http"
+  },
+  "transform": {
+    "type": "expression",
+    "expression": {
+      "rules": [
+        [
+          {
+            "extract": "results[*].date_created",
+            "generate": "originalPayload.projectData.createdAt"
+          },
+          {
+            "generate": "image_table.0",
+            "extract": "results[*].date_updated"
+          },
+          {
+            "generate": "ids.quote_quote_id",
+            "extract": "results[*].quote"
+          },
+          {
+            "extract": "results[*].special_instructions",
+            "generate": "image_table.1"
+          }
+        ]
+      ],
+      "version": "1"
+    },
+    "rules": [
+      [
+        {
+          "extract": "results[*].date_created",
+          "generate": "originalPayload.projectData.createdAt"
+        },
+        {
+          "generate": "image_table.0",
+          "extract": "results[*].date_updated"
+        },
+        {
+          "generate": "ids.quote_quote_id",
+          "extract": "results[*].quote"
+        },
+        {
+          "extract": "results[*].special_instructions",
+          "generate": "image_table.1"
+        }
+      ]
+    ],
+    "version": "1"
+  },
+  "adaptorType": "HTTPExport"
+}

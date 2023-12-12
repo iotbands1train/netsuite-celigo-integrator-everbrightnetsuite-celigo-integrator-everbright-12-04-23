@@ -1,0 +1,54 @@
+{
+  "_id": "65786791488f674f478c2796",
+  "name": "Ops Workflow",
+  "_connectionId": "654e618e57f7f566040cf952",
+  "apiIdentifier": "efe0193aba",
+  "asynchronous": true,
+  "isLookup": true,
+  "oneToMany": false,
+  "http": {
+    "relativeURI": "/api/v1/ops_workflow?site_id={{record.originalPayload.projectData.everbrightProjectId}}",
+    "method": "GET",
+    "formType": "http"
+  },
+  "transform": {
+    "type": "expression",
+    "expression": {
+      "rules": [
+        [
+          {
+            "extract": "results[*].uuid",
+            "generate": "originalPayload.projectData.workflow_id"
+          },
+          {
+            "extract": "results[*].contract",
+            "generate": "originalPayload.projectData.contract_id"
+          },
+          {
+            "extract": "results[*].initial_quote",
+            "generate": "originalPayload.projectData.initial_quote_id"
+          }
+        ]
+      ],
+      "version": "1"
+    },
+    "rules": [
+      [
+        {
+          "extract": "results[*].uuid",
+          "generate": "originalPayload.projectData.workflow_id"
+        },
+        {
+          "extract": "results[*].contract",
+          "generate": "originalPayload.projectData.contract_id"
+        },
+        {
+          "extract": "results[*].initial_quote",
+          "generate": "originalPayload.projectData.initial_quote_id"
+        }
+      ]
+    ],
+    "version": "1"
+  },
+  "adaptorType": "HTTPExport"
+}

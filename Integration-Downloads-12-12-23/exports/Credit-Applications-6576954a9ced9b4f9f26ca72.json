@@ -1,0 +1,122 @@
+{
+  "_id": "6576954a9ced9b4f9f26ca72",
+  "name": "Credit Applications",
+  "_connectionId": "654e618e57f7f566040cf952",
+  "apiIdentifier": "e87fa6396f",
+  "asynchronous": true,
+  "isLookup": true,
+  "oneToMany": false,
+  "mockOutput": {
+    "page_of_records": [
+      {
+        "record": {
+          "count": 2,
+          "next": null,
+          "previous": null,
+          "results": [
+            {
+              "uuid": "348ef734-975e-4e88-a9cd-f3867c801d0b",
+              "status": "COMP",
+              "is_prequal": true,
+              "access_token": "a89301f159074950aff5e1a8ca0f3d74",
+              "application_mode": "INPERSON",
+              "date_initiated": "2023-10-12T15:24:05.134965Z",
+              "date_submitted": "2023-10-12T15:32:43.023125Z",
+              "application_process": "be4bbcdb-d0c0-4de7-b481-0762091e60fd",
+              "qualification": "e0cf8ac3-5980-4993-9cb0-850735e39068",
+              "application_url": "https://engine.goeverbright.com/credit_application/a89301f159074950aff5e1a8ca0f3d74/",
+              "application_stage": "pre",
+              "application_type": "CREDIT",
+              "date_updated": "2023-10-12T18:56:38.213006Z",
+              "external_ids": [
+                {
+                  "uuid": "3ba31855-a935-4ac0-ba60-5676be3cdd9e",
+                  "organization": "88171ca6-1c4a-4753-88b5-8a689342c334",
+                  "organization_name": "EverBright, LLC",
+                  "external_id": "10010014306882"
+                }
+              ]
+            },
+            {
+              "uuid": "10549cc2-9f12-436f-869f-c4b73a69a08e",
+              "status": "NOSTART",
+              "is_prequal": false,
+              "access_token": "3a4b15c832ae41879672a72283dd5b15",
+              "application_mode": null,
+              "date_initiated": null,
+              "date_submitted": null,
+              "application_process": "17dd6296-8742-4d4b-804d-5fa2647793c8",
+              "qualification": "e0cf8ac3-5980-4993-9cb0-850735e39068",
+              "application_url": null,
+              "application_stage": "regular",
+              "application_type": "CREDIT",
+              "date_updated": "2023-10-12T18:56:38.467764Z",
+              "external_ids": []
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "http": {
+    "relativeURI": "/api/v1/credit_application?site_id={{record.originalPayload.projectData.everbrightProjectId}}",
+    "method": "GET",
+    "formType": "http"
+  },
+  "transform": {
+    "type": "expression",
+    "expression": {
+      "rules": [
+        [
+          {
+            "extract": "results[*].uuid",
+            "generate": "originalPayload.projectData.credit.credit_id"
+          },
+          {
+            "generate": "originalPayload.projectData.credit.credit_qualification_id",
+            "extract": "results[*].qualification"
+          },
+          {
+            "generate": "originalPayload.projectData.credit.credit_organization_name",
+            "extract": "results[*].external_ids[0].organization_name"
+          },
+          {
+            "generate": "originalPayload.agreement_url.*",
+            "extract": "results[*].application_url"
+          },
+          {
+            "extract": "results[*].application_process",
+            "generate": "originalPayload.projectData.credit.application_process"
+          }
+        ]
+      ],
+      "version": "1"
+    },
+    "rules": [
+      [
+        {
+          "extract": "results[*].uuid",
+          "generate": "originalPayload.projectData.credit.credit_id"
+        },
+        {
+          "generate": "originalPayload.projectData.credit.credit_qualification_id",
+          "extract": "results[*].qualification"
+        },
+        {
+          "generate": "originalPayload.projectData.credit.credit_organization_name",
+          "extract": "results[*].external_ids[0].organization_name"
+        },
+        {
+          "generate": "originalPayload.agreement_url.*",
+          "extract": "results[*].application_url"
+        },
+        {
+          "extract": "results[*].application_process",
+          "generate": "originalPayload.projectData.credit.application_process"
+        }
+      ]
+    ],
+    "version": "1"
+  },
+  "adaptorType": "HTTPExport"
+}

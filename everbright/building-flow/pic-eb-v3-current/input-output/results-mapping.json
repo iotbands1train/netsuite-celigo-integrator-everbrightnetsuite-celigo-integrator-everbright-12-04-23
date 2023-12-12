@@ -1,0 +1,24 @@
+{
+  "record": {
+    "originalPayload": {
+      "projectData": {
+        "project_id": "b31270e0-5ce8-45fd-982a-26404225e06a",
+        "everbrightProjectId": "56a9b904-ecfd-4507-97fd-624593982c4a",
+        "systemSize": 6.48
+      },
+      "ids": {
+        "site_id": "56a9b904-ecfd-4507-97fd-624593982c4a",
+        "salesworkflow_id": "cf3ec4d7-48ee-49fd-be91-8f6648e71e4f",
+        "address_id": "f142f2c9-b2af-47cb-a88e-b19f52fb32cb",
+        "site": "56a9b904-ecfd-4507-97fd-624593982c4a"
+      },
+      "contactData": {
+        "street": "1630 Lucile Ave",
+        "city": "Wichita Falls",
+        "state": "TX",
+        "zip": "76301"
+      }
+    },
+    "image_table": "\n      <table style=\"font-family: \"Trebuchet MS\", Arial, Helvetica, sans-serif;border-collapse: collapse;width: 100%;\">\n        <thead>\n          <tr>\n            <th style=\"border: 1px solid #ddd;padding: 8px;padding-top: 12px;padding-bottom: 12px;text-align: left;background-color: #4CAF50;color: white;\">Friendly Name</th>\n            <th style=\"border: 1px solid #ddd;padding: 8px;padding-top: 12px;padding-bottom: 12px;text-align: left;background-color: #4CAF50;color: white;\">Image Link</th>\n          </tr>\n        </thead>\n        <tbody>\n          \n        </tbody>\n      </table>\n    "
+  }
+}

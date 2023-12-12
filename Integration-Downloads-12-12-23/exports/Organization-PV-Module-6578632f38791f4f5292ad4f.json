@@ -1,0 +1,78 @@
+{
+  "_id": "6578632f38791f4f5292ad4f",
+  "name": "Organization PV Module",
+  "_connectionId": "654e618e57f7f566040cf952",
+  "apiIdentifier": "eeac0b9f2c",
+  "asynchronous": true,
+  "isLookup": true,
+  "oneToMany": false,
+  "http": {
+    "relativeURI": "/api/v1/organization_pv_module?project_id={{record.originalPayload.projectData.project_id}}",
+    "method": "GET",
+    "formType": "http"
+  },
+  "transform": {
+    "type": "expression",
+    "expression": {
+      "rules": [
+        [
+          {
+            "extract": "count",
+            "generate": "originalPayload.projectData.module.module.model_count"
+          },
+          {
+            "generate": "originalPayload.projectData.module.mod.*._model",
+            "extract": "results[*].pv_module.model"
+          },
+          {
+            "generate": "originalPayload.projectData.module.mod.*._manufacturer_name",
+            "extract": "results[*].pv_module.manufacturer_name"
+          },
+          {
+            "extract": "results[*].pv_module.rating_nominal",
+            "generate": "originalPayload.projectData.module.mod.*._rating_nominal"
+          },
+          {
+            "extract": "results[*].wholesale_price_amount",
+            "generate": "originalPayload.projectData.module.mod.*._amount"
+          },
+          {
+            "extract": "results[*].price_unit",
+            "generate": "originalPayload.projectData.module.mod.*._price_unit"
+          }
+        ]
+      ],
+      "version": "1"
+    },
+    "rules": [
+      [
+        {
+          "extract": "count",
+          "generate": "originalPayload.projectData.module.module.model_count"
+        },
+        {
+          "generate": "originalPayload.projectData.module.mod.*._model",
+          "extract": "results[*].pv_module.model"
+        },
+        {
+          "generate": "originalPayload.projectData.module.mod.*._manufacturer_name",
+          "extract": "results[*].pv_module.manufacturer_name"
+        },
+        {
+          "extract": "results[*].pv_module.rating_nominal",
+          "generate": "originalPayload.projectData.module.mod.*._rating_nominal"
+        },
+        {
+          "extract": "results[*].wholesale_price_amount",
+          "generate": "originalPayload.projectData.module.mod.*._amount"
+        },
+        {
+          "extract": "results[*].price_unit",
+          "generate": "originalPayload.projectData.module.mod.*._price_unit"
+        }
+      ]
+    ],
+    "version": "1"
+  },
+  "adaptorType": "HTTPExport"
+}

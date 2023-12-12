@@ -1,0 +1,2492 @@
+{
+    "uuid": "c79c31a1-a148-40ba-b2e2-5dc8b9326c9c",
+    "site": "55f581c0-caba-4e55-8580-2609fa7f459d",
+    "name": "Project 1",
+    "archived": false,
+    "estimated_installation_start_date": "2021-09-03",
+    "estimated_installation_end_date": "2021-09-08",
+    "can_use_demand_management": false,
+    "can_use_advanced_tou_self_consumption": false,
+    "can_use_shoulder_rates": false,
+    "demand_cap_kw": null,
+    "min_demand_cap_kw": null,
+    "snapshot_image_url": "https://engine-uuid-payloads.s3.amazonaws.com/project/Project/c79c31a1-a148-40ba-b2e2-5dc8b9326c9c/drawing_snapshots/2021-06-10_18-43-17-670232.jpeg",
+    "snapshot_image_corrupted": false,
+    "utility_bill": {
+      "interval": "MONTHLY",
+      "amounts": [
+        {
+          "start_of_period": "2021-10-01",
+          "amount": 7.109999999999999
+        },
+        {
+          "start_of_period": "2021-11-01",
+          "amount": 7.109999999999999
+        },
+        {
+          "start_of_period": "2021-12-01",
+          "amount": 7.109999999999999
+        },
+        {
+          "start_of_period": "2022-01-01",
+          "amount": 7.109999999999999
+        },
+        {
+          "start_of_period": "2022-02-01",
+          "amount": 7.109999999999999
+        },
+        {
+          "start_of_period": "2022-03-01",
+          "amount": 7.109999999999999
+        },
+        {
+          "start_of_period": "2022-04-01",
+          "amount": 7.109999999999999
+        },
+        {
+          "start_of_period": "2022-05-01",
+          "amount": 7.109999999999999
+        },
+        {
+          "start_of_period": "2022-06-01",
+          "amount": 7.109999999999999
+        },
+        {
+          "start_of_period": "2022-07-01",
+          "amount": 7.109999999999999
+        },
+        {
+          "start_of_period": "2022-08-01",
+          "amount": 7.109999999999999
+        },
+        {
+          "start_of_period": "2022-09-01",
+          "amount": 7.109999999999999
+        },
+        {
+          "start_of_period": "2022-10-01",
+          "amount": 7.3261416666666666
+        },
+        {
+          "start_of_period": "2022-11-01",
+          "amount": 7.3261416666666666
+        },
+        {
+          "start_of_period": "2022-12-01",
+          "amount": 7.3261416666666666
+        },
+        {
+          "start_of_period": "2023-01-01",
+          "amount": 7.3261416666666666
+        },
+        {
+          "start_of_period": "2023-02-01",
+          "amount": 7.3261416666666666
+        },
+        {
+          "start_of_period": "2023-03-01",
+          "amount": 7.3261416666666666
+        },
+        {
+          "start_of_period": "2023-04-01",
+          "amount": 7.3261416666666666
+        },
+        {
+          "start_of_period": "2023-05-01",
+          "amount": 7.3261416666666666
+        },
+        {
+          "start_of_period": "2023-06-01",
+          "amount": 7.3261416666666666
+        },
+        {
+          "start_of_period": "2023-07-01",
+          "amount": 7.3261416666666666
+        },
+        {
+          "start_of_period": "2023-08-01",
+          "amount": 7.3261416666666666
+        },
+        {
+          "start_of_period": "2023-09-01",
+          "amount": 7.3261416666666666
+        },
+        {
+          "start_of_period": "2023-10-01",
+          "amount": 7.548858333333332
+        },
+        {
+          "start_of_period": "2023-11-01",
+          "amount": 7.548858333333332
+        },
+        {
+          "start_of_period": "2023-12-01",
+          "amount": 7.548858333333332
+        },
+        {
+          "start_of_period": "2024-01-01",
+          "amount": 7.548858333333332
+        },
+        {
+          "start_of_period": "2024-02-01",
+          "amount": 7.548858333333332
+        },
+        {
+          "start_of_period": "2024-03-01",
+          "amount": 7.548858333333332
+        },
+        {
+          "start_of_period": "2024-04-01",
+          "amount": 7.548858333333332
+        },
+        {
+          "start_of_period": "2024-05-01",
+          "amount": 7.548858333333332
+        },
+        {
+          "start_of_period": "2024-06-01",
+          "amount": 7.548858333333332
+        },
+        {
+          "start_of_period": "2024-07-01",
+          "amount": 7.548858333333332
+        },
+        {
+          "start_of_period": "2024-08-01",
+          "amount": 7.548858333333332
+        },
+        {
+          "start_of_period": "2024-09-01",
+          "amount": 7.548858333333332
+        },
+        {
+          "start_of_period": "2024-10-01",
+          "amount": 7.778341666666668
+        },
+        {
+          "start_of_period": "2024-11-01",
+          "amount": 7.778341666666668
+        },
+        {
+          "start_of_period": "2024-12-01",
+          "amount": 7.778341666666668
+        },
+        {
+          "start_of_period": "2025-01-01",
+          "amount": 7.778341666666668
+        },
+        {
+          "start_of_period": "2025-02-01",
+          "amount": 7.778341666666668
+        },
+        {
+          "start_of_period": "2025-03-01",
+          "amount": 7.778341666666668
+        },
+        {
+          "start_of_period": "2025-04-01",
+          "amount": 7.778341666666668
+        },
+        {
+          "start_of_period": "2025-05-01",
+          "amount": 7.778341666666668
+        },
+        {
+          "start_of_period": "2025-06-01",
+          "amount": 7.778341666666668
+        },
+        {
+          "start_of_period": "2025-07-01",
+          "amount": 7.778341666666668
+        },
+        {
+          "start_of_period": "2025-08-01",
+          "amount": 7.778341666666668
+        },
+        {
+          "start_of_period": "2025-09-01",
+          "amount": 7.778341666666668
+        },
+        {
+          "start_of_period": "2025-10-01",
+          "amount": 8.0148
+        },
+        {
+          "start_of_period": "2025-11-01",
+          "amount": 8.0148
+        },
+        {
+          "start_of_period": "2025-12-01",
+          "amount": 8.0148
+        },
+        {
+          "start_of_period": "2026-01-01",
+          "amount": 8.0148
+        },
+        {
+          "start_of_period": "2026-02-01",
+          "amount": 8.0148
+        },
+        {
+          "start_of_period": "2026-03-01",
+          "amount": 8.0148
+        },
+        {
+          "start_of_period": "2026-04-01",
+          "amount": 8.0148
+        },
+        {
+          "start_of_period": "2026-05-01",
+          "amount": 8.0148
+        },
+        {
+          "start_of_period": "2026-06-01",
+          "amount": 8.0148
+        },
+        {
+          "start_of_period": "2026-07-01",
+          "amount": 8.0148
+        },
+        {
+          "start_of_period": "2026-08-01",
+          "amount": 8.0148
+        },
+        {
+          "start_of_period": "2026-09-01",
+          "amount": 8.0148
+        },
+        {
+          "start_of_period": "2026-10-01",
+          "amount": 8.25845
+        },
+        {
+          "start_of_period": "2026-11-01",
+          "amount": 8.25845
+        },
+        {
+          "start_of_period": "2026-12-01",
+          "amount": 8.25845
+        },
+        {
+          "start_of_period": "2027-01-01",
+          "amount": 8.25845
+        },
+        {
+          "start_of_period": "2027-02-01",
+          "amount": 8.25845
+        },
+        {
+          "start_of_period": "2027-03-01",
+          "amount": 8.25845
+        },
+        {
+          "start_of_period": "2027-04-01",
+          "amount": 8.25845
+        },
+        {
+          "start_of_period": "2027-05-01",
+          "amount": 8.25845
+        },
+        {
+          "start_of_period": "2027-06-01",
+          "amount": 8.25845
+        },
+        {
+          "start_of_period": "2027-07-01",
+          "amount": 8.25845
+        },
+        {
+          "start_of_period": "2027-08-01",
+          "amount": 8.25845
+        },
+        {
+          "start_of_period": "2027-09-01",
+          "amount": 8.25845
+        },
+        {
+          "start_of_period": "2027-10-01",
+          "amount": 8.509500000000001
+        },
+        {
+          "start_of_period": "2027-11-01",
+          "amount": 8.509500000000001
+        },
+        {
+          "start_of_period": "2027-12-01",
+          "amount": 8.509500000000001
+        },
+        {
+          "start_of_period": "2028-01-01",
+          "amount": 8.509500000000001
+        },
+        {
+          "start_of_period": "2028-02-01",
+          "amount": 8.509500000000001
+        },
+        {
+          "start_of_period": "2028-03-01",
+          "amount": 8.509500000000001
+        },
+        {
+          "start_of_period": "2028-04-01",
+          "amount": 8.509500000000001
+        },
+        {
+          "start_of_period": "2028-05-01",
+          "amount": 8.509500000000001
+        },
+        {
+          "start_of_period": "2028-06-01",
+          "amount": 8.509500000000001
+        },
+        {
+          "start_of_period": "2028-07-01",
+          "amount": 8.509500000000001
+        },
+        {
+          "start_of_period": "2028-08-01",
+          "amount": 8.509500000000001
+        },
+        {
+          "start_of_period": "2028-09-01",
+          "amount": 8.509500000000001
+        },
+        {
+          "start_of_period": "2028-10-01",
+          "amount": 8.768166666666668
+        },
+        {
+          "start_of_period": "2028-11-01",
+          "amount": 8.768166666666668
+        },
+        {
+          "start_of_period": "2028-12-01",
+          "amount": 8.768166666666668
+        },
+        {
+          "start_of_period": "2029-01-01",
+          "amount": 8.768166666666668
+        },
+        {
+          "start_of_period": "2029-02-01",
+          "amount": 8.768166666666668
+        },
+        {
+          "start_of_period": "2029-03-01",
+          "amount": 8.768166666666668
+        },
+        {
+          "start_of_period": "2029-04-01",
+          "amount": 8.768166666666668
+        },
+        {
+          "start_of_period": "2029-05-01",
+          "amount": 8.768166666666668
+        },
+        {
+          "start_of_period": "2029-06-01",
+          "amount": 8.768166666666668
+        },
+        {
+          "start_of_period": "2029-07-01",
+          "amount": 8.768166666666668
+        },
+        {
+          "start_of_period": "2029-08-01",
+          "amount": 8.768166666666668
+        },
+        {
+          "start_of_period": "2029-09-01",
+          "amount": 8.768166666666668
+        },
+        {
+          "start_of_period": "2029-10-01",
+          "amount": 9.03475
+        },
+        {
+          "start_of_period": "2029-11-01",
+          "amount": 9.03475
+        },
+        {
+          "start_of_period": "2029-12-01",
+          "amount": 9.03475
+        },
+        {
+          "start_of_period": "2030-01-01",
+          "amount": 9.03475
+        },
+        {
+          "start_of_period": "2030-02-01",
+          "amount": 9.03475
+        },
+        {
+          "start_of_period": "2030-03-01",
+          "amount": 9.03475
+        },
+        {
+          "start_of_period": "2030-04-01",
+          "amount": 9.03475
+        },
+        {
+          "start_of_period": "2030-05-01",
+          "amount": 9.03475
+        },
+        {
+          "start_of_period": "2030-06-01",
+          "amount": 9.03475
+        },
+        {
+          "start_of_period": "2030-07-01",
+          "amount": 9.03475
+        },
+        {
+          "start_of_period": "2030-08-01",
+          "amount": 9.03475
+        },
+        {
+          "start_of_period": "2030-09-01",
+          "amount": 9.03475
+        },
+        {
+          "start_of_period": "2030-10-01",
+          "amount": 9.309416666666667
+        },
+        {
+          "start_of_period": "2030-11-01",
+          "amount": 9.309416666666667
+        },
+        {
+          "start_of_period": "2030-12-01",
+          "amount": 9.309416666666667
+        },
+        {
+          "start_of_period": "2031-01-01",
+          "amount": 9.309416666666667
+        },
+        {
+          "start_of_period": "2031-02-01",
+          "amount": 9.309416666666667
+        },
+        {
+          "start_of_period": "2031-03-01",
+          "amount": 9.309416666666667
+        },
+        {
+          "start_of_period": "2031-04-01",
+          "amount": 9.309416666666667
+        },
+        {
+          "start_of_period": "2031-05-01",
+          "amount": 9.309416666666667
+        },
+        {
+          "start_of_period": "2031-06-01",
+          "amount": 9.309416666666667
+        },
+        {
+          "start_of_period": "2031-07-01",
+          "amount": 9.309416666666667
+        },
+        {
+          "start_of_period": "2031-08-01",
+          "amount": 9.309416666666667
+        },
+        {
+          "start_of_period": "2031-09-01",
+          "amount": 9.309416666666667
+        },
+        {
+          "start_of_period": "2031-10-01",
+          "amount": 9.592416666666667
+        },
+        {
+          "start_of_period": "2031-11-01",
+          "amount": 9.592416666666667
+        },
+        {
+          "start_of_period": "2031-12-01",
+          "amount": 9.592416666666667
+        },
+        {
+          "start_of_period": "2032-01-01",
+          "amount": 9.592416666666667
+        },
+        {
+          "start_of_period": "2032-02-01",
+          "amount": 9.592416666666667
+        },
+        {
+          "start_of_period": "2032-03-01",
+          "amount": 9.592416666666667
+        },
+        {
+          "start_of_period": "2032-04-01",
+          "amount": 9.592416666666667
+        },
+        {
+          "start_of_period": "2032-05-01",
+          "amount": 9.592416666666667
+        },
+        {
+          "start_of_period": "2032-06-01",
+          "amount": 9.592416666666667
+        },
+        {
+          "start_of_period": "2032-07-01",
+          "amount": 9.592416666666667
+        },
+        {
+          "start_of_period": "2032-08-01",
+          "amount": 9.592416666666667
+        },
+        {
+          "start_of_period": "2032-09-01",
+          "amount": 9.592416666666667
+        },
+        {
+          "start_of_period": "2032-10-01",
+          "amount": 9.884
+        },
+        {
+          "start_of_period": "2032-11-01",
+          "amount": 9.884
+        },
+        {
+          "start_of_period": "2032-12-01",
+          "amount": 9.884
+        },
+        {
+          "start_of_period": "2033-01-01",
+          "amount": 9.884
+        },
+        {
+          "start_of_period": "2033-02-01",
+          "amount": 9.884
+        },
+        {
+          "start_of_period": "2033-03-01",
+          "amount": 9.884
+        },
+        {
+          "start_of_period": "2033-04-01",
+          "amount": 9.884
+        },
+        {
+          "start_of_period": "2033-05-01",
+          "amount": 9.884
+        },
+        {
+          "start_of_period": "2033-06-01",
+          "amount": 9.884
+        },
+        {
+          "start_of_period": "2033-07-01",
+          "amount": 9.884
+        },
+        {
+          "start_of_period": "2033-08-01",
+          "amount": 9.884
+        },
+        {
+          "start_of_period": "2033-09-01",
+          "amount": 9.884
+        },
+        {
+          "start_of_period": "2033-10-01",
+          "amount": 10.1845
+        },
+        {
+          "start_of_period": "2033-11-01",
+          "amount": 10.1845
+        },
+        {
+          "start_of_period": "2033-12-01",
+          "amount": 10.1845
+        },
+        {
+          "start_of_period": "2034-01-01",
+          "amount": 10.1845
+        },
+        {
+          "start_of_period": "2034-02-01",
+          "amount": 10.1845
+        },
+        {
+          "start_of_period": "2034-03-01",
+          "amount": 10.1845
+        },
+        {
+          "start_of_period": "2034-04-01",
+          "amount": 10.1845
+        },
+        {
+          "start_of_period": "2034-05-01",
+          "amount": 10.1845
+        },
+        {
+          "start_of_period": "2034-06-01",
+          "amount": 10.1845
+        },
+        {
+          "start_of_period": "2034-07-01",
+          "amount": 10.1845
+        },
+        {
+          "start_of_period": "2034-08-01",
+          "amount": 10.1845
+        },
+        {
+          "start_of_period": "2034-09-01",
+          "amount": 10.1845
+        },
+        {
+          "start_of_period": "2034-10-01",
+          "amount": 10.494083333333332
+        },
+        {
+          "start_of_period": "2034-11-01",
+          "amount": 10.494083333333332
+        },
+        {
+          "start_of_period": "2034-12-01",
+          "amount": 10.494083333333332
+        },
+        {
+          "start_of_period": "2035-01-01",
+          "amount": 10.494083333333332
+        },
+        {
+          "start_of_period": "2035-02-01",
+          "amount": 10.494083333333332
+        },
+        {
+          "start_of_period": "2035-03-01",
+          "amount": 10.494083333333332
+        },
+        {
+          "start_of_period": "2035-04-01",
+          "amount": 10.494083333333332
+        },
+        {
+          "start_of_period": "2035-05-01",
+          "amount": 10.494083333333332
+        },
+        {
+          "start_of_period": "2035-06-01",
+          "amount": 10.494083333333332
+        },
+        {
+          "start_of_period": "2035-07-01",
+          "amount": 10.494083333333332
+        },
+        {
+          "start_of_period": "2035-08-01",
+          "amount": 10.494083333333332
+        },
+        {
+          "start_of_period": "2035-09-01",
+          "amount": 10.494083333333332
+        },
+        {
+          "start_of_period": "2035-10-01",
+          "amount": 10.813083333333335
+        },
+        {
+          "start_of_period": "2035-11-01",
+          "amount": 10.813083333333335
+        },
+        {
+          "start_of_period": "2035-12-01",
+          "amount": 10.813083333333335
+        },
+        {
+          "start_of_period": "2036-01-01",
+          "amount": 10.813083333333335
+        },
+        {
+          "start_of_period": "2036-02-01",
+          "amount": 10.813083333333335
+        },
+        {
+          "start_of_period": "2036-03-01",
+          "amount": 10.813083333333335
+        },
+        {
+          "start_of_period": "2036-04-01",
+          "amount": 10.813083333333335
+        },
+        {
+          "start_of_period": "2036-05-01",
+          "amount": 10.813083333333335
+        },
+        {
+          "start_of_period": "2036-06-01",
+          "amount": 10.813083333333335
+        },
+        {
+          "start_of_period": "2036-07-01",
+          "amount": 10.813083333333335
+        },
+        {
+          "start_of_period": "2036-08-01",
+          "amount": 10.813083333333335
+        },
+        {
+          "start_of_period": "2036-09-01",
+          "amount": 10.813083333333335
+        },
+        {
+          "start_of_period": "2036-10-01",
+          "amount": 11.141833333333334
+        },
+        {
+          "start_of_period": "2036-11-01",
+          "amount": 11.141833333333334
+        },
+        {
+          "start_of_period": "2036-12-01",
+          "amount": 11.141833333333334
+        },
+        {
+          "start_of_period": "2037-01-01",
+          "amount": 11.141833333333334
+        },
+        {
+          "start_of_period": "2037-02-01",
+          "amount": 11.141833333333334
+        },
+        {
+          "start_of_period": "2037-03-01",
+          "amount": 11.141833333333334
+        },
+        {
+          "start_of_period": "2037-04-01",
+          "amount": 11.141833333333334
+        },
+        {
+          "start_of_period": "2037-05-01",
+          "amount": 11.141833333333334
+        },
+        {
+          "start_of_period": "2037-06-01",
+          "amount": 11.141833333333334
+        },
+        {
+          "start_of_period": "2037-07-01",
+          "amount": 11.141833333333334
+        },
+        {
+          "start_of_period": "2037-08-01",
+          "amount": 11.141833333333334
+        },
+        {
+          "start_of_period": "2037-09-01",
+          "amount": 11.141833333333334
+        },
+        {
+          "start_of_period": "2037-10-01",
+          "amount": 11.480583333333334
+        },
+        {
+          "start_of_period": "2037-11-01",
+          "amount": 11.480583333333334
+        },
+        {
+          "start_of_period": "2037-12-01",
+          "amount": 11.480583333333334
+        },
+        {
+          "start_of_period": "2038-01-01",
+          "amount": 11.480583333333334
+        },
+        {
+          "start_of_period": "2038-02-01",
+          "amount": 11.480583333333334
+        },
+        {
+          "start_of_period": "2038-03-01",
+          "amount": 11.480583333333334
+        },
+        {
+          "start_of_period": "2038-04-01",
+          "amount": 11.480583333333334
+        },
+        {
+          "start_of_period": "2038-05-01",
+          "amount": 11.480583333333334
+        },
+        {
+          "start_of_period": "2038-06-01",
+          "amount": 11.480583333333334
+        },
+        {
+          "start_of_period": "2038-07-01",
+          "amount": 11.480583333333334
+        },
+        {
+          "start_of_period": "2038-08-01",
+          "amount": 11.480583333333334
+        },
+        {
+          "start_of_period": "2038-09-01",
+          "amount": 11.480583333333334
+        },
+        {
+          "start_of_period": "2038-10-01",
+          "amount": 11.829583333333336
+        },
+        {
+          "start_of_period": "2038-11-01",
+          "amount": 11.829583333333336
+        },
+        {
+          "start_of_period": "2038-12-01",
+          "amount": 11.829583333333336
+        },
+        {
+          "start_of_period": "2039-01-01",
+          "amount": 11.829583333333336
+        },
+        {
+          "start_of_period": "2039-02-01",
+          "amount": 11.829583333333336
+        },
+        {
+          "start_of_period": "2039-03-01",
+          "amount": 11.829583333333336
+        },
+        {
+          "start_of_period": "2039-04-01",
+          "amount": 11.829583333333336
+        },
+        {
+          "start_of_period": "2039-05-01",
+          "amount": 11.829583333333336
+        },
+        {
+          "start_of_period": "2039-06-01",
+          "amount": 11.829583333333336
+        },
+        {
+          "start_of_period": "2039-07-01",
+          "amount": 11.829583333333336
+        },
+        {
+          "start_of_period": "2039-08-01",
+          "amount": 11.829583333333336
+        },
+        {
+          "start_of_period": "2039-09-01",
+          "amount": 11.829583333333336
+        },
+        {
+          "start_of_period": "2039-10-01",
+          "amount": 12.189166666666669
+        },
+        {
+          "start_of_period": "2039-11-01",
+          "amount": 12.189166666666669
+        },
+        {
+          "start_of_period": "2039-12-01",
+          "amount": 12.189166666666669
+        },
+        {
+          "start_of_period": "2040-01-01",
+          "amount": 12.189166666666669
+        },
+        {
+          "start_of_period": "2040-02-01",
+          "amount": 12.189166666666669
+        },
+        {
+          "start_of_period": "2040-03-01",
+          "amount": 12.189166666666669
+        },
+        {
+          "start_of_period": "2040-04-01",
+          "amount": 12.189166666666669
+        },
+        {
+          "start_of_period": "2040-05-01",
+          "amount": 12.189166666666669
+        },
+        {
+          "start_of_period": "2040-06-01",
+          "amount": 12.189166666666669
+        },
+        {
+          "start_of_period": "2040-07-01",
+          "amount": 12.189166666666669
+        },
+        {
+          "start_of_period": "2040-08-01",
+          "amount": 12.189166666666669
+        },
+        {
+          "start_of_period": "2040-09-01",
+          "amount": 12.189166666666669
+        },
+        {
+          "start_of_period": "2040-10-01",
+          "amount": 12.559750000000001
+        },
+        {
+          "start_of_period": "2040-11-01",
+          "amount": 12.559750000000001
+        },
+        {
+          "start_of_period": "2040-12-01",
+          "amount": 12.559750000000001
+        },
+        {
+          "start_of_period": "2041-01-01",
+          "amount": 12.559750000000001
+        },
+        {
+          "start_of_period": "2041-02-01",
+          "amount": 12.559750000000001
+        },
+        {
+          "start_of_period": "2041-03-01",
+          "amount": 12.559750000000001
+        },
+        {
+          "start_of_period": "2041-04-01",
+          "amount": 12.559750000000001
+        },
+        {
+          "start_of_period": "2041-05-01",
+          "amount": 12.559750000000001
+        },
+        {
+          "start_of_period": "2041-06-01",
+          "amount": 12.559750000000001
+        },
+        {
+          "start_of_period": "2041-07-01",
+          "amount": 12.559750000000001
+        },
+        {
+          "start_of_period": "2041-08-01",
+          "amount": 12.559750000000001
+        },
+        {
+          "start_of_period": "2041-09-01",
+          "amount": 12.559750000000001
+        },
+        {
+          "start_of_period": "2041-10-01",
+          "amount": 12.941583333333334
+        },
+        {
+          "start_of_period": "2041-11-01",
+          "amount": 12.941583333333334
+        },
+        {
+          "start_of_period": "2041-12-01",
+          "amount": 12.941583333333334
+        },
+        {
+          "start_of_period": "2042-01-01",
+          "amount": 12.941583333333334
+        },
+        {
+          "start_of_period": "2042-02-01",
+          "amount": 12.941583333333334
+        },
+        {
+          "start_of_period": "2042-03-01",
+          "amount": 12.941583333333334
+        },
+        {
+          "start_of_period": "2042-04-01",
+          "amount": 12.941583333333334
+        },
+        {
+          "start_of_period": "2042-05-01",
+          "amount": 12.941583333333334
+        },
+        {
+          "start_of_period": "2042-06-01",
+          "amount": 12.941583333333334
+        },
+        {
+          "start_of_period": "2042-07-01",
+          "amount": 12.941583333333334
+        },
+        {
+          "start_of_period": "2042-08-01",
+          "amount": 12.941583333333334
+        },
+        {
+          "start_of_period": "2042-09-01",
+          "amount": 12.941583333333334
+        },
+        {
+          "start_of_period": "2042-10-01",
+          "amount": 13.335
+        },
+        {
+          "start_of_period": "2042-11-01",
+          "amount": 13.335
+        },
+        {
+          "start_of_period": "2042-12-01",
+          "amount": 13.335
+        },
+        {
+          "start_of_period": "2043-01-01",
+          "amount": 13.335
+        },
+        {
+          "start_of_period": "2043-02-01",
+          "amount": 13.335
+        },
+        {
+          "start_of_period": "2043-03-01",
+          "amount": 13.335
+        },
+        {
+          "start_of_period": "2043-04-01",
+          "amount": 13.335
+        },
+        {
+          "start_of_period": "2043-05-01",
+          "amount": 13.335
+        },
+        {
+          "start_of_period": "2043-06-01",
+          "amount": 13.335
+        },
+        {
+          "start_of_period": "2043-07-01",
+          "amount": 13.335
+        },
+        {
+          "start_of_period": "2043-08-01",
+          "amount": 13.335
+        },
+        {
+          "start_of_period": "2043-09-01",
+          "amount": 13.335
+        },
+        {
+          "start_of_period": "2043-10-01",
+          "amount": 13.740416666666665
+        },
+        {
+          "start_of_period": "2043-11-01",
+          "amount": 13.740416666666665
+        },
+        {
+          "start_of_period": "2043-12-01",
+          "amount": 13.740416666666665
+        },
+        {
+          "start_of_period": "2044-01-01",
+          "amount": 13.740416666666665
+        },
+        {
+          "start_of_period": "2044-02-01",
+          "amount": 13.740416666666665
+        },
+        {
+          "start_of_period": "2044-03-01",
+          "amount": 13.740416666666665
+        },
+        {
+          "start_of_period": "2044-04-01",
+          "amount": 13.740416666666665
+        },
+        {
+          "start_of_period": "2044-05-01",
+          "amount": 13.740416666666665
+        },
+        {
+          "start_of_period": "2044-06-01",
+          "amount": 13.740416666666665
+        },
+        {
+          "start_of_period": "2044-07-01",
+          "amount": 13.740416666666665
+        },
+        {
+          "start_of_period": "2044-08-01",
+          "amount": 13.740416666666665
+        },
+        {
+          "start_of_period": "2044-09-01",
+          "amount": 13.740416666666665
+        },
+        {
+          "start_of_period": "2044-10-01",
+          "amount": 14.799916666666665
+        },
+        {
+          "start_of_period": "2044-11-01",
+          "amount": 14.799916666666665
+        },
+        {
+          "start_of_period": "2044-12-01",
+          "amount": 14.799916666666665
+        },
+        {
+          "start_of_period": "2045-01-01",
+          "amount": 14.799916666666665
+        },
+        {
+          "start_of_period": "2045-02-01",
+          "amount": 14.799916666666665
+        },
+        {
+          "start_of_period": "2045-03-01",
+          "amount": 14.799916666666665
+        },
+        {
+          "start_of_period": "2045-04-01",
+          "amount": 14.799916666666665
+        },
+        {
+          "start_of_period": "2045-05-01",
+          "amount": 14.799916666666665
+        },
+        {
+          "start_of_period": "2045-06-01",
+          "amount": 14.799916666666665
+        },
+        {
+          "start_of_period": "2045-07-01",
+          "amount": 14.799916666666665
+        },
+        {
+          "start_of_period": "2045-08-01",
+          "amount": 14.799916666666665
+        },
+        {
+          "start_of_period": "2045-09-01",
+          "amount": 14.799916666666665
+        },
+        {
+          "start_of_period": "2045-10-01",
+          "amount": 15.933916666666665
+        },
+        {
+          "start_of_period": "2045-11-01",
+          "amount": 15.933916666666665
+        },
+        {
+          "start_of_period": "2045-12-01",
+          "amount": 15.933916666666665
+        },
+        {
+          "start_of_period": "2046-01-01",
+          "amount": 15.933916666666665
+        },
+        {
+          "start_of_period": "2046-02-01",
+          "amount": 15.933916666666665
+        },
+        {
+          "start_of_period": "2046-03-01",
+          "amount": 15.933916666666665
+        },
+        {
+          "start_of_period": "2046-04-01",
+          "amount": 15.933916666666665
+        },
+        {
+          "start_of_period": "2046-05-01",
+          "amount": 15.933916666666665
+        },
+        {
+          "start_of_period": "2046-06-01",
+          "amount": 15.933916666666665
+        },
+        {
+          "start_of_period": "2046-07-01",
+          "amount": 15.933916666666665
+        },
+        {
+          "start_of_period": "2046-08-01",
+          "amount": 15.933916666666665
+        },
+        {
+          "start_of_period": "2046-09-01",
+          "amount": 15.933916666666665
+        },
+        {
+          "start_of_period": "2046-10-01",
+          "amount": 17.11925
+        },
+        {
+          "start_of_period": "2046-11-01",
+          "amount": 17.11925
+        },
+        {
+          "start_of_period": "2046-12-01",
+          "amount": 17.11925
+        },
+        {
+          "start_of_period": "2047-01-01",
+          "amount": 17.11925
+        },
+        {
+          "start_of_period": "2047-02-01",
+          "amount": 17.11925
+        },
+        {
+          "start_of_period": "2047-03-01",
+          "amount": 17.11925
+        },
+        {
+          "start_of_period": "2047-04-01",
+          "amount": 17.11925
+        },
+        {
+          "start_of_period": "2047-05-01",
+          "amount": 17.11925
+        },
+        {
+          "start_of_period": "2047-06-01",
+          "amount": 17.11925
+        },
+        {
+          "start_of_period": "2047-07-01",
+          "amount": 17.11925
+        },
+        {
+          "start_of_period": "2047-08-01",
+          "amount": 17.11925
+        },
+        {
+          "start_of_period": "2047-09-01",
+          "amount": 17.11925
+        },
+        {
+          "start_of_period": "2047-10-01",
+          "amount": 18.357999999999997
+        },
+        {
+          "start_of_period": "2047-11-01",
+          "amount": 18.357999999999997
+        },
+        {
+          "start_of_period": "2047-12-01",
+          "amount": 18.357999999999997
+        },
+        {
+          "start_of_period": "2048-01-01",
+          "amount": 18.357999999999997
+        },
+        {
+          "start_of_period": "2048-02-01",
+          "amount": 18.357999999999997
+        },
+        {
+          "start_of_period": "2048-03-01",
+          "amount": 18.357999999999997
+        },
+        {
+          "start_of_period": "2048-04-01",
+          "amount": 18.357999999999997
+        },
+        {
+          "start_of_period": "2048-05-01",
+          "amount": 18.357999999999997
+        },
+        {
+          "start_of_period": "2048-06-01",
+          "amount": 18.357999999999997
+        },
+        {
+          "start_of_period": "2048-07-01",
+          "amount": 18.357999999999997
+        },
+        {
+          "start_of_period": "2048-08-01",
+          "amount": 18.357999999999997
+        },
+        {
+          "start_of_period": "2048-09-01",
+          "amount": 18.357999999999997
+        },
+        {
+          "start_of_period": "2048-10-01",
+          "amount": 19.652083333333334
+        },
+        {
+          "start_of_period": "2048-11-01",
+          "amount": 19.652083333333334
+        },
+        {
+          "start_of_period": "2048-12-01",
+          "amount": 19.652083333333334
+        },
+        {
+          "start_of_period": "2049-01-01",
+          "amount": 19.652083333333334
+        },
+        {
+          "start_of_period": "2049-02-01",
+          "amount": 19.652083333333334
+        },
+        {
+          "start_of_period": "2049-03-01",
+          "amount": 19.652083333333334
+        },
+        {
+          "start_of_period": "2049-04-01",
+          "amount": 19.652083333333334
+        },
+        {
+          "start_of_period": "2049-05-01",
+          "amount": 19.652083333333334
+        },
+        {
+          "start_of_period": "2049-06-01",
+          "amount": 19.652083333333334
+        },
+        {
+          "start_of_period": "2049-07-01",
+          "amount": 19.652083333333334
+        },
+        {
+          "start_of_period": "2049-08-01",
+          "amount": 19.652083333333334
+        },
+        {
+          "start_of_period": "2049-09-01",
+          "amount": 19.652083333333334
+        },
+        {
+          "start_of_period": "2049-10-01",
+          "amount": 21.003833333333333
+        },
+        {
+          "start_of_period": "2049-11-01",
+          "amount": 21.003833333333333
+        },
+        {
+          "start_of_period": "2049-12-01",
+          "amount": 21.003833333333333
+        },
+        {
+          "start_of_period": "2050-01-01",
+          "amount": 21.003833333333333
+        },
+        {
+          "start_of_period": "2050-02-01",
+          "amount": 21.003833333333333
+        },
+        {
+          "start_of_period": "2050-03-01",
+          "amount": 21.003833333333333
+        },
+        {
+          "start_of_period": "2050-04-01",
+          "amount": 21.003833333333333
+        },
+        {
+          "start_of_period": "2050-05-01",
+          "amount": 21.003833333333333
+        },
+        {
+          "start_of_period": "2050-06-01",
+          "amount": 21.003833333333333
+        },
+        {
+          "start_of_period": "2050-07-01",
+          "amount": 21.003833333333333
+        },
+        {
+          "start_of_period": "2050-08-01",
+          "amount": 21.003833333333333
+        },
+        {
+          "start_of_period": "2050-09-01",
+          "amount": 21.003833333333333
+        },
+        {
+          "start_of_period": "2050-10-01",
+          "amount": 22.415333333333333
+        },
+        {
+          "start_of_period": "2050-11-01",
+          "amount": 22.415333333333333
+        },
+        {
+          "start_of_period": "2050-12-01",
+          "amount": 22.415333333333333
+        },
+        {
+          "start_of_period": "2051-01-01",
+          "amount": 22.415333333333333
+        },
+        {
+          "start_of_period": "2051-02-01",
+          "amount": 22.415333333333333
+        },
+        {
+          "start_of_period": "2051-03-01",
+          "amount": 22.415333333333333
+        },
+        {
+          "start_of_period": "2051-04-01",
+          "amount": 22.415333333333333
+        },
+        {
+          "start_of_period": "2051-05-01",
+          "amount": 22.415333333333333
+        },
+        {
+          "start_of_period": "2051-06-01",
+          "amount": 22.415333333333333
+        },
+        {
+          "start_of_period": "2051-07-01",
+          "amount": 22.415333333333333
+        },
+        {
+          "start_of_period": "2051-08-01",
+          "amount": 22.415333333333333
+        },
+        {
+          "start_of_period": "2051-09-01",
+          "amount": 22.415333333333333
+        }
+      ]
+    },
+    "project_inverters": [],
+    "generation_project": {
+      "uuid": "f2ecc112-f597-40f5-a8f9-00a0e672fb37",
+      "project": "c79c31a1-a148-40ba-b2e2-5dc8b9326c9c",
+      "input_mode": "RSD",
+      "capacity": 5.6,
+      "min_offset": null,
+      "max_offset": null,
+      "generation_profile": {
+        "entered": null,
+        "estimated_monthly": {
+          "interval": "MONTHLY",
+          "amounts": [
+            {
+              "start_of_period": "2021-06-01T00:00:00Z",
+              "amount": 925.9000940000001
+            },
+            {
+              "start_of_period": "2021-07-01T00:00:00Z",
+              "amount": 860.8811929999999
+            },
+            {
+              "start_of_period": "2021-08-01T00:00:00Z",
+              "amount": 804.7479879999999
+            },
+            {
+              "start_of_period": "2021-09-01T00:00:00Z",
+              "amount": 665.5400970000002
+            },
+            {
+              "start_of_period": "2021-10-01T00:00:00Z",
+              "amount": 531.1916509999999
+            },
+            {
+              "start_of_period": "2021-11-01T00:00:00Z",
+              "amount": 395.81740400000007
+            },
+            {
+              "start_of_period": "2021-12-01T00:00:00Z",
+              "amount": 327.54825000000005
+            },
+            {
+              "start_of_period": "2022-01-01T00:00:00Z",
+              "amount": 379.26581899999985
+            },
+            {
+              "start_of_period": "2022-02-01T00:00:00Z",
+              "amount": 464.47102900000004
+            },
+            {
+              "start_of_period": "2022-03-01T00:00:00Z",
+              "amount": 676.1027030000002
+            },
+            {
+              "start_of_period": "2022-04-01T00:00:00Z",
+              "amount": 807.2477340000004
+            },
+            {
+              "start_of_period": "2022-05-01T00:00:00Z",
+              "amount": 926.017667
+            }
+          ]
+        }
+      },
+      "pv_arrays": [
+        {
+          "uuid": "93358a31-7f4d-4ae1-82f8-995e452ea36c",
+          "pv_module_model": "87204f98-ba56-4cdb-b8aa-a2d7de162f86",
+          "array_type": "ROOF_MOUNTED_FIXED",
+          "tilt": 23,
+          "azimuth": 288.06,
+          "orientation": "PORTRAIT",
+          "strings": [
+            {
+              "microinverter_model": "8f2a08b6-b12d-460e-92ca-1ba6c0f11fb3",
+              "central_inverter": null,
+              "pv_module_count": 10,
+              "min_string_length": null,
+              "max_string_length": null,
+              "inverter_model": "8f2a08b6-b12d-460e-92ca-1ba6c0f11fb3"
+            }
+          ],
+          "generation_project": "f2ecc112-f597-40f5-a8f9-00a0e672fb37",
+          "solar_access": {
+            "interval": "MONTHLY",
+            "amounts": [
+              {
+                "start_of_period": "2021-06-01T00:00:00Z",
+                "amount": 93.36772739096506
+              },
+              {
+                "start_of_period": "2021-07-01T00:00:00Z",
+                "amount": 94.58729251142469
+              },
+              {
+                "start_of_period": "2021-08-01T00:00:00Z",
+                "amount": 95.84313000900755
+              },
+              {
+                "start_of_period": "2021-09-01T00:00:00Z",
+                "amount": 91.5701219512195
+              },
+              {
+                "start_of_period": "2021-10-01T00:00:00Z",
+                "amount": 90.42318634423897
+              },
+              {
+                "start_of_period": "2021-11-01T00:00:00Z",
+                "amount": 84.24416559165006
+              },
+              {
+                "start_of_period": "2021-12-01T00:00:00Z",
+                "amount": 85.70578381237877
+              },
+              {
+                "start_of_period": "2022-01-01T00:00:00Z",
+                "amount": 89.70972169193145
+              },
+              {
+                "start_of_period": "2022-02-01T00:00:00Z",
+                "amount": 90.14977456078222
+              },
+              {
+                "start_of_period": "2022-03-01T00:00:00Z",
+                "amount": 92.36539851168214
+              },
+              {
+                "start_of_period": "2022-04-01T00:00:00Z",
+                "amount": 93.48863792460605
+              },
+              {
+                "start_of_period": "2022-05-01T00:00:00Z",
+                "amount": 94.18259004258725
+              }
+            ]
+          },
+          "use_sunroof": true,
+          "use_sunroof_azimuth": true,
+          "use_sunroof_tilt": true,
+          "generation_profile": {
+            "entered": null,
+            "estimated_monthly": {
+              "interval": "MONTHLY",
+              "amounts": [
+                {
+                  "start_of_period": "2021-06-01T00:00:00Z",
+                  "amount": 558.540246
+                },
+                {
+                  "start_of_period": "2021-07-01T00:00:00Z",
+                  "amount": 517.7290490000001
+                },
+                {
+                  "start_of_period": "2021-08-01T00:00:00Z",
+                  "amount": 487.6788469999998
+                },
+                {
+                  "start_of_period": "2021-09-01T00:00:00Z",
+                  "amount": 404.52796800000004
+                },
+                {
+                  "start_of_period": "2021-10-01T00:00:00Z",
+                  "amount": 316.59541699999994
+                },
+                {
+                  "start_of_period": "2021-11-01T00:00:00Z",
+                  "amount": 234.89677099999992
+                },
+                {
+                  "start_of_period": "2021-12-01T00:00:00Z",
+                  "amount": 194.35782700000001
+                },
+                {
+                  "start_of_period": "2022-01-01T00:00:00Z",
+                  "amount": 223.88024499999986
+                },
+                {
+                  "start_of_period": "2022-02-01T00:00:00Z",
+                  "amount": 275.93086200000005
+                },
+                {
+                  "start_of_period": "2022-03-01T00:00:00Z",
+                  "amount": 410.0953880000002
+                },
+                {
+                  "start_of_period": "2022-04-01T00:00:00Z",
+                  "amount": 489.87187500000033
+                },
+                {
+                  "start_of_period": "2022-05-01T00:00:00Z",
+                  "amount": 560.4539850000001
+                }
+              ]
+            }
+          },
+          "design": {
+            "optimal_orientation": "PORTRAIT",
+            "polygon_with_setbacks_edge_lengths": [
+              6.127035109172908,
+              1.7512968924558048,
+              1.8762350546064053,
+              8.683575591605402,
+              13.267945488450554
+            ],
+            "polygon_edge_lengths": [
+              13.267945488450554,
+              6.127035109448796,
+              1.7512968917822482,
+              1.8762350546064053,
+              8.683575591605402
+            ],
+            "polygon_with_setbacks": [
+              {
+                "lat": 35.10361769056257,
+                "lng": -106.71465218067169
+              },
+              {
+                "lat": 35.10364127983417,
+                "lng": -106.71459451317787
+              },
+              {
+                "lat": 35.103656274060896,
+                "lng": -106.71458862209398
+              },
+              {
+                "lat": 35.10366188587511,
+                "lng": -106.71457028829782
+              },
+              {
+                "lat": 35.10373100786996,
+                "lng": -106.71460649811952
+              }
+            ],
+            "panels": [
+              [
+                {
+                  "lat": 35.103704048543165,
+                  "lng": -106.71461585746457
+                },
+                {
+                  "lat": 35.10369517349595,
+                  "lng": -106.71461939481797
+                },
+                {
+                  "lat": 35.10369066950185,
+                  "lng": -106.71460251129741
+                },
+                {
+                  "lat": 35.103699544549066,
+                  "lng": -106.714598973944
+                }
+              ],
+              [
+                {
+                  "lat": 35.10369517349595,
+                  "lng": -106.71461939481797
+                },
+                {
+                  "lat": 35.103686298448736,
+                  "lng": -106.71462293217138
+                },
+                {
+                  "lat": 35.10368179445464,
+                  "lng": -106.71460604865082
+                },
+                {
+                  "lat": 35.10369066950185,
+                  "lng": -106.71460251129741
+                }
+              ],
+              [
+                {
+                  "lat": 35.103686298448736,
+                  "lng": -106.71462293217138
+                },
+                {
+                  "lat": 35.10367742340152,
+                  "lng": -106.71462646952479
+                },
+                {
+                  "lat": 35.10367291940743,
+                  "lng": -106.71460958600423
+                },
+                {
+                  "lat": 35.10368179445464,
+                  "lng": -106.71460604865082
+                }
+              ],
+              [
+                {
+                  "lat": 35.10367742340152,
+                  "lng": -106.71462646952479
+                },
+                {
+                  "lat": 35.10366854835431,
+                  "lng": -106.71463000687821
+                },
+                {
+                  "lat": 35.10366404436021,
+                  "lng": -106.71461312335765
+                },
+                {
+                  "lat": 35.10367291940742,
+                  "lng": -106.71460958600423
+                }
+              ],
+              [
+                {
+                  "lat": 35.10366854835431,
+                  "lng": -106.71463000687821
+                },
+                {
+                  "lat": 35.10365967330709,
+                  "lng": -106.71463354423162
+                },
+                {
+                  "lat": 35.103655169312994,
+                  "lng": -106.71461666071106
+                },
+                {
+                  "lat": 35.10366404436021,
+                  "lng": -106.71461312335765
+                }
+              ],
+              [
+                {
+                  "lat": 35.10365079825988,
+                  "lng": -106.71463708158502
+                },
+                {
+                  "lat": 35.10364192321266,
+                  "lng": -106.71464061893843
+                },
+                {
+                  "lat": 35.103637419218565,
+                  "lng": -106.71462373541787
+                },
+                {
+                  "lat": 35.10364629426578,
+                  "lng": -106.71462019806447
+                }
+              ],
+              [
+                {
+                  "lat": 35.10368178023347,
+                  "lng": -106.71460599534186
+                },
+                {
+                  "lat": 35.10367290518626,
+                  "lng": -106.71460953269526
+                },
+                {
+                  "lat": 35.10366840119216,
+                  "lng": -106.7145926491747
+                },
+                {
+                  "lat": 35.103677276239374,
+                  "lng": -106.7145891118213
+                }
+              ],
+              [
+                {
+                  "lat": 35.10367290518626,
+                  "lng": -106.71460953269526
+                },
+                {
+                  "lat": 35.10366403013904,
+                  "lng": -106.71461307004867
+                },
+                {
+                  "lat": 35.103659526144945,
+                  "lng": -106.71459618652811
+                },
+                {
+                  "lat": 35.10366840119216,
+                  "lng": -106.7145926491747
+                }
+              ],
+              [
+                {
+                  "lat": 35.10366403013904,
+                  "lng": -106.71461307004867
+                },
+                {
+                  "lat": 35.10365515509183,
+                  "lng": -106.71461660740208
+                },
+                {
+                  "lat": 35.10365065109773,
+                  "lng": -106.71459972388152
+                },
+                {
+                  "lat": 35.103659526144945,
+                  "lng": -106.71459618652811
+                }
+              ],
+              [
+                {
+                  "lat": 35.10365515509183,
+                  "lng": -106.71461660740208
+                },
+                {
+                  "lat": 35.103646280044615,
+                  "lng": -106.71462014475549
+                },
+                {
+                  "lat": 35.103641776050516,
+                  "lng": -106.71460326123493
+                },
+                {
+                  "lat": 35.10365065109773,
+                  "lng": -106.71459972388152
+                }
+              ]
+            ]
+          },
+          "alignment": "GRID",
+          "azimuth_side": 0,
+          "polygon": [
+            {
+              "lat": 35.10373100786996,
+              "lng": -106.71460649811952
+            },
+            {
+              "lat": 35.10361769056257,
+              "lng": -106.71465218067169
+            },
+            {
+              "lat": 35.10364127983418,
+              "lng": -106.71459451317787
+            },
+            {
+              "lat": 35.103656274060896,
+              "lng": -106.71458862209398
+            },
+            {
+              "lat": 35.10366188587511,
+              "lng": -106.71457028829782
+            }
+          ],
+          "row_spacing": 0,
+          "rows_per_group": 1,
+          "setbacks": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "setback_edges": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "irradiance": 1822.880325317383,
+          "sunroof_shade_data_reliable": true,
+          "polygon_offset_lat": null,
+          "polygon_offset_lng": null
+        },
+        {
+          "uuid": "c4d6dead-0fc9-41f1-880a-b88f3e85a6ef",
+          "pv_module_model": "87204f98-ba56-4cdb-b8aa-a2d7de162f86",
+          "array_type": "ROOF_MOUNTED_FIXED",
+          "tilt": 22,
+          "azimuth": 17.26,
+          "orientation": "OPTIMAL",
+          "strings": [
+            {
+              "microinverter_model": "8f2a08b6-b12d-460e-92ca-1ba6c0f11fb3",
+              "central_inverter": null,
+              "pv_module_count": 2,
+              "min_string_length": null,
+              "max_string_length": null,
+              "inverter_model": "8f2a08b6-b12d-460e-92ca-1ba6c0f11fb3"
+            }
+          ],
+          "generation_project": "f2ecc112-f597-40f5-a8f9-00a0e672fb37",
+          "solar_access": {
+            "interval": "MONTHLY",
+            "amounts": [
+              {
+                "start_of_period": "2021-06-01T00:00:00Z",
+                "amount": 99.70172548339548
+              },
+              {
+                "start_of_period": "2021-07-01T00:00:00Z",
+                "amount": 99.7730337961407
+              },
+              {
+                "start_of_period": "2021-08-01T00:00:00Z",
+                "amount": 99.29625609164607
+              },
+              {
+                "start_of_period": "2021-09-01T00:00:00Z",
+                "amount": 97.45541877588587
+              },
+              {
+                "start_of_period": "2021-10-01T00:00:00Z",
+                "amount": 96.83392603129445
+              },
+              {
+                "start_of_period": "2021-11-01T00:00:00Z",
+                "amount": 90.61363902896682
+              },
+              {
+                "start_of_period": "2021-12-01T00:00:00Z",
+                "amount": 89.58517016399225
+              },
+              {
+                "start_of_period": "2022-01-01T00:00:00Z",
+                "amount": 93.52471957650118
+              },
+              {
+                "start_of_period": "2022-02-01T00:00:00Z",
+                "amount": 98.4335861246912
+              },
+              {
+                "start_of_period": "2022-03-01T00:00:00Z",
+                "amount": 97.92503898277153
+              },
+              {
+                "start_of_period": "2022-04-01T00:00:00Z",
+                "amount": 99.01317726015031
+              },
+              {
+                "start_of_period": "2022-05-01T00:00:00Z",
+                "amount": 99.92287524677673
+              }
+            ]
+          },
+          "use_sunroof": true,
+          "use_sunroof_azimuth": true,
+          "use_sunroof_tilt": true,
+          "generation_profile": {
+            "entered": null,
+            "estimated_monthly": {
+              "interval": "MONTHLY",
+              "amounts": [
+                {
+                  "start_of_period": "2021-06-01T00:00:00Z",
+                  "amount": 123.96202099999998
+                },
+                {
+                  "start_of_period": "2021-07-01T00:00:00Z",
+                  "amount": 113.57063699999998
+                },
+                {
+                  "start_of_period": "2021-08-01T00:00:00Z",
+                  "amount": 99.03206000000004
+                },
+                {
+                  "start_of_period": "2021-09-01T00:00:00Z",
+                  "amount": 72.38448499999996
+                },
+                {
+                  "start_of_period": "2021-10-01T00:00:00Z",
+                  "amount": 47.31124199999996
+                },
+                {
+                  "start_of_period": "2021-11-01T00:00:00Z",
+                  "amount": 27.212199000000005
+                },
+                {
+                  "start_of_period": "2021-12-01T00:00:00Z",
+                  "amount": 18.361859000000003
+                },
+                {
+                  "start_of_period": "2022-01-01T00:00:00Z",
+                  "amount": 23.310623000000014
+                },
+                {
+                  "start_of_period": "2022-02-01T00:00:00Z",
+                  "amount": 39.600274
+                },
+                {
+                  "start_of_period": "2022-03-01T00:00:00Z",
+                  "amount": 69.947932
+                },
+                {
+                  "start_of_period": "2022-04-01T00:00:00Z",
+                  "amount": 96.41480100000007
+                },
+                {
+                  "start_of_period": "2022-05-01T00:00:00Z",
+                  "amount": 119.84952699999998
+                }
+              ]
+            }
+          },
+          "design": {
+            "optimal_orientation": "PORTRAIT",
+            "polygon_with_setbacks_edge_lengths": [
+              3.2396149512445933,
+              1.3911562803118855,
+              4.948871836345209,
+              3.8964114018083817,
+              1.4600169099066427,
+              4.85773047419684
+            ],
+            "polygon_edge_lengths": [
+              4.85773047419684,
+              3.2396149512445933,
+              1.3911562803118855,
+              4.948871836345209,
+              3.8964114018083817,
+              1.4600169099066427
+            ],
+            "polygon_with_setbacks": [
+              {
+                "lat": 35.103703270212996,
+                "lng": -106.71458646655083
+              },
+              {
+                "lat": 35.10371808206645,
+                "lng": -106.71455763280392
+              },
+              {
+                "lat": 35.1037147905437,
+                "lng": -106.71454288065434
+              },
+              {
+                "lat": 35.10367638943504,
+                "lng": -106.71452008187771
+              },
+              {
+                "lat": 35.10365905133,
+                "lng": -106.71455518245642
+              },
+              {
+                "lat": 35.10366396986347,
+                "lng": -106.71457005361067
+              }
+            ],
+            "panels": [
+              [
+                {
+                  "lat": 35.103693477822716,
+                  "lng": -106.71454943735557
+                },
+                {
+                  "lat": 35.10369624758188,
+                  "lng": -106.71456033387979
+                },
+                {
+                  "lat": 35.103682272739874,
+                  "lng": -106.71456564118843
+                },
+                {
+                  "lat": 35.10367950298071,
+                  "lng": -106.71455474466421
+                }
+              ],
+              [
+                {
+                  "lat": 35.103676736179814,
+                  "lng": -106.71454384701653
+                },
+                {
+                  "lat": 35.10367950593898,
+                  "lng": -106.71455474354075
+                },
+                {
+                  "lat": 35.103665531096965,
+                  "lng": -106.71456005084937
+                },
+                {
+                  "lat": 35.10366276133781,
+                  "lng": -106.71454915432517
+                }
+              ]
+            ]
+          },
+          "alignment": "GRID",
+          "azimuth_side": 2,
+          "polygon": [
+            {
+              "lat": 35.10366396986347,
+              "lng": -106.71457005361067
+            },
+            {
+              "lat": 35.103703270212996,
+              "lng": -106.71458646655083
+            },
+            {
+              "lat": 35.10371808206645,
+              "lng": -106.71455763280392
+            },
+            {
+              "lat": 35.1037147905437,
+              "lng": -106.71454288065434
+            },
+            {
+              "lat": 35.10367638943504,
+              "lng": -106.71452008187771
+            },
+            {
+              "lat": 35.10365905133,
+              "lng": -106.71455518245642
+            }
+          ],
+          "row_spacing": 0,
+          "rows_per_group": 1,
+          "setbacks": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "setback_edges": [],
+          "irradiance": 1587.275779724121,
+          "sunroof_shade_data_reliable": true,
+          "polygon_offset_lat": null,
+          "polygon_offset_lng": null
+        },
+        {
+          "uuid": "d98a35ec-5423-4c04-ab27-8b07ef33209d",
+          "pv_module_model": "87204f98-ba56-4cdb-b8aa-a2d7de162f86",
+          "array_type": "ROOF_MOUNTED_FIXED",
+          "tilt": 23,
+          "azimuth": 109.17,
+          "orientation": "OPTIMAL",
+          "strings": [
+            {
+              "microinverter_model": "8f2a08b6-b12d-460e-92ca-1ba6c0f11fb3",
+              "central_inverter": null,
+              "pv_module_count": 4,
+              "min_string_length": null,
+              "max_string_length": null,
+              "inverter_model": "8f2a08b6-b12d-460e-92ca-1ba6c0f11fb3"
+            }
+          ],
+          "generation_project": "f2ecc112-f597-40f5-a8f9-00a0e672fb37",
+          "solar_access": {
+            "interval": "MONTHLY",
+            "amounts": [
+              {
+                "start_of_period": "2021-06-01T00:00:00Z",
+                "amount": 99.13964276424174
+              },
+              {
+                "start_of_period": "2021-07-01T00:00:00Z",
+                "amount": 98.63121920134085
+              },
+              {
+                "start_of_period": "2021-08-01T00:00:00Z",
+                "amount": 98.25438252072892
+              },
+              {
+                "start_of_period": "2021-09-01T00:00:00Z",
+                "amount": 95.62068568798895
+              },
+              {
+                "start_of_period": "2021-10-01T00:00:00Z",
+                "amount": 92.1678520625889
+              },
+              {
+                "start_of_period": "2021-11-01T00:00:00Z",
+                "amount": 82.81683671474923
+              },
+              {
+                "start_of_period": "2021-12-01T00:00:00Z",
+                "amount": 77.04990301534121
+              },
+              {
+                "start_of_period": "2022-01-01T00:00:00Z",
+                "amount": 87.28162052276926
+              },
+              {
+                "start_of_period": "2022-02-01T00:00:00Z",
+                "amount": 92.17095375472904
+              },
+              {
+                "start_of_period": "2022-03-01T00:00:00Z",
+                "amount": 92.12643095295445
+              },
+              {
+                "start_of_period": "2022-04-01T00:00:00Z",
+                "amount": 96.983113875861
+              },
+              {
+                "start_of_period": "2022-05-01T00:00:00Z",
+                "amount": 98.07570367905309
+              }
+            ]
+          },
+          "use_sunroof": true,
+          "use_sunroof_azimuth": true,
+          "use_sunroof_tilt": true,
+          "generation_profile": {
+            "entered": null,
+            "estimated_monthly": {
+              "interval": "MONTHLY",
+              "amounts": [
+                {
+                  "start_of_period": "2021-06-01T00:00:00Z",
+                  "amount": 243.39782700000012
+                },
+                {
+                  "start_of_period": "2021-07-01T00:00:00Z",
+                  "amount": 229.58150699999982
+                },
+                {
+                  "start_of_period": "2021-08-01T00:00:00Z",
+                  "amount": 218.037081
+                },
+                {
+                  "start_of_period": "2021-09-01T00:00:00Z",
+                  "amount": 188.62764400000012
+                },
+                {
+                  "start_of_period": "2021-10-01T00:00:00Z",
+                  "amount": 167.28499200000005
+                },
+                {
+                  "start_of_period": "2021-11-01T00:00:00Z",
+                  "amount": 133.70843400000012
+                },
+                {
+                  "start_of_period": "2021-12-01T00:00:00Z",
+                  "amount": 114.82856400000004
+                },
+                {
+                  "start_of_period": "2022-01-01T00:00:00Z",
+                  "amount": 132.07495099999997
+                },
+                {
+                  "start_of_period": "2022-02-01T00:00:00Z",
+                  "amount": 148.93989299999996
+                },
+                {
+                  "start_of_period": "2022-03-01T00:00:00Z",
+                  "amount": 196.05938300000005
+                },
+                {
+                  "start_of_period": "2022-04-01T00:00:00Z",
+                  "amount": 220.96105799999995
+                },
+                {
+                  "start_of_period": "2022-05-01T00:00:00Z",
+                  "amount": 245.71415499999986
+                }
+              ]
+            }
+          },
+          "design": {
+            "optimal_orientation": "LANDSCAPE",
+            "polygon_with_setbacks_edge_lengths": [
+              1.8972437629380636,
+              5.262993851974652,
+              13.893217903859908,
+              8.646353208100194,
+              3.586068402538843
+            ],
+            "polygon_edge_lengths": [
+              3.586068402191109,
+              1.8972437632932324,
+              5.262993852788637,
+              13.893217903859908,
+              8.646353208720754
+            ],
+            "polygon_with_setbacks": [
+              {
+                "lat": 35.10367364649802,
+                "lng": -106.71452075242996
+              },
+              {
+                "lat": 35.1036899865026,
+                "lng": -106.71451476058924
+              },
+              {
+                "lat": 35.10371149902081,
+                "lng": -106.71446576714516
+              },
+              {
+                "lat": 35.103591699275896,
+                "lng": -106.71450903325311
+              },
+              {
+                "lat": 35.10365665854082,
+                "lng": -106.71455275335025
+              }
+            ],
+            "panels": [
+              [
+                {
+                  "lat": 35.1036589626704,
+                  "lng": -106.71451052651072
+                },
+                {
+                  "lat": 35.10367387056731,
+                  "lng": -106.71450419153749
+                },
+                {
+                  "lat": 35.10367669222776,
+                  "lng": -106.71451411239121
+                },
+                {
+                  "lat": 35.103661784330846,
+                  "lng": -106.71452044736446
+                }
+              ],
+              [
+                {
+                  "lat": 35.10364688059758,
+                  "lng": -106.71452679697693
+                },
+                {
+                  "lat": 35.10366178849449,
+                  "lng": -106.71452046200368
+                },
+                {
+                  "lat": 35.10366461015494,
+                  "lng": -106.7145303828574
+                },
+                {
+                  "lat": 35.103649702258025,
+                  "lng": -106.71453671783065
+                }
+              ],
+              [
+                {
+                  "lat": 35.103670710839765,
+                  "lng": -106.71449192518807
+                },
+                {
+                  "lat": 35.10367952815999,
+                  "lng": -106.71448817834919
+                },
+                {
+                  "lat": 35.10368429888646,
+                  "lng": -106.71450495204698
+                },
+                {
+                  "lat": 35.103675481566235,
+                  "lng": -106.71450869888585
+                }
+              ],
+              [
+                {
+                  "lat": 35.10367729388819,
+                  "lng": -106.71448052579977
+                },
+                {
+                  "lat": 35.10368611120841,
+                  "lng": -106.71447677896089
+                },
+                {
+                  "lat": 35.10369088193489,
+                  "lng": -106.71449355265868
+                },
+                {
+                  "lat": 35.10368206461467,
+                  "lng": -106.71449729949755
+                }
+              ]
+            ]
+          },
+          "alignment": "GRID",
+          "azimuth_side": 3,
+          "polygon": [
+            {
+              "lat": 35.10365665854083,
+              "lng": -106.71455275335025
+            },
+            {
+              "lat": 35.10367364649802,
+              "lng": -106.71452075242996
+            },
+            {
+              "lat": 35.10368998650261,
+              "lng": -106.71451476058925
+            },
+            {
+              "lat": 35.10371149902081,
+              "lng": -106.71446576714516
+            },
+            {
+              "lat": 35.103591699275896,
+              "lng": -106.71450903325311
+            }
+          ],
+          "row_spacing": 0,
+          "rows_per_group": 1,
+          "setbacks": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "setback_edges": [],
+          "irradiance": 2138.9183044433594,
+          "sunroof_shade_data_reliable": true,
+          "polygon_offset_lat": null,
+          "polygon_offset_lng": null
+        }
+      ],
+      "keepouts": {},
+      "methodology": "PVWATTS",
+      "monitoring_model": null,
+      "monitoring_quantity": null,
+      "racking_model": null,
+      "autodesign_roof_geometry_id": null,
+      "panel_placement_is_optimized": false,
+      "autodesign_target_offset_pct": null
+    },
+    "efficiency_project": null,
+    "storage_project": null,
+    "map_image_url": "",
+    "map_image_type": "GOOGLE_MAPS",
+    "map_image_lat_min": null,
+    "map_image_lng_min": null,
+    "map_image_lat_max": null,
+    "map_image_lng_max": null,
+    "map_image_rotation": null,
+    "read_only": false,
+    "date_created": "2021-06-10T18:19:36.568663Z",
+    "date_updated": "2021-06-10T18:43:15.643579Z",
+    "created_by": "50d44dc4-89ff-44fd-b4ff-f5ddfa31b59b",
+    "modified_by": "50d44dc4-89ff-44fd-b4ff-f5ddfa31b59b",
+    "version_of": null,
+    "soiling_loss_pct": 2,
+    "max_temp": null,
+    "min_temp": null,
+    "usage_profile": "ef520546-5794-4088-901f-b9bc8bef439a",
+    "created_with_autodesign": false,
+    "modified_autodesign": false,
+    "autodesign_project_template": null
+  }

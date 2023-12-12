@@ -1,0 +1,24 @@
+{
+    "uuid": "45f05436-c0ce-480f-8e9f-c860cdc8c169",
+    "alias": "contract",
+    "order": 8,
+    "displayed": true,
+    "status": "COMP",
+    "is_open": true,
+    "assigned_to_user": {
+        "uuid": "b0d45312-d8d2-4d43-934b-ecec2031f9d9",
+        "email": "Fsimmons@nusunpower.com",
+        "first_name": "Franklin",
+        "last_name": "Simmons",
+        "organization": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+        "organization_name": "TriSMART Solar, LLC"
+    },
+    "assigned_to_organization": {
+        "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+        "name": "TriSMART Solar, LLC",
+        "is_active": true
+    },
+    "phase_definition": "7125a76f-49d0-473c-8f19-37437dee89c5",
+    "summary": "Contract 1",
+    "default_data": {}
+}

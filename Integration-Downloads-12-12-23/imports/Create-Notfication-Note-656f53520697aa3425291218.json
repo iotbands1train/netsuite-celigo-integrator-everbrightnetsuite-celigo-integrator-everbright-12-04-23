@@ -1,0 +1,54 @@
+{
+  "_id": "656f53520697aa3425291218",
+  "name": "Create Notfication Note",
+  "description": "Create notfication Note to let know that the Project was created in NS.",
+  "_connectionId": "654e618e57f7f566040cf952",
+  "apiIdentifier": "i1846c771b",
+  "ignoreExisting": false,
+  "ignoreMissing": false,
+  "oneToMany": false,
+  "http": {
+    "relativeURI": [
+      "/api/v3/installs/{{data.0.originalPayload.projectData.enerfloProjectId}}/notes"
+    ],
+    "method": [
+      "POST"
+    ],
+    "body": [
+      "{\r\n  \"note\": \"Project Interface was created in NetSuite with ID {{data.0.nsProjectInterfaceId}}\"\r\n}"
+    ],
+    "batchSize": 1,
+    "sendPostMappedData": true,
+    "formType": "http"
+  },
+  "filter": {
+    "type": "expression",
+    "expression": {
+      "rules": [
+        "notequals",
+        [
+          "string",
+          [
+            "extract",
+            "creationIgnored"
+          ]
+        ],
+        "true"
+      ],
+      "version": "1"
+    },
+    "rules": [
+      "notequals",
+      [
+        "string",
+        [
+          "extract",
+          "creationIgnored"
+        ]
+      ],
+      "true"
+    ],
+    "version": "1"
+  },
+  "adaptorType": "HTTPImport"
+}

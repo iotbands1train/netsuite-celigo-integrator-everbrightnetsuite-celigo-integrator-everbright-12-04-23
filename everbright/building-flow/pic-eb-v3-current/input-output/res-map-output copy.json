@@ -1,0 +1,187 @@
+{
+    "record": {
+      "originalPayload": {
+        "contactData": {
+          "everbrightCustomerId": "fc539a28-91f1-4a2d-b615-d50f3839a690",
+          "firstName": "Brandon",
+          "lastName": "Noriega",
+          "phoneNumber": "",
+          "primaryEmail": "",
+          "street": "7235 Plow Run",
+          "city": "San Antonio",
+          "state": "TX",
+          "zip": "78252",
+          "contact_id": "fc539a28-91f1-4a2d-b615-d50f3839a690",
+          "contact_site_id": "8ca99d95-9844-4b37-a8c6-9239a27f1f86",
+          "contact_first_name": "Brandon",
+          "contact_last_name": "Noriega",
+          "email": ""
+        },
+        "projectData": {
+          "relatedCustomer": "fc539a28-91f1-4a2d-b615-d50f3839a690",
+          "salesOrgId": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+          "salesOrgName": "TriSMART Solar, LLC",
+          "createdAt": "2023-10-12T17:27:09.441557Z",
+          "everbrightProjectId": "8ca99d95-9844-4b37-a8c6-9239a27f1f86",
+          "survey_id": "0030a818-4d4e-4c3d-bd78-e6ca80178911",
+          "salesRep": {
+            "employee": "c8d3b443-046b-4dd8-ae75-2ed404a8de7b",
+            "firstName": "Gerardo",
+            "lastName": "Calaycay",
+            "primaryEmail": "gcalaycay@trismartsolar.com"
+          },
+          "usage_id": "20a0d0d0-e8a5-40b1-8a77-082b83912e39",
+          "usage_name": "Typical Usage Profile",
+          "usage_utility_company": "81fb6cec-506d-4fb6-b973-d969042e48eb",
+          "usage_genability_rate_schedule_id": "29012f96-b7fc-4221-98f0-9bf160a26124",
+          "usage_genability_rate_schedule_name": "Residential",
+          "usage_genability_rate_schedule_display_name": "Residential - RE",
+          "usage_genability_rate_schedule_customer_class": "RESIDENTIAL",
+          "usage_genability_rate_schedule_genability_id": 26065,
+          "usage_genability_rate_schedule_genability_utility_id": 1068,
+          "project_id": [
+            "3661eebb-eb9f-47b0-805a-dcfa39b9427a",
+            "e9093efd-9e30-4452-a231-9f146c26002e"
+          ],
+          "project_name": [
+            "Project 1",
+            "Project 2"
+          ],
+          "project_image_type": [
+            "GOOGLE_MAPS",
+            "SUNROOF"
+          ],
+          "project_image_url": [
+            "https://engine-uuid-payloads.s3.amazonaws.com/project/Project/3661eebb-eb9f-47b0-805a-dcfa39b9427a/drawing_snapshots/2023-10-12_18-56-27-806310.jpeg",
+            null
+          ],
+          "project_soiling_loss_pct": [
+            2.249,
+            2.249
+          ],
+          "project_date_created": [
+            "2023-10-12T17:32:57.595127Z",
+            "2023-10-12T17:36:17.566195Z"
+          ],
+          "project_created_by": [
+            "c8d3b443-046b-4dd8-ae75-2ed404a8de7b",
+            "c8d3b443-046b-4dd8-ae75-2ed404a8de7b"
+          ],
+          "proj_inverters_id": [
+            "041fcfee-68c0-4605-a3c0-37aff8242ff9",
+            "cc43c9c4-9b32-4a23-8187-0f9d49e5dae3",
+            "1a2d40ee-4033-4b12-bc40-cd1b01bd72cf",
+            "9f64bd1b-d69a-4e4d-821d-6503981113ec"
+          ],
+          "proj_inverters_pv_arrays_ids": [
+            [
+              "0eec09a7-f800-471b-8a27-035f2c977e4c"
+            ],
+            [
+              "f63fcf4b-9cf8-4686-8265-3e7d3954f3f5"
+            ],
+            [
+              "57fedfcf-44be-40ad-a389-13ad02a541c2"
+            ],
+            [
+              "37a86c75-0f5f-48de-a7a4-edd9d40a6063"
+            ]
+          ],
+          "proj_inverters_batteries": [
+            [],
+            [],
+            [],
+            []
+          ],
+          "proj_inverters_inverter_model": "dbd15933-bd7d-469b-bb26-96883a0258ae",
+          "proj_inverters_count": 4,
+          "battery": [
+            {
+              "battery_id": "997b45f0-edc0-4890-82c1-ffeb68c8d977",
+              "battery_manufacturer_name": "Enphase Energy",
+              "battery_model": "IQ Battery 10T",
+              "battery_capacity": 10.08,
+              "battery_count": 4
+            },
+            {
+              "battery_id": "7354aa52-c995-4061-b550-68caa6514edc",
+              "battery_manufacturer_name": "Enphase Energy",
+              "battery_model": "IQ Battery 5P",
+              "battery_capacity": 5,
+              "battery_count": 4
+            },
+            {
+              "battery_id": "d214a2f4-326b-4d9b-96db-c9c8ad1436a5",
+              "battery_manufacturer_name": "FranklinWH Technologies",
+              "battery_model": "aPower",
+              "battery_capacity": 13.6,
+              "battery_count": 4
+            },
+            {
+              "battery_id": "9424d27f-c06b-4ad3-a486-16735f4a294b",
+              "battery_manufacturer_name": "Tesla",
+              "battery_model": "PowerWall 2 AC",
+              "battery_capacity": 13.5,
+              "battery_count": 4
+            }
+          ],
+          "qualification": {
+            "qualification_id": "428c103b-5d05-4db2-8f47-58dbebb5968a",
+            "qualification_process_name": "EverBright Qualification",
+            "process_owned_by_organization_id": "88171ca6-1c4a-4753-88b5-8a689342c334",
+            "last_updated": "2023-10-12T17:29:13.441369Z",
+            "qualification_process_id": "99071b58-4c13-4670-bac2-6f3f4ee3e055"
+          }
+        },
+        "files": {
+          "id": "ChIJzcF_sV9GXIYRfDJ067nbtLc",
+          "survey_id": "0030a818-4d4e-4c3d-bd78-e6ca80178911",
+          "url": "https://maps.googleapis.com/maps/api/staticmap?center=29.3584623%2C-98.77201900000001&maptype=satellite&size=400x400&zoom=20"
+        },
+        "phases": [
+          {
+            "phase_name": "address",
+            "id": "5feb85dc-96e6-4d59-9a40-d4e389dba9f9"
+          },
+          {
+            "phase_name": "quote",
+            "id": "c423fc74-0d33-44f2-a213-8f0a5f2feea7"
+          },
+          {
+            "phase_name": "contact",
+            "id": "f0e79c63-ed0b-458d-a0a4-af2f1c5cd5fa"
+          },
+          {
+            "phase_name": "project",
+            "id": "8b1af434-adce-4905-b0a9-f3cf1d5f678f"
+          },
+          {
+            "phase_name": "usage",
+            "id": "3642123b-31c6-4f56-a38d-c115098eb6e6"
+          },
+          {
+            "phase_name": "proposal",
+            "id": "a5cab787-24b7-46ad-ba80-f03bc6ed9296"
+          },
+          {
+            "phase_name": "contract",
+            "id": "5bd7af02-5593-4dc4-9b05-1ef5aff5d7c7"
+          },
+          {
+            "phase_name": "qualification",
+            "id": "81343109-dda3-4148-94ac-86aa760fc85d"
+          },
+          {
+            "phase_name": "operations",
+            "id": "d6f1370b-103f-4806-96cd-76b6188cd24c"
+          }
+        ]
+      },
+      "ids": {
+        "everbrightCustomerId": "fc539a28-91f1-4a2d-b615-d50f3839a690",
+        "survey_id": "0030a818-4d4e-4c3d-bd78-e6ca80178911",
+        "everbrightProjectId": "8ca99d95-9844-4b37-a8c6-9239a27f1f86"
+      },
+      "image_table": "\n      <table style=\"font-family: \"Trebuchet MS\", Arial, Helvetica, sans-serif;border-collapse: collapse;width: 100%;\">\n        <thead>\n          <tr>\n            <th style=\"border: 1px solid #ddd;padding: 8px;padding-top: 12px;padding-bottom: 12px;text-align: left;background-color: #4CAF50;color: white;\">Friendly Name</th>\n            <th style=\"border: 1px solid #ddd;padding: 8px;padding-top: 12px;padding-bottom: 12px;text-align: left;background-color: #4CAF50;color: white;\">Image Link</th>\n          </tr>\n        </thead>\n        <tbody>\n          \n        </tbody>\n      </table>\n    "
+    }
+  }

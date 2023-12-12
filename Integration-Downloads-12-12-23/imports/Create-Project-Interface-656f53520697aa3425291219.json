@@ -1,0 +1,205 @@
+{
+  "_id": "656f53520697aa3425291219",
+  "name": "Create Project Interface",
+  "description": "Create Project Interface in NetSuite.",
+  "_connectionId": "64fa2feeba13695e3ab09df6",
+  "distributed": true,
+  "apiIdentifier": "ida7e2f499",
+  "ignoreExisting": true,
+  "ignoreMissing": false,
+  "oneToMany": false,
+  "lookups": [],
+  "netsuite_da": {
+    "restletVersion": "suiteapp2.0",
+    "operation": "add",
+    "recordType": "customrecord_bb_ss_project_interface",
+    "internalIdLookup": {
+      "expression": "[\"custrecord_bb_pi_enerflo_proj_id\",\"is\",\"{{{originalPayload.projectData.enerfloProjectId}}}\"]"
+    },
+    "lookups": [],
+    "mapping": {
+      "fields": [
+        {
+          "extract": "originalPayload.contactData.contact_first_name",
+          "generate": "custrecord_bb_pi_customer_first_name",
+          "internalId": false
+        },
+        {
+          "extract": "originalPayload.contactData.contact_last_name",
+          "generate": "custrecord_bb_pi_customer_last_name",
+          "internalId": false
+        },
+        {
+          "extract": "originalPayload.contactData.phone",
+          "generate": "custrecord_bb_pi_customer_phone_txt",
+          "internalId": false
+        },
+        {
+          "extract": "originalPayload.contactData.email",
+          "generate": "custrecord_bb_pi_customer_email_txt",
+          "internalId": false
+        },
+        {
+          "extract": "originalPayload.contactData.street",
+          "generate": "custrecord_bb_pi_install_address_1_text",
+          "internalId": false
+        },
+        {
+          "extract": "originalPayload.contactData.city",
+          "generate": "custrecord_bb_pi_install_city_text",
+          "internalId": false
+        },
+        {
+          "extract": "originalPayload.contactData.state",
+          "generate": "custrecord_bb_pi_install_state_txt",
+          "internalId": false
+        },
+        {
+          "extract": "originalPayload.contactData.zip",
+          "generate": "custrecord_bb_pi_install_zip_code_text",
+          "internalId": false
+        },
+        {
+          "extract": "originalPayload.contactData.contact_first_name",
+          "generate": "custrecord_bb_pi_homeowner_name",
+          "internalId": false
+        },
+        {
+          "extract": "originalPayload.contactData.contact_last_name",
+          "generate": "custrecord_bb_pi_homeowner_last_name_txt",
+          "internalId": false
+        },
+        {
+          "extract": "originalPayload.contactData.phone",
+          "generate": "custrecord_bb_pi_home_owner_phone",
+          "internalId": false
+        },
+        {
+          "extract": "originalPayload.contactData.email",
+          "generate": "custrecord_bb_pi_home_owner_pri_email",
+          "internalId": false
+        },
+        {
+          "extract": "originalPayload.projectData.salesOrgName",
+          "generate": "custrecord_ts_dealer_vendor",
+          "internalId": false
+        },
+        {
+          "extract": "originalPayload.projectData.everbrightProjectId",
+          "generate": "custrecord_everbright_proj_id",
+          "internalId": false
+        },
+        {
+          "extract": "originalPayload.projectData.contractPrice",
+          "generate": "custrecord_bb_pi_fin_prel_purch_prc_amt",
+          "internalId": false
+        },
+        {
+          "extract": "originalPayload.projectData.systemSize",
+          "generate": "custrecord_bb_pi_system_size_dec",
+          "internalId": false
+        },
+        {
+          "extract": "originalPayload.projectData.utility.name",
+          "generate": "custrecord_bb_pi_utility_company_txt",
+          "internalId": false
+        },
+        {
+          "extract": "originalPayload.projectData.avgUtilityBill",
+          "generate": "custrecord_bb_pi_avg_util_bill_txt",
+          "internalId": false
+        },
+        {
+          "extract": "originalPayload.projectData.salesRep.fullName",
+          "generate": "custrecord_ts_pi_energy_consult",
+          "internalId": false
+        },
+        {
+          "extract": "originalPayload.projectData.salesRep.phoneNumber",
+          "generate": "custrecord_ts_pi_energy_consult_phone",
+          "internalId": false
+        },
+        {
+          "extract": "originalPayload.projectData.salesRep.primaryEmail",
+          "generate": "custrecord_ts_pi_energy_consult_email",
+          "internalId": false
+        },
+        {
+          "extract": "mod",
+          "generate": "custrecord_bb_pi_module_item",
+          "internalId": false
+        },
+        {
+          "extract": "originalPayload.projectData.equipment.panel.manufacturer",
+          "generate": "custrecord_bb_pi_module_manufacturer",
+          "internalId": false
+        },
+        {
+          "extract": "originalPayload.projectData.panelCount",
+          "generate": "custrecord_bb_pi_module_num",
+          "internalId": false
+        },
+        {
+          "extract": "originalPayload.projectData.proj_inverters_inverter_model",
+          "generate": "custrecord_bb_pi_inverter_item_txt",
+          "internalId": false
+        },
+        {
+          "extract": "originalPayload.projectData.proj_inverters_id.0",
+          "generate": "custrecord_bb_pi_inverter_manufacturer",
+          "internalId": false
+        },
+        {
+          "extract": "originalPayload.projectData.proj_inverters_count",
+          "generate": "custrecord_bb_pi_inverter_quantity",
+          "internalId": false
+        },
+        {
+          "extract": "originalPayload.projectData.battery[*].battery_model",
+          "generate": "custrecord_bb_pi_battery_item_txt",
+          "internalId": false
+        },
+        {
+          "extract": "originalPayload.projectData.battery[*].battery_manufacturer_name",
+          "generate": "custrecord_bb_pi_battery_manuf_txt",
+          "internalId": false
+        },
+        {
+          "extract": "{{{jsonSerialize originalPayload}}}",
+          "generate": "custrecord_everbright_payload",
+          "discardIfEmpty": false,
+          "immutable": false,
+          "internalId": false
+        },
+        {
+          "extract": "{{{image_table}}}",
+          "generate": "custrecord_everbright_project_images",
+          "internalId": false
+        },
+        {
+          "generate": "celigo_ignore_mandatory_fields",
+          "discardIfEmpty": false,
+          "immutable": false,
+          "hardCodedValue": "true",
+          "internalId": false
+        },
+        {
+          "extract": "originalPayload.contactData.city",
+          "generate": "custrecord_ts_proj_location",
+          "internalId": false
+        }
+      ],
+      "lists": []
+    }
+  },
+  "filter": {
+    "type": "expression",
+    "expression": {
+      "rules": [],
+      "version": "1"
+    },
+    "rules": [],
+    "version": "1"
+  },
+  "adaptorType": "NetSuiteDistributedImport"
+}

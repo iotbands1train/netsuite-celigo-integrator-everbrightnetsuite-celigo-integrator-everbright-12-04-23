@@ -1,0 +1,92 @@
+{
+  "_id": "65752d443af3cd4efb6ca4d5",
+  "name": "Qualifications",
+  "_connectionId": "654e618e57f7f566040cf952",
+  "apiIdentifier": "e43f0fe52c",
+  "asynchronous": true,
+  "isLookup": true,
+  "oneToMany": false,
+  "mockOutput": {
+    "page_of_records": [
+      {
+        "record": {
+          "count": 1,
+          "next": null,
+          "previous": null,
+          "results": [
+            {
+              "uuid": "e0cf8ac3-5980-4993-9cb0-850735e39068",
+              "site": "56a9b904-ecfd-4507-97fd-624593982c4a",
+              "qualification_process": "99071b58-4c13-4670-bac2-6f3f4ee3e055",
+              "process_name": "EverBright Qualification",
+              "process_description": "",
+              "process_owned_by_organization": "88171ca6-1c4a-4753-88b5-8a689342c334",
+              "last_updated": "2023-10-12T15:32:45.552169Z"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "http": {
+    "relativeURI": "/api/v1/qualification?site_id={{record.originalPayload.projectData.everbrightProjectId}}",
+    "method": "GET",
+    "formType": "http"
+  },
+  "transform": {
+    "type": "expression",
+    "expression": {
+      "rules": [
+        [
+          {
+            "extract": "results[*].uuid",
+            "generate": "originalPayload.projectData.qualification.qualification_id"
+          },
+          {
+            "generate": "originalPayload.projectData.qualification.qualification_process_name",
+            "extract": "results[*].process_name"
+          },
+          {
+            "generate": "originalPayload.projectData.qualification.process_owned_by_organization_id",
+            "extract": "results[*].process_owned_by_organization"
+          },
+          {
+            "generate": "originalPayload.projectData.qualification.last_updated",
+            "extract": "results[*].last_updated"
+          },
+          {
+            "generate": "originalPayload.projectData.qualification.qualification_process_id",
+            "extract": "results[*].qualification_process"
+          }
+        ]
+      ],
+      "version": "1"
+    },
+    "rules": [
+      [
+        {
+          "extract": "results[*].uuid",
+          "generate": "originalPayload.projectData.qualification.qualification_id"
+        },
+        {
+          "generate": "originalPayload.projectData.qualification.qualification_process_name",
+          "extract": "results[*].process_name"
+        },
+        {
+          "generate": "originalPayload.projectData.qualification.process_owned_by_organization_id",
+          "extract": "results[*].process_owned_by_organization"
+        },
+        {
+          "generate": "originalPayload.projectData.qualification.last_updated",
+          "extract": "results[*].last_updated"
+        },
+        {
+          "generate": "originalPayload.projectData.qualification.qualification_process_id",
+          "extract": "results[*].qualification_process"
+        }
+      ]
+    ],
+    "version": "1"
+  },
+  "adaptorType": "HTTPExport"
+}

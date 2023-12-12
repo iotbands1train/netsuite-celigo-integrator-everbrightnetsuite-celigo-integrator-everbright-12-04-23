@@ -1,0 +1,62 @@
+{
+  "_id": "6576fbc29ced9b4f9f26d1f1",
+  "name": "Utility",
+  "_connectionId": "654e618e57f7f566040cf952",
+  "apiIdentifier": "e62e943163",
+  "asynchronous": true,
+  "isLookup": true,
+  "oneToMany": false,
+  "http": {
+    "relativeURI": "/api/v1/utility/{{record.originalPayload.projectData.usage_utility_company}}",
+    "method": "GET",
+    "formType": "http"
+  },
+  "transform": {
+    "type": "expression",
+    "expression": {
+      "rules": [
+        [
+          {
+            "extract": "name",
+            "generate": "originalPayload.projectData.utility.name"
+          },
+          {
+            "generate": "originalPayload.projectData.utility.utility_id",
+            "extract": "uuid"
+          },
+          {
+            "extract": "genability_id",
+            "generate": "originalPayload.projectData.utility.utility_genability_id"
+          },
+          {
+            "extract": "eiaid",
+            "generate": "originalPayload.projectData.utility.utility_eiaid"
+          }
+        ]
+      ],
+      "version": "1"
+    },
+    "rules": [
+      [
+        {
+          "extract": "name",
+          "generate": "originalPayload.projectData.utility.name"
+        },
+        {
+          "generate": "originalPayload.projectData.utility.utility_id",
+          "extract": "uuid"
+        },
+        {
+          "extract": "genability_id",
+          "generate": "originalPayload.projectData.utility.utility_genability_id"
+        },
+        {
+          "extract": "eiaid",
+          "generate": "originalPayload.projectData.utility.utility_eiaid"
+        }
+      ]
+    ],
+    "version": "1"
+  },
+  "adaptorType": "HTTPExport"
+}

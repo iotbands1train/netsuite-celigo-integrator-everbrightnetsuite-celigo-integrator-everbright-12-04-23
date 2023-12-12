@@ -1,0 +1,259 @@
+{
+  "_id": "6575beaa38791f4f52925c69",
+  "name": "[Site] via [everbrightProjectId]",
+  "description": "Get Site via Project. Project = everbrightProjectId",
+  "_connectionId": "654e618e57f7f566040cf952",
+  "apiIdentifier": "e8a7223a4a",
+  "asynchronous": true,
+  "isLookup": true,
+  "oneToMany": false,
+  "mockOutput": {
+    "page_of_records": [
+      {
+        "record": {
+          "uuid": "56a9b904-ecfd-4507-97fd-624593982c4a",
+          "salesworkflow": "cf3ec4d7-48ee-49fd-be91-8f6648e71e4f",
+          "address": {
+            "uuid": "f142f2c9-b2af-47cb-a88e-b19f52fb32cb",
+            "site": "56a9b904-ecfd-4507-97fd-624593982c4a",
+            "address_line_1": "1630 Lucile Ave",
+            "city_name": "Wichita Falls",
+            "state_abbreviation": "TX",
+            "zipcode": "76301",
+            "county_name": "Wichita County",
+            "county_fips": "48485",
+            "latitude": 33.8981935,
+            "longitude": -98.5001709,
+            "elevation": 300,
+            "overridden": false,
+            "google_places_id": "ChIJt6zWBWQgU4YR389gj0eN5i8",
+            "image_url": "https://maps.googleapis.com/maps/api/staticmap?center=33.8981935%2C-98.5001709&maptype=satellite&size=400x400&zoom=20",
+            "eagleview_data_available": null,
+            "sunroof_building": {
+              "uuid": "faeb1b34-dea6-4920-889a-24fe781d52d3",
+              "building_id": "3f047ca6-2953-49e8-9b2e-9e91564c14f2",
+              "latitude": 33.8982058,
+              "longitude": -98.5001816,
+              "radius": 50,
+              "resources_bucket_name": "google-sunroof-images-prod",
+              "default_roof_geometry_id": "a012f0d5-7957-4452-8f73-c5dd6b1ee831",
+              "rsd_imagery": {
+                "imagery_date": "2015-04-04",
+                "imagery_processed_date": "2021-02-15",
+                "imagery_key": "3f047ca6-2953-49e8-9b2e-9e91564c14f2/sunroof_rsd_image.png",
+                "imagery_radius": 50
+              },
+              "image_data": {
+                "imagery_date": "2015-04-04",
+                "imagery_processed_date": "2021-02-15",
+                "mask_key": "3f047ca6-2953-49e8-9b2e-9e91564c14f2/maskUrl",
+                "rgb_key": "3f047ca6-2953-49e8-9b2e-9e91564c14f2/rgbUrl",
+                "annual_flux_key": "3f047ca6-2953-49e8-9b2e-9e91564c14f2/annualFluxUrl",
+                "monthly_flux_key": "3f047ca6-2953-49e8-9b2e-9e91564c14f2/monthlyFluxUrl",
+                "dsm_key": "3f047ca6-2953-49e8-9b2e-9e91564c14f2/dsmUrl",
+                "heatmap_img_key_year_1": "3f047ca6-2953-49e8-9b2e-9e91564c14f2/flux/solar_resource_00.png",
+                "heatmap_img_key_month_1": "3f047ca6-2953-49e8-9b2e-9e91564c14f2/flux/solar_resource_01.png",
+                "heatmap_img_key_month_2": "3f047ca6-2953-49e8-9b2e-9e91564c14f2/flux/solar_resource_02.png",
+                "heatmap_img_key_month_3": "3f047ca6-2953-49e8-9b2e-9e91564c14f2/flux/solar_resource_03.png",
+                "heatmap_img_key_month_4": "3f047ca6-2953-49e8-9b2e-9e91564c14f2/flux/solar_resource_04.png",
+                "heatmap_img_key_month_5": "3f047ca6-2953-49e8-9b2e-9e91564c14f2/flux/solar_resource_05.png",
+                "heatmap_img_key_month_6": "3f047ca6-2953-49e8-9b2e-9e91564c14f2/flux/solar_resource_06.png",
+                "heatmap_img_key_month_7": "3f047ca6-2953-49e8-9b2e-9e91564c14f2/flux/solar_resource_07.png",
+                "heatmap_img_key_month_8": "3f047ca6-2953-49e8-9b2e-9e91564c14f2/flux/solar_resource_08.png",
+                "heatmap_img_key_month_9": "3f047ca6-2953-49e8-9b2e-9e91564c14f2/flux/solar_resource_09.png",
+                "heatmap_img_key_month_10": "3f047ca6-2953-49e8-9b2e-9e91564c14f2/flux/solar_resource_10.png",
+                "heatmap_img_key_month_11": "3f047ca6-2953-49e8-9b2e-9e91564c14f2/flux/solar_resource_11.png",
+                "heatmap_img_key_month_12": "3f047ca6-2953-49e8-9b2e-9e91564c14f2/flux/solar_resource_12.png"
+              },
+              "shade_data": {
+                "imagery_date": "2015-04-04",
+                "imagery_processed_date": "2021-02-15",
+                "shade_data_key_month_1": "3f047ca6-2953-49e8-9b2e-9e91564c14f2/SunAPI_HourlyShadeMonth01.tif",
+                "shade_data_key_month_2": "3f047ca6-2953-49e8-9b2e-9e91564c14f2/SunAPI_HourlyShadeMonth02.tif",
+                "shade_data_key_month_3": "3f047ca6-2953-49e8-9b2e-9e91564c14f2/SunAPI_HourlyShadeMonth03.tif",
+                "shade_data_key_month_4": "3f047ca6-2953-49e8-9b2e-9e91564c14f2/SunAPI_HourlyShadeMonth04.tif",
+                "shade_data_key_month_5": "3f047ca6-2953-49e8-9b2e-9e91564c14f2/SunAPI_HourlyShadeMonth05.tif",
+                "shade_data_key_month_6": "3f047ca6-2953-49e8-9b2e-9e91564c14f2/SunAPI_HourlyShadeMonth06.tif",
+                "shade_data_key_month_7": "3f047ca6-2953-49e8-9b2e-9e91564c14f2/SunAPI_HourlyShadeMonth07.tif",
+                "shade_data_key_month_8": "3f047ca6-2953-49e8-9b2e-9e91564c14f2/SunAPI_HourlyShadeMonth08.tif",
+                "shade_data_key_month_9": "3f047ca6-2953-49e8-9b2e-9e91564c14f2/SunAPI_HourlyShadeMonth09.tif",
+                "shade_data_key_month_10": "3f047ca6-2953-49e8-9b2e-9e91564c14f2/SunAPI_HourlyShadeMonth10.tif",
+                "shade_data_key_month_11": "3f047ca6-2953-49e8-9b2e-9e91564c14f2/SunAPI_HourlyShadeMonth11.tif",
+                "shade_data_key_month_12": "3f047ca6-2953-49e8-9b2e-9e91564c14f2/SunAPI_HourlyShadeMonth12.tif",
+                "sav_data_key_month_1": "3f047ca6-2953-49e8-9b2e-9e91564c14f2/sav/sav_matrix_01.npz",
+                "sav_data_key_month_2": "3f047ca6-2953-49e8-9b2e-9e91564c14f2/sav/sav_matrix_02.npz",
+                "sav_data_key_month_3": "3f047ca6-2953-49e8-9b2e-9e91564c14f2/sav/sav_matrix_03.npz",
+                "sav_data_key_month_4": "3f047ca6-2953-49e8-9b2e-9e91564c14f2/sav/sav_matrix_04.npz",
+                "sav_data_key_month_5": "3f047ca6-2953-49e8-9b2e-9e91564c14f2/sav/sav_matrix_05.npz",
+                "sav_data_key_month_6": "3f047ca6-2953-49e8-9b2e-9e91564c14f2/sav/sav_matrix_06.npz",
+                "sav_data_key_month_7": "3f047ca6-2953-49e8-9b2e-9e91564c14f2/sav/sav_matrix_07.npz",
+                "sav_data_key_month_8": "3f047ca6-2953-49e8-9b2e-9e91564c14f2/sav/sav_matrix_08.npz",
+                "sav_data_key_month_9": "3f047ca6-2953-49e8-9b2e-9e91564c14f2/sav/sav_matrix_09.npz",
+                "sav_data_key_month_10": "3f047ca6-2953-49e8-9b2e-9e91564c14f2/sav/sav_matrix_10.npz",
+                "sav_data_key_month_11": "3f047ca6-2953-49e8-9b2e-9e91564c14f2/sav/sav_matrix_11.npz",
+                "sav_data_key_month_12": "3f047ca6-2953-49e8-9b2e-9e91564c14f2/sav/sav_matrix_12.npz"
+              },
+              "roof_geometries_available": true
+            },
+            "sunroof_rsd_imagery_available": true,
+            "sunroof_rsd_imagery_radius": 50,
+            "sunroof_rsd_imagery_date": null,
+            "sunroof_image_data_available": true,
+            "sunroof_shade_data_available": true,
+            "sunroof_allow_retry": false,
+            "sunroof_center_latitude": 33.8982058,
+            "sunroof_center_longitude": -98.5001816,
+            "sunroof_radius": 50,
+            "auto_design_available": true,
+            "nearmap_design_areas_available": null,
+            "nearmap_irradiance_data_available": null,
+            "nearmap_heatmap_images_available": null
+          },
+          "contacts": [
+            {
+              "uuid": "285208ca-091c-4be8-b485-e6ed20976945",
+              "site": "56a9b904-ecfd-4507-97fd-624593982c4a",
+              "first_name": "Bobby",
+              "last_name": "Jordan",
+              "phone_number": "9402958960",
+              "email": "Bobbyjordan119@outlook.com",
+              "primary": true
+            }
+          ],
+          "default_usage_profile": "00618f3d-ab7e-4528-9a4d-f783e6df9d3b",
+          "usage_profile": "00618f3d-ab7e-4528-9a4d-f783e6df9d3b",
+          "estimated_contract_start_date": "2024-01-10T15:07:39.892116Z",
+          "note": "",
+          "follow_up_date": null,
+          "follow_up_notification_date": null,
+          "lead_source": null,
+          "job_type": "RESI",
+          "building_type": "SFDT",
+          "primary_language": "EN",
+          "retrofit": false,
+          "archived": true,
+          "external_programs": [],
+          "npv_yearly_discount_rate": 6,
+          "federal_tax_rate": 33.3,
+          "state_tax_rate": 10.3,
+          "property_tax_rate": 1.1,
+          "square_footage": null,
+          "archive_reason": "",
+          "date_created": "2023-10-12T15:07:39.895700Z",
+          "date_updated": "2023-10-12T18:56:37.421133Z",
+          "created_by": "dbfe4797-2364-4523-909e-9ddb7111c234",
+          "modified_by": "dbfe4797-2364-4523-909e-9ddb7111c234",
+          "owned_by_organization": {
+            "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+            "name": "TriSMART Solar, LLC",
+            "is_active": true
+          }
+        }
+      }
+    ]
+  },
+  "http": {
+    "relativeURI": "/api/v1/site/{{record.originalPayload.projectData.everbrightProjectId}}",
+    "method": "GET",
+    "formType": "http"
+  },
+  "transform": {
+    "type": "expression",
+    "expression": {
+      "rules": [
+        [
+          {
+            "extract": "uuid",
+            "generate": "ids.site_id"
+          },
+          {
+            "generate": "ids.salesworkflow_id",
+            "extract": "salesworkflow"
+          },
+          {
+            "generate": "ids.address_id",
+            "extract": "address.uuid"
+          },
+          {
+            "generate": "originalPayload.contactData.street",
+            "extract": "address.address_line_1"
+          },
+          {
+            "generate": "originalPayload.contactData.city",
+            "extract": "address.city_name"
+          },
+          {
+            "extract": "address.state_abbreviation",
+            "generate": "originalPayload.contactData.state"
+          },
+          {
+            "extract": "address.zipcode",
+            "generate": "originalPayload.contactData.zip"
+          }
+        ]
+      ],
+      "version": "1"
+    },
+    "rules": [
+      [
+        {
+          "extract": "uuid",
+          "generate": "ids.site_id"
+        },
+        {
+          "generate": "ids.salesworkflow_id",
+          "extract": "salesworkflow"
+        },
+        {
+          "generate": "ids.address_id",
+          "extract": "address.uuid"
+        },
+        {
+          "generate": "originalPayload.contactData.street",
+          "extract": "address.address_line_1"
+        },
+        {
+          "generate": "originalPayload.contactData.city",
+          "extract": "address.city_name"
+        },
+        {
+          "extract": "address.state_abbreviation",
+          "generate": "originalPayload.contactData.state"
+        },
+        {
+          "extract": "address.zipcode",
+          "generate": "originalPayload.contactData.zip"
+        }
+      ]
+    ],
+    "version": "1"
+  },
+  "inputFilter": {
+    "type": "expression",
+    "expression": {
+      "rules": [
+        "notempty",
+        [
+          "string",
+          [
+            "extract",
+            "originalPayload.projectData.everbrightProjectId"
+          ]
+        ]
+      ],
+      "version": "1"
+    },
+    "rules": [
+      "notempty",
+      [
+        "string",
+        [
+          "extract",
+          "originalPayload.projectData.everbrightProjectId"
+        ]
+      ]
+    ],
+    "version": "1"
+  },
+  "adaptorType": "HTTPExport"
+}

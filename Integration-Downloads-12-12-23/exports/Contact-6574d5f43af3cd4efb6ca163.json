@@ -1,0 +1,88 @@
+{
+  "_id": "6574d5f43af3cd4efb6ca163",
+  "name": "Contact",
+  "_connectionId": "654e618e57f7f566040cf952",
+  "apiIdentifier": "ec37f44748",
+  "asynchronous": true,
+  "isLookup": true,
+  "oneToMany": false,
+  "mockOutput": {
+    "page_of_records": [
+      {
+        "record": {
+          "uuid": "285208ca-091c-4be8-b485-e6ed20976945",
+          "site": "56a9b904-ecfd-4507-97fd-624593982c4a",
+          "first_name": "Bobby",
+          "last_name": "Jordan",
+          "phone_number": "9402958960",
+          "email": "Bobbyjordan119@outlook.com",
+          "primary": true
+        }
+      }
+    ]
+  },
+  "http": {
+    "relativeURI": "/api/v1/contact?site_id={{record.originalPayload.projectData.everbrightProjectId}}",
+    "method": "GET",
+    "formType": "http",
+    "response": {
+      "resourcePath": "results"
+    }
+  },
+  "transform": {
+    "type": "expression",
+    "expression": {
+      "rules": [
+        [
+          {
+            "extract": "uuid",
+            "generate": "originalPayload.contactData.contact_id"
+          },
+          {
+            "generate": "originalPayload.contactData.contact_site_id",
+            "extract": "site"
+          },
+          {
+            "generate": "originalPayload.contactData.contact_first_name",
+            "extract": "first_name"
+          },
+          {
+            "generate": "originalPayload.contactData.contact_last_name",
+            "extract": "last_name"
+          },
+          {
+            "generate": "originalPayload.contactData.email",
+            "extract": "email"
+          }
+        ]
+      ],
+      "version": "1"
+    },
+    "rules": [
+      [
+        {
+          "extract": "uuid",
+          "generate": "originalPayload.contactData.contact_id"
+        },
+        {
+          "generate": "originalPayload.contactData.contact_site_id",
+          "extract": "site"
+        },
+        {
+          "generate": "originalPayload.contactData.contact_first_name",
+          "extract": "first_name"
+        },
+        {
+          "generate": "originalPayload.contactData.contact_last_name",
+          "extract": "last_name"
+        },
+        {
+          "generate": "originalPayload.contactData.email",
+          "extract": "email"
+        }
+      ]
+    ],
+    "version": "1"
+  },
+  "adaptorType": "HTTPExport"
+}

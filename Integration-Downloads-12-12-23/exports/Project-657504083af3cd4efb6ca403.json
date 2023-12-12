@@ -1,0 +1,2186 @@
+{
+  "_id": "657504083af3cd4efb6ca403",
+  "name": "Project",
+  "_connectionId": "654e618e57f7f566040cf952",
+  "apiIdentifier": "ecc0f8fc09",
+  "asynchronous": true,
+  "isLookup": true,
+  "oneToMany": false,
+  "mockOutput": {
+    "page_of_records": [
+      {
+        "record": {
+          "count": 1,
+          "next": null,
+          "previous": null,
+          "results": [
+            {
+              "uuid": "b31270e0-5ce8-45fd-982a-26404225e06a",
+              "site": "56a9b904-ecfd-4507-97fd-624593982c4a",
+              "name": "Project 1",
+              "archived": false,
+              "estimated_installation_start_date": "2024-01-05",
+              "estimated_installation_end_date": "2024-01-10",
+              "can_use_demand_management": false,
+              "can_use_advanced_tou_self_consumption": false,
+              "can_use_shoulder_rates": false,
+              "demand_cap_kw": null,
+              "min_demand_cap_kw": null,
+              "snapshot_image_url": null,
+              "snapshot_image_corrupted": false,
+              "utility_bill": {
+                "interval": "MONTHLY",
+                "amounts": [
+                  {
+                    "start_of_period": "2024-02-01",
+                    "amount": 11.178351114796
+                  },
+                  {
+                    "start_of_period": "2024-03-01",
+                    "amount": 4.23
+                  },
+                  {
+                    "start_of_period": "2024-04-01",
+                    "amount": 4.23
+                  },
+                  {
+                    "start_of_period": "2024-05-01",
+                    "amount": 4.23
+                  },
+                  {
+                    "start_of_period": "2024-06-01",
+                    "amount": 33.552286754104
+                  },
+                  {
+                    "start_of_period": "2024-07-01",
+                    "amount": 31.160219165958
+                  },
+                  {
+                    "start_of_period": "2024-08-01",
+                    "amount": 39.720544662692
+                  },
+                  {
+                    "start_of_period": "2024-09-01",
+                    "amount": 68.26755948435
+                  },
+                  {
+                    "start_of_period": "2024-10-01",
+                    "amount": 4.23
+                  },
+                  {
+                    "start_of_period": "2024-11-01",
+                    "amount": 4.23
+                  },
+                  {
+                    "start_of_period": "2024-12-01",
+                    "amount": 32.579030598559
+                  },
+                  {
+                    "start_of_period": "2025-01-01",
+                    "amount": 20.330806324928
+                  },
+                  {
+                    "start_of_period": "2025-02-01",
+                    "amount": 11.505382506303814
+                  },
+                  {
+                    "start_of_period": "2025-03-01",
+                    "amount": 4.35375195338488
+                  },
+                  {
+                    "start_of_period": "2025-04-01",
+                    "amount": 4.35375195338488
+                  },
+                  {
+                    "start_of_period": "2025-05-01",
+                    "amount": 4.35375195338488
+                  },
+                  {
+                    "start_of_period": "2025-06-01",
+                    "amount": 34.53388510548698
+                  },
+                  {
+                    "start_of_period": "2025-07-01",
+                    "amount": 32.071835711983596
+                  },
+                  {
+                    "start_of_period": "2025-08-01",
+                    "amount": 40.88260021624271
+                  },
+                  {
+                    "start_of_period": "2025-09-01",
+                    "amount": 70.26478025007265
+                  },
+                  {
+                    "start_of_period": "2025-10-01",
+                    "amount": 4.35375195338488
+                  },
+                  {
+                    "start_of_period": "2025-11-01",
+                    "amount": 4.35375195338488
+                  },
+                  {
+                    "start_of_period": "2025-12-01",
+                    "amount": 33.53215558105485
+                  },
+                  {
+                    "start_of_period": "2026-01-01",
+                    "amount": 20.92559994114538
+                  },
+                  {
+                    "start_of_period": "2026-02-01",
+                    "amount": 11.84029256151867
+                  },
+                  {
+                    "start_of_period": "2026-03-01",
+                    "amount": 4.4804852720121415
+                  },
+                  {
+                    "start_of_period": "2026-04-01",
+                    "amount": 4.4804852720121415
+                  },
+                  {
+                    "start_of_period": "2026-05-01",
+                    "amount": 4.4804852720121415
+                  },
+                  {
+                    "start_of_period": "2026-06-01",
+                    "amount": 35.53913159434776
+                  },
+                  {
+                    "start_of_period": "2026-07-01",
+                    "amount": 33.00541443161826
+                  },
+                  {
+                    "start_of_period": "2026-08-01",
+                    "amount": 42.07265138474987
+                  },
+                  {
+                    "start_of_period": "2026-09-01",
+                    "amount": 72.31011698010471
+                  },
+                  {
+                    "start_of_period": "2026-10-01",
+                    "amount": 4.4804852720121415
+                  },
+                  {
+                    "start_of_period": "2026-11-01",
+                    "amount": 4.4804852720121415
+                  },
+                  {
+                    "start_of_period": "2026-12-01",
+                    "amount": 34.50824273599917
+                  },
+                  {
+                    "start_of_period": "2027-01-01",
+                    "amount": 21.5347230040121
+                  },
+                  {
+                    "start_of_period": "2027-02-01",
+                    "amount": 12.183176665667212
+                  },
+                  {
+                    "start_of_period": "2027-03-01",
+                    "amount": 4.6102360506067175
+                  },
+                  {
+                    "start_of_period": "2027-04-01",
+                    "amount": 4.6102360506067175
+                  },
+                  {
+                    "start_of_period": "2027-05-01",
+                    "amount": 4.6102360506067175
+                  },
+                  {
+                    "start_of_period": "2027-06-01",
+                    "amount": 36.56831252341951
+                  },
+                  {
+                    "start_of_period": "2027-07-01",
+                    "amount": 33.96122121600614
+                  },
+                  {
+                    "start_of_period": "2027-08-01",
+                    "amount": 43.291037104888154
+                  },
+                  {
+                    "start_of_period": "2027-09-01",
+                    "amount": 74.40415220370896
+                  },
+                  {
+                    "start_of_period": "2027-10-01",
+                    "amount": 4.6102360506067175
+                  },
+                  {
+                    "start_of_period": "2027-11-01",
+                    "amount": 4.6102360506067175
+                  },
+                  {
+                    "start_of_period": "2027-12-01",
+                    "amount": 35.5075700612993
+                  },
+                  {
+                    "start_of_period": "2028-01-01",
+                    "amount": 22.158348996947076
+                  },
+                  {
+                    "start_of_period": "2028-02-01",
+                    "amount": 12.534208167639305
+                  },
+                  {
+                    "start_of_period": "2028-03-01",
+                    "amount": 4.743069886124422
+                  },
+                  {
+                    "start_of_period": "2028-04-01",
+                    "amount": 4.743069886124422
+                  },
+                  {
+                    "start_of_period": "2028-05-01",
+                    "amount": 4.743069886124422
+                  },
+                  {
+                    "start_of_period": "2028-06-01",
+                    "amount": 37.62194820661986
+                  },
+                  {
+                    "start_of_period": "2028-07-01",
+                    "amount": 34.9397392839462
+                  },
+                  {
+                    "start_of_period": "2028-08-01",
+                    "amount": 44.53837334517129
+                  },
+                  {
+                    "start_of_period": "2028-09-01",
+                    "amount": 76.54794458378916
+                  },
+                  {
+                    "start_of_period": "2028-10-01",
+                    "amount": 4.743069886124422
+                  },
+                  {
+                    "start_of_period": "2028-11-01",
+                    "amount": 4.743069886124422
+                  },
+                  {
+                    "start_of_period": "2028-12-01",
+                    "amount": 36.530642778049945
+                  },
+                  {
+                    "start_of_period": "2029-01-01",
+                    "amount": 22.796793201038753
+                  },
+                  {
+                    "start_of_period": "2029-02-01",
+                    "amount": 12.893647090769742
+                  },
+                  {
+                    "start_of_period": "2029-03-01",
+                    "amount": 4.879085173998969
+                  },
+                  {
+                    "start_of_period": "2029-04-01",
+                    "amount": 4.879085173998969
+                  },
+                  {
+                    "start_of_period": "2029-05-01",
+                    "amount": 4.879085173998969
+                  },
+                  {
+                    "start_of_period": "2029-06-01",
+                    "amount": 38.70081911482525
+                  },
+                  {
+                    "start_of_period": "2029-07-01",
+                    "amount": 35.94169346363692
+                  },
+                  {
+                    "start_of_period": "2029-08-01",
+                    "amount": 45.815584058369836
+                  },
+                  {
+                    "start_of_period": "2029-09-01",
+                    "amount": 78.7430821147009
+                  },
+                  {
+                    "start_of_period": "2029-10-01",
+                    "amount": 4.879085173998969
+                  },
+                  {
+                    "start_of_period": "2029-11-01",
+                    "amount": 4.879085173998969
+                  },
+                  {
+                    "start_of_period": "2029-12-01",
+                    "amount": 37.57821871789314
+                  },
+                  {
+                    "start_of_period": "2030-01-01",
+                    "amount": 23.45052853791978
+                  },
+                  {
+                    "start_of_period": "2030-02-01",
+                    "amount": 13.261580109503454
+                  },
+                  {
+                    "start_of_period": "2030-03-01",
+                    "amount": 5.018314712708266
+                  },
+                  {
+                    "start_of_period": "2030-04-01",
+                    "amount": 5.018314712708266
+                  },
+                  {
+                    "start_of_period": "2030-05-01",
+                    "amount": 5.018314712708266
+                  },
+                  {
+                    "start_of_period": "2030-06-01",
+                    "amount": 39.80518540499451
+                  },
+                  {
+                    "start_of_period": "2030-07-01",
+                    "amount": 36.96732536447781
+                  },
+                  {
+                    "start_of_period": "2030-08-01",
+                    "amount": 47.12297722874067
+                  },
+                  {
+                    "start_of_period": "2030-09-01",
+                    "amount": 80.99009412789606
+                  },
+                  {
+                    "start_of_period": "2030-10-01",
+                    "amount": 5.018314712708266
+                  },
+                  {
+                    "start_of_period": "2030-11-01",
+                    "amount": 5.018314712708266
+                  },
+                  {
+                    "start_of_period": "2030-12-01",
+                    "amount": 38.65055049137622
+                  },
+                  {
+                    "start_of_period": "2031-01-01",
+                    "amount": 24.119712648134385
+                  },
+                  {
+                    "start_of_period": "2031-02-01",
+                    "amount": 13.638223909952766
+                  },
+                  {
+                    "start_of_period": "2031-03-01",
+                    "amount": 5.160840498447075
+                  },
+                  {
+                    "start_of_period": "2031-04-01",
+                    "amount": 5.160840498447075
+                  },
+                  {
+                    "start_of_period": "2031-05-01",
+                    "amount": 5.160840498447075
+                  },
+                  {
+                    "start_of_period": "2031-06-01",
+                    "amount": 40.935697469524655
+                  },
+                  {
+                    "start_of_period": "2031-07-01",
+                    "amount": 38.01723900996756
+                  },
+                  {
+                    "start_of_period": "2031-08-01",
+                    "amount": 48.46132281692593
+                  },
+                  {
+                    "start_of_period": "2031-09-01",
+                    "amount": 83.2903039520043
+                  },
+                  {
+                    "start_of_period": "2031-10-01",
+                    "amount": 5.160840498447075
+                  },
+                  {
+                    "start_of_period": "2031-11-01",
+                    "amount": 5.160840498447075
+                  },
+                  {
+                    "start_of_period": "2031-12-01",
+                    "amount": 39.74826962486755
+                  },
+                  {
+                    "start_of_period": "2032-01-01",
+                    "amount": 24.804739633043113
+                  },
+                  {
+                    "start_of_period": "2032-02-01",
+                    "amount": 14.02383851545248
+                  },
+                  {
+                    "start_of_period": "2032-03-01",
+                    "amount": 5.306760926649116
+                  },
+                  {
+                    "start_of_period": "2032-04-01",
+                    "amount": 5.306760926649116
+                  },
+                  {
+                    "start_of_period": "2032-05-01",
+                    "amount": 5.306760926649116
+                  },
+                  {
+                    "start_of_period": "2032-06-01",
+                    "amount": 42.09313577929215
+                  },
+                  {
+                    "start_of_period": "2032-07-01",
+                    "amount": 39.09215922830468
+                  },
+                  {
+                    "start_of_period": "2032-08-01",
+                    "amount": 49.83154477569621
+                  },
+                  {
+                    "start_of_period": "2032-09-01",
+                    "amount": 85.64529958138128
+                  },
+                  {
+                    "start_of_period": "2032-10-01",
+                    "amount": 5.306760926649116
+                  },
+                  {
+                    "start_of_period": "2032-11-01",
+                    "amount": 5.306760926649116
+                  },
+                  {
+                    "start_of_period": "2032-12-01",
+                    "amount": 40.872133950009186
+                  },
+                  {
+                    "start_of_period": "2033-01-01",
+                    "amount": 25.506082414278634
+                  },
+                  {
+                    "start_of_period": "2033-02-01",
+                    "amount": 14.41851060044752
+                  },
+                  {
+                    "start_of_period": "2033-03-01",
+                    "amount": 5.456108795792291
+                  },
+                  {
+                    "start_of_period": "2033-04-01",
+                    "amount": 5.456108795792291
+                  },
+                  {
+                    "start_of_period": "2033-05-01",
+                    "amount": 5.456108795792291
+                  },
+                  {
+                    "start_of_period": "2033-06-01",
+                    "amount": 43.2777604912558
+                  },
+                  {
+                    "start_of_period": "2033-07-01",
+                    "amount": 40.19232762888865
+                  },
+                  {
+                    "start_of_period": "2033-08-01",
+                    "amount": 51.233951089308356
+                  },
+                  {
+                    "start_of_period": "2033-09-01",
+                    "amount": 88.05561034747883
+                  },
+                  {
+                    "start_of_period": "2033-10-01",
+                    "amount": 5.456108795792291
+                  },
+                  {
+                    "start_of_period": "2033-11-01",
+                    "amount": 5.456108795792291
+                  },
+                  {
+                    "start_of_period": "2033-12-01",
+                    "amount": 42.02239607734845
+                  },
+                  {
+                    "start_of_period": "2034-01-01",
+                    "amount": 26.223898632385158
+                  },
+                  {
+                    "start_of_period": "2034-02-01",
+                    "amount": 14.822543525495156
+                  },
+                  {
+                    "start_of_period": "2034-03-01",
+                    "amount": 5.608998900549274
+                  },
+                  {
+                    "start_of_period": "2034-04-01",
+                    "amount": 5.608998900549274
+                  },
+                  {
+                    "start_of_period": "2034-05-01",
+                    "amount": 5.608998900549274
+                  },
+                  {
+                    "start_of_period": "2034-06-01",
+                    "amount": 44.49048215477147
+                  },
+                  {
+                    "start_of_period": "2034-07-01",
+                    "amount": 41.31858984461769
+                  },
+                  {
+                    "start_of_period": "2034-08-01",
+                    "amount": 52.66961970266141
+                  },
+                  {
+                    "start_of_period": "2034-09-01",
+                    "amount": 90.52308891037856
+                  },
+                  {
+                    "start_of_period": "2034-10-01",
+                    "amount": 5.608998900549274
+                  },
+                  {
+                    "start_of_period": "2034-11-01",
+                    "amount": 5.608998900549274
+                  },
+                  {
+                    "start_of_period": "2034-12-01",
+                    "amount": 43.199940143801086
+                  },
+                  {
+                    "start_of_period": "2035-01-01",
+                    "amount": 26.958740029267467
+                  },
+                  {
+                    "start_of_period": "2035-02-01",
+                    "amount": 15.236067302262772
+                  },
+                  {
+                    "start_of_period": "2035-03-01",
+                    "amount": 5.765480438636919
+                  },
+                  {
+                    "start_of_period": "2035-04-01",
+                    "amount": 5.765480438636919
+                  },
+                  {
+                    "start_of_period": "2035-05-01",
+                    "amount": 5.765480438636919
+                  },
+                  {
+                    "start_of_period": "2035-06-01",
+                    "amount": 45.731691005277355
+                  },
+                  {
+                    "start_of_period": "2035-07-01",
+                    "amount": 42.47130828959103
+                  },
+                  {
+                    "start_of_period": "2035-08-01",
+                    "amount": 54.13901259214061
+                  },
+                  {
+                    "start_of_period": "2035-09-01",
+                    "amount": 93.04852926725819
+                  },
+                  {
+                    "start_of_period": "2035-10-01",
+                    "amount": 5.765480438636919
+                  },
+                  {
+                    "start_of_period": "2035-11-01",
+                    "amount": 5.765480438636919
+                  },
+                  {
+                    "start_of_period": "2035-12-01",
+                    "amount": 44.405145065188066
+                  },
+                  {
+                    "start_of_period": "2036-01-01",
+                    "amount": 27.710843065741873
+                  },
+                  {
+                    "start_of_period": "2036-02-01",
+                    "amount": 15.659211942417773
+                  },
+                  {
+                    "start_of_period": "2036-03-01",
+                    "amount": 5.9256026077720865
+                  },
+                  {
+                    "start_of_period": "2036-04-01",
+                    "amount": 5.9256026077720865
+                  },
+                  {
+                    "start_of_period": "2036-05-01",
+                    "amount": 5.9256026077720865
+                  },
+                  {
+                    "start_of_period": "2036-06-01",
+                    "amount": 47.001777278211705
+                  },
+                  {
+                    "start_of_period": "2036-07-01",
+                    "amount": 43.65084537790791
+                  },
+                  {
+                    "start_of_period": "2036-08-01",
+                    "amount": 55.64259173413129
+                  },
+                  {
+                    "start_of_period": "2036-09-01",
+                    "amount": 95.6327254152956
+                  },
+                  {
+                    "start_of_period": "2036-10-01",
+                    "amount": 5.9256026077720865
+                  },
+                  {
+                    "start_of_period": "2036-11-01",
+                    "amount": 5.9256026077720865
+                  },
+                  {
+                    "start_of_period": "2036-12-01",
+                    "amount": 45.63838975733045
+                  },
+                  {
+                    "start_of_period": "2037-01-01",
+                    "amount": 28.480444202624724
+                  },
+                  {
+                    "start_of_period": "2037-02-01",
+                    "amount": 16.09236748096235
+                  },
+                  {
+                    "start_of_period": "2037-03-01",
+                    "amount": 6.0895130011053515
+                  },
+                  {
+                    "start_of_period": "2037-04-01",
+                    "amount": 6.0895130011053515
+                  },
+                  {
+                    "start_of_period": "2037-05-01",
+                    "amount": 6.0895130011053515
+                  },
+                  {
+                    "start_of_period": "2037-06-01",
+                    "amount": 48.30191167988917
+                  },
+                  {
+                    "start_of_period": "2037-07-01",
+                    "amount": 44.85828835186605
+                  },
+                  {
+                    "start_of_period": "2037-08-01",
+                    "amount": 57.18174305778929
+                  },
+                  {
+                    "start_of_period": "2037-09-01",
+                    "amount": 98.27805934602418
+                  },
+                  {
+                    "start_of_period": "2037-10-01",
+                    "amount": 6.0895130011053515
+                  },
+                  {
+                    "start_of_period": "2037-11-01",
+                    "amount": 6.0895130011053515
+                  },
+                  {
+                    "start_of_period": "2037-12-01",
+                    "amount": 46.90081096769127
+                  },
+                  {
+                    "start_of_period": "2038-01-01",
+                    "amount": 29.268252822365007
+                  },
+                  {
+                    "start_of_period": "2038-02-01",
+                    "amount": 16.53562059234143
+                  },
+                  {
+                    "start_of_period": "2038-03-01",
+                    "amount": 6.257244417114619
+                  },
+                  {
+                    "start_of_period": "2038-04-01",
+                    "amount": 6.257244417114619
+                  },
+                  {
+                    "start_of_period": "2038-05-01",
+                    "amount": 6.257244417114619
+                  },
+                  {
+                    "start_of_period": "2038-06-01",
+                    "amount": 49.63235436726857
+                  },
+                  {
+                    "start_of_period": "2038-07-01",
+                    "amount": 46.09387882086493
+                  },
+                  {
+                    "start_of_period": "2038-08-01",
+                    "amount": 58.756774547371485
+                  },
+                  {
+                    "start_of_period": "2038-09-01",
+                    "amount": 100.9850603908958
+                  },
+                  {
+                    "start_of_period": "2038-10-01",
+                    "amount": 6.257244417114619
+                  },
+                  {
+                    "start_of_period": "2038-11-01",
+                    "amount": 6.257244417114619
+                  },
+                  {
+                    "start_of_period": "2038-12-01",
+                    "amount": 48.19266130681788
+                  },
+                  {
+                    "start_of_period": "2039-01-01",
+                    "amount": 30.074426565506933
+                  },
+                  {
+                    "start_of_period": "2039-02-01",
+                    "amount": 16.98923129988981
+                  },
+                  {
+                    "start_of_period": "2039-03-01",
+                    "amount": 6.428895251233607
+                  },
+                  {
+                    "start_of_period": "2039-04-01",
+                    "amount": 6.428895251233607
+                  },
+                  {
+                    "start_of_period": "2039-05-01",
+                    "amount": 6.428895251233607
+                  },
+                  {
+                    "start_of_period": "2039-06-01",
+                    "amount": 50.99388581122635
+                  },
+                  {
+                    "start_of_period": "2039-07-01",
+                    "amount": 47.35834161310303
+                  },
+                  {
+                    "start_of_period": "2039-08-01",
+                    "amount": 60.36861015564846
+                  },
+                  {
+                    "start_of_period": "2039-09-01",
+                    "amount": 103.75531654426608
+                  },
+                  {
+                    "start_of_period": "2039-10-01",
+                    "amount": 6.428895251233607
+                  },
+                  {
+                    "start_of_period": "2039-11-01",
+                    "amount": 6.428895251233607
+                  },
+                  {
+                    "start_of_period": "2039-12-01",
+                    "amount": 49.514698606352326
+                  },
+                  {
+                    "start_of_period": "2040-01-01",
+                    "amount": 30.89943835368317
+                  },
+                  {
+                    "start_of_period": "2040-02-01",
+                    "amount": 17.453372952497354
+                  },
+                  {
+                    "start_of_period": "2040-03-01",
+                    "amount": 6.604531100418127
+                  },
+                  {
+                    "start_of_period": "2040-04-01",
+                    "amount": 6.604531100418127
+                  },
+                  {
+                    "start_of_period": "2040-05-01",
+                    "amount": 6.604531100418127
+                  },
+                  {
+                    "start_of_period": "2040-06-01",
+                    "amount": 52.38702632568015
+                  },
+                  {
+                    "start_of_period": "2040-07-01",
+                    "amount": 48.65215994737933
+                  },
+                  {
+                    "start_of_period": "2040-08-01",
+                    "amount": 62.01786585113393
+                  },
+                  {
+                    "start_of_period": "2040-09-01",
+                    "amount": 106.58988646903877
+                  },
+                  {
+                    "start_of_period": "2040-10-01",
+                    "amount": 6.604531100418127
+                  },
+                  {
+                    "start_of_period": "2040-11-01",
+                    "amount": 6.604531100418127
+                  },
+                  {
+                    "start_of_period": "2040-12-01",
+                    "amount": 50.867428087389285
+                  },
+                  {
+                    "start_of_period": "2041-01-01",
+                    "amount": 31.743603467982158
+                  },
+                  {
+                    "start_of_period": "2041-02-01",
+                    "amount": 17.928392247943787
+                  },
+                  {
+                    "start_of_period": "2041-03-01",
+                    "amount": 6.784283158579799
+                  },
+                  {
+                    "start_of_period": "2041-04-01",
+                    "amount": 6.784283158579799
+                  },
+                  {
+                    "start_of_period": "2041-05-01",
+                    "amount": 6.784283158579799
+                  },
+                  {
+                    "start_of_period": "2041-06-01",
+                    "amount": 53.81281653846521
+                  },
+                  {
+                    "start_of_period": "2041-07-01",
+                    "amount": 49.976300261291804
+                  },
+                  {
+                    "start_of_period": "2041-08-01",
+                    "amount": 63.705773570855335
+                  },
+                  {
+                    "start_of_period": "2041-09-01",
+                    "amount": 109.49088749102135
+                  },
+                  {
+                    "start_of_period": "2041-10-01",
+                    "amount": 6.784283158579799
+                  },
+                  {
+                    "start_of_period": "2041-11-01",
+                    "amount": 6.784283158579799
+                  },
+                  {
+                    "start_of_period": "2041-12-01",
+                    "amount": 52.25186019211815
+                  },
+                  {
+                    "start_of_period": "2042-01-01",
+                    "amount": 32.60755247058078
+                  },
+                  {
+                    "start_of_period": "2042-02-01",
+                    "amount": 18.414419197896507
+                  },
+                  {
+                    "start_of_period": "2042-03-01",
+                    "amount": 6.968200623435484
+                  },
+                  {
+                    "start_of_period": "2042-04-01",
+                    "amount": 6.968200623435484
+                  },
+                  {
+                    "start_of_period": "2042-05-01",
+                    "amount": 6.968200623435484
+                  },
+                  {
+                    "start_of_period": "2042-06-01",
+                    "amount": 55.27164668501977
+                  },
+                  {
+                    "start_of_period": "2042-07-01",
+                    "amount": 51.33112496893968
+                  },
+                  {
+                    "start_of_period": "2042-08-01",
+                    "amount": 65.43279529119796
+                  },
+                  {
+                    "start_of_period": "2042-09-01",
+                    "amount": 112.45911360739164
+                  },
+                  {
+                    "start_of_period": "2042-10-01",
+                    "amount": 6.968200623435484
+                  },
+                  {
+                    "start_of_period": "2042-11-01",
+                    "amount": 6.968200623435484
+                  },
+                  {
+                    "start_of_period": "2042-12-01",
+                    "amount": 53.66837383635993
+                  },
+                  {
+                    "start_of_period": "2043-01-01",
+                    "amount": 33.49152182229536
+                  },
+                  {
+                    "start_of_period": "2043-02-01",
+                    "amount": 18.911713825690303
+                  },
+                  {
+                    "start_of_period": "2043-03-01",
+                    "amount": 7.156381890418898
+                  },
+                  {
+                    "start_of_period": "2043-04-01",
+                    "amount": 7.156381890418898
+                  },
+                  {
+                    "start_of_period": "2043-05-01",
+                    "amount": 7.156381890418898
+                  },
+                  {
+                    "start_of_period": "2043-06-01",
+                    "amount": 56.764297236220266
+                  },
+                  {
+                    "start_of_period": "2043-07-01",
+                    "amount": 52.71735889852143
+                  },
+                  {
+                    "start_of_period": "2043-08-01",
+                    "amount": 67.19985496493238
+                  },
+                  {
+                    "start_of_period": "2043-09-01",
+                    "amount": 115.49615281250524
+                  },
+                  {
+                    "start_of_period": "2043-10-01",
+                    "amount": 7.156381890418898
+                  },
+                  {
+                    "start_of_period": "2043-11-01",
+                    "amount": 7.156381890418898
+                  },
+                  {
+                    "start_of_period": "2043-12-01",
+                    "amount": 55.11772685175668
+                  },
+                  {
+                    "start_of_period": "2044-01-01",
+                    "amount": 34.39598444475856
+                  },
+                  {
+                    "start_of_period": "2044-02-01",
+                    "amount": 19.42049281743751
+                  },
+                  {
+                    "start_of_period": "2044-03-01",
+                    "amount": 7.348908955724804
+                  },
+                  {
+                    "start_of_period": "2044-04-01",
+                    "amount": 7.348908955724804
+                  },
+                  {
+                    "start_of_period": "2044-05-01",
+                    "amount": 7.348908955724804
+                  },
+                  {
+                    "start_of_period": "2044-06-01",
+                    "amount": 58.291418584463734
+                  },
+                  {
+                    "start_of_period": "2044-07-01",
+                    "amount": 54.1356060735358
+                  },
+                  {
+                    "start_of_period": "2044-08-01",
+                    "amount": 69.00772255270077
+                  },
+                  {
+                    "start_of_period": "2044-09-01",
+                    "amount": 118.60332843499184
+                  },
+                  {
+                    "start_of_period": "2044-10-01",
+                    "amount": 7.348908955724804
+                  },
+                  {
+                    "start_of_period": "2044-11-01",
+                    "amount": 7.348908955724804
+                  },
+                  {
+                    "start_of_period": "2044-12-01",
+                    "amount": 56.60055076467675
+                  },
+                  {
+                    "start_of_period": "2045-01-01",
+                    "amount": 35.32133443933094
+                  },
+                  {
+                    "start_of_period": "2045-02-01",
+                    "amount": 19.94105953369538
+                  },
+                  {
+                    "start_of_period": "2045-03-01",
+                    "amount": 7.545896614025872
+                  },
+                  {
+                    "start_of_period": "2045-04-01",
+                    "amount": 7.545896614025872
+                  },
+                  {
+                    "start_of_period": "2045-05-01",
+                    "amount": 7.545896614025872
+                  },
+                  {
+                    "start_of_period": "2045-06-01",
+                    "amount": 59.853921279106025
+                  },
+                  {
+                    "start_of_period": "2045-07-01",
+                    "amount": 55.586712126880975
+                  },
+                  {
+                    "start_of_period": "2045-08-01",
+                    "amount": 70.85747599940211
+                  },
+                  {
+                    "start_of_period": "2045-09-01",
+                    "amount": 121.78249313493296
+                  },
+                  {
+                    "start_of_period": "2045-10-01",
+                    "amount": 7.545896614025872
+                  },
+                  {
+                    "start_of_period": "2045-11-01",
+                    "amount": 7.545896614025872
+                  },
+                  {
+                    "start_of_period": "2045-12-01",
+                    "amount": 58.117729712035846
+                  },
+                  {
+                    "start_of_period": "2046-01-01",
+                    "amount": 36.268123547917256
+                  },
+                  {
+                    "start_of_period": "2046-02-01",
+                    "amount": 20.473587323353787
+                  },
+                  {
+                    "start_of_period": "2046-03-01",
+                    "amount": 7.747410462277915
+                  },
+                  {
+                    "start_of_period": "2046-04-01",
+                    "amount": 7.747410462277915
+                  },
+                  {
+                    "start_of_period": "2046-05-01",
+                    "amount": 7.747410462277915
+                  },
+                  {
+                    "start_of_period": "2046-06-01",
+                    "amount": 61.452325634064785
+                  },
+                  {
+                    "start_of_period": "2046-07-01",
+                    "amount": 57.07116027735598
+                  },
+                  {
+                    "start_of_period": "2046-08-01",
+                    "amount": 72.74973127355015
+                  },
+                  {
+                    "start_of_period": "2046-09-01",
+                    "amount": 125.0347055752324
+                  },
+                  {
+                    "start_of_period": "2046-10-01",
+                    "amount": 7.747410462277915
+                  },
+                  {
+                    "start_of_period": "2046-11-01",
+                    "amount": 7.747410462277915
+                  },
+                  {
+                    "start_of_period": "2046-12-01",
+                    "amount": 59.669768914928675
+                  },
+                  {
+                    "start_of_period": "2047-01-01",
+                    "amount": 37.236667051605956
+                  },
+                  {
+                    "start_of_period": "2047-02-01",
+                    "amount": 21.018466221414908
+                  },
+                  {
+                    "start_of_period": "2047-03-01",
+                    "amount": 7.953598093631505
+                  },
+                  {
+                    "start_of_period": "2047-04-01",
+                    "amount": 7.953598093631505
+                  },
+                  {
+                    "start_of_period": "2047-05-01",
+                    "amount": 7.953598093631505
+                  },
+                  {
+                    "start_of_period": "2047-06-01",
+                    "amount": 63.08780235565465
+                  },
+                  {
+                    "start_of_period": "2047-07-01",
+                    "amount": 58.590037767258494
+                  },
+                  {
+                    "start_of_period": "2047-08-01",
+                    "amount": 74.68587430430074
+                  },
+                  {
+                    "start_of_period": "2047-09-01",
+                    "amount": 128.3623477474235
+                  },
+                  {
+                    "start_of_period": "2047-10-01",
+                    "amount": 7.953598093631505
+                  },
+                  {
+                    "start_of_period": "2047-11-01",
+                    "amount": 7.953598093631505
+                  },
+                  {
+                    "start_of_period": "2047-12-01",
+                    "amount": 61.257805120818276
+                  },
+                  {
+                    "start_of_period": "2048-01-01",
+                    "amount": 38.22767433284602
+                  },
+                  {
+                    "start_of_period": "2048-02-01",
+                    "amount": 21.575826239546153
+                  },
+                  {
+                    "start_of_period": "2048-03-01",
+                    "amount": 8.164508705803504
+                  },
+                  {
+                    "start_of_period": "2048-04-01",
+                    "amount": 8.164508705803504
+                  },
+                  {
+                    "start_of_period": "2048-05-01",
+                    "amount": 8.164508705803504
+                  },
+                  {
+                    "start_of_period": "2048-06-01",
+                    "amount": 64.76074167931387
+                  },
+                  {
+                    "start_of_period": "2048-07-01",
+                    "amount": 60.14370701068777
+                  },
+                  {
+                    "start_of_period": "2048-08-01",
+                    "amount": 76.66636706803916
+                  },
+                  {
+                    "start_of_period": "2048-09-01",
+                    "amount": 131.7662136486842
+                  },
+                  {
+                    "start_of_period": "2048-10-01",
+                    "amount": 8.164508705803504
+                  },
+                  {
+                    "start_of_period": "2048-11-01",
+                    "amount": 8.164508705803504
+                  },
+                  {
+                    "start_of_period": "2048-12-01",
+                    "amount": 62.88221724552569
+                  },
+                  {
+                    "start_of_period": "2049-01-01",
+                    "amount": 39.241381852453806
+                  },
+                  {
+                    "start_of_period": "2049-02-01",
+                    "amount": 22.146014075527244
+                  },
+                  {
+                    "start_of_period": "2049-03-01",
+                    "amount": 8.380273492705532
+                  },
+                  {
+                    "start_of_period": "2049-04-01",
+                    "amount": 8.380273492705532
+                  },
+                  {
+                    "start_of_period": "2049-05-01",
+                    "amount": 8.380273492705532
+                  },
+                  {
+                    "start_of_period": "2049-06-01",
+                    "amount": 66.4721842328777
+                  },
+                  {
+                    "start_of_period": "2049-07-01",
+                    "amount": 61.73313444524177
+                  },
+                  {
+                    "start_of_period": "2049-08-01",
+                    "amount": 78.69244150179289
+                  },
+                  {
+                    "start_of_period": "2049-09-01",
+                    "amount": 135.24842060482183
+                  },
+                  {
+                    "start_of_period": "2049-10-01",
+                    "amount": 8.380273492705532
+                  },
+                  {
+                    "start_of_period": "2049-11-01",
+                    "amount": 8.380273492705532
+                  },
+                  {
+                    "start_of_period": "2049-12-01",
+                    "amount": 64.54401573124028
+                  },
+                  {
+                    "start_of_period": "2050-01-01",
+                    "amount": 40.27842017260617
+                  },
+                  {
+                    "start_of_period": "2050-02-01",
+                    "amount": 22.729289752692967
+                  },
+                  {
+                    "start_of_period": "2050-03-01",
+                    "amount": 8.600990849771305
+                  },
+                  {
+                    "start_of_period": "2050-04-01",
+                    "amount": 8.600990849771305
+                  },
+                  {
+                    "start_of_period": "2050-05-01",
+                    "amount": 8.600990849771305
+                  },
+                  {
+                    "start_of_period": "2050-06-01",
+                    "amount": 68.22291048722258
+                  },
+                  {
+                    "start_of_period": "2050-07-01",
+                    "amount": 63.35904489911896
+                  },
+                  {
+                    "start_of_period": "2050-08-01",
+                    "amount": 80.76502155833246
+                  },
+                  {
+                    "start_of_period": "2050-09-01",
+                    "amount": 138.81055661019212
+                  },
+                  {
+                    "start_of_period": "2050-10-01",
+                    "amount": 8.600990849771305
+                  },
+                  {
+                    "start_of_period": "2050-11-01",
+                    "amount": 8.600990849771305
+                  },
+                  {
+                    "start_of_period": "2050-12-01",
+                    "amount": 66.24395840960409
+                  },
+                  {
+                    "start_of_period": "2051-01-01",
+                    "amount": 41.33926221493577
+                  },
+                  {
+                    "start_of_period": "2051-02-01",
+                    "amount": 23.32591329437813
+                  },
+                  {
+                    "start_of_period": "2051-03-01",
+                    "amount": 8.826759172434544
+                  },
+                  {
+                    "start_of_period": "2051-04-01",
+                    "amount": 8.826759172434544
+                  },
+                  {
+                    "start_of_period": "2051-05-01",
+                    "amount": 8.826759172434544
+                  },
+                  {
+                    "start_of_period": "2051-06-01",
+                    "amount": 70.01370091322495
+                  },
+                  {
+                    "start_of_period": "2051-07-01",
+                    "amount": 65.02216320051782
+                  },
+                  {
+                    "start_of_period": "2051-08-01",
+                    "amount": 82.88503119042849
+                  },
+                  {
+                    "start_of_period": "2051-09-01",
+                    "amount": 142.45420965915062
+                  },
+                  {
+                    "start_of_period": "2051-10-01",
+                    "amount": 8.826759172434544
+                  },
+                  {
+                    "start_of_period": "2051-11-01",
+                    "amount": 8.826759172434544
+                  },
+                  {
+                    "start_of_period": "2051-12-01",
+                    "amount": 67.98280311225918
+                  },
+                  {
+                    "start_of_period": "2052-01-01",
+                    "amount": 42.42438090107529
+                  },
+                  {
+                    "start_of_period": "2052-02-01",
+                    "amount": 23.93618806113998
+                  },
+                  {
+                    "start_of_period": "2052-03-01",
+                    "amount": 9.057693255367914
+                  },
+                  {
+                    "start_of_period": "2052-04-01",
+                    "amount": 9.057693255367914
+                  },
+                  {
+                    "start_of_period": "2052-05-01",
+                    "amount": 9.057693255367914
+                  },
+                  {
+                    "start_of_period": "2052-06-01",
+                    "amount": 71.84546606024067
+                  },
+                  {
+                    "start_of_period": "2052-07-01",
+                    "amount": 66.72333498233658
+                  },
+                  {
+                    "start_of_period": "2052-08-01",
+                    "amount": 85.05354834297998
+                  },
+                  {
+                    "start_of_period": "2052-09-01",
+                    "amount": 146.18123241177892
+                  },
+                  {
+                    "start_of_period": "2052-10-01",
+                    "amount": 9.057693255367914
+                  },
+                  {
+                    "start_of_period": "2052-11-01",
+                    "amount": 9.057693255367914
+                  },
+                  {
+                    "start_of_period": "2052-12-01",
+                    "amount": 69.76143397612121
+                  },
+                  {
+                    "start_of_period": "2053-01-01",
+                    "amount": 43.534327972929475
+                  },
+                  {
+                    "start_of_period": "2053-02-01",
+                    "amount": 24.560330739090855
+                  },
+                  {
+                    "start_of_period": "2053-03-01",
+                    "amount": 9.29387509476618
+                  },
+                  {
+                    "start_of_period": "2053-04-01",
+                    "amount": 9.29387509476618
+                  },
+                  {
+                    "start_of_period": "2053-05-01",
+                    "amount": 9.29387509476618
+                  },
+                  {
+                    "start_of_period": "2053-06-01",
+                    "amount": 73.71885632066676
+                  },
+                  {
+                    "start_of_period": "2053-07-01",
+                    "amount": 68.46316426807397
+                  },
+                  {
+                    "start_of_period": "2053-08-01",
+                    "amount": 87.27134297662906
+                  },
+                  {
+                    "start_of_period": "2053-09-01",
+                    "amount": 149.99294819670666
+                  },
+                  {
+                    "start_of_period": "2053-10-01",
+                    "amount": 9.29387509476618
+                  },
+                  {
+                    "start_of_period": "2053-11-01",
+                    "amount": 9.29387509476618
+                  },
+                  {
+                    "start_of_period": "2053-12-01",
+                    "amount": 71.58048252755859
+                  },
+                  {
+                    "start_of_period": "2054-01-01",
+                    "amount": 44.66949753185889
+                  }
+                ]
+              },
+              "project_inverters": [],
+              "generation_project": {
+                "uuid": "2947cfe5-0280-44f6-9704-de497a3142f1",
+                "project": "b31270e0-5ce8-45fd-982a-26404225e06a",
+                "input_mode": "RSD",
+                "capacity": 6.48,
+                "min_offset": null,
+                "max_offset": null,
+                "generation_profile": {
+                  "entered": null,
+                  "estimated_monthly": {
+                    "interval": "MONTHLY",
+                    "amounts": [
+                      {
+                        "start_of_period": "2023-10-01T00:00:00Z",
+                        "amount": 535.2050690000001
+                      },
+                      {
+                        "start_of_period": "2023-11-01T00:00:00Z",
+                        "amount": 425.12225399999966
+                      },
+                      {
+                        "start_of_period": "2023-12-01T00:00:00Z",
+                        "amount": 357.6453159999998
+                      },
+                      {
+                        "start_of_period": "2024-01-01T00:00:00Z",
+                        "amount": 412.7788380000001
+                      },
+                      {
+                        "start_of_period": "2024-02-01T00:00:00Z",
+                        "amount": 439.3444750000001
+                      },
+                      {
+                        "start_of_period": "2024-03-01T00:00:00Z",
+                        "amount": 630.5424479999996
+                      },
+                      {
+                        "start_of_period": "2024-04-01T00:00:00Z",
+                        "amount": 744.177016
+                      },
+                      {
+                        "start_of_period": "2024-05-01T00:00:00Z",
+                        "amount": 836.4244100000001
+                      },
+                      {
+                        "start_of_period": "2024-06-01T00:00:00Z",
+                        "amount": 810.062151
+                      },
+                      {
+                        "start_of_period": "2024-07-01T00:00:00Z",
+                        "amount": 840.4953999999998
+                      },
+                      {
+                        "start_of_period": "2024-08-01T00:00:00Z",
+                        "amount": 788.2197919999999
+                      },
+                      {
+                        "start_of_period": "2024-09-01T00:00:00Z",
+                        "amount": 657.5313019999999
+                      }
+                    ]
+                  }
+                },
+                "pv_arrays": [
+                  {
+                    "uuid": "f5096744-12b7-4767-b27c-480e65775c9d",
+                    "pv_module_model": "ebec7262-0f36-469f-b378-957afb8e9b83",
+                    "array_type": "ROOF_MOUNTED_FIXED",
+                    "tilt": 22,
+                    "azimuth": 270.62,
+                    "orientation": "OPTIMAL",
+                    "strings": [
+                      {
+                        "microinverter_model": "8f2a08b6-b12d-460e-92ca-1ba6c0f11fb3",
+                        "central_inverter": null,
+                        "pv_module_count": 18,
+                        "min_string_length": null,
+                        "max_string_length": null,
+                        "inverter_model": "8f2a08b6-b12d-460e-92ca-1ba6c0f11fb3"
+                      }
+                    ],
+                    "generation_project": "2947cfe5-0280-44f6-9704-de497a3142f1",
+                    "solar_access": {
+                      "interval": "MONTHLY",
+                      "amounts": [
+                        {
+                          "start_of_period": "2023-10-01T00:00:00Z",
+                          "amount": 74.66351318359375
+                        },
+                        {
+                          "start_of_period": "2023-11-01T00:00:00Z",
+                          "amount": 74.96198272705078
+                        },
+                        {
+                          "start_of_period": "2023-12-01T00:00:00Z",
+                          "amount": 74.26568603515625
+                        },
+                        {
+                          "start_of_period": "2024-01-01T00:00:00Z",
+                          "amount": 70.62115478515625
+                        },
+                        {
+                          "start_of_period": "2024-02-01T00:00:00Z",
+                          "amount": 77.67757415771484
+                        },
+                        {
+                          "start_of_period": "2024-03-01T00:00:00Z",
+                          "amount": 80.44743347167969
+                        },
+                        {
+                          "start_of_period": "2024-04-01T00:00:00Z",
+                          "amount": 85.06287384033203
+                        },
+                        {
+                          "start_of_period": "2024-05-01T00:00:00Z",
+                          "amount": 87.24995422363281
+                        },
+                        {
+                          "start_of_period": "2024-06-01T00:00:00Z",
+                          "amount": 85.84698486328125
+                        },
+                        {
+                          "start_of_period": "2024-07-01T00:00:00Z",
+                          "amount": 85.754150390625
+                        },
+                        {
+                          "start_of_period": "2024-08-01T00:00:00Z",
+                          "amount": 84.32057189941406
+                        },
+                        {
+                          "start_of_period": "2024-09-01T00:00:00Z",
+                          "amount": 82.95414733886719
+                        }
+                      ]
+                    },
+                    "use_sunroof": true,
+                    "use_sunroof_azimuth": true,
+                    "use_sunroof_tilt": true,
+                    "generation_profile": {
+                      "entered": null,
+                      "estimated_monthly": {
+                        "interval": "MONTHLY",
+                        "amounts": [
+                          {
+                            "start_of_period": "2023-10-01T00:00:00Z",
+                            "amount": 535.2050690000001
+                          },
+                          {
+                            "start_of_period": "2023-11-01T00:00:00Z",
+                            "amount": 425.12225399999966
+                          },
+                          {
+                            "start_of_period": "2023-12-01T00:00:00Z",
+                            "amount": 357.6453159999998
+                          },
+                          {
+                            "start_of_period": "2024-01-01T00:00:00Z",
+                            "amount": 412.7788380000001
+                          },
+                          {
+                            "start_of_period": "2024-02-01T00:00:00Z",
+                            "amount": 439.3444750000001
+                          },
+                          {
+                            "start_of_period": "2024-03-01T00:00:00Z",
+                            "amount": 630.5424479999996
+                          },
+                          {
+                            "start_of_period": "2024-04-01T00:00:00Z",
+                            "amount": 744.177016
+                          },
+                          {
+                            "start_of_period": "2024-05-01T00:00:00Z",
+                            "amount": 836.4244100000001
+                          },
+                          {
+                            "start_of_period": "2024-06-01T00:00:00Z",
+                            "amount": 810.062151
+                          },
+                          {
+                            "start_of_period": "2024-07-01T00:00:00Z",
+                            "amount": 840.4953999999998
+                          },
+                          {
+                            "start_of_period": "2024-08-01T00:00:00Z",
+                            "amount": 788.2197919999999
+                          },
+                          {
+                            "start_of_period": "2024-09-01T00:00:00Z",
+                            "amount": 657.5313019999999
+                          }
+                        ]
+                      }
+                    },
+                    "design": {
+                      "panels": [
+                        [
+                          {
+                            "lng": -98.5002196568592,
+                            "lat": 33.898262174398674
+                          },
+                          {
+                            "lng": -98.50021977597665,
+                            "lat": 33.8982530378261
+                          },
+                          {
+                            "lng": -98.50020248807142,
+                            "lat": 33.898252882543666
+                          },
+                          {
+                            "lng": -98.50020236895398,
+                            "lat": 33.89826201911623
+                          }
+                        ],
+                        [
+                          {
+                            "lng": -98.50021977597665,
+                            "lat": 33.8982530378261
+                          },
+                          {
+                            "lng": -98.50021989509409,
+                            "lat": 33.89824390125354
+                          },
+                          {
+                            "lng": -98.50020260718887,
+                            "lat": 33.8982437459711
+                          },
+                          {
+                            "lng": -98.50020248807142,
+                            "lat": 33.898252882543666
+                          }
+                        ],
+                        [
+                          {
+                            "lng": -98.50021989509409,
+                            "lat": 33.89824390125354
+                          },
+                          {
+                            "lng": -98.50022001421154,
+                            "lat": 33.89823476468097
+                          },
+                          {
+                            "lng": -98.50020272630631,
+                            "lat": 33.89823460939853
+                          },
+                          {
+                            "lng": -98.50020260718887,
+                            "lat": 33.8982437459711
+                          }
+                        ],
+                        [
+                          {
+                            "lng": -98.50022001421152,
+                            "lat": 33.89823476468097
+                          },
+                          {
+                            "lng": -98.50022013332897,
+                            "lat": 33.8982256281084
+                          },
+                          {
+                            "lng": -98.50020284542374,
+                            "lat": 33.89822547282596
+                          },
+                          {
+                            "lng": -98.5002027263063,
+                            "lat": 33.89823460939853
+                          }
+                        ],
+                        [
+                          {
+                            "lng": -98.50022013332897,
+                            "lat": 33.8982256281084
+                          },
+                          {
+                            "lng": -98.50022025244641,
+                            "lat": 33.898216491535834
+                          },
+                          {
+                            "lng": -98.50020296454117,
+                            "lat": 33.8982163362534
+                          },
+                          {
+                            "lng": -98.50020284542374,
+                            "lat": 33.89822547282596
+                          }
+                        ],
+                        [
+                          {
+                            "lng": -98.50022025244641,
+                            "lat": 33.898216491535834
+                          },
+                          {
+                            "lng": -98.50022037156386,
+                            "lat": 33.89820735496327
+                          },
+                          {
+                            "lng": -98.50020308365863,
+                            "lat": 33.898207199680826
+                          },
+                          {
+                            "lng": -98.50020296454119,
+                            "lat": 33.8982163362534
+                          }
+                        ],
+                        [
+                          {
+                            "lng": -98.50022037156386,
+                            "lat": 33.89820735496326
+                          },
+                          {
+                            "lng": -98.5002204906813,
+                            "lat": 33.8981982183907
+                          },
+                          {
+                            "lng": -98.50020320277608,
+                            "lat": 33.89819806310826
+                          },
+                          {
+                            "lng": -98.50020308365863,
+                            "lat": 33.898207199680826
+                          }
+                        ],
+                        [
+                          {
+                            "lng": -98.5002204906813,
+                            "lat": 33.8981982183907
+                          },
+                          {
+                            "lng": -98.50022060979875,
+                            "lat": 33.89818908181813
+                          },
+                          {
+                            "lng": -98.50020332189351,
+                            "lat": 33.898188926535695
+                          },
+                          {
+                            "lng": -98.50020320277608,
+                            "lat": 33.89819806310826
+                          }
+                        ],
+                        [
+                          {
+                            "lng": -98.50022060979873,
+                            "lat": 33.89818908181813
+                          },
+                          {
+                            "lng": -98.50022072891618,
+                            "lat": 33.898179945245566
+                          },
+                          {
+                            "lng": -98.50020344101095,
+                            "lat": 33.89817978996312
+                          },
+                          {
+                            "lng": -98.50020332189351,
+                            "lat": 33.898188926535695
+                          }
+                        ],
+                        [
+                          {
+                            "lng": -98.50020241813775,
+                            "lat": 33.89826201955801
+                          },
+                          {
+                            "lng": -98.50020253725519,
+                            "lat": 33.89825288298544
+                          },
+                          {
+                            "lng": -98.50018524934997,
+                            "lat": 33.898252727703
+                          },
+                          {
+                            "lng": -98.50018513023252,
+                            "lat": 33.89826186427557
+                          }
+                        ],
+                        [
+                          {
+                            "lng": -98.50020253725519,
+                            "lat": 33.89825288298544
+                          },
+                          {
+                            "lng": -98.50020265637264,
+                            "lat": 33.898243746412874
+                          },
+                          {
+                            "lng": -98.5001853684674,
+                            "lat": 33.89824359113043
+                          },
+                          {
+                            "lng": -98.50018524934995,
+                            "lat": 33.898252727703
+                          }
+                        ],
+                        [
+                          {
+                            "lng": -98.50020265637262,
+                            "lat": 33.898243746412874
+                          },
+                          {
+                            "lng": -98.50020277549007,
+                            "lat": 33.89823460984031
+                          },
+                          {
+                            "lng": -98.50018548758484,
+                            "lat": 33.89823445455787
+                          },
+                          {
+                            "lng": -98.5001853684674,
+                            "lat": 33.89824359113044
+                          }
+                        ],
+                        [
+                          {
+                            "lng": -98.50020277549007,
+                            "lat": 33.89823460984031
+                          },
+                          {
+                            "lng": -98.50020289460751,
+                            "lat": 33.89822547326774
+                          },
+                          {
+                            "lng": -98.50018560670229,
+                            "lat": 33.8982253179853
+                          },
+                          {
+                            "lng": -98.50018548758484,
+                            "lat": 33.89823445455787
+                          }
+                        ],
+                        [
+                          {
+                            "lng": -98.50020289460751,
+                            "lat": 33.898225473267736
+                          },
+                          {
+                            "lng": -98.50020301372496,
+                            "lat": 33.89821633669517
+                          },
+                          {
+                            "lng": -98.50018572581973,
+                            "lat": 33.898216181412735
+                          },
+                          {
+                            "lng": -98.50018560670229,
+                            "lat": 33.8982253179853
+                          }
+                        ],
+                        [
+                          {
+                            "lng": -98.50020301372496,
+                            "lat": 33.89821633669517
+                          },
+                          {
+                            "lng": -98.5002031328424,
+                            "lat": 33.8982072001226
+                          },
+                          {
+                            "lng": -98.50018584493716,
+                            "lat": 33.89820704484016
+                          },
+                          {
+                            "lng": -98.50018572581973,
+                            "lat": 33.898216181412735
+                          }
+                        ],
+                        [
+                          {
+                            "lng": -98.5002031328424,
+                            "lat": 33.898207200122606
+                          },
+                          {
+                            "lng": -98.50020325195985,
+                            "lat": 33.89819806355004
+                          },
+                          {
+                            "lng": -98.50018596405461,
+                            "lat": 33.8981979082676
+                          },
+                          {
+                            "lng": -98.50018584493718,
+                            "lat": 33.89820704484017
+                          }
+                        ],
+                        [
+                          {
+                            "lng": -98.50020325195985,
+                            "lat": 33.89819806355003
+                          },
+                          {
+                            "lng": -98.50020337107728,
+                            "lat": 33.89818892697747
+                          },
+                          {
+                            "lng": -98.50018608317205,
+                            "lat": 33.89818877169503
+                          },
+                          {
+                            "lng": -98.50018596405461,
+                            "lat": 33.8981979082676
+                          }
+                        ],
+                        [
+                          {
+                            "lng": -98.50020337107728,
+                            "lat": 33.89818892697747
+                          },
+                          {
+                            "lng": -98.50020349019472,
+                            "lat": 33.898179790404896
+                          },
+                          {
+                            "lng": -98.5001862022895,
+                            "lat": 33.89817963512246
+                          },
+                          {
+                            "lng": -98.50018608317205,
+                            "lat": 33.89818877169503
+                          }
+                        ]
+                      ],
+                      "polygon_with_setbacks_edge_lengths": [
+                        5.540377709590624,
+                        13.002261594415819,
+                        5.943221746573574,
+                        12.87296971479042
+                      ],
+                      "optimal_orientation": "PORTRAIT",
+                      "polygon_edge_lengths": [
+                        12.87296971479042,
+                        5.540377709597366,
+                        13.002261593708825,
+                        5.943221746573574
+                      ],
+                      "polygon_with_setbacks": [
+                        {
+                          "lng": -98.50023858788002,
+                          "lat": 33.89814711166042
+                        },
+                        {
+                          "lng": -98.50018293204296,
+                          "lat": 33.89814766823911
+                        },
+                        {
+                          "lng": -98.50017890872944,
+                          "lat": 33.89826454968586
+                        },
+                        {
+                          "lng": -98.50023858788002,
+                          "lat": 33.89826287995203
+                        }
+                      ]
+                    },
+                    "alignment": "GRID",
+                    "azimuth_side": 0,
+                    "polygon": [
+                      {
+                        "lng": -98.50023858788002,
+                        "lat": 33.89826287995203
+                      },
+                      {
+                        "lng": -98.50023858788002,
+                        "lat": 33.89814711166042
+                      },
+                      {
+                        "lng": -98.50018293204296,
+                        "lat": 33.89814766823912
+                      },
+                      {
+                        "lng": -98.50017890872944,
+                        "lat": 33.89826454968586
+                      }
+                    ],
+                    "row_spacing": 0,
+                    "rows_per_group": 1,
+                    "setbacks": [
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "setback_edges": [],
+                    "irradiance": 1795.8745803833008,
+                    "sunroof_shade_data_reliable": true,
+                    "polygon_offset_lat": null,
+                    "polygon_offset_lng": null
+                  }
+                ],
+                "methodology": "PVWATTS",
+                "monitoring_model": null,
+                "monitoring_quantity": null,
+                "racking_model": null,
+                "autodesign_roof_geometry_id": null,
+                "panel_placement_is_optimized": false,
+                "autodesign_target_offset_pct": null
+              },
+              "efficiency_project": null,
+              "storage_project": null,
+              "map_image_url": "https://sighten-project-images.s3.amazonaws.com/engine/b31270e0-5ce8-45fd-982a-26404225e06a/sunroof-33.89775663975233--98.5007227375285.png",
+              "map_image_type": "SUNROOF",
+              "map_image_lat_min": 33.8977566397523,
+              "map_image_lng_min": -98.5007227375285,
+              "map_image_lat_max": 33.8986549602477,
+              "map_image_lng_max": -98.4996404624715,
+              "map_image_rotation": null,
+              "read_only": false,
+              "date_created": "2023-10-12T15:11:39.893481Z",
+              "date_updated": "2023-10-12T15:14:57.797133Z",
+              "created_by": "dbfe4797-2364-4523-909e-9ddb7111c234",
+              "modified_by": "dbfe4797-2364-4523-909e-9ddb7111c234",
+              "version_of": null,
+              "soiling_loss_pct": 2.249,
+              "max_temp": null,
+              "min_temp": null,
+              "usage_profile": "00618f3d-ab7e-4528-9a4d-f783e6df9d3b",
+              "created_with_autodesign": false,
+              "modified_autodesign": false,
+              "autodesign_project_template": null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "http": {
+    "relativeURI": "/api/v1/project?site_id={{record.originalPayload.projectData.everbrightProjectId}}",
+    "method": "GET",
+    "formType": "http"
+  },
+  "transform": {
+    "type": "expression",
+    "expression": {
+      "rules": [
+        [
+          {
+            "extract": "results[*].uuid",
+            "generate": "originalPayload.projectData.project.*.project_id"
+          },
+          {
+            "generate": "originalPayload.projectData.project.*.project_name",
+            "extract": "results[*].name"
+          },
+          {
+            "extract": "results[*].map_image_type",
+            "generate": "originalPayload.projectData.project.*.project_image_type"
+          },
+          {
+            "generate": "originalPayload.projectData.project.*.project_image_url",
+            "extract": "results[*].snapshot_image_url"
+          },
+          {
+            "extract": "results[*].soiling_loss_pct",
+            "generate": "originalPayload.projectData.project.*.project_soiling_loss_pct"
+          },
+          {
+            "extract": "results[*].date_created",
+            "generate": "originalPayload.projectData.project.*.project_date_created"
+          },
+          {
+            "extract": "results[*].created_by",
+            "generate": "originalPayload.projectData.project.*.project_created_by"
+          },
+          {
+            "extract": "results[*].generation_project.pv_arrays[*].pv_module_model",
+            "generate": "originalPayload.projectData.project.*.pv_module_model"
+          }
+        ]
+      ],
+      "version": "1"
+    },
+    "rules": [
+      [
+        {
+          "extract": "results[*].uuid",
+          "generate": "originalPayload.projectData.project.*.project_id"
+        },
+        {
+          "generate": "originalPayload.projectData.project.*.project_name",
+          "extract": "results[*].name"
+        },
+        {
+          "extract": "results[*].map_image_type",
+          "generate": "originalPayload.projectData.project.*.project_image_type"
+        },
+        {
+          "generate": "originalPayload.projectData.project.*.project_image_url",
+          "extract": "results[*].snapshot_image_url"
+        },
+        {
+          "extract": "results[*].soiling_loss_pct",
+          "generate": "originalPayload.projectData.project.*.project_soiling_loss_pct"
+        },
+        {
+          "extract": "results[*].date_created",
+          "generate": "originalPayload.projectData.project.*.project_date_created"
+        },
+        {
+          "extract": "results[*].created_by",
+          "generate": "originalPayload.projectData.project.*.project_created_by"
+        },
+        {
+          "extract": "results[*].generation_project.pv_arrays[*].pv_module_model",
+          "generate": "originalPayload.projectData.project.*.pv_module_model"
+        }
+      ]
+    ],
+    "version": "1"
+  },
+  "adaptorType": "HTTPExport"
+}

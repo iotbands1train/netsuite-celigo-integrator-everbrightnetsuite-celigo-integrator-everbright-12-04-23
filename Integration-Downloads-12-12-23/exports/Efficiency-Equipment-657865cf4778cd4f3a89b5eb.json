@@ -1,0 +1,15 @@
+{
+  "_id": "657865cf4778cd4f3a89b5eb",
+  "name": "Efficiency Equipment",
+  "_connectionId": "654e618e57f7f566040cf952",
+  "apiIdentifier": "e39e14845a",
+  "asynchronous": true,
+  "isLookup": true,
+  "oneToMany": false,
+  "http": {
+    "relativeURI": "/api/v1/organization_efficiency_equipment?site_id={{record.originalPayload.projectData.everbrightProjectId}}",
+    "method": "GET",
+    "formType": "http"
+  },
+  "adaptorType": "HTTPExport"
+}

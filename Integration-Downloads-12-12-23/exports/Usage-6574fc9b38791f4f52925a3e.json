@@ -1,0 +1,606 @@
+{
+  "_id": "6574fc9b38791f4f52925a3e",
+  "name": "Usage",
+  "_connectionId": "654e618e57f7f566040cf952",
+  "apiIdentifier": "e80a554c99",
+  "asynchronous": true,
+  "isLookup": true,
+  "oneToMany": false,
+  "mockOutput": {
+    "page_of_records": [
+      {
+        "record": {
+          "uuid": "00618f3d-ab7e-4528-9a4d-f783e6df9d3b",
+          "site": "56a9b904-ecfd-4507-97fd-624593982c4a",
+          "name": "Typical Usage Profile",
+          "default": true,
+          "utility_company": "e6c9a282-e945-45c6-b941-8771e62a8daf",
+          "genability_rate_schedule": {
+            "uuid": "c3137c2e-a0e5-4f63-b824-93167cf3e6a0",
+            "name": "Residential",
+            "code": "R",
+            "display_name": "Residential - R",
+            "customer_class": "RESIDENTIAL",
+            "has_contracted_rates": true,
+            "genability_id": 3153595,
+            "genability_utility_id": 2288,
+            "allows_medical_baseline": false
+          },
+          "post_project_genability_rate_schedule": {
+            "uuid": "c3137c2e-a0e5-4f63-b824-93167cf3e6a0",
+            "name": "Residential",
+            "code": "R",
+            "display_name": "Residential - R",
+            "customer_class": "RESIDENTIAL",
+            "has_contracted_rates": true,
+            "genability_id": 3153595,
+            "genability_utility_id": 2288,
+            "allows_medical_baseline": false
+          },
+          "everbright_rate_schedule": null,
+          "post_project_everbright_rate_schedule": null,
+          "custom_rate": null,
+          "post_project_custom_rate": null,
+          "utility_rate_escalator": 1.7999999999999998,
+          "utility_sales_tax_rate": 0,
+          "medical_baseline_allotments": 0,
+          "contracted_rates": [],
+          "input_mode": "MONUSG",
+          "entered_usage": {
+            "heating": null,
+            "cooling": null,
+            "lighting": null,
+            "water_heater": null,
+            "appliance": null,
+            "ev": null,
+            "pool": null,
+            "grid_import": null,
+            "total": {
+              "interval": "MONTHLY",
+              "amounts": [
+                {
+                  "start_of_period": "2023-10-01T00:00:00Z",
+                  "amount": 500
+                },
+                {
+                  "start_of_period": "2023-11-01T00:00:00Z",
+                  "amount": 300
+                },
+                {
+                  "start_of_period": "2023-12-01T00:00:00Z",
+                  "amount": 500
+                },
+                {
+                  "start_of_period": "2024-01-01T00:00:00Z",
+                  "amount": 500
+                },
+                {
+                  "start_of_period": "2024-02-01T00:00:00Z",
+                  "amount": 500
+                },
+                {
+                  "start_of_period": "2024-03-01T00:00:00Z",
+                  "amount": 500
+                },
+                {
+                  "start_of_period": "2024-04-01T00:00:00Z",
+                  "amount": 500
+                },
+                {
+                  "start_of_period": "2024-05-01T00:00:00Z",
+                  "amount": 500
+                },
+                {
+                  "start_of_period": "2024-06-01T00:00:00Z",
+                  "amount": 1000
+                },
+                {
+                  "start_of_period": "2024-07-01T00:00:00Z",
+                  "amount": 1000
+                },
+                {
+                  "start_of_period": "2024-08-01T00:00:00Z",
+                  "amount": 1000
+                },
+                {
+                  "start_of_period": "2024-09-01T00:00:00Z",
+                  "amount": 1000
+                }
+              ]
+            }
+          },
+          "entered_bill": null,
+          "estimated_monthly_usage": {
+            "heating": {
+              "interval": "MONTHLY",
+              "amounts": [
+                {
+                  "start_of_period": "2023-10-01T00:00:00Z",
+                  "amount": 0
+                },
+                {
+                  "start_of_period": "2023-11-01T00:00:00Z",
+                  "amount": 0
+                },
+                {
+                  "start_of_period": "2023-12-01T00:00:00Z",
+                  "amount": 0
+                },
+                {
+                  "start_of_period": "2024-01-01T00:00:00Z",
+                  "amount": 0
+                },
+                {
+                  "start_of_period": "2024-02-01T00:00:00Z",
+                  "amount": 0
+                },
+                {
+                  "start_of_period": "2024-03-01T00:00:00Z",
+                  "amount": 0
+                },
+                {
+                  "start_of_period": "2024-04-01T00:00:00Z",
+                  "amount": 0
+                },
+                {
+                  "start_of_period": "2024-05-01T00:00:00Z",
+                  "amount": 0
+                },
+                {
+                  "start_of_period": "2024-06-01T00:00:00Z",
+                  "amount": 0
+                },
+                {
+                  "start_of_period": "2024-07-01T00:00:00Z",
+                  "amount": 0
+                },
+                {
+                  "start_of_period": "2024-08-01T00:00:00Z",
+                  "amount": 0
+                },
+                {
+                  "start_of_period": "2024-09-01T00:00:00Z",
+                  "amount": 0
+                }
+              ]
+            },
+            "cooling": {
+              "interval": "MONTHLY",
+              "amounts": [
+                {
+                  "start_of_period": "2023-10-01T00:00:00Z",
+                  "amount": 35.92335908511204
+                },
+                {
+                  "start_of_period": "2023-11-01T00:00:00Z",
+                  "amount": 7.933251182823495
+                },
+                {
+                  "start_of_period": "2023-12-01T00:00:00Z",
+                  "amount": 30.97877898745157
+                },
+                {
+                  "start_of_period": "2024-01-01T00:00:00Z",
+                  "amount": 36.400223153003374
+                },
+                {
+                  "start_of_period": "2024-02-01T00:00:00Z",
+                  "amount": 29.98848969734713
+                },
+                {
+                  "start_of_period": "2024-03-01T00:00:00Z",
+                  "amount": 21.774670744853964
+                },
+                {
+                  "start_of_period": "2024-04-01T00:00:00Z",
+                  "amount": 10.919931862512113
+                },
+                {
+                  "start_of_period": "2024-05-01T00:00:00Z",
+                  "amount": 82.88674184446735
+                },
+                {
+                  "start_of_period": "2024-06-01T00:00:00Z",
+                  "amount": 361.33127840585365
+                },
+                {
+                  "start_of_period": "2024-07-01T00:00:00Z",
+                  "amount": 499.81185338552757
+                },
+                {
+                  "start_of_period": "2024-08-01T00:00:00Z",
+                  "amount": 480.49837392271746
+                },
+                {
+                  "start_of_period": "2024-09-01T00:00:00Z",
+                  "amount": 322.157804506025
+                }
+              ]
+            },
+            "lighting": {
+              "interval": "MONTHLY",
+              "amounts": [
+                {
+                  "start_of_period": "2023-10-01T00:00:00Z",
+                  "amount": 95.9039453930782
+                },
+                {
+                  "start_of_period": "2023-11-01T00:00:00Z",
+                  "amount": 66.78128716799223
+                },
+                {
+                  "start_of_period": "2023-12-01T00:00:00Z",
+                  "amount": 111.64901078355702
+                },
+                {
+                  "start_of_period": "2024-01-01T00:00:00Z",
+                  "amount": 99.82282089482283
+                },
+                {
+                  "start_of_period": "2024-02-01T00:00:00Z",
+                  "amount": 91.20600215634379
+                },
+                {
+                  "start_of_period": "2024-03-01T00:00:00Z",
+                  "amount": 83.07287825096978
+                },
+                {
+                  "start_of_period": "2024-04-01T00:00:00Z",
+                  "amount": 75.12157642012566
+                },
+                {
+                  "start_of_period": "2024-05-01T00:00:00Z",
+                  "amount": 62.39486797041765
+                },
+                {
+                  "start_of_period": "2024-06-01T00:00:00Z",
+                  "amount": 93.78204556128378
+                },
+                {
+                  "start_of_period": "2024-07-01T00:00:00Z",
+                  "amount": 75.93840003064521
+                },
+                {
+                  "start_of_period": "2024-08-01T00:00:00Z",
+                  "amount": 94.20589081465418
+                },
+                {
+                  "start_of_period": "2024-09-01T00:00:00Z",
+                  "amount": 128.56035567514007
+                }
+              ]
+            },
+            "water_heater": {
+              "interval": "MONTHLY",
+              "amounts": [
+                {
+                  "start_of_period": "2023-10-01T00:00:00Z",
+                  "amount": 117.67503280051213
+                },
+                {
+                  "start_of_period": "2023-11-01T00:00:00Z",
+                  "amount": 79.69736778882425
+                },
+                {
+                  "start_of_period": "2023-12-01T00:00:00Z",
+                  "amount": 116.29448848933329
+                },
+                {
+                  "start_of_period": "2024-01-01T00:00:00Z",
+                  "amount": 135.15789828742436
+                },
+                {
+                  "start_of_period": "2024-02-01T00:00:00Z",
+                  "amount": 140.1321912247118
+                },
+                {
+                  "start_of_period": "2024-03-01T00:00:00Z",
+                  "amount": 147.28865761111715
+                },
+                {
+                  "start_of_period": "2024-04-01T00:00:00Z",
+                  "amount": 144.749860874345
+                },
+                {
+                  "start_of_period": "2024-05-01T00:00:00Z",
+                  "amount": 104.77676734078186
+                },
+                {
+                  "start_of_period": "2024-06-01T00:00:00Z",
+                  "amount": 167.97426295763248
+                },
+                {
+                  "start_of_period": "2024-07-01T00:00:00Z",
+                  "amount": 124.09214950708684
+                },
+                {
+                  "start_of_period": "2024-08-01T00:00:00Z",
+                  "amount": 107.75042954506921
+                },
+                {
+                  "start_of_period": "2024-09-01T00:00:00Z",
+                  "amount": 167.98502419859506
+                }
+              ]
+            },
+            "appliance": {
+              "interval": "MONTHLY",
+              "amounts": [
+                {
+                  "start_of_period": "2023-10-01T00:00:00Z",
+                  "amount": 91.19944433636473
+                },
+                {
+                  "start_of_period": "2023-11-01T00:00:00Z",
+                  "amount": 52.28411024360194
+                },
+                {
+                  "start_of_period": "2023-12-01T00:00:00Z",
+                  "amount": 72.12797854232616
+                },
+                {
+                  "start_of_period": "2024-01-01T00:00:00Z",
+                  "amount": 73.22188648723677
+                },
+                {
+                  "start_of_period": "2024-02-01T00:00:00Z",
+                  "amount": 76.11283160234896
+                },
+                {
+                  "start_of_period": "2024-03-01T00:00:00Z",
+                  "amount": 89.24545951307046
+                },
+                {
+                  "start_of_period": "2024-04-01T00:00:00Z",
+                  "amount": 99.11499356957826
+                },
+                {
+                  "start_of_period": "2024-05-01T00:00:00Z",
+                  "amount": 87.66397765590798
+                },
+                {
+                  "start_of_period": "2024-06-01T00:00:00Z",
+                  "amount": 147.38255877598482
+                },
+                {
+                  "start_of_period": "2024-07-01T00:00:00Z",
+                  "amount": 120.13709849236648
+                },
+                {
+                  "start_of_period": "2024-08-01T00:00:00Z",
+                  "amount": 116.0611937947731
+                },
+                {
+                  "start_of_period": "2024-09-01T00:00:00Z",
+                  "amount": 149.57817154939167
+                }
+              ]
+            },
+            "ev": null,
+            "pool": null,
+            "grid_import": null,
+            "total": {
+              "interval": "MONTHLY",
+              "amounts": [
+                {
+                  "start_of_period": "2023-10-01T00:00:00Z",
+                  "amount": 500.00000000000034
+                },
+                {
+                  "start_of_period": "2023-11-01T00:00:00Z",
+                  "amount": 299.9999999999998
+                },
+                {
+                  "start_of_period": "2023-12-01T00:00:00Z",
+                  "amount": 500.0000000000003
+                },
+                {
+                  "start_of_period": "2024-01-01T00:00:00Z",
+                  "amount": 499.9999999999997
+                },
+                {
+                  "start_of_period": "2024-02-01T00:00:00Z",
+                  "amount": 499.99999999999983
+                },
+                {
+                  "start_of_period": "2024-03-01T00:00:00Z",
+                  "amount": 499.9999999999994
+                },
+                {
+                  "start_of_period": "2024-04-01T00:00:00Z",
+                  "amount": 499.99999999999994
+                },
+                {
+                  "start_of_period": "2024-05-01T00:00:00Z",
+                  "amount": 500.0000000000001
+                },
+                {
+                  "start_of_period": "2024-06-01T00:00:00Z",
+                  "amount": 1000.0000000000003
+                },
+                {
+                  "start_of_period": "2024-07-01T00:00:00Z",
+                  "amount": 999.9999999999991
+                },
+                {
+                  "start_of_period": "2024-08-01T00:00:00Z",
+                  "amount": 999.9999999999986
+                },
+                {
+                  "start_of_period": "2024-09-01T00:00:00Z",
+                  "amount": 1000.0000000000002
+                }
+              ]
+            }
+          },
+          "estimated_monthly_bill": {
+            "interval": "MONTHLY",
+            "amounts": [
+              {
+                "start_of_period": "2023-10-01",
+                "amount": 99.54
+              },
+              {
+                "start_of_period": "2023-11-01",
+                "amount": 61.84
+              },
+              {
+                "start_of_period": "2023-12-01",
+                "amount": 100.16
+              },
+              {
+                "start_of_period": "2024-01-01",
+                "amount": 98.56
+              },
+              {
+                "start_of_period": "2024-02-01",
+                "amount": 91.69
+              },
+              {
+                "start_of_period": "2024-03-01",
+                "amount": 82.44
+              },
+              {
+                "start_of_period": "2024-04-01",
+                "amount": 81.99
+              },
+              {
+                "start_of_period": "2024-05-01",
+                "amount": 79.87
+              },
+              {
+                "start_of_period": "2024-06-01",
+                "amount": 159.33
+              },
+              {
+                "start_of_period": "2024-07-01",
+                "amount": 172.18
+              },
+              {
+                "start_of_period": "2024-08-01",
+                "amount": 171.92
+              },
+              {
+                "start_of_period": "2024-09-01",
+                "amount": 203.89
+              }
+            ]
+          },
+          "estimated_monthly_bill_breakdown": null,
+          "uploaded_csv": null,
+          "uploaded_csv_format": null,
+          "proposed_usage_increase_amount": 0,
+          "proposed_usage_increase_unit": "PCT",
+          "electric_vehicles": [],
+          "include_pool": false,
+          "proposed_monthly_usage": null,
+          "proposed_monthly_bill": null,
+          "proposed_monthly_bill_breakdown": null,
+          "production_input_mode": null,
+          "estimated_monthly_production": null,
+          "entered_production": null,
+          "daily_persona": null,
+          "custom_daily_persona": null,
+          "median_daily_usage_total": 16.958469713218108,
+          "median_daily_usage_date": "2024-01-14",
+          "archived": false,
+          "min_utility_rate": 0,
+          "max_utility_rate": 0.2802
+        }
+      }
+    ]
+  },
+  "http": {
+    "relativeURI": "/api/v1/site/{{record.originalPayload.projectData.everbrightProjectId}}/usage_profile",
+    "method": "GET",
+    "formType": "http"
+  },
+  "transform": {
+    "type": "expression",
+    "expression": {
+      "rules": [
+        [
+          {
+            "extract": "uuid",
+            "generate": "originalPayload.projectData.usage_id"
+          },
+          {
+            "generate": "originalPayload.projectData.usage_name",
+            "extract": "name"
+          },
+          {
+            "generate": "originalPayload.projectData.usage_utility_company",
+            "extract": "utility_company"
+          },
+          {
+            "generate": "originalPayload.projectData.usage_genability_rate_schedule_id",
+            "extract": "genability_rate_schedule.uuid"
+          },
+          {
+            "generate": "originalPayload.projectData.usage_genability_rate_schedule_name",
+            "extract": "genability_rate_schedule.name"
+          },
+          {
+            "generate": "originalPayload.projectData.usage_genability_rate_schedule_display_name",
+            "extract": "genability_rate_schedule.display_name"
+          },
+          {
+            "generate": "originalPayload.projectData.usage_genability_rate_schedule_customer_class",
+            "extract": "genability_rate_schedule.customer_class"
+          },
+          {
+            "generate": "originalPayload.projectData.usage_genability_rate_schedule_genability_id",
+            "extract": "genability_rate_schedule.genability_id"
+          },
+          {
+            "extract": "genability_rate_schedule.genability_utility_id",
+            "generate": "originalPayload.projectData.usage_genability_rate_schedule_genability_utility_id"
+          }
+        ]
+      ],
+      "version": "1"
+    },
+    "rules": [
+      [
+        {
+          "extract": "uuid",
+          "generate": "originalPayload.projectData.usage_id"
+        },
+        {
+          "generate": "originalPayload.projectData.usage_name",
+          "extract": "name"
+        },
+        {
+          "generate": "originalPayload.projectData.usage_utility_company",
+          "extract": "utility_company"
+        },
+        {
+          "generate": "originalPayload.projectData.usage_genability_rate_schedule_id",
+          "extract": "genability_rate_schedule.uuid"
+        },
+        {
+          "generate": "originalPayload.projectData.usage_genability_rate_schedule_name",
+          "extract": "genability_rate_schedule.name"
+        },
+        {
+          "generate": "originalPayload.projectData.usage_genability_rate_schedule_display_name",
+          "extract": "genability_rate_schedule.display_name"
+        },
+        {
+          "generate": "originalPayload.projectData.usage_genability_rate_schedule_customer_class",
+          "extract": "genability_rate_schedule.customer_class"
+        },
+        {
+          "generate": "originalPayload.projectData.usage_genability_rate_schedule_genability_id",
+          "extract": "genability_rate_schedule.genability_id"
+        },
+        {
+          "extract": "genability_rate_schedule.genability_utility_id",
+          "generate": "originalPayload.projectData.usage_genability_rate_schedule_genability_utility_id"
+        }
+      ]
+    ],
+    "version": "1"
+  },
+  "adaptorType": "HTTPExport"
+}

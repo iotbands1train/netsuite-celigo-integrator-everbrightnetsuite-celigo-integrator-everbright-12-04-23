@@ -1,0 +1,24 @@
+{
+    "uuid": "1b8eb907-6dee-4bb2-940f-628a0ef516ec",
+    "alias": "operations",
+    "order": 9,
+    "displayed": true,
+    "status": "INPROG",
+    "is_open": true,
+    "assigned_to_user": {
+        "uuid": "b0d45312-d8d2-4d43-934b-ecec2031f9d9",
+        "email": "Fsimmons@nusunpower.com",
+        "first_name": "Franklin",
+        "last_name": "Simmons",
+        "organization": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+        "organization_name": "TriSMART Solar, LLC"
+    },
+    "assigned_to_organization": {
+        "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+        "name": "TriSMART Solar, LLC",
+        "is_active": true
+    },
+    "phase_definition": "a5e947d6-4b52-4c46-b95a-4ff8c108e135",
+    "summary": "EverBright EverOwn",
+    "default_data": {}
+}

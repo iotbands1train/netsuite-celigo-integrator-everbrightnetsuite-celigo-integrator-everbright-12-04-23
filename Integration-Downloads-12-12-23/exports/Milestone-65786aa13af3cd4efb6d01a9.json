@@ -1,0 +1,126 @@
+{
+  "_id": "65786aa13af3cd4efb6d01a9",
+  "name": "Milestone",
+  "_connectionId": "654e618e57f7f566040cf952",
+  "apiIdentifier": "e53002c05f",
+  "asynchronous": true,
+  "isLookup": true,
+  "oneToMany": false,
+  "http": {
+    "relativeURI": "/api/v1/milestone?workflow_id={{record.originalPayload.projectData.workflow_id}}",
+    "method": "GET",
+    "formType": "http"
+  },
+  "transform": {
+    "type": "expression",
+    "expression": {
+      "rules": [
+        [
+          {
+            "extract": "count",
+            "generate": "originalPayload.projectData.milestoneData.milestone_count"
+          },
+          {
+            "generate": "originalPayload.projectData.milestoneData.milestone.*.milestone_name",
+            "extract": "results[*].name"
+          },
+          {
+            "generate": "originalPayload.projectData.milestoneData.milestone.*.milestone_code",
+            "extract": "results[*].alias"
+          },
+          {
+            "generate": "originalPayload.projectData.milestoneData.milestone.*.milestone_org_id",
+            "extract": "results[*].approval_organization.uuid"
+          },
+          {
+            "generate": "originalPayload.projectData.milestoneData.milestone.*.milestone_org_name",
+            "extract": "results[*].approval_organization.name"
+          },
+          {
+            "extract": "results[*].responsible_user.uuid",
+            "generate": "originalPayload.projectData.milestoneData.milestone.*.milestone_sales_id"
+          },
+          {
+            "extract": "results[*].responsible_user.first_name",
+            "generate": "originalPayload.projectData.milestoneData.milestone.*.milestone_sales_first_name"
+          },
+          {
+            "extract": "results[*].responsible_user.last_name",
+            "generate": "originalPayload.projectData.milestoneData.milestone.*.milestone_sales_last_name"
+          },
+          {
+            "extract": "results[*].responsible_user.email",
+            "generate": "originalPayload.projectData.milestoneData.milestone.*.milestone_sales_email"
+          },
+          {
+            "extract": "results[*].responsible_user.organization",
+            "generate": "originalPayload.projectData.milestoneData.milestone.*.milestone_resp_org_id"
+          },
+          {
+            "extract": "results[*].responsible_user.organization_name",
+            "generate": "originalPayload.projectData.milestoneData.milestone.*.milestone_resp_org_name"
+          },
+          {
+            "generate": "originalPayload.projectData.milestoneData.milestone.*.milestone_ids",
+            "extract": "results[*].uuid"
+          }
+        ]
+      ],
+      "version": "1"
+    },
+    "rules": [
+      [
+        {
+          "extract": "count",
+          "generate": "originalPayload.projectData.milestoneData.milestone_count"
+        },
+        {
+          "generate": "originalPayload.projectData.milestoneData.milestone.*.milestone_name",
+          "extract": "results[*].name"
+        },
+        {
+          "generate": "originalPayload.projectData.milestoneData.milestone.*.milestone_code",
+          "extract": "results[*].alias"
+        },
+        {
+          "generate": "originalPayload.projectData.milestoneData.milestone.*.milestone_org_id",
+          "extract": "results[*].approval_organization.uuid"
+        },
+        {
+          "generate": "originalPayload.projectData.milestoneData.milestone.*.milestone_org_name",
+          "extract": "results[*].approval_organization.name"
+        },
+        {
+          "extract": "results[*].responsible_user.uuid",
+          "generate": "originalPayload.projectData.milestoneData.milestone.*.milestone_sales_id"
+        },
+        {
+          "extract": "results[*].responsible_user.first_name",
+          "generate": "originalPayload.projectData.milestoneData.milestone.*.milestone_sales_first_name"
+        },
+        {
+          "extract": "results[*].responsible_user.last_name",
+          "generate": "originalPayload.projectData.milestoneData.milestone.*.milestone_sales_last_name"
+        },
+        {
+          "extract": "results[*].responsible_user.email",
+          "generate": "originalPayload.projectData.milestoneData.milestone.*.milestone_sales_email"
+        },
+        {
+          "extract": "results[*].responsible_user.organization",
+          "generate": "originalPayload.projectData.milestoneData.milestone.*.milestone_resp_org_id"
+        },
+        {
+          "extract": "results[*].responsible_user.organization_name",
+          "generate": "originalPayload.projectData.milestoneData.milestone.*.milestone_resp_org_name"
+        },
+        {
+          "generate": "originalPayload.projectData.milestoneData.milestone.*.milestone_ids",
+          "extract": "results[*].uuid"
+        }
+      ]
+    ],
+    "version": "1"
+  },
+  "adaptorType": "HTTPExport"
+}

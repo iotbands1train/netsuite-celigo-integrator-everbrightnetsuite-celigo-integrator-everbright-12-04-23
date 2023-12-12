@@ -1,0 +1,8 @@
+{
+  "_id": "6576302bdf8b184f3121cc3f",
+  "lastModified": "2023-12-10T21:54:32.948Z",
+  "createdAt": "2023-12-10T21:39:55.495Z",
+  "name": "trs",
+  "sandbox": false,
+  "postResponseHookToProcessOnChildRecord": false
+}

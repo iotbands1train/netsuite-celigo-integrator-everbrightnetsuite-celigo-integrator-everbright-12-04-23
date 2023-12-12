@@ -1,0 +1,287 @@
+{
+  "_id": "656f53530697aa342529121c",
+  "name": "⛔Project Interface Creation - v3.0.1",
+  "schedule": "? */5 * ? * *",
+  "timezone": "America/Los_Angeles",
+  "pageGenerators": [
+    {
+      "_exportId": "656f53520697aa3425291214",
+      "skipRetries": false
+    }
+  ],
+  "pageProcessors": [
+    {
+      "responseMapping": {
+        "fields": [
+          {
+            "extract": "data.0.originalPayload",
+            "generate": "originalPayload"
+          }
+        ],
+        "lists": []
+      },
+      "type": "export",
+      "_exportId": "6575beaa38791f4f52925c69"
+    },
+    {
+      "responseMapping": {
+        "fields": [
+          {
+            "extract": "data.0.originalPayload",
+            "generate": "originalPayload"
+          },
+          {
+            "extract": "data.0.ids",
+            "generate": "ids"
+          }
+        ],
+        "lists": []
+      },
+      "type": "export",
+      "_exportId": "656f53520697aa3425291215"
+    },
+    {
+      "responseMapping": {
+        "fields": [
+          {
+            "extract": "data.0.originalPayload",
+            "generate": "originalPayload"
+          }
+        ],
+        "lists": []
+      },
+      "type": "export",
+      "_exportId": "6574d5f43af3cd4efb6ca163"
+    },
+    {
+      "responseMapping": {
+        "fields": [
+          {
+            "extract": "data.0.originalPayload",
+            "generate": "originalPayload"
+          }
+        ],
+        "lists": []
+      },
+      "type": "export",
+      "_exportId": "6574fc9b38791f4f52925a3e"
+    },
+    {
+      "responseMapping": {
+        "fields": [
+          {
+            "extract": "data.0.originalPayload",
+            "generate": "originalPayload"
+          }
+        ],
+        "lists": []
+      },
+      "type": "export",
+      "_exportId": "657504083af3cd4efb6ca403"
+    },
+    {
+      "responseMapping": {
+        "fields": [
+          {
+            "generate": "originalPayload",
+            "extract": "data.0.originalPayload"
+          }
+        ],
+        "lists": []
+      },
+      "type": "export",
+      "_exportId": "657507774778cd4f3a89645a"
+    },
+    {
+      "responseMapping": {
+        "fields": [
+          {
+            "generate": "originalPayload",
+            "extract": "data.0.originalPayload"
+          }
+        ],
+        "lists": []
+      },
+      "type": "export",
+      "_exportId": "6578632f38791f4f5292ad4f"
+    },
+    {
+      "responseMapping": {
+        "fields": [
+          {
+            "generate": "originalPayload",
+            "extract": "data.0.originalPayload"
+          }
+        ],
+        "lists": []
+      },
+      "type": "export",
+      "_exportId": "657511249ced9b4f9f26c205"
+    },
+    {
+      "responseMapping": {
+        "fields": [],
+        "lists": []
+      },
+      "type": "export",
+      "_exportId": "657865cf4778cd4f3a89b5eb"
+    },
+    {
+      "responseMapping": {
+        "fields": [
+          {
+            "extract": "data.0.originalPayload",
+            "generate": "originalPayload"
+          }
+        ],
+        "lists": []
+      },
+      "type": "export",
+      "_exportId": "65786791488f674f478c2796"
+    },
+    {
+      "responseMapping": {
+        "fields": [
+          {
+            "generate": "originalPayload",
+            "extract": "data.0.originalPayload"
+          }
+        ],
+        "lists": []
+      },
+      "type": "export",
+      "_exportId": "65786aa13af3cd4efb6d01a9"
+    },
+    {
+      "responseMapping": {
+        "fields": [],
+        "lists": []
+      },
+      "type": "export",
+      "_exportId": "657871af488f674f478c29b1"
+    },
+    {
+      "responseMapping": {
+        "fields": [
+          {
+            "generate": "originalPayload",
+            "extract": "data.0.originalPayload"
+          }
+        ],
+        "lists": []
+      },
+      "type": "export",
+      "_exportId": "65752d443af3cd4efb6ca4d5"
+    },
+    {
+      "responseMapping": {
+        "fields": [
+          {
+            "generate": "originalPayload",
+            "extract": "data.0.originalPayload"
+          }
+        ],
+        "lists": []
+      },
+      "type": "export",
+      "_exportId": "6575bd1b3af3cd4efb6ca640"
+    },
+    {
+      "responseMapping": {
+        "fields": [
+          {
+            "extract": "data.0.originalPayload",
+            "generate": "originalPayload"
+          }
+        ],
+        "lists": []
+      },
+      "type": "export",
+      "_exportId": "657688969ced9b4f9f26c9c8"
+    },
+    {
+      "responseMapping": {
+        "fields": [
+          {
+            "extract": "data.0.originalPayload",
+            "generate": "originalPayload"
+          }
+        ],
+        "lists": []
+      },
+      "type": "export",
+      "_exportId": "6576954a9ced9b4f9f26ca72"
+    },
+    {
+      "hooks": {
+        "postResponseMap": {
+          "_scriptId": "65784c4d4778cd4f3a89b32f",
+          "function": "postResponseMap"
+        }
+      },
+      "responseMapping": {
+        "fields": [
+          {
+            "extract": "data.0.originalPayload",
+            "generate": "originalPayload"
+          }
+        ],
+        "lists": []
+      },
+      "type": "export",
+      "_exportId": "6576861b488f674f478bdac9"
+    },
+    {
+      "responseMapping": {
+        "fields": [
+          {
+            "extract": "data.0.originalPayload",
+            "generate": "originalPayload"
+          }
+        ],
+        "lists": []
+      },
+      "type": "export",
+      "_exportId": "6576fbc29ced9b4f9f26d1f1"
+    },
+    {
+      "responseMapping": {
+        "fields": [
+          {
+            "extract": "data.0.originalPayload",
+            "generate": "originalPayload"
+          }
+        ],
+        "lists": []
+      },
+      "type": "export",
+      "_exportId": "657850624778cd4f3a89b37a"
+    },
+    {
+      "responseMapping": {
+        "fields": [
+          {
+            "extract": "id",
+            "generate": "nsProjectInterfaceId"
+          },
+          {
+            "extract": "ignored",
+            "generate": "creationIgnored"
+          }
+        ],
+        "lists": []
+      },
+      "type": "import",
+      "_importId": "656f53520697aa3425291219"
+    },
+    {
+      "responseMapping": {
+        "fields": [],
+        "lists": []
+      },
+      "type": "import",
+      "_importId": "656f53520697aa3425291218"
+    }
+  ],
+  "free": false
+}

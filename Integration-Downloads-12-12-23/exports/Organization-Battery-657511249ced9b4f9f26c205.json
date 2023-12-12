@@ -1,0 +1,179 @@
+{
+  "_id": "657511249ced9b4f9f26c205",
+  "name": "Organization Battery",
+  "_connectionId": "654e618e57f7f566040cf952",
+  "apiIdentifier": "e13ccc9e81",
+  "asynchronous": true,
+  "isLookup": true,
+  "oneToMany": false,
+  "mockOutput": {
+    "page_of_records": [
+      {
+        "record": {
+          "count": 4,
+          "next": null,
+          "previous": null,
+          "results": [
+            {
+              "uuid": "ac850c96-0697-438c-9f2b-a4256a2a92bd",
+              "wholesale_price_amount": 0,
+              "retail_price_amount": 0,
+              "price_unit": "$",
+              "spec_sheet_name": null,
+              "battery": {
+                "uuid": "997b45f0-edc0-4890-82c1-ffeb68c8d977",
+                "manufacturer": "61b93d95-cd4e-4b20-a3e1-0648f36e7f34",
+                "manufacturer_name": "Enphase Energy",
+                "manufacturer_name_abbreviation": "Enphase",
+                "model": "IQ Battery 10T",
+                "sku_name": "123456789",
+                "capacity": 10.08,
+                "usable_capacity": null,
+                "battery_type": "LI",
+                "voltage_ac": true,
+                "power_rating": 3.84,
+                "cycle_life": 4000,
+                "warranty": 15,
+                "efficiency": 96,
+                "approved": true
+              }
+            },
+            {
+              "uuid": "963524a4-8f63-4e6e-b8bc-c6463b78e4db",
+              "wholesale_price_amount": 0,
+              "retail_price_amount": 0,
+              "price_unit": "$",
+              "spec_sheet_name": null,
+              "battery": {
+                "uuid": "7354aa52-c995-4061-b550-68caa6514edc",
+                "manufacturer": "61b93d95-cd4e-4b20-a3e1-0648f36e7f34",
+                "manufacturer_name": "Enphase Energy",
+                "manufacturer_name_abbreviation": "Enphase",
+                "model": "IQ Battery 5P",
+                "sku_name": "IQBATTERY-5P-1P-NA",
+                "capacity": 5,
+                "usable_capacity": 5,
+                "battery_type": "LI",
+                "voltage_ac": true,
+                "power_rating": 3.84,
+                "cycle_life": 6000,
+                "warranty": 15,
+                "efficiency": 96,
+                "approved": true
+              }
+            },
+            {
+              "uuid": "ecd6a512-7ea0-4a9c-90b3-1b9bc8e934a8",
+              "wholesale_price_amount": 0,
+              "retail_price_amount": 0,
+              "price_unit": "$",
+              "spec_sheet_name": null,
+              "battery": {
+                "uuid": "d214a2f4-326b-4d9b-96db-c9c8ad1436a5",
+                "manufacturer": "326879e1-d4d0-4fc0-8bfe-abf31bba63e6",
+                "manufacturer_name": "FranklinWH Technologies",
+                "manufacturer_name_abbreviation": "",
+                "model": "aPower",
+                "sku_name": "aPower",
+                "capacity": 13.6,
+                "usable_capacity": null,
+                "battery_type": "LI",
+                "voltage_ac": true,
+                "power_rating": 10,
+                "cycle_life": 6000,
+                "warranty": 12,
+                "efficiency": 89,
+                "approved": true
+              }
+            },
+            {
+              "uuid": "972759e7-495a-4bcd-8821-a47e226d098b",
+              "wholesale_price_amount": 0,
+              "retail_price_amount": 0,
+              "price_unit": "$",
+              "spec_sheet_name": null,
+              "battery": {
+                "uuid": "9424d27f-c06b-4ad3-a486-16735f4a294b",
+                "manufacturer": "62ad076c-2452-44bc-ab88-9a5ff1becb16",
+                "manufacturer_name": "Tesla",
+                "manufacturer_name_abbreviation": "TSLA",
+                "model": "PowerWall 2 AC",
+                "sku_name": "ABC-123",
+                "capacity": 13.5,
+                "usable_capacity": 13.2,
+                "battery_type": "LI",
+                "voltage_ac": true,
+                "power_rating": 5,
+                "cycle_life": 3200,
+                "warranty": 10,
+                "efficiency": 90,
+                "approved": true
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "http": {
+    "relativeURI": "/api/v1/organization_battery?site_id={{record.originalPayload.projectData.everbrightProjectId}}",
+    "method": "GET",
+    "formType": "http"
+  },
+  "transform": {
+    "type": "expression",
+    "expression": {
+      "rules": [
+        [
+          {
+            "extract": "count",
+            "generate": "originalPayload.projectData.battery.*.battery_count"
+          },
+          {
+            "generate": "originalPayload.projectData.battery.*.battery_id",
+            "extract": "results[*].battery.uuid"
+          },
+          {
+            "generate": "originalPayload.projectData.battery.*.battery_manufacturer_name",
+            "extract": "results[*].battery.manufacturer_name"
+          },
+          {
+            "generate": "originalPayload.projectData.battery.*.battery_model",
+            "extract": "results[*].battery.model"
+          },
+          {
+            "generate": "originalPayload.projectData.battery.*.battery_capacity",
+            "extract": "results[*].battery.capacity"
+          }
+        ]
+      ],
+      "version": "1"
+    },
+    "rules": [
+      [
+        {
+          "extract": "count",
+          "generate": "originalPayload.projectData.battery.*.battery_count"
+        },
+        {
+          "generate": "originalPayload.projectData.battery.*.battery_id",
+          "extract": "results[*].battery.uuid"
+        },
+        {
+          "generate": "originalPayload.projectData.battery.*.battery_manufacturer_name",
+          "extract": "results[*].battery.manufacturer_name"
+        },
+        {
+          "generate": "originalPayload.projectData.battery.*.battery_model",
+          "extract": "results[*].battery.model"
+        },
+        {
+          "generate": "originalPayload.projectData.battery.*.battery_capacity",
+          "extract": "results[*].battery.capacity"
+        }
+      ]
+    ],
+    "version": "1"
+  },
+  "adaptorType": "HTTPExport"
+}

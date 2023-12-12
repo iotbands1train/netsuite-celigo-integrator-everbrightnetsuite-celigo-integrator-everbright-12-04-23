@@ -1,0 +1,24 @@
+{
+    "uuid": "eafdd9a3-59f5-4965-a8b8-906da167e1ab",
+    "alias": "qualification",
+    "order": 7,
+    "displayed": true,
+    "status": "COMP",
+    "is_open": true,
+    "assigned_to_user": {
+        "uuid": "b0d45312-d8d2-4d43-934b-ecec2031f9d9",
+        "email": "Fsimmons@nusunpower.com",
+        "first_name": "Franklin",
+        "last_name": "Simmons",
+        "organization": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+        "organization_name": "TriSMART Solar, LLC"
+    },
+    "assigned_to_organization": {
+        "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+        "name": "TriSMART Solar, LLC",
+        "is_active": true
+    },
+    "phase_definition": "0aec1132-107b-48df-bf1c-1fff0f6ec772",
+    "summary": "4501 Bluestem Ln, Killeen, TX 76542 - David Oquendo",
+    "default_data": {}
+}

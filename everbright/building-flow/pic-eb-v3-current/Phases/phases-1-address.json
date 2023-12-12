@@ -1,0 +1,24 @@
+{
+    "uuid": "d7d8a27d-10bd-4435-8b52-2a3fe209422b",
+    "alias": "address",
+    "order": 1,
+    "displayed": true,
+    "status": "COMP",
+    "is_open": true,
+    "assigned_to_user": {
+        "uuid": "b0d45312-d8d2-4d43-934b-ecec2031f9d9",
+        "email": "Fsimmons@nusunpower.com",
+        "first_name": "Franklin",
+        "last_name": "Simmons",
+        "organization": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+        "organization_name": "TriSMART Solar, LLC"
+    },
+    "assigned_to_organization": {
+        "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+        "name": "TriSMART Solar, LLC",
+        "is_active": true
+    },
+    "phase_definition": "0b605586-36a2-49eb-ac37-0f4a7df14014",
+    "summary": "<QuerySet [<Address: 4501 Bluestem Ln, Killeen, TX 76542>]>",
+    "default_data": {}
+}

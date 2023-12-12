@@ -1,0 +1,118 @@
+{
+  "_id": "657850624778cd4f3a89b37a",
+  "name": "Quote",
+  "_connectionId": "654e618e57f7f566040cf952",
+  "apiIdentifier": "ee5ebeb03a",
+  "asynchronous": true,
+  "isLookup": true,
+  "oneToMany": false,
+  "http": {
+    "relativeURI": "/api/v1/quote?site_id={{record.originalPayload.projectData.everbrightProjectId}}",
+    "method": "GET",
+    "formType": "http"
+  },
+  "transform": {
+    "type": "expression",
+    "expression": {
+      "rules": [
+        [
+          {
+            "extract": "results[*].uuid",
+            "generate": "originalPayload.projectData.quote.quote_id.*"
+          },
+          {
+            "generate": "originalPayload.projectData.quote.quote_project",
+            "extract": "results[*].submission.project"
+          },
+          {
+            "generate": "originalPayload.projectData.quote.quote_product",
+            "extract": "results[*].product"
+          },
+          {
+            "generate": "originalPayload.projectData.contractPrice",
+            "extract": "results[*].install_cost"
+          },
+          {
+            "generate": "originalPayload.projectData.systemSize",
+            "extract": "results[*].submission.install_cost_per_watt"
+          },
+          {
+            "generate": "originalPayload.projectData.avgUtilityBill",
+            "extract": "results[*].monthly_payment"
+          },
+          {
+            "extract": "results[*].submission.interest_rate",
+            "generate": "originalPayload.projectData.apr"
+          },
+          {
+            "extract": "results[*].submission.contract_term",
+            "generate": "originalPayload.projectData.quote.quote_contract_term"
+          },
+          {
+            "extract": "results[*].lookup_data.financing_fee_pct",
+            "generate": "originalPayload.projectData.quote.quote_financing_fee_pct"
+          },
+          {
+            "extract": "results[*].product_attributes.financing_partner_name",
+            "generate": "originalPayload.projectData.quote.quote_financing_partner_name"
+          },
+          {
+            "extract": "results[*].product_attributes.channel_manager_name",
+            "generate": "originalPayload.projectData.quote.quote_channel_manager_name"
+          }
+        ]
+      ],
+      "version": "1"
+    },
+    "rules": [
+      [
+        {
+          "extract": "results[*].uuid",
+          "generate": "originalPayload.projectData.quote.quote_id.*"
+        },
+        {
+          "generate": "originalPayload.projectData.quote.quote_project",
+          "extract": "results[*].submission.project"
+        },
+        {
+          "generate": "originalPayload.projectData.quote.quote_product",
+          "extract": "results[*].product"
+        },
+        {
+          "generate": "originalPayload.projectData.contractPrice",
+          "extract": "results[*].install_cost"
+        },
+        {
+          "generate": "originalPayload.projectData.systemSize",
+          "extract": "results[*].submission.install_cost_per_watt"
+        },
+        {
+          "generate": "originalPayload.projectData.avgUtilityBill",
+          "extract": "results[*].monthly_payment"
+        },
+        {
+          "extract": "results[*].submission.interest_rate",
+          "generate": "originalPayload.projectData.apr"
+        },
+        {
+          "extract": "results[*].submission.contract_term",
+          "generate": "originalPayload.projectData.quote.quote_contract_term"
+        },
+        {
+          "extract": "results[*].lookup_data.financing_fee_pct",
+          "generate": "originalPayload.projectData.quote.quote_financing_fee_pct"
+        },
+        {
+          "extract": "results[*].product_attributes.financing_partner_name",
+          "generate": "originalPayload.projectData.quote.quote_financing_partner_name"
+        },
+        {
+          "extract": "results[*].product_attributes.channel_manager_name",
+          "generate": "originalPayload.projectData.quote.quote_channel_manager_name"
+        }
+      ]
+    ],
+    "version": "1"
+  },
+  "adaptorType": "HTTPExport"
+}

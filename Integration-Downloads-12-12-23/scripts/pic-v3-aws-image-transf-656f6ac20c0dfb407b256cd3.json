@@ -1,0 +1,8 @@
+{
+  "_id": "656f6ac20c0dfb407b256cd3",
+  "lastModified": "2023-12-05T18:28:04.249Z",
+  "createdAt": "2023-12-05T18:24:02.417Z",
+  "name": "pic-v3-aws-image-transf",
+  "sandbox": false,
+  "postResponseHookToProcessOnChildRecord": false
+}

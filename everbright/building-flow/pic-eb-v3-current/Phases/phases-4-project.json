@@ -1,0 +1,29 @@
+{
+    "uuid": "4284d38f-fceb-4a49-b0bb-2233c4e33447",
+    "alias": "project",
+    "order": 4,
+    "displayed": true,
+    "status": "COMP",
+    "is_open": true,
+    "assigned_to_user": {
+        "uuid": "b0d45312-d8d2-4d43-934b-ecec2031f9d9",
+        "email": "Fsimmons@nusunpower.com",
+        "first_name": "Franklin",
+        "last_name": "Simmons",
+        "organization": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+        "organization_name": "TriSMART Solar, LLC"
+    },
+    "assigned_to_organization": {
+        "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+        "name": "TriSMART Solar, LLC",
+        "is_active": true
+    },
+    "phase_definition": "b8825baa-42e8-4a4e-ae2b-3bacebce11a7",
+    "summary": "Project 1",
+    "default_data": {
+        "capacity": 5,
+        "initial_input_mode": "RSD",
+        "pv_module_model": "5a8ac823-f38d-4460-8b8c-24eb9f6d9aee",
+        "inverter_model": "a514fdf8-2ea4-4c9f-b42d-6b7af010ffd1"
+    }
+}

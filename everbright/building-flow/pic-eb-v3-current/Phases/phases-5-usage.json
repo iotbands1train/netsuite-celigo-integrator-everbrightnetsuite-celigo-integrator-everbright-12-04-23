@@ -1,0 +1,24 @@
+{
+    "uuid": "89240d6a-37a7-4a84-be37-e260569ee75b",
+    "alias": "usage",
+    "order": 3,
+    "displayed": true,
+    "status": "COMP",
+    "is_open": true,
+    "assigned_to_user": {
+        "uuid": "b0d45312-d8d2-4d43-934b-ecec2031f9d9",
+        "email": "Fsimmons@nusunpower.com",
+        "first_name": "Franklin",
+        "last_name": "Simmons",
+        "organization": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+        "organization_name": "TriSMART Solar, LLC"
+    },
+    "assigned_to_organization": {
+        "uuid": "3a2dee81-e5c4-4257-aaa6-51d0e0b5a874",
+        "name": "TriSMART Solar, LLC",
+        "is_active": true
+    },
+    "phase_definition": "909f6e1c-33aa-49a8-80c6-4d44fc3c7253",
+    "summary": "075f0d2f-a209-4992-91cd-176a59520c01",
+    "default_data": {}
+}
