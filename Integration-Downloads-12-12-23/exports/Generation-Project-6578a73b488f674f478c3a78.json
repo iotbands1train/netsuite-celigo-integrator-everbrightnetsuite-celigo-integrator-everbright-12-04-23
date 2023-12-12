@@ -1,0 +1,70 @@
+{
+  "_id": "6578a73b488f674f478c3a78",
+  "name": "Generation Project",
+  "_connectionId": "654e618e57f7f566040cf952",
+  "apiIdentifier": "eae4f5e48c",
+  "asynchronous": true,
+  "isLookup": true,
+  "oneToMany": false,
+  "http": {
+    "relativeURI": "/api/v1/generation_project/{{record.ids.gen_proj_id}}",
+    "method": "GET",
+    "formType": "http"
+  },
+  "transform": {
+    "type": "expression",
+    "expression": {
+      "rules": [
+        [
+          {
+            "extract": "capacity",
+            "generate": "originalPayload.projectData.pv_module_capacity"
+          },
+          {
+            "extract": "pv_arrays[*].strings[*].pv_module_count",
+            "generate": "originalPayload.projectData.pv_module_count"
+          },
+          {
+            "extract": "pv_arrays[*].azimuth",
+            "generate": "originalPayload.projectData.pv_module_azimuth"
+          },
+          {
+            "extract": "pv_arrays[*].tilt",
+            "generate": "originalPayload.projectData.pv_module_tilt"
+          },
+          {
+            "extract": "pv_arrays[*].array_type",
+            "generate": "originalPayload.projectData.pv_module_array_type"
+          }
+        ]
+      ],
+      "version": "1"
+    },
+    "rules": [
+      [
+        {
+          "extract": "capacity",
+          "generate": "originalPayload.projectData.pv_module_capacity"
+        },
+        {
+          "extract": "pv_arrays[*].strings[*].pv_module_count",
+          "generate": "originalPayload.projectData.pv_module_count"
+        },
+        {
+          "extract": "pv_arrays[*].azimuth",
+          "generate": "originalPayload.projectData.pv_module_azimuth"
+        },
+        {
+          "extract": "pv_arrays[*].tilt",
+          "generate": "originalPayload.projectData.pv_module_tilt"
+        },
+        {
+          "extract": "pv_arrays[*].array_type",
+          "generate": "originalPayload.projectData.pv_module_array_type"
+        }
+      ]
+    ],
+    "version": "1"
+  },
+  "adaptorType": "HTTPExport"
+}

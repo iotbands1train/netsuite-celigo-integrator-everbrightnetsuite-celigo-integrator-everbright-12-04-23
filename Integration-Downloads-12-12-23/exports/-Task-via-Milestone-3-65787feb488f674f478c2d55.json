@@ -1,0 +1,166 @@
+{
+  "_id": "65787feb488f674f478c2d55",
+  "name": "[ Task ] via Milestone 3",
+  "_connectionId": "654e618e57f7f566040cf952",
+  "apiIdentifier": "e728e6fd82",
+  "asynchronous": true,
+  "isLookup": true,
+  "oneToMany": false,
+  "http": {
+    "relativeURI": "/api/v1/task?milestone_id={{record.originalPayload.projectData.milestoneData.milestone.2.milestone_ids}}",
+    "method": "GET",
+    "formType": "http"
+  },
+  "transform": {
+    "type": "expression",
+    "expression": {
+      "rules": [
+        [
+          {
+            "extract": "count",
+            "generate": "originalPayload.projectData.task3.count"
+          },
+          {
+            "extract": "results[*].name",
+            "generate": "originalPayload.projectData.task3.data.*.name"
+          },
+          {
+            "extract": "results[*].uuid",
+            "generate": "originalPayload.projectData.task3.data.*.uuid"
+          },
+          {
+            "extract": "results[*].task_definition",
+            "generate": "originalPayload.projectData.task3.data.*.task_definition"
+          },
+          {
+            "extract": "results[*].description",
+            "generate": "originalPayload.projectData.task3.data.*.description"
+          },
+          {
+            "extract": "results[*].responsible_user.uuid",
+            "generate": "originalPayload.projectData.task3.data.*.resp_user.id"
+          },
+          {
+            "extract": "results[*].responsible_user.email",
+            "generate": "originalPayload.projectData.task3.data.*.resp_user.email"
+          },
+          {
+            "extract": "results[*].responsible_user.first_name",
+            "generate": "originalPayload.projectData.task3.data.*.resp_user.first_name"
+          },
+          {
+            "extract": "results[*].responsible_user.last_name",
+            "generate": "originalPayload.projectData.task3.data.*.resp_user.last_name"
+          },
+          {
+            "extract": "results[*].responsible_user.organization",
+            "generate": "originalPayload.projectData.task3.data.*.resp_user.org_id"
+          },
+          {
+            "extract": "results[*].responsible_user.organization_name",
+            "generate": "originalPayload.projectData.task3.data.*.resp_user.org_name"
+          },
+          {
+            "extract": "results[*].approver_user.uuid",
+            "generate": "originalPayload.projectData.task3.data.*.app_user.id"
+          },
+          {
+            "extract": "results[*].approver_user.first_name",
+            "generate": "originalPayload.projectData.task3.data.*.app_user.first_name"
+          },
+          {
+            "extract": "results[*].approver_user.last_name",
+            "generate": "originalPayload.projectData.task3.data.*.app_user.last_name"
+          },
+          {
+            "extract": "results[*].approver_user.email",
+            "generate": "originalPayload.projectData.task3.data.*.app_user.email"
+          },
+          {
+            "extract": "results[*].approver_user.organization",
+            "generate": "originalPayload.projectData.task3.data.*.app_user.org_id"
+          },
+          {
+            "extract": "results[*].approver_user.organization_name",
+            "generate": "originalPayload.projectData.task3.data.*.app_user.org_name"
+          }
+        ]
+      ],
+      "version": "1"
+    },
+    "rules": [
+      [
+        {
+          "extract": "count",
+          "generate": "originalPayload.projectData.task3.count"
+        },
+        {
+          "extract": "results[*].name",
+          "generate": "originalPayload.projectData.task3.data.*.name"
+        },
+        {
+          "extract": "results[*].uuid",
+          "generate": "originalPayload.projectData.task3.data.*.uuid"
+        },
+        {
+          "extract": "results[*].task_definition",
+          "generate": "originalPayload.projectData.task3.data.*.task_definition"
+        },
+        {
+          "extract": "results[*].description",
+          "generate": "originalPayload.projectData.task3.data.*.description"
+        },
+        {
+          "extract": "results[*].responsible_user.uuid",
+          "generate": "originalPayload.projectData.task3.data.*.resp_user.id"
+        },
+        {
+          "extract": "results[*].responsible_user.email",
+          "generate": "originalPayload.projectData.task3.data.*.resp_user.email"
+        },
+        {
+          "extract": "results[*].responsible_user.first_name",
+          "generate": "originalPayload.projectData.task3.data.*.resp_user.first_name"
+        },
+        {
+          "extract": "results[*].responsible_user.last_name",
+          "generate": "originalPayload.projectData.task3.data.*.resp_user.last_name"
+        },
+        {
+          "extract": "results[*].responsible_user.organization",
+          "generate": "originalPayload.projectData.task3.data.*.resp_user.org_id"
+        },
+        {
+          "extract": "results[*].responsible_user.organization_name",
+          "generate": "originalPayload.projectData.task3.data.*.resp_user.org_name"
+        },
+        {
+          "extract": "results[*].approver_user.uuid",
+          "generate": "originalPayload.projectData.task3.data.*.app_user.id"
+        },
+        {
+          "extract": "results[*].approver_user.first_name",
+          "generate": "originalPayload.projectData.task3.data.*.app_user.first_name"
+        },
+        {
+          "extract": "results[*].approver_user.last_name",
+          "generate": "originalPayload.projectData.task3.data.*.app_user.last_name"
+        },
+        {
+          "extract": "results[*].approver_user.email",
+          "generate": "originalPayload.projectData.task3.data.*.app_user.email"
+        },
+        {
+          "extract": "results[*].approver_user.organization",
+          "generate": "originalPayload.projectData.task3.data.*.app_user.org_id"
+        },
+        {
+          "extract": "results[*].approver_user.organization_name",
+          "generate": "originalPayload.projectData.task3.data.*.app_user.org_name"
+        }
+      ]
+    ],
+    "version": "1"
+  },
+  "adaptorType": "HTTPExport"
+}

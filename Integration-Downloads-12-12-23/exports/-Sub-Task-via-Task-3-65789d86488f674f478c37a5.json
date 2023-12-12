@@ -1,0 +1,71 @@
+{
+  "_id": "65789d86488f674f478c37a5",
+  "name": "[ Sub Task ]  via Task 3",
+  "description": "Get last sub task of task 3",
+  "_connectionId": "654e618e57f7f566040cf952",
+  "apiIdentifier": "e017a323ed",
+  "asynchronous": true,
+  "isLookup": true,
+  "oneToMany": false,
+  "http": {
+    "relativeURI": "/api/v1/sub_task?task_id={{record.originalPayload.projectData.task3.data.0.uuid}}",
+    "method": "GET",
+    "formType": "http"
+  },
+  "transform": {
+    "type": "expression",
+    "expression": {
+      "rules": [
+        [
+          {
+            "extract": "count",
+            "generate": "originalPayload.projectData.subtask3.count"
+          },
+          {
+            "generate": "originalPayload.projectData.subtask3.data.*.uuid",
+            "extract": "results[*].uuid"
+          },
+          {
+            "generate": "originalPayload.projectData.subtask3.data.*.label",
+            "extract": "results[*].label"
+          },
+          {
+            "generate": "originalPayload.projectData.subtask3.data.*.instructions",
+            "extract": "results[*].instructions"
+          },
+          {
+            "generate": "originalPayload.projectData.subtask3.data.*.category",
+            "extract": "results[*].category"
+          }
+        ]
+      ],
+      "version": "1"
+    },
+    "rules": [
+      [
+        {
+          "extract": "count",
+          "generate": "originalPayload.projectData.subtask3.count"
+        },
+        {
+          "generate": "originalPayload.projectData.subtask3.data.*.uuid",
+          "extract": "results[*].uuid"
+        },
+        {
+          "generate": "originalPayload.projectData.subtask3.data.*.label",
+          "extract": "results[*].label"
+        },
+        {
+          "generate": "originalPayload.projectData.subtask3.data.*.instructions",
+          "extract": "results[*].instructions"
+        },
+        {
+          "generate": "originalPayload.projectData.subtask3.data.*.category",
+          "extract": "results[*].category"
+        }
+      ]
+    ],
+    "version": "1"
+  },
+  "adaptorType": "HTTPExport"
+}

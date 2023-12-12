@@ -1,0 +1,46 @@
+{
+  "_id": "6578a1d438791f4f5292c168",
+  "name": "User (Sales) via Email",
+  "_connectionId": "654e618e57f7f566040cf952",
+  "apiIdentifier": "ecfd1442dc",
+  "asynchronous": true,
+  "isLookup": true,
+  "oneToMany": false,
+  "http": {
+    "relativeURI": "/api/v1/user?email={{record.originalPayload.projectData.milestoneData.milestone.0.milestone_sales_email}}",
+    "method": "GET",
+    "formType": "http"
+  },
+  "transform": {
+    "type": "expression",
+    "expression": {
+      "rules": [
+        [
+          {
+            "generate": "originalPayload.projectData.salesRep.phoneNumber2",
+            "extract": "results[*].phone_number"
+          },
+          {
+            "generate": "originalPayload.projectData.advPaySch.lenderName_id2",
+            "extract": "results[*].organization"
+          }
+        ]
+      ],
+      "version": "1"
+    },
+    "rules": [
+      [
+        {
+          "generate": "originalPayload.projectData.salesRep.phoneNumber2",
+          "extract": "results[*].phone_number"
+        },
+        {
+          "generate": "originalPayload.projectData.advPaySch.lenderName_id2",
+          "extract": "results[*].organization"
+        }
+      ]
+    ],
+    "version": "1"
+  },
+  "adaptorType": "HTTPExport"
+}

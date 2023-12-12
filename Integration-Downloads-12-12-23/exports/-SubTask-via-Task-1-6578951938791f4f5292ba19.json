@@ -1,0 +1,70 @@
+{
+  "_id": "6578951938791f4f5292ba19",
+  "name": "[ SubTask ] via Task 1",
+  "_connectionId": "654e618e57f7f566040cf952",
+  "apiIdentifier": "ec74a472b0",
+  "asynchronous": true,
+  "isLookup": true,
+  "oneToMany": false,
+  "http": {
+    "relativeURI": "/api/v1/sub_task?task_id={{data.originalPayload.projectData.task1.data.0.uuid}}",
+    "method": "GET",
+    "formType": "http"
+  },
+  "transform": {
+    "type": "expression",
+    "expression": {
+      "rules": [
+        [
+          {
+            "generate": "originalPayload.projectData.subtask1.count",
+            "extract": "count"
+          },
+          {
+            "generate": "originalPayload.projectData.subtask1.data.*.uuid",
+            "extract": "results[*].uuid"
+          },
+          {
+            "generate": "originalPayload.projectData.subtask1.data.*.label",
+            "extract": "results[*].label"
+          },
+          {
+            "generate": "originalPayload.projectData.subtask1.data.*.instructions",
+            "extract": "results[*].instructions"
+          },
+          {
+            "generate": "originalPayload.projectData.subtask1.data.*.category",
+            "extract": "results[*].category"
+          }
+        ]
+      ],
+      "version": "1"
+    },
+    "rules": [
+      [
+        {
+          "generate": "originalPayload.projectData.subtask1.count",
+          "extract": "count"
+        },
+        {
+          "generate": "originalPayload.projectData.subtask1.data.*.uuid",
+          "extract": "results[*].uuid"
+        },
+        {
+          "generate": "originalPayload.projectData.subtask1.data.*.label",
+          "extract": "results[*].label"
+        },
+        {
+          "generate": "originalPayload.projectData.subtask1.data.*.instructions",
+          "extract": "results[*].instructions"
+        },
+        {
+          "generate": "originalPayload.projectData.subtask1.data.*.category",
+          "extract": "results[*].category"
+        }
+      ]
+    ],
+    "version": "1"
+  },
+  "adaptorType": "HTTPExport"
+}

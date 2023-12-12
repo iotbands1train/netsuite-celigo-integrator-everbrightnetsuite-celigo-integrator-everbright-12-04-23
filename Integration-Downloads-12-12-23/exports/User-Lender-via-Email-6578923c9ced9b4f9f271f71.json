@@ -1,0 +1,46 @@
+{
+  "_id": "6578923c9ced9b4f9f271f71",
+  "name": "User (Lender) via Email",
+  "_connectionId": "654e618e57f7f566040cf952",
+  "apiIdentifier": "e8cd0719d0",
+  "asynchronous": true,
+  "isLookup": true,
+  "oneToMany": false,
+  "http": {
+    "relativeURI": "/api/v1/user?email={{record.originalPayload.projectData.salesRep.primaryEmail}}",
+    "method": "GET",
+    "formType": "http"
+  },
+  "transform": {
+    "type": "expression",
+    "expression": {
+      "rules": [
+        [
+          {
+            "generate": "originalPayload.projectData.salesRep.phoneNumber",
+            "extract": "results[*].phone_number"
+          },
+          {
+            "extract": "results[*].organization",
+            "generate": "originalPayload.projectData.advPaySch.lenderName_id"
+          }
+        ]
+      ],
+      "version": "1"
+    },
+    "rules": [
+      [
+        {
+          "generate": "originalPayload.projectData.salesRep.phoneNumber",
+          "extract": "results[*].phone_number"
+        },
+        {
+          "extract": "results[*].organization",
+          "generate": "originalPayload.projectData.advPaySch.lenderName_id"
+        }
+      ]
+    ],
+    "version": "1"
+  },
+  "adaptorType": "HTTPExport"
+}

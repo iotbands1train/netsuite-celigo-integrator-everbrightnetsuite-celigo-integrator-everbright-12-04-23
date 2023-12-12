@@ -1,0 +1,102 @@
+{
+  "_id": "6578879e35ebec4f0fba0be6",
+  "name": "Org Inverter",
+  "_connectionId": "654e618e57f7f566040cf952",
+  "apiIdentifier": "ecd4e8f7d6",
+  "asynchronous": true,
+  "isLookup": true,
+  "oneToMany": false,
+  "http": {
+    "relativeURI": "/api/v1/organization_inverter?project_id={{data.originalPayload.projectData.project.0.project_id}}",
+    "method": "GET",
+    "formType": "http"
+  },
+  "transform": {
+    "type": "expression",
+    "expression": {
+      "rules": [
+        [
+          {
+            "extract": "count",
+            "generate": "originalPayload.projectData.equipment.inverter.inverter_count"
+          },
+          {
+            "generate": "originalPayload.projectData.equipment.inverter.id",
+            "extract": "results[*].inverter.uuid"
+          },
+          {
+            "generate": "originalPayload.projectData.equipment.inverter.name",
+            "extract": "results[*].inverter.manufacturer_name"
+          },
+          {
+            "generate": "originalPayload.projectData.equipment.inverter.model",
+            "extract": "results[*].inverter.model"
+          },
+          {
+            "generate": "originalPayload.projectData.equipment.inverter.manufacturer",
+            "extract": "results[*].inverter.manufacturer"
+          },
+          {
+            "generate": "originalPayload.projectData.equipment.inverter.is_microinverter",
+            "extract": "results[*].inverter.microinverter"
+          },
+          {
+            "generate": "originalPayload.projectData.equipment.inverter.max_efficiency",
+            "extract": "results[*].inverter.efficiency_peak"
+          },
+          {
+            "generate": "originalPayload.projectData.equipment.inverter.active",
+            "extract": "results[*].default"
+          },
+          {
+            "generate": "originalPayload.projectData.equipment.inverter.company_id",
+            "extract": "results[*].inverter.manufacturer"
+          }
+        ]
+      ],
+      "version": "1"
+    },
+    "rules": [
+      [
+        {
+          "extract": "count",
+          "generate": "originalPayload.projectData.equipment.inverter.inverter_count"
+        },
+        {
+          "generate": "originalPayload.projectData.equipment.inverter.id",
+          "extract": "results[*].inverter.uuid"
+        },
+        {
+          "generate": "originalPayload.projectData.equipment.inverter.name",
+          "extract": "results[*].inverter.manufacturer_name"
+        },
+        {
+          "generate": "originalPayload.projectData.equipment.inverter.model",
+          "extract": "results[*].inverter.model"
+        },
+        {
+          "generate": "originalPayload.projectData.equipment.inverter.manufacturer",
+          "extract": "results[*].inverter.manufacturer"
+        },
+        {
+          "generate": "originalPayload.projectData.equipment.inverter.is_microinverter",
+          "extract": "results[*].inverter.microinverter"
+        },
+        {
+          "generate": "originalPayload.projectData.equipment.inverter.max_efficiency",
+          "extract": "results[*].inverter.efficiency_peak"
+        },
+        {
+          "generate": "originalPayload.projectData.equipment.inverter.active",
+          "extract": "results[*].default"
+        },
+        {
+          "generate": "originalPayload.projectData.equipment.inverter.company_id",
+          "extract": "results[*].inverter.manufacturer"
+        }
+      ]
+    ],
+    "version": "1"
+  },
+  "adaptorType": "HTTPExport"
+}

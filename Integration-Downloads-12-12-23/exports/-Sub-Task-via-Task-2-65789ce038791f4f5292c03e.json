@@ -1,0 +1,71 @@
+{
+  "_id": "65789ce038791f4f5292c03e",
+  "name": "[ Sub Task ]  via Task 2",
+  "description": "Get last sub task of task 2",
+  "_connectionId": "654e618e57f7f566040cf952",
+  "apiIdentifier": "e9670b0abc",
+  "asynchronous": true,
+  "isLookup": true,
+  "oneToMany": false,
+  "http": {
+    "relativeURI": "/api/v1/sub_task?task_id={{record.originalPayload.projectData.task2.data.0.uuid}}",
+    "method": "GET",
+    "formType": "http"
+  },
+  "transform": {
+    "type": "expression",
+    "expression": {
+      "rules": [
+        [
+          {
+            "extract": "count",
+            "generate": "originalPayload.projectData.subtask2.count"
+          },
+          {
+            "extract": "results[*].uuid",
+            "generate": "originalPayload.projectData.subtask2.data.*.uuid"
+          },
+          {
+            "extract": "results[*].label",
+            "generate": "originalPayload.projectData.subtask2.data.*.label"
+          },
+          {
+            "extract": "results[*].instructions",
+            "generate": "originalPayload.projectData.subtask2.data.*.instructions"
+          },
+          {
+            "extract": "results[*].category",
+            "generate": "originalPayload.projectData.subtask2.data.*.category"
+          }
+        ]
+      ],
+      "version": "1"
+    },
+    "rules": [
+      [
+        {
+          "extract": "count",
+          "generate": "originalPayload.projectData.subtask2.count"
+        },
+        {
+          "extract": "results[*].uuid",
+          "generate": "originalPayload.projectData.subtask2.data.*.uuid"
+        },
+        {
+          "extract": "results[*].label",
+          "generate": "originalPayload.projectData.subtask2.data.*.label"
+        },
+        {
+          "extract": "results[*].instructions",
+          "generate": "originalPayload.projectData.subtask2.data.*.instructions"
+        },
+        {
+          "extract": "results[*].category",
+          "generate": "originalPayload.projectData.subtask2.data.*.category"
+        }
+      ]
+    ],
+    "version": "1"
+  },
+  "adaptorType": "HTTPExport"
+}

@@ -36,23 +36,27 @@
         [
           {
             "extract": "uuid",
-            "generate": "originalPayload.contactData.contact_id"
+            "generate": "originalPayload.contactData.everbrightCustomerId"
           },
           {
             "generate": "originalPayload.contactData.contact_site_id",
             "extract": "site"
           },
           {
-            "generate": "originalPayload.contactData.contact_first_name",
+            "generate": "originalPayload.contactData.firstName",
             "extract": "first_name"
           },
           {
-            "generate": "originalPayload.contactData.contact_last_name",
+            "generate": "originalPayload.contactData.lastName",
             "extract": "last_name"
           },
           {
-            "generate": "originalPayload.contactData.email",
+            "generate": "originalPayload.contactData.primaryEmail",
             "extract": "email"
+          },
+          {
+            "generate": "originalPayload.contactData.phoneNumber",
+            "extract": "phone_number"
           }
         ]
       ],
@@ -62,23 +66,27 @@
       [
         {
           "extract": "uuid",
-          "generate": "originalPayload.contactData.contact_id"
+          "generate": "originalPayload.contactData.everbrightCustomerId"
         },
         {
           "generate": "originalPayload.contactData.contact_site_id",
           "extract": "site"
         },
         {
-          "generate": "originalPayload.contactData.contact_first_name",
+          "generate": "originalPayload.contactData.firstName",
           "extract": "first_name"
         },
         {
-          "generate": "originalPayload.contactData.contact_last_name",
+          "generate": "originalPayload.contactData.lastName",
           "extract": "last_name"
         },
         {
-          "generate": "originalPayload.contactData.email",
+          "generate": "originalPayload.contactData.primaryEmail",
           "extract": "email"
+        },
+        {
+          "generate": "originalPayload.contactData.phoneNumber",
+          "extract": "phone_number"
         }
       ]
     ],
